@@ -1,0 +1,13 @@
+DATA_READY {"frames": 14446, "sequences": 60, "negatives": 2592, "full_history": 14326, "history_uses_labels": false, "future_frames_used": false, "splits_sequence_disjoint": true, "raw_current_channel_is_lossless": true, "history_sha256": "17d6c4b028c7e8a774f76d3c092da496d9cdaf9db53920e804513e60df33950f"}
+EVALUATING val_C1_temporal_uniform
+EVALUATING test_yolo11n
+EVALUATING test_A1_aat_global
+EVALUATING test_A2_aat_sequence
+EVALUATING test_C1_temporal_uniform
+EVALUATING test_C2_temporal_aat_sequence
+EVALUATING test_yolov8n
+EVALUATING test_yolov5nu
+EVALUATING test_yolo26n
+EVALUATING test_C1_temporal_uniform_repeat_current
+EVALUATING test_C2_temporal_aat_sequence_repeat_current
+ALL_COMPLETE

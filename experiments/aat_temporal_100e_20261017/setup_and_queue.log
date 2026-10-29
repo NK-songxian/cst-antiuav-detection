@@ -1,0 +1,13 @@
+TEMPORAL_READY train {"frames": 25612, "sequence_count": 120, "history_full": 25372, "missing_history_clamped": 240, "image_hash_list_sha256": "58c709a9d2a55dd98e435281cb87b760007f7a68b997864b3d67e3897c4614bd", "history_sha256": "4182d16c7c419232a7b160a4f2d7693c92352cf876dd3a1733ad42f73cc06d73", "verified_lossless_probes": 121}
+TEMPORAL_READY val {"frames": 9066, "sequence_count": 40, "history_full": 8986, "missing_history_clamped": 80, "image_hash_list_sha256": "9b78beb331cb2e9b6fe0861166c0e392bb46ec808e788deef484528ea41e0ee2", "history_sha256": "75032401370fefe5f14c318a498b1aa4a883d307a6a9c77da54a5d32263f7103", "verified_lossless_probes": 121}
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 2937.8±1024.2 MB/s, size: 98.4 KB)
+[K[34m[1mtrain: [0mScanning /root/autodl-tmp/Ryan/cst_antiuav/data/yolo/train/labels.cache... 25612 images, 3612 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 25612/25612 4.7Git/s 0.0s
+Overriding model.yaml nc=80 with nc=1
+Traceback (most recent call last):
+  File "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/preflight.py", line 83, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/preflight.py", line 61, in main
+    model=DetectionModel(copy.deepcopy(source.yaml),ch=3,nc=1,verbose=False).load(source,verbose=False).cuda().train()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cuda'

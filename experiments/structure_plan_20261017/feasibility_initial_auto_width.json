@@ -1,0 +1,132 @@
+{
+  "status": "NO_NEW_TRAINING_OR_ACCURACY_RESULT",
+  "reports": [
+    {
+      "name": "baseline",
+      "training_parameters": 2590035,
+      "fused_parameters": 2582347,
+      "fused_gflops_640_square": 6.3719936,
+      "strides": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "output_shape": [
+        1,
+        5,
+        8400
+      ],
+      "replacements": [],
+      "status": "UNTRAINED_FEASIBILITY_ONLY"
+    },
+    {
+      "name": "baseline_contrast_only",
+      "training_parameters": 2590611,
+      "fused_parameters": 2582347,
+      "fused_gflops_640_square": 6.3719936,
+      "strides": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "output_shape": [
+        1,
+        5,
+        8400
+      ],
+      "replacements": [
+        {
+          "level": 0,
+          "channels": 64,
+          "training_extra_parameters": 192
+        },
+        {
+          "level": 1,
+          "channels": 128,
+          "training_extra_parameters": 384
+        }
+      ],
+      "status": "UNTRAINED_FEASIBILITY_ONLY"
+    },
+    {
+      "name": "P2P3P4_width32",
+      "training_parameters": 1995459,
+      "fused_parameters": 1989043,
+      "fused_gflops_640_square": 9.9574784,
+      "strides": [
+        4.0,
+        8.0,
+        16.0
+      ],
+      "output_shape": [
+        1,
+        5,
+        33600
+      ],
+      "replacements": [],
+      "status": "UNTRAINED_FEASIBILITY_ONLY"
+    },
+    {
+      "name": "P2P3P4_width32_contrast",
+      "training_parameters": 1995747,
+      "fused_parameters": 1989043,
+      "fused_gflops_640_square": 9.9574784,
+      "strides": [
+        4.0,
+        8.0,
+        16.0
+      ],
+      "output_shape": [
+        1,
+        5,
+        33600
+      ],
+      "replacements": [
+        {
+          "level": 0,
+          "channels": 32,
+          "training_extra_parameters": 96
+        },
+        {
+          "level": 1,
+          "channels": 64,
+          "training_extra_parameters": 192
+        }
+      ],
+      "status": "UNTRAINED_FEASIBILITY_ONLY"
+    },
+    {
+      "name": "P2P3P4_width64",
+      "training_parameters": 2068435,
+      "fused_parameters": 2061611,
+      "fused_gflops_640_square": 12.3759616,
+      "strides": [
+        4.0,
+        8.0,
+        16.0
+      ],
+      "output_shape": [
+        1,
+        5,
+        33600
+      ],
+      "replacements": [],
+      "status": "UNTRAINED_FEASIBILITY_ONLY"
+    }
+  ],
+  "folding_checks": [
+    {
+      "channels": 8,
+      "height": 17,
+      "width": 19,
+      "max_abs_error": 9.5367431640625e-07
+    },
+    {
+      "channels": 32,
+      "height": 40,
+      "width": 40,
+      "max_abs_error": 9.5367431640625e-07
+    }
+  ],
+  "note": "P5 backbone context is retained; P5 prediction is replaced by P2. FLOPs are estimates, not latency measurements."
+}

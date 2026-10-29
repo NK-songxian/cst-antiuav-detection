@@ -1,0 +1,164 @@
+{
+  "protocol": "Held-out test; three fixed checkpoints selected by validation AP50-95; no test threshold fitting or checkpoint selection.",
+  "models": {
+    "yolo11n": {
+      "metrics": {
+        "metrics/precision(B)": 0.8970623468567173,
+        "metrics/recall(B)": 0.5719565524694595,
+        "metrics/mAP50(B)": 0.6269933337559306,
+        "metrics/mAP50-95(B)": 0.34486194777325896,
+        "fitness": 0.34486194777325896
+      },
+      "protocol": {
+        "split": "test",
+        "frames": 14446,
+        "includes_negatives": true,
+        "batch": 128,
+        "workers": 4,
+        "half": true,
+        "rect": true,
+        "imgsz": 640,
+        "conf": 0.001,
+        "nms_iou": 0.7,
+        "max_det": 300,
+        "ap_implementation": "Ultralytics DetMetrics",
+        "no_training": true,
+        "actual_shapes": {
+          "(3, 544, 672)": 14446
+        }
+      },
+      "background_fpr_conf025": 0.11381172839506173,
+      "background_fp_frames_conf025": 295,
+      "positive_hit_conf025": 0.6145604859119285,
+      "attribute_ap50": {
+        "TC": 0.45897972464255465,
+        "SV": 0.5670786830181231,
+        "DBC": 0.5657319490335035,
+        "CDB": 0.48787333169234726,
+        "SIZE_CODE_1_POS_ONLY": 0.413656663958604,
+        "SIZE_CODE_2_POS_ONLY": 0.6827351206808245,
+        "SIZE_CODE_3_POS_ONLY": 0.7542327616674093,
+        "SIZE_CODE_4_POS_ONLY": 0.20814605122940044
+      },
+      "attribute_ap5095": {
+        "TC": 0.24386083883826978,
+        "SV": 0.3106341601265642,
+        "DBC": 0.2752834385945725,
+        "CDB": 0.2657897456703852,
+        "SIZE_CODE_1_POS_ONLY": 0.15965016863303255
+      },
+      "validation_threshold_replayed": {
+        "threshold": 0.29028320312500006,
+        "test_background_fpr": 0.09992283950617284,
+        "test_positive_hit": 0.6088240256453518,
+        "note": "These test FPRs are not constrained to 5%; no retuning on test."
+      }
+    },
+    "A_zero_deploy": {
+      "metrics": {
+        "metrics/precision(B)": 0.8265710273172537,
+        "metrics/recall(B)": 0.5862156234182554,
+        "metrics/mAP50(B)": 0.6270421652040854,
+        "metrics/mAP50-95(B)": 0.3507355462883837,
+        "fitness": 0.3507355462883837
+      },
+      "protocol": {
+        "split": "test",
+        "frames": 14446,
+        "includes_negatives": true,
+        "batch": 128,
+        "workers": 4,
+        "half": true,
+        "rect": true,
+        "imgsz": 640,
+        "conf": 0.001,
+        "nms_iou": 0.7,
+        "max_det": 300,
+        "ap_implementation": "Ultralytics DetMetrics",
+        "no_training": true,
+        "actual_shapes": {
+          "(3, 544, 672)": 14446
+        }
+      },
+      "background_fpr_conf025": 0.17631172839506173,
+      "background_fp_frames_conf025": 457,
+      "positive_hit_conf025": 0.632529104099882,
+      "attribute_ap50": {
+        "TC": 0.4645352337464993,
+        "SV": 0.5730131263734903,
+        "DBC": 0.5477869177697692,
+        "CDB": 0.515193150956027,
+        "SIZE_CODE_1_POS_ONLY": 0.3784081839353637,
+        "SIZE_CODE_2_POS_ONLY": 0.693954792190785,
+        "SIZE_CODE_3_POS_ONLY": 0.773331640142147,
+        "SIZE_CODE_4_POS_ONLY": 0.16704948097253278
+      },
+      "attribute_ap5095": {
+        "TC": 0.2469856817878505,
+        "SV": 0.3181096726717792,
+        "DBC": 0.27113352490318027,
+        "CDB": 0.28101756886667767,
+        "SIZE_CODE_1_POS_ONLY": 0.14947780759882512
+      },
+      "validation_threshold_replayed": {
+        "threshold": 0.5585937500000001,
+        "test_background_fpr": 0.08063271604938271,
+        "test_positive_hit": 0.5911928462966087,
+        "note": "These test FPRs are not constrained to 5%; no retuning on test."
+      }
+    },
+    "B_p2_compact": {
+      "metrics": {
+        "metrics/precision(B)": 0.8591170572403373,
+        "metrics/recall(B)": 0.5756507730946738,
+        "metrics/mAP50(B)": 0.6273512844763058,
+        "metrics/mAP50-95(B)": 0.35415063653205797,
+        "fitness": 0.35415063653205797
+      },
+      "protocol": {
+        "split": "test",
+        "frames": 14446,
+        "includes_negatives": true,
+        "batch": 128,
+        "workers": 4,
+        "half": true,
+        "rect": true,
+        "imgsz": 640,
+        "conf": 0.001,
+        "nms_iou": 0.7,
+        "max_det": 300,
+        "ap_implementation": "Ultralytics DetMetrics",
+        "no_training": true,
+        "actual_shapes": {
+          "(3, 544, 672)": 14446
+        }
+      },
+      "background_fpr_conf025": 0.08757716049382716,
+      "background_fp_frames_conf025": 227,
+      "positive_hit_conf025": 0.596591867723975,
+      "attribute_ap50": {
+        "TC": 0.440742365651059,
+        "SV": 0.5647926429185672,
+        "DBC": 0.543157686690579,
+        "CDB": 0.5111371686023105,
+        "SIZE_CODE_1_POS_ONLY": 0.3897645261832792,
+        "SIZE_CODE_2_POS_ONLY": 0.6896974516101202,
+        "SIZE_CODE_3_POS_ONLY": 0.7461090494168883,
+        "SIZE_CODE_4_POS_ONLY": 0.3647998728578289
+      },
+      "attribute_ap5095": {
+        "TC": 0.24165588215944048,
+        "SV": 0.3131409353949167,
+        "DBC": 0.2802490451218682,
+        "CDB": 0.28500671624405827,
+        "SIZE_CODE_1_POS_ONLY": 0.15295788881080205
+      },
+      "validation_threshold_replayed": {
+        "threshold": 0.32519531250000006,
+        "test_background_fpr": 0.07523148148148148,
+        "test_positive_hit": 0.58798717732411,
+        "note": "These test FPRs are not constrained to 5%; no retuning on test."
+      }
+    }
+  }
+}

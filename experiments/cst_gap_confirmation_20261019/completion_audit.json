@@ -1,0 +1,948 @@
+{
+  "status": "PASS_ALL9_REPLAYED",
+  "captured_at": "2026-10-20T00:05:10.338718+00:00",
+  "new_completed_runs": 6,
+  "reused_runs": 3,
+  "models": [
+    {
+      "name": "N_tcs_seed0",
+      "far": 10,
+      "seed": 0,
+      "training_epochs": 58,
+      "best_pt_sha256": "9a9e366c88b9bfe5372e02ea29aea54c6f0930fd9b06a1146ae36109f6ef2530",
+      "best_pt_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/N_tcs_seed0/weights/best.pt",
+      "best_pt_bytes": 5501786
+    },
+    {
+      "name": "N_tcs_seed1",
+      "far": 10,
+      "seed": 1,
+      "training_epochs": 80,
+      "best_pt_sha256": "9d372b08091a34fbe7ab1f34fed6f8e42c5360b6b2413960ed509b917835a8c0",
+      "best_pt_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/N_tcs_seed1/weights/best.pt",
+      "best_pt_bytes": 5505626
+    },
+    {
+      "name": "N_tcs_seed2",
+      "far": 10,
+      "seed": 2,
+      "training_epochs": 81,
+      "best_pt_sha256": "6474ac6fa6cf0f5d209ed920447d9c0b471082c3958a560bf3d86acf20688f52",
+      "best_pt_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/N_tcs_seed2/weights/best.pt",
+      "best_pt_bytes": 5505754
+    },
+    {
+      "name": "N_gap15_seed0",
+      "far": 15,
+      "seed": 0,
+      "training_epochs": 81,
+      "best_pt_sha256": "0e7849ae61b6fcaeb650c8e47953c99136f6671df2fe260d55376326624152d2",
+      "best_pt_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap15_seed0/weights/best.pt",
+      "best_pt_bytes": 5505818
+    },
+    {
+      "name": "N_gap15_seed1",
+      "far": 15,
+      "seed": 1,
+      "training_epochs": 59,
+      "best_pt_sha256": "d7fdc5cd88822bc7d05d16e1f78e00b3122e64d6df54443a786fd7e6b0db3f3a",
+      "best_pt_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap15_seed1/weights/best.pt",
+      "best_pt_bytes": 5501978
+    },
+    {
+      "name": "N_gap15_seed2",
+      "far": 15,
+      "seed": 2,
+      "training_epochs": 81,
+      "best_pt_sha256": "5cf1db34958e9d1d901407c806e7c9a547810bf22c6fd2537b5d4fea3dd60b69",
+      "best_pt_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap15_seed2/weights/best.pt",
+      "best_pt_bytes": 5505818
+    },
+    {
+      "name": "N_gap20_seed0",
+      "far": 20,
+      "seed": 0,
+      "training_epochs": 64,
+      "best_pt_sha256": "bccd916d7e068396a77cd4b311826a7afa0df1437024cfb5c5da5b2dfd54c649",
+      "best_pt_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap20_seed0/weights/best.pt",
+      "best_pt_bytes": 5502874
+    },
+    {
+      "name": "N_gap20_seed1",
+      "far": 20,
+      "seed": 1,
+      "training_epochs": 76,
+      "best_pt_sha256": "f741626b3d90d61a7859a95f31a18702885570badf172cf7433baeaddc428cfd",
+      "best_pt_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap20_seed1/weights/best.pt",
+      "best_pt_bytes": 5504922
+    },
+    {
+      "name": "N_gap20_seed2",
+      "far": 20,
+      "seed": 2,
+      "training_epochs": 77,
+      "best_pt_sha256": "18501048cdd22fd5b2a79e4e35210f16a21226aafe11f4528b8c48d95e05f646",
+      "best_pt_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap20_seed2/weights/best.pt",
+      "best_pt_bytes": 5505114
+    }
+  ],
+  "replay_checks": [
+    {
+      "model": "N_tcs_seed0",
+      "split": "val",
+      "frames": 9066,
+      "positive_frames": 7819,
+      "background_fp025": 182,
+      "AP50": 0.7884134108573564,
+      "AP5095": 0.42566093809538075,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_tcs_seed0",
+      "split": "test",
+      "frames": 14446,
+      "positive_frames": 11854,
+      "background_fp025": 542,
+      "AP50": 0.7473430740014188,
+      "AP5095": 0.3925828282690865,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_tcs_seed1",
+      "split": "val",
+      "frames": 9066,
+      "positive_frames": 7819,
+      "background_fp025": 89,
+      "AP50": 0.7783336400556289,
+      "AP5095": 0.4286354257077301,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_tcs_seed1",
+      "split": "test",
+      "frames": 14446,
+      "positive_frames": 11854,
+      "background_fp025": 323,
+      "AP50": 0.7254814770206839,
+      "AP5095": 0.3925196783027918,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_tcs_seed2",
+      "split": "val",
+      "frames": 9066,
+      "positive_frames": 7819,
+      "background_fp025": 123,
+      "AP50": 0.789459651208118,
+      "AP5095": 0.43036838205782263,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_tcs_seed2",
+      "split": "test",
+      "frames": 14446,
+      "positive_frames": 11854,
+      "background_fp025": 333,
+      "AP50": 0.7536310338768835,
+      "AP5095": 0.40276554952052956,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_gap15_seed0",
+      "split": "val",
+      "frames": 9066,
+      "positive_frames": 7819,
+      "background_fp025": 123,
+      "AP50": 0.7717459119936328,
+      "AP5095": 0.4257010678645875,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_gap15_seed0",
+      "split": "test",
+      "frames": 14446,
+      "positive_frames": 11854,
+      "background_fp025": 357,
+      "AP50": 0.7420461849520389,
+      "AP5095": 0.3965106987396495,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_gap15_seed1",
+      "split": "val",
+      "frames": 9066,
+      "positive_frames": 7819,
+      "background_fp025": 171,
+      "AP50": 0.7857440751146199,
+      "AP5095": 0.4277298277867172,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_gap15_seed1",
+      "split": "test",
+      "frames": 14446,
+      "positive_frames": 11854,
+      "background_fp025": 533,
+      "AP50": 0.7344266043309301,
+      "AP5095": 0.3899334644344548,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_gap15_seed2",
+      "split": "val",
+      "frames": 9066,
+      "positive_frames": 7819,
+      "background_fp025": 101,
+      "AP50": 0.7794668196782217,
+      "AP5095": 0.42857499379166847,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_gap15_seed2",
+      "split": "test",
+      "frames": 14446,
+      "positive_frames": 11854,
+      "background_fp025": 352,
+      "AP50": 0.7249946408951562,
+      "AP5095": 0.3902210882662275,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_gap20_seed0",
+      "split": "val",
+      "frames": 9066,
+      "positive_frames": 7819,
+      "background_fp025": 104,
+      "AP50": 0.781299502659351,
+      "AP5095": 0.4268418537226866,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_gap20_seed0",
+      "split": "test",
+      "frames": 14446,
+      "positive_frames": 11854,
+      "background_fp025": 197,
+      "AP50": 0.748592541845448,
+      "AP5095": 0.39785056723196993,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_gap20_seed1",
+      "split": "val",
+      "frames": 9066,
+      "positive_frames": 7819,
+      "background_fp025": 117,
+      "AP50": 0.7907339875897723,
+      "AP5095": 0.4308220148060452,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_gap20_seed1",
+      "split": "test",
+      "frames": 14446,
+      "positive_frames": 11854,
+      "background_fp025": 476,
+      "AP50": 0.7300770786085713,
+      "AP5095": 0.3900738149290797,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_gap20_seed2",
+      "split": "val",
+      "frames": 9066,
+      "positive_frames": 7819,
+      "background_fp025": 107,
+      "AP50": 0.7676190130425702,
+      "AP5095": 0.4276479850312159,
+      "replay_max_error": 0
+    },
+    {
+      "model": "N_gap20_seed2",
+      "split": "test",
+      "frames": 14446,
+      "positive_frames": 11854,
+      "background_fp025": 330,
+      "AP50": 0.7355714235744276,
+      "AP5095": 0.39012444585988393,
+      "replay_max_error": 0
+    }
+  ],
+  "contract_sha256": "5e723672f5281979acbf19a76fb9fd34642dad562dcc5cae4b411c6631ebcaef",
+  "summary_sha256": "187f881188f8ab480370cb6ff46944ac7591c202bedf9c3983b3b6d3f9f261a0",
+  "files": [
+    {
+      "archive_path": "evaluations/test/N_gap15_seed0/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap15_seed0/audit.json",
+      "bytes": 13646,
+      "sha256": "1e69116afff966bca0c7d3ab24c141f291d8f8e52eca3b638ba598ce8d5e1d0d"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap15_seed0/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap15_seed0/frame_stats.npz",
+      "bytes": 259888,
+      "sha256": "1d54f9cd0527346db1ea52c40f1d0d63bddadb4992e527bf191afbd74f84aa7b"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap15_seed0/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap15_seed0/groups.json",
+      "bytes": 12083,
+      "sha256": "3c9623129d627c650c581512b75e757644acc0e80345968b8f9cb82fae55fe7a"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap15_seed1/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap15_seed1/audit.json",
+      "bytes": 13648,
+      "sha256": "ec09483581e409b0edd718d6e8d475b122833b6b80e7cd82fe888931d2a0e1ad"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap15_seed1/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap15_seed1/frame_stats.npz",
+      "bytes": 462680,
+      "sha256": "1ee460393e0b2f2d4146f72bfdf39ad1ca37707547b3bd35784b818d17e8b3be"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap15_seed1/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap15_seed1/groups.json",
+      "bytes": 12085,
+      "sha256": "a7ac5900a658b8dfbd6734a16817142ecb4d49f4016723f59b7fb8f185a275b3"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap15_seed2/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap15_seed2/audit.json",
+      "bytes": 13567,
+      "sha256": "1f271e4a73bdcf5dc7b7a1447d2f93e01b502f07e669e358d8335d1141c1a712"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap15_seed2/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap15_seed2/frame_stats.npz",
+      "bytes": 254208,
+      "sha256": "a1ce911a7d1e01aafd22091129e343f7f6e753b96b57eaa179b1badcf05bd4be"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap15_seed2/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap15_seed2/groups.json",
+      "bytes": 12005,
+      "sha256": "544e0ad2d1a79b2a5b1bbb148e6616ee33c5560b074795d82e36fdc7b0357c95"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap20_seed0/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap20_seed0/audit.json",
+      "bytes": 13665,
+      "sha256": "49775f88fdecbaa32b3bfc49b44395fd6d578f982405c094d459d8ae4d55b0a7"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap20_seed0/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap20_seed0/frame_stats.npz",
+      "bytes": 237789,
+      "sha256": "8c84495f9abfb0f46676ac3b61d440be0be5b96e0aef3d003df714ff9b887706"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap20_seed0/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap20_seed0/groups.json",
+      "bytes": 12101,
+      "sha256": "e03f33d9eb6171391cdcff629ad6b3aa8fb4f423a6f92118e7a3352a42f6b393"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap20_seed1/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap20_seed1/audit.json",
+      "bytes": 13624,
+      "sha256": "95d4aad803b798775f9851ed72a472867df8e93aa75f9b3b44f265b7fd7a01f4"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap20_seed1/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap20_seed1/frame_stats.npz",
+      "bytes": 378846,
+      "sha256": "c3d482fdfe168fff60b7565b55bc6a3b82abeb92b090ec27d863fc972daedff8"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap20_seed1/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap20_seed1/groups.json",
+      "bytes": 12061,
+      "sha256": "b702f9ec14300b850d90b2df8e80a4eb00aa380942fab2d882a332597bd22ef2"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap20_seed2/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap20_seed2/audit.json",
+      "bytes": 13638,
+      "sha256": "7224e973084cb5f7b7afc6825998f5bb5a967a5904ce37fd44dc92b26c6b53c5"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap20_seed2/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap20_seed2/frame_stats.npz",
+      "bytes": 259941,
+      "sha256": "31195bbb6b98ef0cfe85b9073035bedb584faf0956e3fd15023a784f4a1a3086"
+    },
+    {
+      "archive_path": "evaluations/test/N_gap20_seed2/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/test_audit/N_gap20_seed2/groups.json",
+      "bytes": 12073,
+      "sha256": "e3aaefa5b87900b403ab46ff4783e3f2abd0dd83d2767483eabef82478bb8103"
+    },
+    {
+      "archive_path": "evaluations/test/N_tcs_seed0/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/test_audit/N_tcs_seed0/audit.json",
+      "bytes": 13929,
+      "sha256": "ae74904e8e4ee72490d2e3c6739df985f370cdb5ba15d080e07dc35f38cdfffd"
+    },
+    {
+      "archive_path": "evaluations/test/N_tcs_seed0/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/test_audit/N_tcs_seed0/frame_stats.npz",
+      "bytes": 397043,
+      "sha256": "a21277a2d6414a049fa343aacb28c63bbaad17f45716dd25b31871fd3f901d65"
+    },
+    {
+      "archive_path": "evaluations/test/N_tcs_seed0/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/test_audit/N_tcs_seed0/groups.json",
+      "bytes": 12091,
+      "sha256": "b2129d342ee12d887b940cca8f3dd7a42d0654abc72ec5ee3f84667185063f37"
+    },
+    {
+      "archive_path": "evaluations/test/N_tcs_seed1/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/test_audit/N_tcs_seed1/audit.json",
+      "bytes": 13936,
+      "sha256": "78989c487e65e590f0fc4302e21611fd0634c0e09ca1a90bd85be50334755412"
+    },
+    {
+      "archive_path": "evaluations/test/N_tcs_seed1/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/test_audit/N_tcs_seed1/frame_stats.npz",
+      "bytes": 223443,
+      "sha256": "44c8f7c29f1fa82a8f71a0acff3e7fad588c8c8d487263db8cd0ca831dc4406e"
+    },
+    {
+      "archive_path": "evaluations/test/N_tcs_seed1/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/test_audit/N_tcs_seed1/groups.json",
+      "bytes": 12098,
+      "sha256": "688dbfe058c86538dbfd35f41d507eae38fa6d409b112d85edc1ded00833efb6"
+    },
+    {
+      "archive_path": "evaluations/test/N_tcs_seed2/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/test_audit/N_tcs_seed2/audit.json",
+      "bytes": 13917,
+      "sha256": "404fe0b0edbfe9952843b20f7818feb1220795a2234e72c5d1fc338fc27625fe"
+    },
+    {
+      "archive_path": "evaluations/test/N_tcs_seed2/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/test_audit/N_tcs_seed2/frame_stats.npz",
+      "bytes": 262157,
+      "sha256": "c837032743567d3b384df41b81dcdc3e587d52aea18e73e3bed348309529d383"
+    },
+    {
+      "archive_path": "evaluations/test/N_tcs_seed2/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/test_audit/N_tcs_seed2/groups.json",
+      "bytes": 12077,
+      "sha256": "0a8c4ec210ff5170f35a6328a3a772b1ae415238474f6dac1cce0a3df2b204e3"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap15_seed0/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap15_seed0/audit.json",
+      "bytes": 13510,
+      "sha256": "0847a2b493e59bbb34f18d728825fd4fd54824b02bc86babce47c11cc4209a19"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap15_seed0/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap15_seed0/frame_stats.npz",
+      "bytes": 134786,
+      "sha256": "2a5669dca21713b96c7a5dafbf88b023ff7ec6222e7272a152f3880ae50e78d4"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap15_seed0/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap15_seed0/groups.json",
+      "bytes": 11949,
+      "sha256": "861d8699e2b9373c788fba792d097ddb787073d6253b15bbd09d9d385370759b"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap15_seed1/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap15_seed1/audit.json",
+      "bytes": 13512,
+      "sha256": "83e311642cb0d8e2a896bc5ce827fd507e239e8b0413dbc1ce2bcc03ebbaddf0"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap15_seed1/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap15_seed1/frame_stats.npz",
+      "bytes": 242961,
+      "sha256": "4175fd2e63eb3f25d7a29f534b6f88d336be6dc6089f5dd11c6d2926b47f3035"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap15_seed1/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap15_seed1/groups.json",
+      "bytes": 11951,
+      "sha256": "daa554eb8632d58083c67b9eaaf6de48cf18adf40dee32d169075d37fdee6b51"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap15_seed2/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap15_seed2/audit.json",
+      "bytes": 13508,
+      "sha256": "3d77885fa8df6636e3f7f96e2d5babf00042dff1513cbf9af05bc34841c50c42"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap15_seed2/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap15_seed2/frame_stats.npz",
+      "bytes": 130675,
+      "sha256": "53ae5740350156971a859af240b723fb639ad41f2339a80f9417b2ecffab6b57"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap15_seed2/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap15_seed2/groups.json",
+      "bytes": 11945,
+      "sha256": "10f12119349ddacfba1a864e3e4ea1c7ffa69d917e599cbab4d2cff63339cf9a"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap20_seed0/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap20_seed0/audit.json",
+      "bytes": 13485,
+      "sha256": "d70d416eba277eb3891b0aee67cf33c417251665137667180e63f6eea57f1c7f"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap20_seed0/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap20_seed0/frame_stats.npz",
+      "bytes": 142932,
+      "sha256": "abb8ba730569c85ecadfe51c05dc8845fbc3e23866c4625a9ab8537234c66fe0"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap20_seed0/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap20_seed0/groups.json",
+      "bytes": 11925,
+      "sha256": "35685f42ee9047fd3d9debbb4f19754c32d67e0917b74e7928c485ba14aea037"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap20_seed1/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap20_seed1/audit.json",
+      "bytes": 13459,
+      "sha256": "b268dff48daf09779fd04572a86ff5dfa79bd69c3f8b8bb6ca025a9dbc5331c1"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap20_seed1/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap20_seed1/frame_stats.npz",
+      "bytes": 166680,
+      "sha256": "76ad2b27330804eb9eec81d7575c3bd0acd8e086549b3442d0c756b348c111b6"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap20_seed1/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap20_seed1/groups.json",
+      "bytes": 11898,
+      "sha256": "25c5e3bb20739a459446f1b9d5e9552b5e25587b02102d505e120f3ee246cd8c"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap20_seed2/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap20_seed2/audit.json",
+      "bytes": 13489,
+      "sha256": "0dca81266ab54490a80c0a658d44cad883a354f91a660172d7bd7d2c8b7663d2"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap20_seed2/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap20_seed2/frame_stats.npz",
+      "bytes": 133939,
+      "sha256": "12b65fd47c0e10bc721252bbf1d2265e0d7415283d64d69b29fb534d4bea12a0"
+    },
+    {
+      "archive_path": "evaluations/val/N_gap20_seed2/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/validation_audit/N_gap20_seed2/groups.json",
+      "bytes": 11928,
+      "sha256": "664e134bb4d2165dac4a13f763ece33e10974c1e64c7935008689c96b58ae8cc"
+    },
+    {
+      "archive_path": "evaluations/val/N_tcs_seed0/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/validation_audit/N_tcs_seed0/audit.json",
+      "bytes": 13751,
+      "sha256": "85ebfcccfad200e1c42ed9591b5bfc0f3ab451830457063cdcf85e2ceb6dabbb"
+    },
+    {
+      "archive_path": "evaluations/val/N_tcs_seed0/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/validation_audit/N_tcs_seed0/frame_stats.npz",
+      "bytes": 177304,
+      "sha256": "cb0802775606948ccd4e8284b3c1b3fbf28240c9c87d6d42f40abe3d3d400955"
+    },
+    {
+      "archive_path": "evaluations/val/N_tcs_seed0/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/validation_audit/N_tcs_seed0/groups.json",
+      "bytes": 11914,
+      "sha256": "2f92bfaad31ff7ecdfef7b1b769500ea461c68b82841d4662b8decf30722d8cb"
+    },
+    {
+      "archive_path": "evaluations/val/N_tcs_seed1/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/validation_audit/N_tcs_seed1/audit.json",
+      "bytes": 13794,
+      "sha256": "cea80dc3b33d9ff18d55e54524531e305ecb45e0a2d6f73e49b86373a53a7ff1"
+    },
+    {
+      "archive_path": "evaluations/val/N_tcs_seed1/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/validation_audit/N_tcs_seed1/frame_stats.npz",
+      "bytes": 129444,
+      "sha256": "c88f8c6b4266c10bc89d6c12b67ce4cbeed65e7b4db99483aed1885dbf857b48"
+    },
+    {
+      "archive_path": "evaluations/val/N_tcs_seed1/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/validation_audit/N_tcs_seed1/groups.json",
+      "bytes": 11959,
+      "sha256": "ef94cb7703d01133a22955825d25f6bd99c2cd1059eda215be82d57cc20e2e6f"
+    },
+    {
+      "archive_path": "evaluations/val/N_tcs_seed2/audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/validation_audit/N_tcs_seed2/audit.json",
+      "bytes": 13770,
+      "sha256": "814c3cd9dae68b55dfe6e02a383d56833d204101a4760ec44c88be0e0d982880"
+    },
+    {
+      "archive_path": "evaluations/val/N_tcs_seed2/frame_stats.npz",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/validation_audit/N_tcs_seed2/frame_stats.npz",
+      "bytes": 144873,
+      "sha256": "6a423b7d98c7f68fbf7ac755e76e9cf4b980a82f1ef6c9d8f2730fab456b98ed"
+    },
+    {
+      "archive_path": "evaluations/val/N_tcs_seed2/groups.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/validation_audit/N_tcs_seed2/groups.json",
+      "bytes": 11935,
+      "sha256": "a02f1971405e6861deab5eb7b078db9b62a291e7160dc43c503094dc5af4965e"
+    },
+    {
+      "archive_path": "logs/N_gap15_seed0_test.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap15_seed0_test.log",
+      "bytes": 80614,
+      "sha256": "908b38271fc76a62cf459a3d673f587c86a037bd25cbf3399a6eb9ff073530c7"
+    },
+    {
+      "archive_path": "logs/N_gap15_seed0_train.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap15_seed0_train.log",
+      "bytes": 2347014,
+      "sha256": "7c129cddb60b8c2a9d0d6599eb8163967fe2bb49037caa623b859606ddc5b3b5"
+    },
+    {
+      "archive_path": "logs/N_gap15_seed0_val.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap15_seed0_val.log",
+      "bytes": 12314,
+      "sha256": "30e18c8da5387463336755eb9ab1a45e6703c1abceecc593d60d1c151469fcd2"
+    },
+    {
+      "archive_path": "logs/N_gap15_seed1_test.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap15_seed1_test.log",
+      "bytes": 19077,
+      "sha256": "2378e0dd4c40200c82142341965f90515b5d58cb6372fb6eebf9bcca909492c9"
+    },
+    {
+      "archive_path": "logs/N_gap15_seed1_train.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap15_seed1_train.log",
+      "bytes": 1584205,
+      "sha256": "89faf0b2f4d6dddca8cae0abe5bcf2206a57c9c589fc78a5fcd2ec2e8e5cc49d"
+    },
+    {
+      "archive_path": "logs/N_gap15_seed1_val.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap15_seed1_val.log",
+      "bytes": 12315,
+      "sha256": "8fec37706db6ddbb35496a84264292f0c47e3963d35ada46e4e10efc15458329"
+    },
+    {
+      "archive_path": "logs/N_gap15_seed2_test.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap15_seed2_test.log",
+      "bytes": 19076,
+      "sha256": "3ea553c84fd9ff1906cdaf06d06a2c0b94cf070a5258e98d70f38e58454c7bb9"
+    },
+    {
+      "archive_path": "logs/N_gap15_seed2_train.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap15_seed2_train.log",
+      "bytes": 2168505,
+      "sha256": "16a916d34c2fe31797d30ca94d3f56251ee12ca386e48f428d4ca7fde36bd5ae"
+    },
+    {
+      "archive_path": "logs/N_gap15_seed2_val.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap15_seed2_val.log",
+      "bytes": 12317,
+      "sha256": "789891794c9d3dde1892afda6e846530755578b8c58d03985b8ae494ca737328"
+    },
+    {
+      "archive_path": "logs/N_gap20_seed0_test.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap20_seed0_test.log",
+      "bytes": 74326,
+      "sha256": "2c863d4c21aac738477839ff2eda43d1e3b1a63058e86319714bf6d91f0d0947"
+    },
+    {
+      "archive_path": "logs/N_gap20_seed0_train.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap20_seed0_train.log",
+      "bytes": 1904416,
+      "sha256": "4258539e45dfd545a563c05bf950dbea9bfe55b1e947ceb1ac5cec0dd90380d1"
+    },
+    {
+      "archive_path": "logs/N_gap20_seed0_val.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap20_seed0_val.log",
+      "bytes": 12314,
+      "sha256": "4ccb4b8b98559e1691be07b8941f0e1940e2c354a449d5b80be9b6a4fe952df9"
+    },
+    {
+      "archive_path": "logs/N_gap20_seed1_test.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap20_seed1_test.log",
+      "bytes": 19075,
+      "sha256": "0b9aaa49a75c0d848e84a9cfe3b17dcb815bc2b6981db6eca573bcfdacc3ae6e"
+    },
+    {
+      "archive_path": "logs/N_gap20_seed1_train.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap20_seed1_train.log",
+      "bytes": 2034843,
+      "sha256": "030eb7ff786f35f236a8a3b44e7be720b56273005a84ea3c9471a4f2acf04416"
+    },
+    {
+      "archive_path": "logs/N_gap20_seed1_val.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap20_seed1_val.log",
+      "bytes": 12313,
+      "sha256": "e7f4ea236bc4764957d0fca98f8f74cec95651244c1ee4f7f928dfdb0c07bdc4"
+    },
+    {
+      "archive_path": "logs/N_gap20_seed2_test.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap20_seed2_test.log",
+      "bytes": 19073,
+      "sha256": "376a686743a24c01e7ab50124301204ee20bf7cc299bbe2a542e07a5b2a11da2"
+    },
+    {
+      "archive_path": "logs/N_gap20_seed2_train.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap20_seed2_train.log",
+      "bytes": 2061237,
+      "sha256": "e46f07ad1d12beb22e7b726049a7a4cf6657cbbc518d22baf2f2f34529bef998"
+    },
+    {
+      "archive_path": "logs/N_gap20_seed2_val.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/logs/N_gap20_seed2_val.log",
+      "bytes": 12311,
+      "sha256": "a4155a5ee9cf2769dc4b30574ccc89cc69a9790aee4212c0f8b5198f04c6612a"
+    },
+    {
+      "archive_path": "results/all9_runs.csv",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/results/all9_runs.csv",
+      "bytes": 1087,
+      "sha256": "5373bfdd302dea831d17efa3c62abfb1e0b7e5a26b4007aa96fb82f12868c0c2"
+    },
+    {
+      "archive_path": "results/summary.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/results/summary.json",
+      "bytes": 10607,
+      "sha256": "187f881188f8ab480370cb6ff46944ac7591c202bedf9c3983b3b6d3f9f261a0"
+    },
+    {
+      "archive_path": "results/\u8865\u5b9e\u9a8c\u7ed3\u679c.md",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/results/\u8865\u5b9e\u9a8c\u7ed3\u679c.md",
+      "bytes": 581,
+      "sha256": "afc52997e0fe55abc9daf50c1a800a8f8da496d33e83d2116bf2f467b05381ab"
+    },
+    {
+      "archive_path": "study/attribute_lineage_full_audit.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/attribute_lineage_full_audit.json",
+      "bytes": 60154,
+      "sha256": "f0d81f139027e966ea9eab4bd543d309211aaa6814302245cca71ac53b46422e"
+    },
+    {
+      "archive_path": "study/audit_completed_gap.py",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/audit_completed_gap.py",
+      "bytes": 5661,
+      "sha256": "67f2450f0ef88885b64512ae497f514b66e908294539f9c140c011fed048bb71"
+    },
+    {
+      "archive_path": "study/bootstrap.log",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/bootstrap.log",
+      "bytes": 240,
+      "sha256": "0884d4f71403d852270deed33b0132671a364bbd9863572dbc4adc6cb3d17edd"
+    },
+    {
+      "archive_path": "study/collect_gap_results.py",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/collect_gap_results.py",
+      "bytes": 4617,
+      "sha256": "1455316360949e18917094cfc2d46c4e418b26a824e34cf11ee7c28e69bf6b97"
+    },
+    {
+      "archive_path": "study/completed_queue_status.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue/status.json",
+      "bytes": 7359,
+      "sha256": "6393035295bf5a74dbff1cf8c1354ca0fab5c3d88682c1803b72bd795a8a49a7"
+    },
+    {
+      "archive_path": "study/contract.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/contract.json",
+      "bytes": 9857,
+      "sha256": "5e723672f5281979acbf19a76fb9fd34642dad562dcc5cae4b411c6631ebcaef"
+    },
+    {
+      "archive_path": "study/environment_snapshot.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/environment_snapshot.json",
+      "bytes": 4388,
+      "sha256": "452a1d9aaedfa6cb167b569f0ef89085b4feb25ee126898ecee5710c80592fba"
+    },
+    {
+      "archive_path": "study/evaluate_gap.py",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/evaluate_gap.py",
+      "bytes": 2554,
+      "sha256": "6f98c44c3b58175a62e6ed196adb676ff92eece0d7ade682bcf53da66c2e0a68"
+    },
+    {
+      "archive_path": "study/experiment_plan.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/experiment_plan.json",
+      "bytes": 2235,
+      "sha256": "7f52864413b11f37b982fc04cbeda9762444c5e0334f2039f3d1820336618fe4"
+    },
+    {
+      "archive_path": "study/gap_protocol.py",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/gap_protocol.py",
+      "bytes": 643,
+      "sha256": "dbc36e6b57421f1ea8512c50699fe06f596fe6542e18634b9acc771ac5992606"
+    },
+    {
+      "archive_path": "study/matched_runtime.py",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/matched_runtime.py",
+      "bytes": 2709,
+      "sha256": "1789cc6eb4e652e1bec8ef107113df4e4489fd18d40510910adb56bfa7c8087d"
+    },
+    {
+      "archive_path": "study/queue_gap.py",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue_gap.py",
+      "bytes": 4756,
+      "sha256": "1a28bf8f1cf311b0c816c2868a7e2aad737fe03dbccb48d485ee055e8412344c"
+    },
+    {
+      "archive_path": "study/train_matched.py",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/train_matched.py",
+      "bytes": 4650,
+      "sha256": "df436b88f59d1499b72c724737f5dec4c9ac182b7d88d47c0cbf627fa61bc04d"
+    },
+    {
+      "archive_path": "train/N_gap15_seed0/args.yaml",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap15_seed0/args.yaml",
+      "bytes": 1882,
+      "sha256": "dc59da58261361845542856614819f569c6d6b913237ce63f87d5514b71de20e"
+    },
+    {
+      "archive_path": "train/N_gap15_seed0/manifest.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/jobs/N_gap15_seed0/manifest.json",
+      "bytes": 3996,
+      "sha256": "abac51f9607e5911fa3c5530f1102e0b760b09f8b12d215afbce7f96629a7375"
+    },
+    {
+      "archive_path": "train/N_gap15_seed0/results.csv",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap15_seed0/results.csv",
+      "bytes": 13279,
+      "sha256": "d0f4bb690cfe8da22f7eec0a3ffc584a686d70366bdd6e3c2be15ad0447bb738"
+    },
+    {
+      "archive_path": "train/N_gap15_seed1/args.yaml",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap15_seed1/args.yaml",
+      "bytes": 1882,
+      "sha256": "697c30a463a6c4047cacea90b4fcee74c9c0f95b1636e6a893420f5e2f73da7a"
+    },
+    {
+      "archive_path": "train/N_gap15_seed1/manifest.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/jobs/N_gap15_seed1/manifest.json",
+      "bytes": 3996,
+      "sha256": "dada39e246b7fc3d065121619c86e363d1b2d8be304dbaa7592654f680e440a4"
+    },
+    {
+      "archive_path": "train/N_gap15_seed1/results.csv",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap15_seed1/results.csv",
+      "bytes": 9754,
+      "sha256": "31d8379595cd3fdfb16362ba171c70ad7e7883a025d1ae5cc04abbc91fc3f2c7"
+    },
+    {
+      "archive_path": "train/N_gap15_seed2/args.yaml",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap15_seed2/args.yaml",
+      "bytes": 1882,
+      "sha256": "06af76e6f15ecafc82b18336224370f4e7f593d83a4199437de62f3ad873b61c"
+    },
+    {
+      "archive_path": "train/N_gap15_seed2/manifest.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/jobs/N_gap15_seed2/manifest.json",
+      "bytes": 3996,
+      "sha256": "0c6d69039b0e817b4e044f7a170161c8a2002f672641d5e6f0fd20a967a23f73"
+    },
+    {
+      "archive_path": "train/N_gap15_seed2/results.csv",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap15_seed2/results.csv",
+      "bytes": 13274,
+      "sha256": "6af6430d22ce5be64832e369e45e64ff6b96a0826c74794cf9b0ffef08649bdc"
+    },
+    {
+      "archive_path": "train/N_gap20_seed0/args.yaml",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap20_seed0/args.yaml",
+      "bytes": 1882,
+      "sha256": "f987228b99cb454d79ddff117b214c6425719b87f3558840112a229a3060f685"
+    },
+    {
+      "archive_path": "train/N_gap20_seed0/manifest.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/jobs/N_gap20_seed0/manifest.json",
+      "bytes": 3996,
+      "sha256": "215e0f33d003363cbeb22c36502492c29e4a14e38f8f110c5a11e096a766a971"
+    },
+    {
+      "archive_path": "train/N_gap20_seed0/results.csv",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap20_seed0/results.csv",
+      "bytes": 10550,
+      "sha256": "31c6b0fe12970f897059b1e82a2b0c6cbeca0d7351eb5e571538de4cb34a3714"
+    },
+    {
+      "archive_path": "train/N_gap20_seed1/args.yaml",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap20_seed1/args.yaml",
+      "bytes": 1882,
+      "sha256": "3fa33ef3d87ec0e6cf39751c86e0e11fd31312355534c55b00eee10f99b2b956"
+    },
+    {
+      "archive_path": "train/N_gap20_seed1/manifest.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/jobs/N_gap20_seed1/manifest.json",
+      "bytes": 3996,
+      "sha256": "74b5f69b9a9fea882ae5f8374fc676ee16c23abd1b7ddc69c6a8204e16cecc54"
+    },
+    {
+      "archive_path": "train/N_gap20_seed1/results.csv",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap20_seed1/results.csv",
+      "bytes": 12492,
+      "sha256": "736d0cd2b4fed1be18da0a9d7dd80065f179e48cdf93b06dfe4a63cad96c4750"
+    },
+    {
+      "archive_path": "train/N_gap20_seed2/args.yaml",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap20_seed2/args.yaml",
+      "bytes": 1882,
+      "sha256": "4cb58157c7cbb3c7d359559fd21460a57a82c008cef9e364aeb28be7d01bbeda"
+    },
+    {
+      "archive_path": "train/N_gap20_seed2/manifest.json",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/jobs/N_gap20_seed2/manifest.json",
+      "bytes": 3996,
+      "sha256": "ca954efdf25cb629a108b2c187380debe8866bfc9e31136f713ed83c286fcff1"
+    },
+    {
+      "archive_path": "train/N_gap20_seed2/results.csv",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_gap_confirmation_20261019/N_gap20_seed2/results.csv",
+      "bytes": 12661,
+      "sha256": "88adbe0d09fe37819b293c73e50cd8ac835ae680f43a0be82ea3e9ee446d88fd"
+    },
+    {
+      "archive_path": "train/N_tcs_seed0/args.yaml",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/N_tcs_seed0/args.yaml",
+      "bytes": 1869,
+      "sha256": "e12bac78f1c95342bdd6d1942f2735ec24d2ee0701c211a6e9ea60e2e55e57e8"
+    },
+    {
+      "archive_path": "train/N_tcs_seed0/results.csv",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/N_tcs_seed0/results.csv",
+      "bytes": 9592,
+      "sha256": "5e3ed5c7b4ba1151422f408f14d99a2992f7cd88429cf08f7533af4e9f90418a"
+    },
+    {
+      "archive_path": "train/N_tcs_seed1/args.yaml",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/N_tcs_seed1/args.yaml",
+      "bytes": 1869,
+      "sha256": "6b98d968256161512e0ec6e57db409c3ce4e56a08c9f1757f5867689c0a5d084"
+    },
+    {
+      "archive_path": "train/N_tcs_seed1/results.csv",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/N_tcs_seed1/results.csv",
+      "bytes": 13142,
+      "sha256": "aced1c750e1a7bc45336c4a80a54d37fab81d02c8d295828b55a1f121c1d3459"
+    },
+    {
+      "archive_path": "train/N_tcs_seed2/args.yaml",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/N_tcs_seed2/args.yaml",
+      "bytes": 1869,
+      "sha256": "446f3fcee52749b61d81d0887bf86f0de3f5218ca78a2fbff60afa8e4acc4aef"
+    },
+    {
+      "archive_path": "train/N_tcs_seed2/results.csv",
+      "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/N_tcs_seed2/results.csv",
+      "bytes": 13280,
+      "sha256": "cfef62c5eaab6f446d7fd1438035f1cbe8f234145db271d290cd0c1d97511706"
+    }
+  ],
+  "scope": "Full-set AP and BG-FP replay for all 9 models on val and test; data/code/checkpoint identity; no independent retraining claim."
+}

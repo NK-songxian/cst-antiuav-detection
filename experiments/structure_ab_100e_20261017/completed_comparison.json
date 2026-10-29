@@ -1,0 +1,221 @@
+{
+  "protocol": "Validation only; same frozen AP evaluator; 9066 frames incl 1247 negatives; matched-FPR thresholds fitted and measured on same validation set: exploratory.",
+  "models": {
+    "yolo11n": {
+      "metrics": {
+        "metrics/precision(B)": 0.8971878593967464,
+        "metrics/recall(B)": 0.6149493911356042,
+        "metrics/mAP50(B)": 0.6621235875972866,
+        "metrics/mAP50-95(B)": 0.3678197402423832,
+        "fitness": 0.3678197402423832
+      },
+      "protocol": {
+        "split": "val",
+        "frames": 9066,
+        "includes_negatives": true,
+        "batch": 128,
+        "workers": 4,
+        "half": true,
+        "rect": true,
+        "imgsz": 640,
+        "conf": 0.001,
+        "nms_iou": 0.7,
+        "max_det": 300,
+        "ap_implementation": "Ultralytics DetMetrics",
+        "no_training": true,
+        "actual_shapes": {
+          "(3, 544, 672)": 9066
+        }
+      },
+      "background_fpr_conf025": 0.0673616680032077,
+      "background_fp_frames_conf025": 84,
+      "positive_hit_conf025": 0.639212175470009,
+      "matched_fpr05": {
+        "threshold": 0.29028320312500006,
+        "negative_fpr": 0.04971932638331997,
+        "positive_hit": 0.6358869420642026,
+        "tc_positive_hit": 0.48764089381055964
+      },
+      "attribute_ap50": {
+        "TC": 0.5342088870170528,
+        "SV": 0.5485924492875817,
+        "DBC": 0.616008801194023,
+        "CDB": 0.6055263479398412,
+        "SIZE_CODE_1_POS_ONLY": 0.4747955498549407,
+        "SIZE_CODE_2_POS_ONLY": 0.7349500663811566,
+        "SIZE_CODE_3_POS_ONLY": 0.5561964948365432,
+        "SIZE_CODE_4_POS_ONLY": 0.0
+      },
+      "attribute_ap5095": {
+        "TC": 0.25886500751521213,
+        "SV": 0.3007620461810363,
+        "DBC": 0.36259472490174993,
+        "CDB": 0.36974672072164044,
+        "SIZE_CODE_1_POS_ONLY": 0.22639527541576415
+      },
+      "source_sha256": "218e83daceb636aa67f857255ad80c328df13767b3edc4f27ebfb916e90fd9ce"
+    },
+    "A_zero_deploy": {
+      "metrics": {
+        "metrics/precision(B)": 0.892845537581664,
+        "metrics/recall(B)": 0.6173423711472055,
+        "metrics/mAP50(B)": 0.6652971257932939,
+        "metrics/mAP50-95(B)": 0.3772165979465954,
+        "fitness": 0.3772165979465954
+      },
+      "protocol": {
+        "split": "val",
+        "frames": 9066,
+        "includes_negatives": true,
+        "batch": 128,
+        "workers": 4,
+        "half": true,
+        "rect": true,
+        "imgsz": 640,
+        "conf": 0.001,
+        "nms_iou": 0.7,
+        "max_det": 300,
+        "ap_implementation": "Ultralytics DetMetrics",
+        "no_training": true,
+        "actual_shapes": {
+          "(3, 544, 672)": 9066
+        }
+      },
+      "background_fpr_conf025": 0.22453889334402566,
+      "background_fp_frames_conf025": 280,
+      "positive_hit_conf025": 0.6706739992326385,
+      "matched_fpr05": {
+        "threshold": 0.5585937500000001,
+        "negative_fpr": 0.04971932638331997,
+        "positive_hit": 0.6253996674766594,
+        "tc_positive_hit": 0.4799288115483488
+      },
+      "attribute_ap50": {
+        "TC": 0.5435861965567612,
+        "SV": 0.5472025424450376,
+        "DBC": 0.6180076848183654,
+        "CDB": 0.6103549230652362,
+        "SIZE_CODE_1_POS_ONLY": 0.4333942143843047,
+        "SIZE_CODE_2_POS_ONLY": 0.7477353783204068,
+        "SIZE_CODE_3_POS_ONLY": 0.5925422167759837,
+        "SIZE_CODE_4_POS_ONLY": 0.0
+      },
+      "attribute_ap5095": {
+        "TC": 0.272899171375799,
+        "SV": 0.30293385894842106,
+        "DBC": 0.36760033784997975,
+        "CDB": 0.37559091648493065,
+        "SIZE_CODE_1_POS_ONLY": 0.209717218260822
+      },
+      "source_sha256": "bb1ed0e748ccc1f05a678cb321bfe7a3271874d514d62e33816cb6e0afd28151"
+    },
+    "B_p2_compact": {
+      "metrics": {
+        "metrics/precision(B)": 0.9051493847068723,
+        "metrics/recall(B)": 0.613121882593682,
+        "metrics/mAP50(B)": 0.6610061721725655,
+        "metrics/mAP50-95(B)": 0.3813098017269038,
+        "fitness": 0.3813098017269038
+      },
+      "protocol": {
+        "split": "val",
+        "frames": 9066,
+        "includes_negatives": true,
+        "batch": 128,
+        "workers": 4,
+        "half": true,
+        "rect": true,
+        "imgsz": 640,
+        "conf": 0.001,
+        "nms_iou": 0.7,
+        "max_det": 300,
+        "ap_implementation": "Ultralytics DetMetrics",
+        "no_training": true,
+        "actual_shapes": {
+          "(3, 544, 672)": 9066
+        }
+      },
+      "background_fpr_conf025": 0.07939053728949479,
+      "background_fp_frames_conf025": 99,
+      "positive_hit_conf025": 0.6363985164343267,
+      "matched_fpr05": {
+        "threshold": 0.32519531250000006,
+        "negative_fpr": 0.04971932638331997,
+        "positive_hit": 0.6294922624376519,
+        "tc_positive_hit": 0.48210401423769034
+      },
+      "attribute_ap50": {
+        "TC": 0.5298743534712147,
+        "SV": 0.5356522247198741,
+        "DBC": 0.6106701277480342,
+        "CDB": 0.6014784710993468,
+        "SIZE_CODE_1_POS_ONLY": 0.4568915643971762,
+        "SIZE_CODE_2_POS_ONLY": 0.7376031176169761,
+        "SIZE_CODE_3_POS_ONLY": 0.6329951848323674,
+        "SIZE_CODE_4_POS_ONLY": 0.006190043065043066
+      },
+      "attribute_ap5095": {
+        "TC": 0.2721994440479887,
+        "SV": 0.2977314886931378,
+        "DBC": 0.3618798538514698,
+        "CDB": 0.3685007614319004,
+        "SIZE_CODE_1_POS_ONLY": 0.23130999958431406
+      },
+      "source_sha256": "ce960b4847354e1a3bdbf46c1ab0b413b6f64a8833f9de06233183061339a081"
+    }
+  },
+  "cluster_bootstrap": {
+    "unit": "validation sequence",
+    "sequences": 40,
+    "resamples": 2000,
+    "interpretation": "Descriptive paired percentile intervals, conditional on the single trained seed and thresholds tuned on this validation set; not AP confidence intervals or independent replication.",
+    "comparisons": {
+      "A_zero_deploy": {
+        "fp025": {
+          "difference": 0.15717722534081796,
+          "ci95": [
+            0.038987049223233816,
+            0.33835824411695403
+          ]
+        },
+        "hit025": {
+          "difference": 0.031461823762629494,
+          "ci95": [
+            0.01850210915607755,
+            0.0475066300721183
+          ]
+        },
+        "hit_at_fpr05": {
+          "difference": -0.010487274587543165,
+          "ci95": [
+            -0.02449242115031303,
+            0.0032051889453822676
+          ]
+        }
+      },
+      "B_p2_compact": {
+        "fp025": {
+          "difference": 0.012028869286287089,
+          "ci95": [
+            -0.02981038966594199,
+            0.06720333402926092
+          ]
+        },
+        "hit025": {
+          "difference": -0.002813659035682312,
+          "ci95": [
+            -0.01831466961198583,
+            0.013724996731465565
+          ]
+        },
+        "hit_at_fpr05": {
+          "difference": -0.00639467962655071,
+          "ci95": [
+            -0.022957769787162272,
+            0.010460088659544065
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "name": "S_tcs_seed0_adopted",
+  "input_mode": "temporal",
+  "trained_current_only_control": false,
+  "seed": 0,
+  "weights_sha256": "1f80f0852eb55cf20aa1f1de998fea5ea0413db43299f90371e554ccee2bfd52",
+  "parameters_before_fusion": 9428179,
+  "script_sha256": "d8b743b1b95a22c4484ac3dc177542b086afa5c907740d359bb865195bb9fdca",
+  "validator_source_sha256": "abf4f4a47e02cd0b79b2608551b126fdf401fc34f67a557cb6d182c78776478b",
+  "completed_at": "2026-10-18T04:34:07.893128+00:00",
+  "protocol": {
+    "split": "test",
+    "frames": 14446,
+    "includes_negatives": true,
+    "imgsz": 640,
+    "batch": 128,
+    "workers": 0,
+    "half": true,
+    "rect": true,
+    "conf": 0.001,
+    "nms_iou": 0.7,
+    "max_det": 300,
+    "actual_shapes": {
+      "(3, 544, 672)": 14446
+    },
+    "selection": "native best.pt selected by val AP50-95; no test selection"
+  },
+  "metrics": {
+    "metrics/precision(B)": 0.8902349582797677,
+    "metrics/recall(B)": 0.7245655474945166,
+    "metrics/mAP50(B)": 0.7711867926815128,
+    "metrics/mAP50-95(B)": 0.4139593173767039,
+    "fitness": 0.4139593173767039
+  },
+  "groups": {
+    "ALL": {
+      "frames": 14446,
+      "objects": 11854,
+      "negative_frames": 2592,
+      "conf_0.1": {
+        "background_frames_with_fp": 376,
+        "background_frame_fp_rate": 0.14506172839506173,
+        "fp_per_background_frame": 0.1739969135802469,
+        "positive_frame_hit_rate_iou50": 0.7663236038468028
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 250,
+        "background_frame_fp_rate": 0.09645061728395062,
+        "fp_per_background_frame": 0.10416666666666667,
+        "positive_frame_hit_rate_iou50": 0.7434621224902986
+      },
+      "metrics/precision(B)": 0.8902349582797677,
+      "metrics/recall(B)": 0.7245655474945166,
+      "metrics/mAP50(B)": 0.7711867926815128,
+      "metrics/mAP50-95(B)": 0.4139593173767039,
+      "fitness": 0.4139593173767039,
+      "small_positive_subset": false
+    },
+    "POS_ONLY": {
+      "frames": 11854,
+      "objects": 11854,
+      "negative_frames": 0,
+      "conf_0.1": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.7663236038468028
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.7434621224902986
+      },
+      "metrics/precision(B)": 0.9042423202422745,
+      "metrics/recall(B)": 0.7273494179180023,
+      "metrics/mAP50(B)": 0.7786675180182814,
+      "metrics/mAP50-95(B)": 0.41744564108263704,
+      "fitness": 0.41744564108263704,
+      "small_positive_subset": false
+    },
+    "NEG_ONLY": {
+      "frames": 2592,
+      "objects": 0,
+      "negative_frames": 2592,
+      "conf_0.1": {
+        "background_frames_with_fp": 376,
+        "background_frame_fp_rate": 0.14506172839506173,
+        "fp_per_background_frame": 0.1739969135802469,
+        "positive_frame_hit_rate_iou50": null
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 250,
+        "background_frame_fp_rate": 0.09645061728395062,
+        "fp_per_background_frame": 0.10416666666666667,
+        "positive_frame_hit_rate_iou50": null
+      },
+      "metrics/mAP50(B)": null,
+      "metrics/mAP50-95(B)": null,
+      "small_positive_subset": false
+    },
+    "TC": {
+      "frames": 8443,
+      "objects": 6931,
+      "negative_frames": 1512,
+      "conf_0.1": {
+        "background_frames_with_fp": 145,
+        "background_frame_fp_rate": 0.0958994708994709,
+        "fp_per_background_frame": 0.1111111111111111,
+        "positive_frame_hit_rate_iou50": 0.6434857884865098
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 84,
+        "background_frame_fp_rate": 0.05555555555555555,
+        "fp_per_background_frame": 0.057539682539682536,
+        "positive_frame_hit_rate_iou50": 0.6097244264896841
+      },
+      "metrics/precision(B)": 0.8464153541354574,
+      "metrics/recall(B)": 0.6100129851392295,
+      "metrics/mAP50(B)": 0.6619266788080749,
+      "metrics/mAP50-95(B)": 0.33656727331220987,
+      "fitness": 0.33656727331220987,
+      "small_positive_subset": false
+    },
+    "DBC": {
+      "frames": 1728,
+      "objects": 805,
+      "negative_frames": 923,
+      "conf_0.1": {
+        "background_frames_with_fp": 99,
+        "background_frame_fp_rate": 0.10725893824485373,
+        "fp_per_background_frame": 0.12242686890574214,
+        "positive_frame_hit_rate_iou50": 0.7180124223602484
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 59,
+        "background_frame_fp_rate": 0.06392199349945829,
+        "fp_per_background_frame": 0.06608884073672806,
+        "positive_frame_hit_rate_iou50": 0.6993788819875777
+      },
+      "metrics/precision(B)": 0.8325381860199288,
+      "metrics/recall(B)": 0.6546583850931676,
+      "metrics/mAP50(B)": 0.6760634115602581,
+      "metrics/mAP50-95(B)": 0.30649649432176884,
+      "fitness": 0.30649649432176884,
+      "small_positive_subset": false
+    },
+    "CDB": {
+      "frames": 2876,
+      "objects": 2257,
+      "negative_frames": 619,
+      "conf_0.1": {
+        "background_frames_with_fp": 49,
+        "background_frame_fp_rate": 0.0791599353796446,
+        "fp_per_background_frame": 0.10016155088852989,
+        "positive_frame_hit_rate_iou50": 0.6517501107665042
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 25,
+        "background_frame_fp_rate": 0.04038772213247173,
+        "fp_per_background_frame": 0.045234248788368334,
+        "positive_frame_hit_rate_iou50": 0.618520159503766
+      },
+      "metrics/precision(B)": 0.8921216531098985,
+      "metrics/recall(B)": 0.6118741692512184,
+      "metrics/mAP50(B)": 0.6774838814555488,
+      "metrics/mAP50-95(B)": 0.35342748872694274,
+      "fitness": 0.35342748872694274,
+      "small_positive_subset": false
+    },
+    "SV": {
+      "frames": 6690,
+      "objects": 6690,
+      "negative_frames": 0,
+      "conf_0.1": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.7076233183856502
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.6828101644245143
+      },
+      "metrics/precision(B)": 0.8746170093012768,
+      "metrics/recall(B)": 0.6723467862481315,
+      "metrics/mAP50(B)": 0.7199708197250733,
+      "metrics/mAP50-95(B)": 0.3806540206134431,
+      "fitness": 0.3806540206134431,
+      "small_positive_subset": false
+    },
+    "OC": {
+      "frames": 1301,
+      "objects": 5,
+      "negative_frames": 1296,
+      "conf_0.1": {
+        "background_frames_with_fp": 130,
+        "background_frame_fp_rate": 0.10030864197530864,
+        "fp_per_background_frame": 0.11805555555555555,
+        "positive_frame_hit_rate_iou50": 0.8
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 79,
+        "background_frame_fp_rate": 0.06095679012345679,
+        "fp_per_background_frame": 0.06327160493827161,
+        "positive_frame_hit_rate_iou50": 0.8
+      },
+      "metrics/precision(B)": 0.14341198341198344,
+      "metrics/recall(B)": 0.6,
+      "metrics/mAP50(B)": 0.11093137254901964,
+      "metrics/mAP50-95(B)": 0.06305085784313727,
+      "fitness": 0.06305085784313727,
+      "small_positive_subset": true
+    },
+    "OV": {
+      "frames": 1261,
+      "objects": 5,
+      "negative_frames": 1256,
+      "conf_0.1": {
+        "background_frames_with_fp": 242,
+        "background_frame_fp_rate": 0.1926751592356688,
+        "fp_per_background_frame": 0.23328025477707007,
+        "positive_frame_hit_rate_iou50": 0.0
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 168,
+        "background_frame_fp_rate": 0.1337579617834395,
+        "fp_per_background_frame": 0.1464968152866242,
+        "positive_frame_hit_rate_iou50": 0.0
+      },
+      "metrics/precision(B)": 0.0004472271914132379,
+      "metrics/recall(B)": 0.2,
+      "metrics/mAP50(B)": 0.0002446675031367629,
+      "metrics/mAP50-95(B)": 4.8933500627352576e-05,
+      "fitness": 4.8933500627352576e-05,
+      "small_positive_subset": true
+    },
+    "FM": {
+      "frames": 23,
+      "objects": 23,
+      "negative_frames": 0,
+      "conf_0.1": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.5652173913043478
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.5652173913043478
+      },
+      "metrics/precision(B)": 0.7982034532819988,
+      "metrics/recall(B)": 0.5652173913043478,
+      "metrics/mAP50(B)": 0.5692204022988506,
+      "metrics/mAP50-95(B)": 0.28290252578256325,
+      "fitness": 0.28290252578256325,
+      "small_positive_subset": false
+    },
+    "TC_POS_ONLY": {
+      "frames": 6931,
+      "objects": 6931,
+      "negative_frames": 0,
+      "conf_0.1": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.6434857884865098
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.6097244264896841
+      },
+      "metrics/precision(B)": 0.8576605794635185,
+      "metrics/recall(B)": 0.6110229404126388,
+      "metrics/mAP50(B)": 0.666369333005077,
+      "metrics/mAP50-95(B)": 0.3382462273901444,
+      "fitness": 0.3382462273901444,
+      "small_positive_subset": false
+    },
+    "NON_TC_POS_ONLY": {
+      "frames": 4923,
+      "objects": 4923,
+      "negative_frames": 0,
+      "conf_0.1": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.9392646760105626
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.9317489335770871
+      },
+      "metrics/precision(B)": 0.9523392782829603,
+      "metrics/recall(B)": 0.9091787298165522,
+      "metrics/mAP50(B)": 0.9358159914259697,
+      "metrics/mAP50-95(B)": 0.5310888416063423,
+      "fitness": 0.5310888416063423,
+      "small_positive_subset": false
+    },
+    "SIZE_CODE_1_POS_ONLY": {
+      "frames": 2079,
+      "objects": 2079,
+      "negative_frames": 0,
+      "conf_0.1": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.5738335738335738
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.5512265512265512
+      },
+      "metrics/precision(B)": 0.8045559967835164,
+      "metrics/recall(B)": 0.5247172486229725,
+      "metrics/mAP50(B)": 0.5487085193763122,
+      "metrics/mAP50-95(B)": 0.20723349280481979,
+      "fitness": 0.20723349280481979,
+      "small_positive_subset": false
+    },
+    "SIZE_CODE_2_POS_ONLY": {
+      "frames": 9144,
+      "objects": 9144,
+      "negative_frames": 0,
+      "conf_0.1": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.8061023622047244
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.7825896762904637
+      },
+      "metrics/precision(B)": 0.9251449629375935,
+      "metrics/recall(B)": 0.7744745745620636,
+      "metrics/mAP50(B)": 0.8284210731483423,
+      "metrics/mAP50-95(B)": 0.46113447738054847,
+      "fitness": 0.46113447738054847,
+      "small_positive_subset": false
+    },
+    "SIZE_CODE_3_POS_ONLY": {
+      "frames": 491,
+      "objects": 491,
+      "negative_frames": 0,
+      "conf_0.1": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.90020366598778
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.8920570264765784
+      },
+      "metrics/precision(B)": 0.9194454199307799,
+      "metrics/recall(B)": 0.8737270875763747,
+      "metrics/mAP50(B)": 0.9205230187144303,
+      "metrics/mAP50-95(B)": 0.530779431586401,
+      "fitness": 0.530779431586401,
+      "small_positive_subset": false
+    },
+    "SIZE_CODE_4_POS_ONLY": {
+      "frames": 65,
+      "objects": 65,
+      "negative_frames": 0,
+      "conf_0.1": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.47692307692307695
+      },
+      "conf_0.25": {
+        "background_frames_with_fp": 0,
+        "background_frame_fp_rate": null,
+        "fp_per_background_frame": null,
+        "positive_frame_hit_rate_iou50": 0.4153846153846154
+      },
+      "metrics/precision(B)": 0.6194345564791738,
+      "metrics/recall(B)": 0.4758013468615188,
+      "metrics/mAP50(B)": 0.438530796348398,
+      "metrics/mAP50-95(B)": 0.163241568358239,
+      "fitness": 0.163241568358239,
+      "small_positive_subset": false
+    }
+  }
+}

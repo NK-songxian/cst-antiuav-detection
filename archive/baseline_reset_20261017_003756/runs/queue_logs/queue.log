@@ -1,0 +1,33 @@
+[queue 2026-10-17 00:13:29] wave 1: ['yolo8n', 'yolo11n'] parallel
+[queue 2026-10-17 00:13:29] wave1 yolo8n exit 1
+[queue 2026-10-17 00:13:29] wave1 yolo11n exit 1
+[queue 2026-10-17 00:13:29] wave1 yolo8n retry sequentially
+[queue 2026-10-17 00:14:29] yolo8n start
+[queue 2026-10-17 00:14:29] yolo8n exit 1
+[queue 2026-10-17 00:14:29] yolo8n failed (1); wait 120s then retry
+[queue 2026-10-17 00:15:00] wave 1: ['yolo8n', 'yolo11n'] parallel
+[queue 2026-10-17 00:16:19] wave1 yolo8n exit -9
+[queue 2026-10-17 00:16:19] wave1 yolo11n exit -9
+[queue 2026-10-17 00:16:19] wave1 yolo8n retry sequentially
+[queue 2026-10-17 00:17:19] yolo8n start
+[queue 2026-10-17 00:17:46] yolo8n exit -9
+[queue 2026-10-17 00:17:46] yolo8n failed (-9); wait 120s then retry
+[queue 2026-10-17 00:19:46] yolo8n start
+[queue 2026-10-17 00:20:23] yolo8n exit -9
+[queue 2026-10-17 00:20:23] yolo8n result=FAILED
+[queue 2026-10-17 00:20:23] wave1 yolo11n retry sequentially
+[queue 2026-10-17 00:21:23] yolo11n start
+[queue 2026-10-17 00:22:06] yolo11n exit -9
+[queue 2026-10-17 00:22:06] yolo11n failed (-9); wait 120s then retry
+[queue 2026-10-17 00:24:06] yolo11n start
+[queue 2026-10-17 00:24:53] yolo11n exit -9
+[queue 2026-10-17 00:24:53] yolo11n result=FAILED
+[queue 2026-10-17 00:25:53] wave 2: yolo11s alone
+[queue 2026-10-17 00:25:53] yolo11s start
+[queue 2026-10-17 00:26:18] yolo11s exit -9
+[queue 2026-10-17 00:26:18] yolo11s failed (-9); wait 120s then retry
+[queue 2026-10-17 00:28:18] yolo11s start
+[queue 2026-10-17 00:29:08] yolo11s exit -6
+[queue 2026-10-17 00:29:08] yolo11s result=FAILED
+[queue 2026-10-17 00:29:08] summary: finished=[]
+[queue 2026-10-17 00:29:08] INCOMPLETE (0/3)

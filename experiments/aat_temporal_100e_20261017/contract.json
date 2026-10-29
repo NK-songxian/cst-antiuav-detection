@@ -1,0 +1,115 @@
+{
+  "models": [
+    {
+      "name": "A1_aat_global",
+      "sampling": "global",
+      "temporal": false,
+      "wave": 1,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/cst_original.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+    },
+    {
+      "name": "A2_aat_sequence",
+      "sampling": "quota",
+      "temporal": false,
+      "wave": 1,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/cst_original.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+    },
+    {
+      "name": "C1_temporal_uniform",
+      "sampling": "uniform",
+      "temporal": true,
+      "wave": 2,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+    },
+    {
+      "name": "C2_temporal_aat_sequence",
+      "sampling": "quota",
+      "temporal": true,
+      "wave": 2,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+    }
+  ],
+  "common_args_sha256": "c90dc99ddcf7ec2c73879f8679642696b26bc7da5ba0e0a163623f8ebece06d3",
+  "splits": {
+    "train": {
+      "images": 25612,
+      "objects": 22000,
+      "negatives": 3612,
+      "list_sha256": "a397552b51c623d3a2418fcdd5ee38941febbbac1bfc9b865b3a4df099726599",
+      "label_sha256": "355de31f91155ab1fea360d4d7b3e24d59e9aafec1c06062c5f9a9578c8f0f54"
+    },
+    "val": {
+      "images": 9066,
+      "objects": 7819,
+      "negatives": 1247,
+      "list_sha256": "e23cb9d1ad4e9a121d2e5fb521e168ad6a0aaa793bb574086e0dfe9da5fedacc",
+      "label_sha256": "0522a089e4858ed1ad2c8594bafa9899615a4d9c7d3b4556e5c78eaf5573a066"
+    },
+    "test": {
+      "images": 14446,
+      "objects": 11854,
+      "negatives": 2592,
+      "list_sha256": "c60c7506d607153bd35832659679d44b9739ba375880623d2e28873bcfbe852a",
+      "label_sha256": "d4b1b355dffa7a606fd13260cb365b8104faa56c83b41020259c0da34ceb57a2"
+    }
+  },
+  "index_sha256": "9ce7b25b99e5ebaaeb4fd074a3f36e8453aec7c8088448f95954a0c13d579d83",
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "ultralytics": "8.4.177",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "runtime": {
+    "workers": 16,
+    "prefetch_factor": 1,
+    "pin_memory": false,
+    "multiprocessing_context": "forkserver"
+  },
+  "max_parallel": 2,
+  "waves": 2,
+  "source_authorization": "User 2026-10-17: arrange two concurrent processes and two batches, AAT then other methods",
+  "frozen_at": "2026-10-17T03:33:32.815117+00:00",
+  "question": "Can sequence-preserving AAT improve detection without the background tradeoff, and does causal motion context help?",
+  "primary": "val mAP50; planned target +1.0 percentage point over 66.2124, not a promised gain",
+  "secondary": [
+    "val mAP50-95",
+    "TC/SV subgroup AP50",
+    "background frame FP@0.25",
+    "parameters",
+    "image-to-box latency including context construction"
+  ],
+  "guardrail": "A candidate with BG FP rate > baseline+2 percentage points or recall <-1 point is reported as a tradeoff, not an unqualified improvement",
+  "stopping": "Maximum 100 epochs, patience 20 on framework AP50-95 fitness; preserve both bestAP50.pt and native best.pt",
+  "failure": "If no val AP50 improvement, retain all runs and do not claim the mechanism improves accuracy",
+  "no_test_selection": true,
+  "seed_role": "one exploratory seed 0; no significance or SOTA claim from this queue",
+  "temporal": "BGR image file [t-10,t-5,t], RGB network order [t,t-5,t-10]; input images only, current frame labels only, no future frames",
+  "temporal_augmentation": "Shared scalar brightness LUT replaces HSV across time channels; geometric and Mosaic operations remain unchanged",
+  "sampling_scope": "exact primary slots per epoch; secondary Mosaic draws retain the standard framework buffer policy",
+  "code_sha256": {
+    "preflight.py": "2ad9cfc3b1cbeaa4d95e63e8d5547438420af7ede68328855f0f6df9ebfe1b32",
+    "prepare_study.py": "712df8ba54c9d27be11bb824d688516c8888f4c84bbbaea9209e8b7379019abb",
+    "run_queue.py": "8ffcad0dcc5516738c0d76b7a9057a4bbf768a595b43480501d8df59048c43f1",
+    "sampling.py": "4846d28a72deeb0e7c0cc5059856a6dbd51569e4b129f59d1e48523cc500668e",
+    "test_sampling.py": "7104bd0f414f2fa444e55a7b7683b4ba572df9b2d5256820d2f40c8b461b419b",
+    "train_innovation.py": "9ca23841dbca9c8cbd502589d99dfb5b96578bf3fa4f0cd31e1696eead00db10"
+  },
+  "amendments": [
+    {
+      "at": "2026-10-17T03:35:30.120417+00:00",
+      "reason": "Smoke check corrected: DetectionModel.load returns None; train implementation and experiment design unchanged",
+      "previous_contract_sha256": "c0eb5f2847d28cfee60e628cc104395a26a3fd053eabd070c48ea7bbd7f0a50e",
+      "failed_preflight_log": "setup_and_queue.log"
+    }
+  ]
+}

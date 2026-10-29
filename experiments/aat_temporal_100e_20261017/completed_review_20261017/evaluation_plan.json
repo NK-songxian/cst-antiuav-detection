@@ -1,0 +1,68 @@
+{
+  "started_at": "2026-10-17T09:16:47.372008+00:00",
+  "tasks": [
+    [
+      "C1_temporal_uniform",
+      "val",
+      false
+    ],
+    [
+      "yolo11n",
+      "test",
+      false
+    ],
+    [
+      "A1_aat_global",
+      "test",
+      false
+    ],
+    [
+      "A2_aat_sequence",
+      "test",
+      false
+    ],
+    [
+      "C1_temporal_uniform",
+      "test",
+      false
+    ],
+    [
+      "C2_temporal_aat_sequence",
+      "test",
+      false
+    ],
+    [
+      "yolov8n",
+      "test",
+      false
+    ],
+    [
+      "yolov5nu",
+      "test",
+      false
+    ],
+    [
+      "yolo26n",
+      "test",
+      false
+    ],
+    [
+      "C1_temporal_uniform",
+      "test",
+      true
+    ],
+    [
+      "C2_temporal_aat_sequence",
+      "test",
+      true
+    ]
+  ],
+  "completed": [],
+  "checkpoint_policy": "All native best.pt; no test-based selection",
+  "exploratory_single_seed": true,
+  "controls": "Repeat-current is a post-training diagnostic; distribution shift limits interpretation",
+  "env": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  }
+}

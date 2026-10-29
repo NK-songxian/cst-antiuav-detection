@@ -1,0 +1,34 @@
+{
+  "environment": {
+    "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+    "opencv": "5.0.0",
+    "threads": 1,
+    "co_running_training": true
+  },
+  "n_images": 64,
+  "measured_iterations": 256,
+  "input": "640x512 grayscale JPEG, letterbox544x672; historical-frame buffers represented by copied decoded arrays; no GPU timing",
+  "stage_stats": {
+    "decode_ms": {
+      "median_ms": 0.8206330239772797,
+      "p90_ms": 1.448899507522583
+    },
+    "current_resize_ms": {
+      "median_ms": 0.018911436200141907,
+      "p90_ms": 0.02041645348072052
+    },
+    "repeat3_ms": {
+      "median_ms": 0.5343183875083923,
+      "p90_ms": 0.5393549799919128
+    },
+    "cached_temporal_stack_ms": {
+      "median_ms": 0.33356621861457825,
+      "p90_ms": 0.3351084887981415
+    },
+    "cached_temporal_total_ms": {
+      "median_ms": 1.171717420220375,
+      "p90_ms": 1.7978344112634659
+    }
+  },
+  "warning": "CPU-stage benchmark in shared training environment; historical images are reused buffers for operation cost, not detector accuracy. Not Jetson or end-to-end deployment."
+}

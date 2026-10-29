@@ -1,0 +1,130 @@
+{
+  "updated_at": "2026-10-17T20:15:31.301836+00:00",
+  "scheduler_pid": 997141,
+  "status": "needs_attention",
+  "max_parallel": 2,
+  "jobs": [
+    {
+      "name": "tcs_yolo8n",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "wave": 1,
+      "temporal_channels": [
+        0,
+        -5,
+        -10
+      ],
+      "temporal": true,
+      "sampling": "uniform",
+      "allocator_cap_bytes": 33285996544,
+      "launch_gpu_bytes": 34359738368,
+      "measured_peak_reserved": 28527558656,
+      "state": "completed",
+      "attempt": 1,
+      "run_name": "tcs_yolo8n",
+      "pid": 997144,
+      "started_at": "2026-10-17T11:23:17.284882+00:00",
+      "exit_code": 0,
+      "ended_at": "2026-10-17T16:43:49.670283+00:00"
+    },
+    {
+      "name": "tcs_far15_yolo11n",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_relaunch_20261017/cst_far15.yaml",
+      "wave": 1,
+      "temporal_channels": [
+        0,
+        -5,
+        -15
+      ],
+      "temporal": true,
+      "sampling": "uniform",
+      "allocator_cap_bytes": 37580963840,
+      "launch_gpu_bytes": 38654705664,
+      "measured_peak_reserved": 32822525952,
+      "state": "completed",
+      "attempt": 1,
+      "run_name": "tcs_far15_yolo11n",
+      "pid": 997273,
+      "started_at": "2026-10-17T11:23:52.758924+00:00",
+      "exit_code": 0,
+      "ended_at": "2026-10-17T16:01:07.112940+00:00"
+    },
+    {
+      "name": "tcs_yolo11s",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+      "sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "wave": 2,
+      "temporal_channels": [
+        0,
+        -5,
+        -10
+      ],
+      "temporal": true,
+      "sampling": "uniform",
+      "allocator_cap_bytes": 63350767616,
+      "launch_gpu_bytes": 64424509440,
+      "measured_peak_reserved": 58533609472,
+      "state": "failed",
+      "attempt": 1,
+      "run_name": "tcs_yolo11s",
+      "pid": 56244,
+      "started_at": "2026-10-17T16:43:49.740970+00:00",
+      "exit_code": 1,
+      "ended_at": "2026-10-17T16:48:08.297739+00:00"
+    },
+    {
+      "name": "tcs_far20_yolo11n",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_relaunch_20261017/cst_far20.yaml",
+      "wave": 2,
+      "temporal_channels": [
+        0,
+        -5,
+        -20
+      ],
+      "temporal": true,
+      "sampling": "uniform",
+      "allocator_cap_bytes": 37580963840,
+      "launch_gpu_bytes": 38654705664,
+      "measured_peak_reserved": 32822525952,
+      "state": "completed",
+      "attempt": 1,
+      "run_name": "tcs_far20_yolo11n",
+      "pid": 56860,
+      "started_at": "2026-10-17T16:47:12.565135+00:00",
+      "exit_code": 0,
+      "ended_at": "2026-10-17T20:15:31.300821+00:00"
+    },
+    {
+      "name": "single_yolo11s",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+      "sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/cst_original.yaml",
+      "wave": 3,
+      "temporal_channels": [
+        0,
+        0,
+        0
+      ],
+      "temporal": false,
+      "sampling": "uniform",
+      "allocator_cap_bytes": 63350767616,
+      "launch_gpu_bytes": 64424509440,
+      "measured_peak_reserved": 58533609472,
+      "state": "pending",
+      "attempt": 0
+    }
+  ],
+  "resources": {
+    "gpu_free_bytes": 402653184,
+    "ram_available_including_inactive_file": 61414866944,
+    "ram_limit_bytes": 118111600640,
+    "ram_used_bytes": 61494931456,
+    "inactive_file_bytes": 4798197760
+  }
+}

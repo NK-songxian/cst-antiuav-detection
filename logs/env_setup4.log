@@ -1,0 +1,4 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Looking in links: https://mirrors.aliyun.com/pytorch-wheels/cu128/
+Collecting torch==2.11.0+cu128
+  Downloading torch-2.11.0%2Bcu128-cp311-cp311-manylinux_2_28_x86_64.whl (820.2 MB)

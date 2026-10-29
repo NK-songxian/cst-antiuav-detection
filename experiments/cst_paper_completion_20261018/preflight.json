@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": [
+    "BGR current=channel2, output copied; source not mutated",
+    "Train/val/test sequence sets disjoint",
+    "Four real augmented samples: current pixels exactly match temporal current channel; GT identical",
+    "Input mode survives dataset serialization to worker processes",
+    "Cached temporal source preserved while current-only image returned"
+  ]
+}

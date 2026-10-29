@@ -1,0 +1,44 @@
+{
+  "captured_at": "2026-10-19T12:42:00.325780+00:00",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "numpy": "2.3.2",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "ultralytics": "8.4.177",
+    "opencv-python": "5.0.0.93",
+    "scipy": "1.18.1",
+    "psutil": "7.0.0",
+    "PyYAML": "6.0.2"
+  },
+  "gpu": {
+    "argv": [
+      "nvidia-smi",
+      "--query-gpu=name,uuid,driver_version,memory.total",
+      "--format=csv,noheader"
+    ],
+    "returncode": 0,
+    "stdout": "NVIDIA RTX PRO 6000 Blackwell Server Edition, GPU-905d416d-4d02-eaef-c0c1-50b784eeb9e5, 580.95.05, 97887 MiB\n",
+    "stderr": ""
+  },
+  "cpu": {
+    "argv": [
+      "lscpu"
+    ],
+    "returncode": 0,
+    "stdout": "Architecture:                    x86_64\nCPU op-mode(s):                  32-bit, 64-bit\nAddress sizes:                   52 bits physical, 57 bits virtual\nByte Order:                      Little Endian\nCPU(s):                          208\nOn-line CPU(s) list:             0-207\nVendor ID:                       GenuineIntel\nModel name:                      Intel(R) Xeon(R) Platinum 8470Q\nCPU family:                      6\nModel:                           143\nThread(s) per core:              2\nCore(s) per socket:              52\nSocket(s):                       2\nStepping:                        8\nCPU max MHz:                     3800.0000\nCPU min MHz:                     800.0000\nBogoMIPS:                        4200.00\nFlags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nVirtualization:                  VT-x\nL1d cache:                       4.9 MiB (104 instances)\nL1i cache:                       3.3 MiB (104 instances)\nL2 cache:                        208 MiB (104 instances)\nL3 cache:                        210 MiB (2 instances)\nNUMA node(s):                    2\nNUMA node0 CPU(s):               0-51,104-155\nNUMA node1 CPU(s):               52-103,156-207\nVulnerability Itlb multihit:     Not affected\nVulnerability L1tf:              Not affected\nVulnerability Mds:               Not affected\nVulnerability Meltdown:          Not affected\nVulnerability Mmio stale data:   Not affected\nVulnerability Retbleed:          Not affected\nVulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence\nVulnerability Srbds:             Not affected\nVulnerability Tsx async abort:   Not affected\n",
+    "stderr": ""
+  },
+  "disk": {
+    "argv": [
+      "df",
+      "-h",
+      "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019"
+    ],
+    "returncode": 0,
+    "stdout": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/md0        250G  124G  127G  50% /root/autodl-tmp\n",
+    "stderr": ""
+  },
+  "scope": "No credential, environment-variable, or shell-history capture"
+}

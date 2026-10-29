@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-10-17T11:20:03.159422+00:00",
+  "authorization": "User requested cleanup and rerun of CST teacher-recommended parallel queue ablations.",
+  "primary": "val mAP50; weights selected by native val AP50-95",
+  "test_selection": false,
+  "runtime_changes": {
+    "train_workers": 2,
+    "prefetch_factor": 1,
+    "pin_memory": false,
+    "start_method": "forkserver",
+    "validation_batch_cap": 128
+  },
+  "justification": "Prevent CUDA handles inherited by dead workers and RAM/validation peaks; train batch256 unchanged.",
+  "additional_control": "YOLO11s single-frame matched baseline needed to distinguish model scaling from temporal benefit."
+}

@@ -1,0 +1,24 @@
+{
+  "tcs_yolo8n": {
+    "pid": 997144,
+    "status": "running",
+    "latest_epoch": null,
+    "actual_batch": 256,
+    "actual_optimizer": "MuSGD",
+    "val_batch": 128,
+    "error": null,
+    "completed_csv_epochs": 0
+  },
+  "tcs_far15_yolo11n": {
+    "pid": 997273,
+    "status": "running",
+    "latest_epoch": null,
+    "actual_batch": 256,
+    "actual_optimizer": "MuSGD",
+    "val_batch": 128,
+    "error": null,
+    "completed_csv_epochs": 0
+  },
+  "gpu_apps": "994214, 5480 MiB\n994338, 7984 MiB\n997144, 29154 MiB\n997273, 33256 MiB\n",
+  "gpu_total": "75921 MiB, 21330 MiB, 86 %\n"
+}

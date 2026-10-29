@@ -1,0 +1,56 @@
+{
+  "source": "/root/autodl-tmp/Ryan/cst_antiuav/runs/baselines_100e_20261017/validation_audit/yolo11n/frame_stats.npz",
+  "source_sha256": "55c968f42abf8a309bf1a65f74aea038df270948a0c8901c72689ea496fb176a",
+  "conf": 0.25,
+  "iou": 0.5,
+  "groups": {
+    "nonTC": {
+      "frames": 2762,
+      "median_wh": [
+        10.974720000000001,
+        7.60576
+      ],
+      "positive_frame_hit_rate": 0.9083997103548154
+    },
+    "8<maxside<=16": {
+      "frames": 4209,
+      "median_wh": [
+        12.47232,
+        6.972928
+      ],
+      "positive_frame_hit_rate": 0.6980280351627465
+    },
+    "TC": {
+      "frames": 5057,
+      "median_wh": [
+        13.964160000000001,
+        7.06304
+      ],
+      "positive_frame_hit_rate": 0.4921890448882737
+    },
+    "maxside<=8": {
+      "frames": 1512,
+      "median_wh": [
+        6.84032,
+        4.661504
+      ],
+      "positive_frame_hit_rate": 0.5052910052910053
+    },
+    "16<maxside<=32": {
+      "frames": 1962,
+      "median_wh": [
+        20.31136,
+        12.086016
+      ],
+      "positive_frame_hit_rate": 0.6498470948012233
+    },
+    "maxside>32": {
+      "frames": 136,
+      "median_wh": [
+        46.1328,
+        26.013696
+      ],
+      "positive_frame_hit_rate": 0.15441176470588236
+    }
+  }
+}

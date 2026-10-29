@@ -1,0 +1,5 @@
+[delta1:train] 25612 frames, clamped=25612
+[delta1:val] 9066 frames, clamped=9066
+[delta10:train] 25612 frames, clamped=480
+[delta10:val] 9066 frames, clamped=160
+TCS_ABLATION_DATA_DONE

@@ -1,0 +1,94 @@
+{
+  "0": {
+    "global": {
+      "primary_slots": 25612,
+      "unique_frames": 24759,
+      "negative_primary_slots": 3612,
+      "tc_positive_slots": 11283,
+      "exact_sequence_counts": false
+    },
+    "quota": {
+      "primary_slots": 25612,
+      "unique_frames": 24759,
+      "negative_primary_slots": 3612,
+      "tc_positive_slots": 11283,
+      "exact_sequence_counts": true
+    },
+    "uniform": {
+      "primary_slots": 25612,
+      "unique_frames": 25612,
+      "negative_primary_slots": 3612,
+      "tc_positive_slots": 10430,
+      "exact_sequence_counts": true
+    }
+  },
+  "1": {
+    "global": {
+      "primary_slots": 25612,
+      "unique_frames": 24759,
+      "negative_primary_slots": 3612,
+      "tc_positive_slots": 11283,
+      "exact_sequence_counts": false
+    },
+    "quota": {
+      "primary_slots": 25612,
+      "unique_frames": 24759,
+      "negative_primary_slots": 3612,
+      "tc_positive_slots": 11283,
+      "exact_sequence_counts": true
+    },
+    "uniform": {
+      "primary_slots": 25612,
+      "unique_frames": 25612,
+      "negative_primary_slots": 3612,
+      "tc_positive_slots": 10430,
+      "exact_sequence_counts": true
+    }
+  },
+  "50": {
+    "global": {
+      "primary_slots": 25612,
+      "unique_frames": 24759,
+      "negative_primary_slots": 3612,
+      "tc_positive_slots": 11283,
+      "exact_sequence_counts": false
+    },
+    "quota": {
+      "primary_slots": 25612,
+      "unique_frames": 24759,
+      "negative_primary_slots": 3612,
+      "tc_positive_slots": 11283,
+      "exact_sequence_counts": true
+    },
+    "uniform": {
+      "primary_slots": 25612,
+      "unique_frames": 25612,
+      "negative_primary_slots": 3612,
+      "tc_positive_slots": 10430,
+      "exact_sequence_counts": true
+    }
+  },
+  "99": {
+    "global": {
+      "primary_slots": 25612,
+      "unique_frames": 24759,
+      "negative_primary_slots": 3612,
+      "tc_positive_slots": 11283,
+      "exact_sequence_counts": false
+    },
+    "quota": {
+      "primary_slots": 25612,
+      "unique_frames": 24759,
+      "negative_primary_slots": 3612,
+      "tc_positive_slots": 11283,
+      "exact_sequence_counts": true
+    },
+    "uniform": {
+      "primary_slots": 25612,
+      "unique_frames": 25612,
+      "negative_primary_slots": 3612,
+      "tc_positive_slots": 10430,
+      "exact_sequence_counts": true
+    }
+  }
+}

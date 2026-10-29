@@ -1,0 +1,7 @@
+path: /root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_relaunch_20261017/completed_review_20261018/far20
+train: /root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_relaunch_20261017/completed_review_20261018/far20/test.txt
+val: /root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_relaunch_20261017/completed_review_20261018/far20/test.txt
+test: /root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_relaunch_20261017/completed_review_20261018/far20/test.txt
+nc: 1
+names:
+- uav

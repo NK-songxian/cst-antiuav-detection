@@ -1,0 +1,4212 @@
+{
+  "models": {
+    "旧单帧11n": {
+      "groups": {
+        "ALL": {
+          "frames": 14446,
+          "negative_frames": 2592,
+          "positive_frames": 11854,
+          "fp_frames": 295,
+          "bg_fpr": 0.11381172839506173,
+          "hits": 7285,
+          "hit_rate": 0.6145604859119285
+        },
+        "OC": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 73,
+          "bg_fpr": 0.05632716049382716,
+          "hits": 1,
+          "hit_rate": 0.2
+        },
+        "OV": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 220,
+          "bg_fpr": 0.1751592356687898,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "SV": {
+          "frames": 6690,
+          "negative_frames": 0,
+          "positive_frames": 6690,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 3665,
+          "hit_rate": 0.5478325859491778
+        },
+        "TC": {
+          "frames": 8443,
+          "negative_frames": 1512,
+          "positive_frames": 6931,
+          "fp_frames": 77,
+          "bg_fpr": 0.05092592592592592,
+          "hits": 2951,
+          "hit_rate": 0.42576828740441497
+        },
+        "DBC": {
+          "frames": 1728,
+          "negative_frames": 923,
+          "positive_frames": 805,
+          "fp_frames": 45,
+          "bg_fpr": 0.04875406283856988,
+          "hits": 476,
+          "hit_rate": 0.591304347826087
+        },
+        "CDB": {
+          "frames": 2876,
+          "negative_frames": 619,
+          "positive_frames": 2257,
+          "fp_frames": 57,
+          "bg_fpr": 0.09208400646203554,
+          "hits": 1066,
+          "hit_rate": 0.4723083739477182
+        },
+        "仅遮挡": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 73,
+          "bg_fpr": 0.05632716049382716,
+          "hits": 1,
+          "hit_rate": 0.2
+        },
+        "仅出视野": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 220,
+          "bg_fpr": 0.1751592356687898,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "遮挡与出视野": {
+          "frames": 0,
+          "negative_frames": 0,
+          "positive_frames": 0,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 0,
+          "hit_rate": null
+        },
+        "无上述缺席标签": {
+          "frames": 11884,
+          "negative_frames": 40,
+          "positive_frames": 11844,
+          "fp_frames": 2,
+          "bg_fpr": 0.05,
+          "hits": 7284,
+          "hit_rate": 0.6149949341438703
+        }
+      },
+      "calibration": [
+        {
+          "validation_budget": 0.01,
+          "threshold": 0.5625000000000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 12,
+            "bg_fpr": 0.009623095429029671,
+            "hits": 4553,
+            "hit_rate": 0.5822995267937077
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 95,
+            "bg_fpr": 0.03665123456790124,
+            "hits": 6728,
+            "hit_rate": 0.5675721275518812
+          }
+        },
+        {
+          "validation_budget": 0.025,
+          "threshold": 0.41479492187500006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 31,
+            "bg_fpr": 0.024859663191659984,
+            "hits": 4828,
+            "hit_rate": 0.6174702647397365
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 169,
+            "bg_fpr": 0.06520061728395062,
+            "hits": 7043,
+            "hit_rate": 0.5941454361396997
+          }
+        },
+        {
+          "validation_budget": 0.05,
+          "threshold": 0.29028320312500006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 62,
+            "bg_fpr": 0.04971932638331997,
+            "hits": 4972,
+            "hit_rate": 0.6358869420642026
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 259,
+            "bg_fpr": 0.09992283950617284,
+            "hits": 7217,
+            "hit_rate": 0.6088240256453518
+          }
+        },
+        {
+          "validation_budget": 0.075,
+          "threshold": 0.22436523437500003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 93,
+            "bg_fpr": 0.07457898957497995,
+            "hits": 5026,
+            "hit_rate": 0.6427931960608774
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 324,
+            "bg_fpr": 0.125,
+            "hits": 7320,
+            "hit_rate": 0.6175130757550195
+          }
+        },
+        {
+          "validation_budget": 0.1,
+          "threshold": 0.18273925781250003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 124,
+            "bg_fpr": 0.09943865276663993,
+            "hits": 5070,
+            "hit_rate": 0.648420514132242
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 374,
+            "bg_fpr": 0.14429012345679013,
+            "hits": 7395,
+            "hit_rate": 0.6238400539902142
+          }
+        },
+        {
+          "validation_budget": 0.15,
+          "threshold": 0.12927246093750003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 187,
+            "bg_fpr": 0.14995990376904572,
+            "hits": 5148,
+            "hit_rate": 0.6583962143496611
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 460,
+            "bg_fpr": 0.17746913580246915,
+            "hits": 7500,
+            "hit_rate": 0.6326978235194871
+          }
+        },
+        {
+          "validation_budget": 0.2,
+          "threshold": 0.09655761718750001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 249,
+            "bg_fpr": 0.1996792301523657,
+            "hits": 5198,
+            "hit_rate": 0.6647908939762118
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 553,
+            "bg_fpr": 0.21334876543209877,
+            "hits": 7585,
+            "hit_rate": 0.639868398852708
+          }
+        },
+        {
+          "validation_budget": 0.25,
+          "threshold": 0.07464599609375001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 311,
+            "bg_fpr": 0.24939855653568566,
+            "hits": 5243,
+            "hit_rate": 0.6705461056401074
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 632,
+            "bg_fpr": 0.24382716049382716,
+            "hits": 7639,
+            "hit_rate": 0.6444238231820483
+          }
+        },
+        {
+          "validation_budget": 0.3,
+          "threshold": 0.05410766601562501,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 373,
+            "bg_fpr": 0.2991178829190056,
+            "hits": 5296,
+            "hit_rate": 0.6773244660442512
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 749,
+            "bg_fpr": 0.28896604938271603,
+            "hits": 7722,
+            "hit_rate": 0.651425679095664
+          }
+        }
+      ],
+      "top_fp_sequences": [
+        {
+          "seq": "jungle_18",
+          "frames": 176,
+          "negative_frames": 72,
+          "positive_frames": 104,
+          "fp_frames": 36,
+          "bg_fpr": 0.5,
+          "hits": 93,
+          "hit_rate": 0.8942307692307693
+        },
+        {
+          "seq": "building_73",
+          "frames": 170,
+          "negative_frames": 70,
+          "positive_frames": 100,
+          "fp_frames": 32,
+          "bg_fpr": 0.45714285714285713,
+          "hits": 57,
+          "hit_rate": 0.57
+        },
+        {
+          "seq": "jungle_13",
+          "frames": 213,
+          "negative_frames": 31,
+          "positive_frames": 182,
+          "fp_frames": 31,
+          "bg_fpr": 1.0,
+          "hits": 125,
+          "hit_rate": 0.6868131868131868
+        },
+        {
+          "seq": "building_74",
+          "frames": 128,
+          "negative_frames": 53,
+          "positive_frames": 75,
+          "fp_frames": 29,
+          "bg_fpr": 0.5471698113207547,
+          "hits": 31,
+          "hit_rate": 0.41333333333333333
+        },
+        {
+          "seq": "jungle_17",
+          "frames": 187,
+          "negative_frames": 47,
+          "positive_frames": 140,
+          "fp_frames": 27,
+          "bg_fpr": 0.574468085106383,
+          "hits": 131,
+          "hit_rate": 0.9357142857142857
+        },
+        {
+          "seq": "jungle_12",
+          "frames": 296,
+          "negative_frames": 17,
+          "positive_frames": 279,
+          "fp_frames": 17,
+          "bg_fpr": 1.0,
+          "hits": 207,
+          "hit_rate": 0.7419354838709677
+        },
+        {
+          "seq": "jungle_7",
+          "frames": 245,
+          "negative_frames": 19,
+          "positive_frames": 226,
+          "fp_frames": 16,
+          "bg_fpr": 0.8421052631578947,
+          "hits": 192,
+          "hit_rate": 0.8495575221238938
+        },
+        {
+          "seq": "urban-areas_41",
+          "frames": 300,
+          "negative_frames": 143,
+          "positive_frames": 157,
+          "fp_frames": 12,
+          "bg_fpr": 0.08391608391608392,
+          "hits": 30,
+          "hit_rate": 0.1910828025477707
+        },
+        {
+          "seq": "cn_mountains_33",
+          "frames": 366,
+          "negative_frames": 115,
+          "positive_frames": 251,
+          "fp_frames": 11,
+          "bg_fpr": 0.09565217391304348,
+          "hits": 132,
+          "hit_rate": 0.5258964143426295
+        },
+        {
+          "seq": "urban-areas_44",
+          "frames": 300,
+          "negative_frames": 108,
+          "positive_frames": 192,
+          "fp_frames": 11,
+          "bg_fpr": 0.10185185185185185,
+          "hits": 125,
+          "hit_rate": 0.6510416666666666
+        }
+      ],
+      "provenance": {
+        "val_stats_sha256": "55c968f42abf8a309bf1a65f74aea038df270948a0c8901c72689ea496fb176a",
+        "test_stats_sha256": "31304723d1f30c63c9e1c0a9503d54cc981bfd61963cba4022d6aca4eb7fdb6d"
+      }
+    },
+    "旧时序11n": {
+      "groups": {
+        "ALL": {
+          "frames": 14446,
+          "negative_frames": 2592,
+          "positive_frames": 11854,
+          "fp_frames": 365,
+          "bg_fpr": 0.1408179012345679,
+          "hits": 8901,
+          "hit_rate": 0.7508857769529272
+        },
+        "OC": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 122,
+          "bg_fpr": 0.0941358024691358,
+          "hits": 3,
+          "hit_rate": 0.6
+        },
+        "OV": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 237,
+          "bg_fpr": 0.18869426751592358,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "SV": {
+          "frames": 6690,
+          "negative_frames": 0,
+          "positive_frames": 6690,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 4649,
+          "hit_rate": 0.6949177877428998
+        },
+        "TC": {
+          "frames": 8443,
+          "negative_frames": 1512,
+          "positive_frames": 6931,
+          "fp_frames": 143,
+          "bg_fpr": 0.09457671957671958,
+          "hits": 4359,
+          "hit_rate": 0.6289135766844611
+        },
+        "DBC": {
+          "frames": 1728,
+          "negative_frames": 923,
+          "positive_frames": 805,
+          "fp_frames": 88,
+          "bg_fpr": 0.09534127843986999,
+          "hits": 548,
+          "hit_rate": 0.6807453416149069
+        },
+        "CDB": {
+          "frames": 2876,
+          "negative_frames": 619,
+          "positive_frames": 2257,
+          "fp_frames": 35,
+          "bg_fpr": 0.05654281098546042,
+          "hits": 1468,
+          "hit_rate": 0.6504209127159947
+        },
+        "仅遮挡": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 122,
+          "bg_fpr": 0.0941358024691358,
+          "hits": 3,
+          "hit_rate": 0.6
+        },
+        "仅出视野": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 237,
+          "bg_fpr": 0.18869426751592358,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "遮挡与出视野": {
+          "frames": 0,
+          "negative_frames": 0,
+          "positive_frames": 0,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 0,
+          "hit_rate": null
+        },
+        "无上述缺席标签": {
+          "frames": 11884,
+          "negative_frames": 40,
+          "positive_frames": 11844,
+          "fp_frames": 6,
+          "bg_fpr": 0.15,
+          "hits": 8898,
+          "hit_rate": 0.7512664640324215
+        }
+      },
+      "calibration": [
+        {
+          "validation_budget": 0.01,
+          "threshold": 0.6660156250000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 12,
+            "bg_fpr": 0.009623095429029671,
+            "hits": 5180,
+            "hit_rate": 0.6624888093106536
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 79,
+            "bg_fpr": 0.030478395061728395,
+            "hits": 7545,
+            "hit_rate": 0.636494010460604
+          }
+        },
+        {
+          "validation_budget": 0.025,
+          "threshold": 0.5976562500000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 31,
+            "bg_fpr": 0.024859663191659984,
+            "hits": 5574,
+            "hit_rate": 0.7128788847678731
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 103,
+            "bg_fpr": 0.03973765432098766,
+            "hits": 8054,
+            "hit_rate": 0.6794331027501266
+          }
+        },
+        {
+          "validation_budget": 0.05,
+          "threshold": 0.5205078125000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 62,
+            "bg_fpr": 0.04971932638331997,
+            "hits": 5810,
+            "hit_rate": 0.7430617726051925
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 135,
+            "bg_fpr": 0.052083333333333336,
+            "hits": 8384,
+            "hit_rate": 0.7072718069849839
+          }
+        },
+        {
+          "validation_budget": 0.075,
+          "threshold": 0.39697265625000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 93,
+            "bg_fpr": 0.07457898957497995,
+            "hits": 5967,
+            "hit_rate": 0.7631410666325618
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 231,
+            "bg_fpr": 0.08912037037037036,
+            "hits": 8674,
+            "hit_rate": 0.7317361228277375
+          }
+        },
+        {
+          "validation_budget": 0.1,
+          "threshold": 0.24804687500000003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 124,
+            "bg_fpr": 0.09943865276663993,
+            "hits": 6081,
+            "hit_rate": 0.7777209361810973
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 366,
+            "bg_fpr": 0.1412037037037037,
+            "hits": 8904,
+            "hit_rate": 0.7511388560823351
+          }
+        },
+        {
+          "validation_budget": 0.15,
+          "threshold": 0.08300781250000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 187,
+            "bg_fpr": 0.14995990376904572,
+            "hits": 6224,
+            "hit_rate": 0.7960097199130324
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 608,
+            "bg_fpr": 0.2345679012345679,
+            "hits": 9229,
+            "hit_rate": 0.7785557617681795
+          }
+        },
+        {
+          "validation_budget": 0.2,
+          "threshold": 0.04107666015625001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 249,
+            "bg_fpr": 0.1996792301523657,
+            "hits": 6292,
+            "hit_rate": 0.8047064842051413
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 782,
+            "bg_fpr": 0.30169753086419754,
+            "hits": 9365,
+            "hit_rate": 0.7900286823013328
+          }
+        },
+        {
+          "validation_budget": 0.25,
+          "threshold": 0.023330688476562503,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 311,
+            "bg_fpr": 0.24939855653568566,
+            "hits": 6334,
+            "hit_rate": 0.810078015091444
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 943,
+            "bg_fpr": 0.3638117283950617,
+            "hits": 9471,
+            "hit_rate": 0.7989708115404083
+          }
+        },
+        {
+          "validation_budget": 0.3,
+          "threshold": 0.013023376464843752,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 373,
+            "bg_fpr": 0.2991178829190056,
+            "hits": 6381,
+            "hit_rate": 0.8160890139404016
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 1093,
+            "bg_fpr": 0.4216820987654321,
+            "hits": 9559,
+            "hit_rate": 0.806394466003037
+          }
+        }
+      ],
+      "top_fp_sequences": [
+        {
+          "seq": "building_73",
+          "frames": 170,
+          "negative_frames": 70,
+          "positive_frames": 100,
+          "fp_frames": 48,
+          "bg_fpr": 0.6857142857142857,
+          "hits": 62,
+          "hit_rate": 0.62
+        },
+        {
+          "seq": "building_74",
+          "frames": 128,
+          "negative_frames": 53,
+          "positive_frames": 75,
+          "fp_frames": 43,
+          "bg_fpr": 0.8113207547169812,
+          "hits": 38,
+          "hit_rate": 0.5066666666666667
+        },
+        {
+          "seq": "cn_mountains_30",
+          "frames": 206,
+          "negative_frames": 50,
+          "positive_frames": 156,
+          "fp_frames": 28,
+          "bg_fpr": 0.56,
+          "hits": 139,
+          "hit_rate": 0.8910256410256411
+        },
+        {
+          "seq": "jungle_18",
+          "frames": 176,
+          "negative_frames": 72,
+          "positive_frames": 104,
+          "fp_frames": 25,
+          "bg_fpr": 0.3472222222222222,
+          "hits": 100,
+          "hit_rate": 0.9615384615384616
+        },
+        {
+          "seq": "jungle_7",
+          "frames": 245,
+          "negative_frames": 19,
+          "positive_frames": 226,
+          "fp_frames": 18,
+          "bg_fpr": 0.9473684210526315,
+          "hits": 199,
+          "hit_rate": 0.8805309734513275
+        },
+        {
+          "seq": "building_68",
+          "frames": 200,
+          "negative_frames": 101,
+          "positive_frames": 99,
+          "fp_frames": 16,
+          "bg_fpr": 0.15841584158415842,
+          "hits": 62,
+          "hit_rate": 0.6262626262626263
+        },
+        {
+          "seq": "cn_mountains_33",
+          "frames": 366,
+          "negative_frames": 115,
+          "positive_frames": 251,
+          "fp_frames": 16,
+          "bg_fpr": 0.1391304347826087,
+          "hits": 178,
+          "hit_rate": 0.7091633466135459
+        },
+        {
+          "seq": "jungle_17",
+          "frames": 187,
+          "negative_frames": 47,
+          "positive_frames": 140,
+          "fp_frames": 14,
+          "bg_fpr": 0.2978723404255319,
+          "hits": 136,
+          "hit_rate": 0.9714285714285714
+        },
+        {
+          "seq": "jungle_13",
+          "frames": 213,
+          "negative_frames": 31,
+          "positive_frames": 182,
+          "fp_frames": 13,
+          "bg_fpr": 0.41935483870967744,
+          "hits": 131,
+          "hit_rate": 0.7197802197802198
+        },
+        {
+          "seq": "urban-areas_42",
+          "frames": 298,
+          "negative_frames": 135,
+          "positive_frames": 163,
+          "fp_frames": 12,
+          "bg_fpr": 0.08888888888888889,
+          "hits": 56,
+          "hit_rate": 0.34355828220858897
+        }
+      ],
+      "provenance": {
+        "val_stats_sha256": "6eb9f22a4eab546aad5022fe191e31b7dd37c7b603c23f7516b31e6423531516",
+        "test_stats_sha256": "1a3d73c78c6f4b491e1a6a9470197dd0020c34c17a218a052d1a60a1a911590b"
+      }
+    },
+    "单帧seed0": {
+      "groups": {
+        "ALL": {
+          "frames": 14446,
+          "negative_frames": 2592,
+          "positive_frames": 11854,
+          "fp_frames": 525,
+          "bg_fpr": 0.2025462962962963,
+          "hits": 7609,
+          "hit_rate": 0.6418930318879703
+        },
+        "OC": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 109,
+          "bg_fpr": 0.08410493827160494,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "OV": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 411,
+          "bg_fpr": 0.32722929936305734,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "SV": {
+          "frames": 6690,
+          "negative_frames": 0,
+          "positive_frames": 6690,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 3892,
+          "hit_rate": 0.581763826606876
+        },
+        "TC": {
+          "frames": 8443,
+          "negative_frames": 1512,
+          "positive_frames": 6931,
+          "fp_frames": 126,
+          "bg_fpr": 0.08333333333333333,
+          "hits": 3204,
+          "hit_rate": 0.46227095657192324
+        },
+        "DBC": {
+          "frames": 1728,
+          "negative_frames": 923,
+          "positive_frames": 805,
+          "fp_frames": 73,
+          "bg_fpr": 0.0790899241603467,
+          "hits": 506,
+          "hit_rate": 0.6285714285714286
+        },
+        "CDB": {
+          "frames": 2876,
+          "negative_frames": 619,
+          "positive_frames": 2257,
+          "fp_frames": 46,
+          "bg_fpr": 0.07431340872374798,
+          "hits": 1179,
+          "hit_rate": 0.5223748338502436
+        },
+        "仅遮挡": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 109,
+          "bg_fpr": 0.08410493827160494,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "仅出视野": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 411,
+          "bg_fpr": 0.32722929936305734,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "遮挡与出视野": {
+          "frames": 0,
+          "negative_frames": 0,
+          "positive_frames": 0,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 0,
+          "hit_rate": null
+        },
+        "无上述缺席标签": {
+          "frames": 11884,
+          "negative_frames": 40,
+          "positive_frames": 11844,
+          "fp_frames": 5,
+          "bg_fpr": 0.125,
+          "hits": 7609,
+          "hit_rate": 0.642434988179669
+        }
+      },
+      "calibration": [
+        {
+          "validation_budget": 0.01,
+          "threshold": 0.6269531250000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 12,
+            "bg_fpr": 0.009623095429029671,
+            "hits": 4649,
+            "hit_rate": 0.594577311676685
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 222,
+            "bg_fpr": 0.08564814814814815,
+            "hits": 6704,
+            "hit_rate": 0.5655474945166189
+          }
+        },
+        {
+          "validation_budget": 0.025,
+          "threshold": 0.5795898437500001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 31,
+            "bg_fpr": 0.024859663191659984,
+            "hits": 4792,
+            "hit_rate": 0.61286609540862
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 273,
+            "bg_fpr": 0.10532407407407407,
+            "hits": 6927,
+            "hit_rate": 0.5843597098025983
+          }
+        },
+        {
+          "validation_budget": 0.05,
+          "threshold": 0.49218750000000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 61,
+            "bg_fpr": 0.04891740176423416,
+            "hits": 4972,
+            "hit_rate": 0.6358869420642026
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 352,
+            "bg_fpr": 0.13580246913580246,
+            "hits": 7201,
+            "hit_rate": 0.6074742702885102
+          }
+        },
+        {
+          "validation_budget": 0.075,
+          "threshold": 0.45336914062500006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 93,
+            "bg_fpr": 0.07457898957497995,
+            "hits": 5021,
+            "hit_rate": 0.6421537280982222
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 375,
+            "bg_fpr": 0.14467592592592593,
+            "hits": 7297,
+            "hit_rate": 0.6155728024295597
+          }
+        },
+        {
+          "validation_budget": 0.1,
+          "threshold": 0.42724609375000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 124,
+            "bg_fpr": 0.09943865276663993,
+            "hits": 5054,
+            "hit_rate": 0.6463742166517458
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 397,
+            "bg_fpr": 0.15316358024691357,
+            "hits": 7344,
+            "hit_rate": 0.6195377087902818
+          }
+        },
+        {
+          "validation_budget": 0.15,
+          "threshold": 0.37109375000000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 186,
+            "bg_fpr": 0.1491579791499599,
+            "hits": 5121,
+            "hit_rate": 0.6549430873513237
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 424,
+            "bg_fpr": 0.16358024691358025,
+            "hits": 7427,
+            "hit_rate": 0.6265395647038974
+          }
+        },
+        {
+          "validation_budget": 0.2,
+          "threshold": 0.28613281250000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 249,
+            "bg_fpr": 0.1996792301523657,
+            "hits": 5209,
+            "hit_rate": 0.6661977234940529
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 500,
+            "bg_fpr": 0.19290123456790123,
+            "hits": 7564,
+            "hit_rate": 0.6380968449468534
+          }
+        },
+        {
+          "validation_budget": 0.25,
+          "threshold": 0.20812988281250003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 311,
+            "bg_fpr": 0.24939855653568566,
+            "hits": 5286,
+            "hit_rate": 0.6760455301189411
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 585,
+            "bg_fpr": 0.22569444444444445,
+            "hits": 7659,
+            "hit_rate": 0.6461110173781002
+          }
+        },
+        {
+          "validation_budget": 0.3,
+          "threshold": 0.12658691406250003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 374,
+            "bg_fpr": 0.29991980753809144,
+            "hits": 5371,
+            "hit_rate": 0.6869164854840772
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 724,
+            "bg_fpr": 0.279320987654321,
+            "hits": 7781,
+            "hit_rate": 0.6564029019740172
+          }
+        }
+      ],
+      "top_fp_sequences": [
+        {
+          "seq": "jungle_18",
+          "frames": 176,
+          "negative_frames": 72,
+          "positive_frames": 104,
+          "fp_frames": 71,
+          "bg_fpr": 0.9861111111111112,
+          "hits": 95,
+          "hit_rate": 0.9134615384615384
+        },
+        {
+          "seq": "building_73",
+          "frames": 170,
+          "negative_frames": 70,
+          "positive_frames": 100,
+          "fp_frames": 70,
+          "bg_fpr": 1.0,
+          "hits": 62,
+          "hit_rate": 0.62
+        },
+        {
+          "seq": "building_74",
+          "frames": 128,
+          "negative_frames": 53,
+          "positive_frames": 75,
+          "fp_frames": 53,
+          "bg_fpr": 1.0,
+          "hits": 33,
+          "hit_rate": 0.44
+        },
+        {
+          "seq": "jungle_17",
+          "frames": 187,
+          "negative_frames": 47,
+          "positive_frames": 140,
+          "fp_frames": 47,
+          "bg_fpr": 1.0,
+          "hits": 137,
+          "hit_rate": 0.9785714285714285
+        },
+        {
+          "seq": "jungle_13",
+          "frames": 213,
+          "negative_frames": 31,
+          "positive_frames": 182,
+          "fp_frames": 31,
+          "bg_fpr": 1.0,
+          "hits": 136,
+          "hit_rate": 0.7472527472527473
+        },
+        {
+          "seq": "jungle_9",
+          "frames": 173,
+          "negative_frames": 26,
+          "positive_frames": 147,
+          "fp_frames": 25,
+          "bg_fpr": 0.9615384615384616,
+          "hits": 123,
+          "hit_rate": 0.8367346938775511
+        },
+        {
+          "seq": "cn_mountains_33",
+          "frames": 366,
+          "negative_frames": 115,
+          "positive_frames": 251,
+          "fp_frames": 21,
+          "bg_fpr": 0.1826086956521739,
+          "hits": 150,
+          "hit_rate": 0.5976095617529881
+        },
+        {
+          "seq": "cn_mountains_37",
+          "frames": 286,
+          "negative_frames": 54,
+          "positive_frames": 232,
+          "fp_frames": 21,
+          "bg_fpr": 0.3888888888888889,
+          "hits": 101,
+          "hit_rate": 0.4353448275862069
+        },
+        {
+          "seq": "jungle_7",
+          "frames": 245,
+          "negative_frames": 19,
+          "positive_frames": 226,
+          "fp_frames": 19,
+          "bg_fpr": 1.0,
+          "hits": 192,
+          "hit_rate": 0.8495575221238938
+        },
+        {
+          "seq": "building_68",
+          "frames": 200,
+          "negative_frames": 101,
+          "positive_frames": 99,
+          "fp_frames": 18,
+          "bg_fpr": 0.1782178217821782,
+          "hits": 42,
+          "hit_rate": 0.42424242424242425
+        }
+      ],
+      "provenance": {
+        "val_stats_sha256": "98c2576e1c14562670823bca9d8f8e83558b403f8e544825378322c1aaf4235e",
+        "test_stats_sha256": "a80e94a15f135410c04c12f5578c341c2b0edcb58bbb8e2bf5eda108b6264e90"
+      }
+    },
+    "时序seed0": {
+      "groups": {
+        "ALL": {
+          "frames": 14446,
+          "negative_frames": 2592,
+          "positive_frames": 11854,
+          "fp_frames": 542,
+          "bg_fpr": 0.20910493827160495,
+          "hits": 9167,
+          "hit_rate": 0.7733254597604184
+        },
+        "OC": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 192,
+          "bg_fpr": 0.14814814814814814,
+          "hits": 2,
+          "hit_rate": 0.4
+        },
+        "OV": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 345,
+          "bg_fpr": 0.2746815286624204,
+          "hits": 1,
+          "hit_rate": 0.2
+        },
+        "SV": {
+          "frames": 6690,
+          "negative_frames": 0,
+          "positive_frames": 6690,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 4799,
+          "hit_rate": 0.717339312406577
+        },
+        "TC": {
+          "frames": 8443,
+          "negative_frames": 1512,
+          "positive_frames": 6931,
+          "fp_frames": 203,
+          "bg_fpr": 0.13425925925925927,
+          "hits": 4487,
+          "hit_rate": 0.6473813302553744
+        },
+        "DBC": {
+          "frames": 1728,
+          "negative_frames": 923,
+          "positive_frames": 805,
+          "fp_frames": 127,
+          "bg_fpr": 0.13759479956663057,
+          "hits": 572,
+          "hit_rate": 0.7105590062111802
+        },
+        "CDB": {
+          "frames": 2876,
+          "negative_frames": 619,
+          "positive_frames": 2257,
+          "fp_frames": 73,
+          "bg_fpr": 0.11793214862681745,
+          "hits": 1545,
+          "hit_rate": 0.6845369960124058
+        },
+        "仅遮挡": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 192,
+          "bg_fpr": 0.14814814814814814,
+          "hits": 2,
+          "hit_rate": 0.4
+        },
+        "仅出视野": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 345,
+          "bg_fpr": 0.2746815286624204,
+          "hits": 1,
+          "hit_rate": 0.2
+        },
+        "遮挡与出视野": {
+          "frames": 0,
+          "negative_frames": 0,
+          "positive_frames": 0,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 0,
+          "hit_rate": null
+        },
+        "无上述缺席标签": {
+          "frames": 11884,
+          "negative_frames": 40,
+          "positive_frames": 11844,
+          "fp_frames": 5,
+          "bg_fpr": 0.125,
+          "hits": 9164,
+          "hit_rate": 0.773725092874029
+        }
+      },
+      "calibration": [
+        {
+          "validation_budget": 0.01,
+          "threshold": 0.6738281250000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 12,
+            "bg_fpr": 0.009623095429029671,
+            "hits": 4445,
+            "hit_rate": 0.5684870188003581
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 55,
+            "bg_fpr": 0.021219135802469136,
+            "hits": 6816,
+            "hit_rate": 0.5749957820145098
+          }
+        },
+        {
+          "validation_budget": 0.025,
+          "threshold": 0.6040039062500001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 31,
+            "bg_fpr": 0.024859663191659984,
+            "hits": 5222,
+            "hit_rate": 0.6678603401969562
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 140,
+            "bg_fpr": 0.05401234567901234,
+            "hits": 7801,
+            "hit_rate": 0.6580900961700692
+          }
+        },
+        {
+          "validation_budget": 0.05,
+          "threshold": 0.5244140625000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 62,
+            "bg_fpr": 0.04971932638331997,
+            "hits": 5610,
+            "hit_rate": 0.7174830540989896
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 227,
+            "bg_fpr": 0.08757716049382716,
+            "hits": 8433,
+            "hit_rate": 0.7114054327653113
+          }
+        },
+        {
+          "validation_budget": 0.075,
+          "threshold": 0.43774414062500006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 93,
+            "bg_fpr": 0.07457898957497995,
+            "hits": 5857,
+            "hit_rate": 0.7490727714541502
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 330,
+            "bg_fpr": 0.12731481481481483,
+            "hits": 8780,
+            "hit_rate": 0.7406782520668129
+          }
+        },
+        {
+          "validation_budget": 0.1,
+          "threshold": 0.37109375000000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 124,
+            "bg_fpr": 0.09943865276663993,
+            "hits": 5956,
+            "hit_rate": 0.7617342371147205
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 400,
+            "bg_fpr": 0.15432098765432098,
+            "hits": 8953,
+            "hit_rate": 0.7552724818626624
+          }
+        },
+        {
+          "validation_budget": 0.15,
+          "threshold": 0.22607421875000003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 187,
+            "bg_fpr": 0.14995990376904572,
+            "hits": 6115,
+            "hit_rate": 0.7820693183271518
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 571,
+            "bg_fpr": 0.22029320987654322,
+            "hits": 9197,
+            "hit_rate": 0.7758562510544964
+          }
+        },
+        {
+          "validation_budget": 0.2,
+          "threshold": 0.15148925781250003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 249,
+            "bg_fpr": 0.1996792301523657,
+            "hits": 6181,
+            "hit_rate": 0.7905102954341987
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 666,
+            "bg_fpr": 0.2569444444444444,
+            "hits": 9324,
+            "hit_rate": 0.7865699341994263
+          }
+        },
+        {
+          "validation_budget": 0.25,
+          "threshold": 0.10015869140625001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 311,
+            "bg_fpr": 0.24939855653568566,
+            "hits": 6240,
+            "hit_rate": 0.7980560173935286
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 765,
+            "bg_fpr": 0.2951388888888889,
+            "hits": 9412,
+            "hit_rate": 0.793993588662055
+          }
+        },
+        {
+          "validation_budget": 0.3,
+          "threshold": 0.04922485351562501,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 374,
+            "bg_fpr": 0.29991980753809144,
+            "hits": 6332,
+            "hit_rate": 0.8098222279063819
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 942,
+            "bg_fpr": 0.36342592592592593,
+            "hits": 9559,
+            "hit_rate": 0.806394466003037
+          }
+        }
+      ],
+      "top_fp_sequences": [
+        {
+          "seq": "building_73",
+          "frames": 170,
+          "negative_frames": 70,
+          "positive_frames": 100,
+          "fp_frames": 69,
+          "bg_fpr": 0.9857142857142858,
+          "hits": 61,
+          "hit_rate": 0.61
+        },
+        {
+          "seq": "jungle_18",
+          "frames": 176,
+          "negative_frames": 72,
+          "positive_frames": 104,
+          "fp_frames": 54,
+          "bg_fpr": 0.75,
+          "hits": 103,
+          "hit_rate": 0.9903846153846154
+        },
+        {
+          "seq": "building_74",
+          "frames": 128,
+          "negative_frames": 53,
+          "positive_frames": 75,
+          "fp_frames": 52,
+          "bg_fpr": 0.9811320754716981,
+          "hits": 43,
+          "hit_rate": 0.5733333333333334
+        },
+        {
+          "seq": "cn_mountains_30",
+          "frames": 206,
+          "negative_frames": 50,
+          "positive_frames": 156,
+          "fp_frames": 30,
+          "bg_fpr": 0.6,
+          "hits": 138,
+          "hit_rate": 0.8846153846153846
+        },
+        {
+          "seq": "jungle_13",
+          "frames": 213,
+          "negative_frames": 31,
+          "positive_frames": 182,
+          "fp_frames": 29,
+          "bg_fpr": 0.9354838709677419,
+          "hits": 144,
+          "hit_rate": 0.7912087912087912
+        },
+        {
+          "seq": "jungle_17",
+          "frames": 187,
+          "negative_frames": 47,
+          "positive_frames": 140,
+          "fp_frames": 29,
+          "bg_fpr": 0.6170212765957447,
+          "hits": 139,
+          "hit_rate": 0.9928571428571429
+        },
+        {
+          "seq": "jungle_9",
+          "frames": 173,
+          "negative_frames": 26,
+          "positive_frames": 147,
+          "fp_frames": 23,
+          "bg_fpr": 0.8846153846153846,
+          "hits": 137,
+          "hit_rate": 0.9319727891156463
+        },
+        {
+          "seq": "cn_mountains_38",
+          "frames": 208,
+          "negative_frames": 42,
+          "positive_frames": 166,
+          "fp_frames": 20,
+          "bg_fpr": 0.47619047619047616,
+          "hits": 161,
+          "hit_rate": 0.9698795180722891
+        },
+        {
+          "seq": "jungle_7",
+          "frames": 245,
+          "negative_frames": 19,
+          "positive_frames": 226,
+          "fp_frames": 19,
+          "bg_fpr": 1.0,
+          "hits": 216,
+          "hit_rate": 0.9557522123893806
+        },
+        {
+          "seq": "urban-areas_43",
+          "frames": 295,
+          "negative_frames": 131,
+          "positive_frames": 164,
+          "fp_frames": 19,
+          "bg_fpr": 0.1450381679389313,
+          "hits": 94,
+          "hit_rate": 0.573170731707317
+        }
+      ],
+      "provenance": {
+        "val_stats_sha256": "cb0802775606948ccd4e8284b3c1b3fbf28240c9c87d6d42f40abe3d3d400955",
+        "test_stats_sha256": "a21277a2d6414a049fa343aacb28c63bbaad17f45716dd25b31871fd3f901d65"
+      }
+    },
+    "单帧seed1": {
+      "groups": {
+        "ALL": {
+          "frames": 14446,
+          "negative_frames": 2592,
+          "positive_frames": 11854,
+          "fp_frames": 405,
+          "bg_fpr": 0.15625,
+          "hits": 6860,
+          "hit_rate": 0.5787076092458242
+        },
+        "OC": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 104,
+          "bg_fpr": 0.08024691358024691,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "OV": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 295,
+          "bg_fpr": 0.23487261146496816,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "SV": {
+          "frames": 6690,
+          "negative_frames": 0,
+          "positive_frames": 6690,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 3471,
+          "hit_rate": 0.5188340807174888
+        },
+        "TC": {
+          "frames": 8443,
+          "negative_frames": 1512,
+          "positive_frames": 6931,
+          "fp_frames": 114,
+          "bg_fpr": 0.07539682539682539,
+          "hits": 2789,
+          "hit_rate": 0.40239503679122784
+        },
+        "DBC": {
+          "frames": 1728,
+          "negative_frames": 923,
+          "positive_frames": 805,
+          "fp_frames": 59,
+          "bg_fpr": 0.06392199349945829,
+          "hits": 461,
+          "hit_rate": 0.5726708074534161
+        },
+        "CDB": {
+          "frames": 2876,
+          "negative_frames": 619,
+          "positive_frames": 2257,
+          "fp_frames": 52,
+          "bg_fpr": 0.0840064620355412,
+          "hits": 926,
+          "hit_rate": 0.410279131590607
+        },
+        "仅遮挡": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 104,
+          "bg_fpr": 0.08024691358024691,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "仅出视野": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 295,
+          "bg_fpr": 0.23487261146496816,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "遮挡与出视野": {
+          "frames": 0,
+          "negative_frames": 0,
+          "positive_frames": 0,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 0,
+          "hit_rate": null
+        },
+        "无上述缺席标签": {
+          "frames": 11884,
+          "negative_frames": 40,
+          "positive_frames": 11844,
+          "fp_frames": 6,
+          "bg_fpr": 0.15,
+          "hits": 6860,
+          "hit_rate": 0.5791962174940898
+        }
+      },
+      "calibration": [
+        {
+          "validation_budget": 0.01,
+          "threshold": 0.5878906250000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 11,
+            "bg_fpr": 0.008821170809943865,
+            "hits": 4539,
+            "hit_rate": 0.5805090164982735
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 75,
+            "bg_fpr": 0.028935185185185185,
+            "hits": 6182,
+            "hit_rate": 0.5215117259996626
+          }
+        },
+        {
+          "validation_budget": 0.025,
+          "threshold": 0.5517578125000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 30,
+            "bg_fpr": 0.024057738572574178,
+            "hits": 4668,
+            "hit_rate": 0.5970072899347743
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 92,
+            "bg_fpr": 0.035493827160493825,
+            "hits": 6324,
+            "hit_rate": 0.5334908047916315
+          }
+        },
+        {
+          "validation_budget": 0.05,
+          "threshold": 0.5078125000000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 62,
+            "bg_fpr": 0.04971932638331997,
+            "hits": 4777,
+            "hit_rate": 0.6109476915206549
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 126,
+            "bg_fpr": 0.04861111111111111,
+            "hits": 6437,
+            "hit_rate": 0.5430234519993251
+          }
+        },
+        {
+          "validation_budget": 0.075,
+          "threshold": 0.45996093750000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 93,
+            "bg_fpr": 0.07457898957497995,
+            "hits": 4867,
+            "hit_rate": 0.622458114848446
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 161,
+            "bg_fpr": 0.062114197530864196,
+            "hits": 6528,
+            "hit_rate": 0.5507001855913616
+          }
+        },
+        {
+          "validation_budget": 0.1,
+          "threshold": 0.39746093750000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 124,
+            "bg_fpr": 0.09943865276663993,
+            "hits": 4951,
+            "hit_rate": 0.6332011766210512
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 228,
+            "bg_fpr": 0.08796296296296297,
+            "hits": 6629,
+            "hit_rate": 0.559220516281424
+          }
+        },
+        {
+          "validation_budget": 0.15,
+          "threshold": 0.30249023437500006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 187,
+            "bg_fpr": 0.14995990376904572,
+            "hits": 5048,
+            "hit_rate": 0.6456068550965597
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 338,
+            "bg_fpr": 0.13040123456790123,
+            "hits": 6786,
+            "hit_rate": 0.5724649907204319
+          }
+        },
+        {
+          "validation_budget": 0.2,
+          "threshold": 0.21838378906250003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 249,
+            "bg_fpr": 0.1996792301523657,
+            "hits": 5118,
+            "hit_rate": 0.6545594065737307
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 455,
+            "bg_fpr": 0.17554012345679013,
+            "hits": 6900,
+            "hit_rate": 0.5820819976379281
+          }
+        },
+        {
+          "validation_budget": 0.25,
+          "threshold": 0.16076660156250003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 311,
+            "bg_fpr": 0.24939855653568566,
+            "hits": 5174,
+            "hit_rate": 0.6617214477554675
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 574,
+            "bg_fpr": 0.22145061728395063,
+            "hits": 7018,
+            "hit_rate": 0.5920364433946347
+          }
+        },
+        {
+          "validation_budget": 0.3,
+          "threshold": 0.11694335937500001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 374,
+            "bg_fpr": 0.29991980753809144,
+            "hits": 5217,
+            "hit_rate": 0.667220872234301
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 695,
+            "bg_fpr": 0.2681327160493827,
+            "hits": 7113,
+            "hit_rate": 0.6000506158258816
+          }
+        }
+      ],
+      "top_fp_sequences": [
+        {
+          "seq": "building_73",
+          "frames": 170,
+          "negative_frames": 70,
+          "positive_frames": 100,
+          "fp_frames": 61,
+          "bg_fpr": 0.8714285714285714,
+          "hits": 63,
+          "hit_rate": 0.63
+        },
+        {
+          "seq": "building_74",
+          "frames": 128,
+          "negative_frames": 53,
+          "positive_frames": 75,
+          "fp_frames": 49,
+          "bg_fpr": 0.9245283018867925,
+          "hits": 27,
+          "hit_rate": 0.36
+        },
+        {
+          "seq": "jungle_18",
+          "frames": 176,
+          "negative_frames": 72,
+          "positive_frames": 104,
+          "fp_frames": 40,
+          "bg_fpr": 0.5555555555555556,
+          "hits": 90,
+          "hit_rate": 0.8653846153846154
+        },
+        {
+          "seq": "cn_mountains_37",
+          "frames": 286,
+          "negative_frames": 54,
+          "positive_frames": 232,
+          "fp_frames": 20,
+          "bg_fpr": 0.37037037037037035,
+          "hits": 90,
+          "hit_rate": 0.3879310344827586
+        },
+        {
+          "seq": "urban-areas_37",
+          "frames": 371,
+          "negative_frames": 103,
+          "positive_frames": 268,
+          "fp_frames": 19,
+          "bg_fpr": 0.18446601941747573,
+          "hits": 111,
+          "hit_rate": 0.4141791044776119
+        },
+        {
+          "seq": "cn_mountains_33",
+          "frames": 366,
+          "negative_frames": 115,
+          "positive_frames": 251,
+          "fp_frames": 17,
+          "bg_fpr": 0.14782608695652175,
+          "hits": 153,
+          "hit_rate": 0.6095617529880478
+        },
+        {
+          "seq": "cn_mountains_35",
+          "frames": 300,
+          "negative_frames": 40,
+          "positive_frames": 260,
+          "fp_frames": 15,
+          "bg_fpr": 0.375,
+          "hits": 252,
+          "hit_rate": 0.9692307692307692
+        },
+        {
+          "seq": "jungle_12",
+          "frames": 296,
+          "negative_frames": 17,
+          "positive_frames": 279,
+          "fp_frames": 15,
+          "bg_fpr": 0.8823529411764706,
+          "hits": 157,
+          "hit_rate": 0.5627240143369175
+        },
+        {
+          "seq": "cn_mountains_31",
+          "frames": 206,
+          "negative_frames": 57,
+          "positive_frames": 149,
+          "fp_frames": 14,
+          "bg_fpr": 0.24561403508771928,
+          "hits": 32,
+          "hit_rate": 0.21476510067114093
+        },
+        {
+          "seq": "cn_mountains_38",
+          "frames": 208,
+          "negative_frames": 42,
+          "positive_frames": 166,
+          "fp_frames": 13,
+          "bg_fpr": 0.30952380952380953,
+          "hits": 153,
+          "hit_rate": 0.9216867469879518
+        }
+      ],
+      "provenance": {
+        "val_stats_sha256": "22504f35a9d2808e59d520048906c54f4faf984d9fc024e7bbbec4ac0340c7f7",
+        "test_stats_sha256": "1fdb923982ca9b3fdb745c99443fb323e94c047d09232184e96ab8635f3eff00"
+      }
+    },
+    "时序seed1": {
+      "groups": {
+        "ALL": {
+          "frames": 14446,
+          "negative_frames": 2592,
+          "positive_frames": 11854,
+          "fp_frames": 323,
+          "bg_fpr": 0.1246141975308642,
+          "hits": 8387,
+          "hit_rate": 0.7075248861143918
+        },
+        "OC": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 92,
+          "bg_fpr": 0.07098765432098765,
+          "hits": 2,
+          "hit_rate": 0.4
+        },
+        "OV": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 227,
+          "bg_fpr": 0.1807324840764331,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "SV": {
+          "frames": 6690,
+          "negative_frames": 0,
+          "positive_frames": 6690,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 4315,
+          "hit_rate": 0.6449925261584455
+        },
+        "TC": {
+          "frames": 8443,
+          "negative_frames": 1512,
+          "positive_frames": 6931,
+          "fp_frames": 93,
+          "bg_fpr": 0.061507936507936505,
+          "hits": 3871,
+          "hit_rate": 0.5585052661953542
+        },
+        "DBC": {
+          "frames": 1728,
+          "negative_frames": 923,
+          "positive_frames": 805,
+          "fp_frames": 62,
+          "bg_fpr": 0.06717226435536294,
+          "hits": 553,
+          "hit_rate": 0.6869565217391305
+        },
+        "CDB": {
+          "frames": 2876,
+          "negative_frames": 619,
+          "positive_frames": 2257,
+          "fp_frames": 32,
+          "bg_fpr": 0.051696284329563816,
+          "hits": 1362,
+          "hit_rate": 0.6034559149313248
+        },
+        "仅遮挡": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 92,
+          "bg_fpr": 0.07098765432098765,
+          "hits": 2,
+          "hit_rate": 0.4
+        },
+        "仅出视野": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 227,
+          "bg_fpr": 0.1807324840764331,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "遮挡与出视野": {
+          "frames": 0,
+          "negative_frames": 0,
+          "positive_frames": 0,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 0,
+          "hit_rate": null
+        },
+        "无上述缺席标签": {
+          "frames": 11884,
+          "negative_frames": 40,
+          "positive_frames": 11844,
+          "fp_frames": 4,
+          "bg_fpr": 0.1,
+          "hits": 8385,
+          "hit_rate": 0.7079533941236069
+        }
+      },
+      "calibration": [
+        {
+          "validation_budget": 0.01,
+          "threshold": 0.6704101562500001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 12,
+            "bg_fpr": 0.009623095429029671,
+            "hits": 4589,
+            "hit_rate": 0.5869036961248242
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 40,
+            "bg_fpr": 0.015432098765432098,
+            "hits": 6544,
+            "hit_rate": 0.5520499409482031
+          }
+        },
+        {
+          "validation_budget": 0.025,
+          "threshold": 0.5527343750000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 31,
+            "bg_fpr": 0.024859663191659984,
+            "hits": 5438,
+            "hit_rate": 0.6954853561836551
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 97,
+            "bg_fpr": 0.03742283950617284,
+            "hits": 7610,
+            "hit_rate": 0.6419773915977729
+          }
+        },
+        {
+          "validation_budget": 0.05,
+          "threshold": 0.39428710937500006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 62,
+            "bg_fpr": 0.04971932638331997,
+            "hits": 5777,
+            "hit_rate": 0.738841284051669
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 212,
+            "bg_fpr": 0.08179012345679013,
+            "hits": 8114,
+            "hit_rate": 0.6844946853382824
+          }
+        },
+        {
+          "validation_budget": 0.075,
+          "threshold": 0.23229980468750003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 93,
+            "bg_fpr": 0.07457898957497995,
+            "hits": 5919,
+            "hit_rate": 0.7570021741910731
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 343,
+            "bg_fpr": 0.13233024691358025,
+            "hits": 8421,
+            "hit_rate": 0.7103931162476801
+          }
+        },
+        {
+          "validation_budget": 0.1,
+          "threshold": 0.11633300781250001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 124,
+            "bg_fpr": 0.09943865276663993,
+            "hits": 6023,
+            "hit_rate": 0.7703031078142984
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 457,
+            "bg_fpr": 0.17631172839506173,
+            "hits": 8626,
+            "hit_rate": 0.7276868567572128
+          }
+        },
+        {
+          "validation_budget": 0.15,
+          "threshold": 0.03817749023437501,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 187,
+            "bg_fpr": 0.14995990376904572,
+            "hits": 6143,
+            "hit_rate": 0.7856503389180202
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 627,
+            "bg_fpr": 0.24189814814814814,
+            "hits": 8861,
+            "hit_rate": 0.7475113885608233
+          }
+        },
+        {
+          "validation_budget": 0.2,
+          "threshold": 0.013374328613281252,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 249,
+            "bg_fpr": 0.1996792301523657,
+            "hits": 6244,
+            "hit_rate": 0.7985675917636527
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 785,
+            "bg_fpr": 0.3028549382716049,
+            "hits": 9043,
+            "hit_rate": 0.7628648557448963
+          }
+        },
+        {
+          "validation_budget": 0.25,
+          "threshold": 0.006340026855468751,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 311,
+            "bg_fpr": 0.24939855653568566,
+            "hits": 6301,
+            "hit_rate": 0.8058575265379204
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 917,
+            "bg_fpr": 0.35378086419753085,
+            "hits": 9173,
+            "hit_rate": 0.7738316180192341
+          }
+        },
+        {
+          "validation_budget": 0.3,
+          "threshold": 0.0034561157226562504,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 374,
+            "bg_fpr": 0.29991980753809144,
+            "hits": 6345,
+            "hit_rate": 0.811484844609285
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 1074,
+            "bg_fpr": 0.41435185185185186,
+            "hits": 9272,
+            "hit_rate": 0.7821832292896912
+          }
+        }
+      ],
+      "top_fp_sequences": [
+        {
+          "seq": "jungle_18",
+          "frames": 176,
+          "negative_frames": 72,
+          "positive_frames": 104,
+          "fp_frames": 50,
+          "bg_fpr": 0.6944444444444444,
+          "hits": 100,
+          "hit_rate": 0.9615384615384616
+        },
+        {
+          "seq": "building_74",
+          "frames": 128,
+          "negative_frames": 53,
+          "positive_frames": 75,
+          "fp_frames": 38,
+          "bg_fpr": 0.7169811320754716,
+          "hits": 41,
+          "hit_rate": 0.5466666666666666
+        },
+        {
+          "seq": "jungle_17",
+          "frames": 187,
+          "negative_frames": 47,
+          "positive_frames": 140,
+          "fp_frames": 37,
+          "bg_fpr": 0.7872340425531915,
+          "hits": 140,
+          "hit_rate": 1.0
+        },
+        {
+          "seq": "building_73",
+          "frames": 170,
+          "negative_frames": 70,
+          "positive_frames": 100,
+          "fp_frames": 36,
+          "bg_fpr": 0.5142857142857142,
+          "hits": 64,
+          "hit_rate": 0.64
+        },
+        {
+          "seq": "cn_mountains_30",
+          "frames": 206,
+          "negative_frames": 50,
+          "positive_frames": 156,
+          "fp_frames": 22,
+          "bg_fpr": 0.44,
+          "hits": 136,
+          "hit_rate": 0.8717948717948718
+        },
+        {
+          "seq": "cn_mountains_37",
+          "frames": 286,
+          "negative_frames": 54,
+          "positive_frames": 232,
+          "fp_frames": 16,
+          "bg_fpr": 0.2962962962962963,
+          "hits": 145,
+          "hit_rate": 0.625
+        },
+        {
+          "seq": "cn_mountains_38",
+          "frames": 208,
+          "negative_frames": 42,
+          "positive_frames": 166,
+          "fp_frames": 11,
+          "bg_fpr": 0.2619047619047619,
+          "hits": 156,
+          "hit_rate": 0.9397590361445783
+        },
+        {
+          "seq": "jungle_12",
+          "frames": 296,
+          "negative_frames": 17,
+          "positive_frames": 279,
+          "fp_frames": 10,
+          "bg_fpr": 0.5882352941176471,
+          "hits": 258,
+          "hit_rate": 0.9247311827956989
+        },
+        {
+          "seq": "jungle_13",
+          "frames": 213,
+          "negative_frames": 31,
+          "positive_frames": 182,
+          "fp_frames": 10,
+          "bg_fpr": 0.3225806451612903,
+          "hits": 124,
+          "hit_rate": 0.6813186813186813
+        },
+        {
+          "seq": "jungle_7",
+          "frames": 245,
+          "negative_frames": 19,
+          "positive_frames": 226,
+          "fp_frames": 10,
+          "bg_fpr": 0.5263157894736842,
+          "hits": 192,
+          "hit_rate": 0.8495575221238938
+        }
+      ],
+      "provenance": {
+        "val_stats_sha256": "c88f8c6b4266c10bc89d6c12b67ce4cbeed65e7b4db99483aed1885dbf857b48",
+        "test_stats_sha256": "44c8f7c29f1fa82a8f71a0acff3e7fad588c8c8d487263db8cd0ca831dc4406e"
+      }
+    },
+    "单帧seed2": {
+      "groups": {
+        "ALL": {
+          "frames": 14446,
+          "negative_frames": 2592,
+          "positive_frames": 11854,
+          "fp_frames": 430,
+          "bg_fpr": 0.16589506172839505,
+          "hits": 7054,
+          "hit_rate": 0.5950733929475283
+        },
+        "OC": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 101,
+          "bg_fpr": 0.0779320987654321,
+          "hits": 1,
+          "hit_rate": 0.2
+        },
+        "OV": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 324,
+          "bg_fpr": 0.25796178343949044,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "SV": {
+          "frames": 6690,
+          "negative_frames": 0,
+          "positive_frames": 6690,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 3587,
+          "hit_rate": 0.5361733931240658
+        },
+        "TC": {
+          "frames": 8443,
+          "negative_frames": 1512,
+          "positive_frames": 6931,
+          "fp_frames": 106,
+          "bg_fpr": 0.0701058201058201,
+          "hits": 2883,
+          "hit_rate": 0.41595729331986725
+        },
+        "DBC": {
+          "frames": 1728,
+          "negative_frames": 923,
+          "positive_frames": 805,
+          "fp_frames": 69,
+          "bg_fpr": 0.07475622968580715,
+          "hits": 462,
+          "hit_rate": 0.5739130434782609
+        },
+        "CDB": {
+          "frames": 2876,
+          "negative_frames": 619,
+          "positive_frames": 2257,
+          "fp_frames": 66,
+          "bg_fpr": 0.10662358642972536,
+          "hits": 1020,
+          "hit_rate": 0.4519273371732388
+        },
+        "仅遮挡": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 101,
+          "bg_fpr": 0.0779320987654321,
+          "hits": 1,
+          "hit_rate": 0.2
+        },
+        "仅出视野": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 324,
+          "bg_fpr": 0.25796178343949044,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "遮挡与出视野": {
+          "frames": 0,
+          "negative_frames": 0,
+          "positive_frames": 0,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 0,
+          "hit_rate": null
+        },
+        "无上述缺席标签": {
+          "frames": 11884,
+          "negative_frames": 40,
+          "positive_frames": 11844,
+          "fp_frames": 5,
+          "bg_fpr": 0.125,
+          "hits": 7053,
+          "hit_rate": 0.5954913880445796
+        }
+      },
+      "calibration": [
+        {
+          "validation_budget": 0.01,
+          "threshold": 0.5708007812500001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 12,
+            "bg_fpr": 0.009623095429029671,
+            "hits": 4545,
+            "hit_rate": 0.5812763780534596
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 175,
+            "bg_fpr": 0.06751543209876543,
+            "hits": 6311,
+            "hit_rate": 0.5323941285641978
+          }
+        },
+        {
+          "validation_budget": 0.025,
+          "threshold": 0.48437500000000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 31,
+            "bg_fpr": 0.024859663191659984,
+            "hits": 4736,
+            "hit_rate": 0.6057040542268832
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 225,
+            "bg_fpr": 0.08680555555555555,
+            "hits": 6608,
+            "hit_rate": 0.5574489623755694
+          }
+        },
+        {
+          "validation_budget": 0.05,
+          "threshold": 0.36743164062500006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 62,
+            "bg_fpr": 0.04971932638331997,
+            "hits": 4895,
+            "hit_rate": 0.6260391354393144
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 319,
+            "bg_fpr": 0.12307098765432099,
+            "hits": 6867,
+            "hit_rate": 0.5792981272144424
+          }
+        },
+        {
+          "validation_budget": 0.075,
+          "threshold": 0.28369140625000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 93,
+            "bg_fpr": 0.07457898957497995,
+            "hits": 4959,
+            "hit_rate": 0.6342243253612994
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 393,
+            "bg_fpr": 0.15162037037037038,
+            "hits": 6997,
+            "hit_rate": 0.5902648894887802
+          }
+        },
+        {
+          "validation_budget": 0.1,
+          "threshold": 0.23437500000000003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 124,
+            "bg_fpr": 0.09943865276663993,
+            "hits": 5000,
+            "hit_rate": 0.639467962655071
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 445,
+            "bg_fpr": 0.1716820987654321,
+            "hits": 7080,
+            "hit_rate": 0.5972667454023958
+          }
+        },
+        {
+          "validation_budget": 0.15,
+          "threshold": 0.14758300781250003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 187,
+            "bg_fpr": 0.14995990376904572,
+            "hits": 5084,
+            "hit_rate": 0.6502110244276762
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 595,
+            "bg_fpr": 0.22955246913580246,
+            "hits": 7243,
+            "hit_rate": 0.6110173781002194
+          }
+        },
+        {
+          "validation_budget": 0.2,
+          "threshold": 0.09173583984375001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 249,
+            "bg_fpr": 0.1996792301523657,
+            "hits": 5156,
+            "hit_rate": 0.6594193630899092
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 692,
+            "bg_fpr": 0.26697530864197533,
+            "hits": 7384,
+            "hit_rate": 0.6229120971823857
+          }
+        },
+        {
+          "validation_budget": 0.25,
+          "threshold": 0.06524658203125001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 310,
+            "bg_fpr": 0.24859663191659984,
+            "hits": 5195,
+            "hit_rate": 0.6644072131986187
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 772,
+            "bg_fpr": 0.2978395061728395,
+            "hits": 7472,
+            "hit_rate": 0.6303357516450143
+          }
+        },
+        {
+          "validation_budget": 0.3,
+          "threshold": 0.04370117187500001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 374,
+            "bg_fpr": 0.29991980753809144,
+            "hits": 5239,
+            "hit_rate": 0.6700345312699834
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 889,
+            "bg_fpr": 0.3429783950617284,
+            "hits": 7554,
+            "hit_rate": 0.6372532478488274
+          }
+        }
+      ],
+      "top_fp_sequences": [
+        {
+          "seq": "jungle_18",
+          "frames": 176,
+          "negative_frames": 72,
+          "positive_frames": 104,
+          "fp_frames": 70,
+          "bg_fpr": 0.9722222222222222,
+          "hits": 94,
+          "hit_rate": 0.9038461538461539
+        },
+        {
+          "seq": "building_73",
+          "frames": 170,
+          "negative_frames": 70,
+          "positive_frames": 100,
+          "fp_frames": 49,
+          "bg_fpr": 0.7,
+          "hits": 57,
+          "hit_rate": 0.57
+        },
+        {
+          "seq": "building_74",
+          "frames": 128,
+          "negative_frames": 53,
+          "positive_frames": 75,
+          "fp_frames": 46,
+          "bg_fpr": 0.8679245283018868,
+          "hits": 36,
+          "hit_rate": 0.48
+        },
+        {
+          "seq": "jungle_17",
+          "frames": 187,
+          "negative_frames": 47,
+          "positive_frames": 140,
+          "fp_frames": 45,
+          "bg_fpr": 0.9574468085106383,
+          "hits": 125,
+          "hit_rate": 0.8928571428571429
+        },
+        {
+          "seq": "jungle_13",
+          "frames": 213,
+          "negative_frames": 31,
+          "positive_frames": 182,
+          "fp_frames": 30,
+          "bg_fpr": 0.967741935483871,
+          "hits": 87,
+          "hit_rate": 0.47802197802197804
+        },
+        {
+          "seq": "cn_mountains_37",
+          "frames": 286,
+          "negative_frames": 54,
+          "positive_frames": 232,
+          "fp_frames": 16,
+          "bg_fpr": 0.2962962962962963,
+          "hits": 95,
+          "hit_rate": 0.40948275862068967
+        },
+        {
+          "seq": "jungle_7",
+          "frames": 245,
+          "negative_frames": 19,
+          "positive_frames": 226,
+          "fp_frames": 16,
+          "bg_fpr": 0.8421052631578947,
+          "hits": 156,
+          "hit_rate": 0.6902654867256637
+        },
+        {
+          "seq": "jungle_12",
+          "frames": 296,
+          "negative_frames": 17,
+          "positive_frames": 279,
+          "fp_frames": 15,
+          "bg_fpr": 0.8823529411764706,
+          "hits": 221,
+          "hit_rate": 0.7921146953405018
+        },
+        {
+          "seq": "cn_mountains_36",
+          "frames": 300,
+          "negative_frames": 14,
+          "positive_frames": 286,
+          "fp_frames": 12,
+          "bg_fpr": 0.8571428571428571,
+          "hits": 278,
+          "hit_rate": 0.972027972027972
+        },
+        {
+          "seq": "cn_mountains_38",
+          "frames": 208,
+          "negative_frames": 42,
+          "positive_frames": 166,
+          "fp_frames": 11,
+          "bg_fpr": 0.2619047619047619,
+          "hits": 155,
+          "hit_rate": 0.9337349397590361
+        }
+      ],
+      "provenance": {
+        "val_stats_sha256": "6b48faa59dbfa6f30f33592182f4caf5753e0ffc799db488d7fb0ea27c3ff610",
+        "test_stats_sha256": "58c7077fc64effffa5fbbbc3b21b9c4f8dd644ebcfdad0f03c5e20d2c0f877b1"
+      }
+    },
+    "时序seed2": {
+      "groups": {
+        "ALL": {
+          "frames": 14446,
+          "negative_frames": 2592,
+          "positive_frames": 11854,
+          "fp_frames": 333,
+          "bg_fpr": 0.1284722222222222,
+          "hits": 8796,
+          "hit_rate": 0.7420280074236545
+        },
+        "OC": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 111,
+          "bg_fpr": 0.08564814814814815,
+          "hits": 2,
+          "hit_rate": 0.4
+        },
+        "OV": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 217,
+          "bg_fpr": 0.17277070063694266,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "SV": {
+          "frames": 6690,
+          "negative_frames": 0,
+          "positive_frames": 6690,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 4605,
+          "hit_rate": 0.6883408071748879
+        },
+        "TC": {
+          "frames": 8443,
+          "negative_frames": 1512,
+          "positive_frames": 6931,
+          "fp_frames": 124,
+          "bg_fpr": 0.082010582010582,
+          "hits": 4250,
+          "hit_rate": 0.6131871302842302
+        },
+        "DBC": {
+          "frames": 1728,
+          "negative_frames": 923,
+          "positive_frames": 805,
+          "fp_frames": 91,
+          "bg_fpr": 0.09859154929577464,
+          "hits": 528,
+          "hit_rate": 0.6559006211180124
+        },
+        "CDB": {
+          "frames": 2876,
+          "negative_frames": 619,
+          "positive_frames": 2257,
+          "fp_frames": 65,
+          "bg_fpr": 0.1050080775444265,
+          "hits": 1454,
+          "hit_rate": 0.6442179884802836
+        },
+        "仅遮挡": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 111,
+          "bg_fpr": 0.08564814814814815,
+          "hits": 2,
+          "hit_rate": 0.4
+        },
+        "仅出视野": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 217,
+          "bg_fpr": 0.17277070063694266,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "遮挡与出视野": {
+          "frames": 0,
+          "negative_frames": 0,
+          "positive_frames": 0,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 0,
+          "hit_rate": null
+        },
+        "无上述缺席标签": {
+          "frames": 11884,
+          "negative_frames": 40,
+          "positive_frames": 11844,
+          "fp_frames": 5,
+          "bg_fpr": 0.125,
+          "hits": 8794,
+          "hit_rate": 0.7424856467409658
+        }
+      },
+      "calibration": [
+        {
+          "validation_budget": 0.01,
+          "threshold": 0.6738281250000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 12,
+            "bg_fpr": 0.009623095429029671,
+            "hits": 4760,
+            "hit_rate": 0.6087735004476276
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 67,
+            "bg_fpr": 0.025848765432098766,
+            "hits": 6922,
+            "hit_rate": 0.5839379112535853
+          }
+        },
+        {
+          "validation_budget": 0.025,
+          "threshold": 0.6181640625000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 31,
+            "bg_fpr": 0.024859663191659984,
+            "hits": 5266,
+            "hit_rate": 0.6734876582683208
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 90,
+            "bg_fpr": 0.034722222222222224,
+            "hits": 7589,
+            "hit_rate": 0.6402058376919183
+          }
+        },
+        {
+          "validation_budget": 0.05,
+          "threshold": 0.48339843750000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 62,
+            "bg_fpr": 0.04971932638331997,
+            "hits": 5752,
+            "hit_rate": 0.7356439442383936
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 176,
+            "bg_fpr": 0.06790123456790123,
+            "hits": 8279,
+            "hit_rate": 0.6984140374557112
+          }
+        },
+        {
+          "validation_budget": 0.075,
+          "threshold": 0.33593750000000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 93,
+            "bg_fpr": 0.07457898957497995,
+            "hits": 5937,
+            "hit_rate": 0.7593042588566313
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 267,
+            "bg_fpr": 0.10300925925925926,
+            "hits": 8634,
+            "hit_rate": 0.7283617344356336
+          }
+        },
+        {
+          "validation_budget": 0.1,
+          "threshold": 0.24865722656250003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 123,
+            "bg_fpr": 0.09863672814755413,
+            "hits": 6023,
+            "hit_rate": 0.7703031078142984
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 333,
+            "bg_fpr": 0.1284722222222222,
+            "hits": 8798,
+            "hit_rate": 0.7421967268432597
+          }
+        },
+        {
+          "validation_budget": 0.15,
+          "threshold": 0.11877441406250001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 187,
+            "bg_fpr": 0.14995990376904572,
+            "hits": 6147,
+            "hit_rate": 0.7861619132881442
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 492,
+            "bg_fpr": 0.18981481481481483,
+            "hits": 9049,
+            "hit_rate": 0.7633710140037119
+          }
+        },
+        {
+          "validation_budget": 0.2,
+          "threshold": 0.06097412109375001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 249,
+            "bg_fpr": 0.1996792301523657,
+            "hits": 6232,
+            "hit_rate": 0.7970328686532805
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 666,
+            "bg_fpr": 0.2569444444444444,
+            "hits": 9201,
+            "hit_rate": 0.7761936898937067
+          }
+        },
+        {
+          "validation_budget": 0.25,
+          "threshold": 0.03704833984375001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 311,
+            "bg_fpr": 0.24939855653568566,
+            "hits": 6293,
+            "hit_rate": 0.8048343777976723
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 797,
+            "bg_fpr": 0.3074845679012346,
+            "hits": 9305,
+            "hit_rate": 0.784967099713177
+          }
+        },
+        {
+          "validation_budget": 0.3,
+          "threshold": 0.021987915039062503,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 374,
+            "bg_fpr": 0.29991980753809144,
+            "hits": 6352,
+            "hit_rate": 0.8123800997570022
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 961,
+            "bg_fpr": 0.3707561728395062,
+            "hits": 9378,
+            "hit_rate": 0.7911253585287666
+          }
+        }
+      ],
+      "top_fp_sequences": [
+        {
+          "seq": "building_74",
+          "frames": 128,
+          "negative_frames": 53,
+          "positive_frames": 75,
+          "fp_frames": 32,
+          "bg_fpr": 0.6037735849056604,
+          "hits": 35,
+          "hit_rate": 0.4666666666666667
+        },
+        {
+          "seq": "jungle_17",
+          "frames": 187,
+          "negative_frames": 47,
+          "positive_frames": 140,
+          "fp_frames": 32,
+          "bg_fpr": 0.6808510638297872,
+          "hits": 137,
+          "hit_rate": 0.9785714285714285
+        },
+        {
+          "seq": "jungle_18",
+          "frames": 176,
+          "negative_frames": 72,
+          "positive_frames": 104,
+          "fp_frames": 31,
+          "bg_fpr": 0.4305555555555556,
+          "hits": 99,
+          "hit_rate": 0.9519230769230769
+        },
+        {
+          "seq": "jungle_13",
+          "frames": 213,
+          "negative_frames": 31,
+          "positive_frames": 182,
+          "fp_frames": 30,
+          "bg_fpr": 0.967741935483871,
+          "hits": 134,
+          "hit_rate": 0.7362637362637363
+        },
+        {
+          "seq": "building_73",
+          "frames": 170,
+          "negative_frames": 70,
+          "positive_frames": 100,
+          "fp_frames": 28,
+          "bg_fpr": 0.4,
+          "hits": 61,
+          "hit_rate": 0.61
+        },
+        {
+          "seq": "urban-areas_43",
+          "frames": 295,
+          "negative_frames": 131,
+          "positive_frames": 164,
+          "fp_frames": 16,
+          "bg_fpr": 0.12213740458015267,
+          "hits": 82,
+          "hit_rate": 0.5
+        },
+        {
+          "seq": "cn_mountains_33",
+          "frames": 366,
+          "negative_frames": 115,
+          "positive_frames": 251,
+          "fp_frames": 14,
+          "bg_fpr": 0.12173913043478261,
+          "hits": 178,
+          "hit_rate": 0.7091633466135459
+        },
+        {
+          "seq": "jungle_7",
+          "frames": 245,
+          "negative_frames": 19,
+          "positive_frames": 226,
+          "fp_frames": 14,
+          "bg_fpr": 0.7368421052631579,
+          "hits": 200,
+          "hit_rate": 0.8849557522123894
+        },
+        {
+          "seq": "urban-areas_35",
+          "frames": 348,
+          "negative_frames": 125,
+          "positive_frames": 223,
+          "fp_frames": 11,
+          "bg_fpr": 0.088,
+          "hits": 51,
+          "hit_rate": 0.22869955156950672
+        },
+        {
+          "seq": "urban-areas_41",
+          "frames": 300,
+          "negative_frames": 143,
+          "positive_frames": 157,
+          "fp_frames": 11,
+          "bg_fpr": 0.07692307692307693,
+          "hits": 41,
+          "hit_rate": 0.2611464968152866
+        }
+      ],
+      "provenance": {
+        "val_stats_sha256": "6a423b7d98c7f68fbf7ac755e76e9cf4b980a82f1ef6c9d8f2730fab456b98ed",
+        "test_stats_sha256": "c837032743567d3b384df41b81dcdc3e587d52aea18e73e3bed348309529d383"
+      }
+    },
+    "单帧11s": {
+      "groups": {
+        "ALL": {
+          "frames": 14446,
+          "negative_frames": 2592,
+          "positive_frames": 11854,
+          "fp_frames": 787,
+          "bg_fpr": 0.30362654320987653,
+          "hits": 7856,
+          "hit_rate": 0.6627298802092121
+        },
+        "OC": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 312,
+          "bg_fpr": 0.24074074074074073,
+          "hits": 2,
+          "hit_rate": 0.4
+        },
+        "OV": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 470,
+          "bg_fpr": 0.37420382165605093,
+          "hits": 1,
+          "hit_rate": 0.2
+        },
+        "SV": {
+          "frames": 6690,
+          "negative_frames": 0,
+          "positive_frames": 6690,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 4088,
+          "hit_rate": 0.6110612855007473
+        },
+        "TC": {
+          "frames": 8443,
+          "negative_frames": 1512,
+          "positive_frames": 6931,
+          "fp_frames": 363,
+          "bg_fpr": 0.2400793650793651,
+          "hits": 3452,
+          "hit_rate": 0.49805222911556774
+        },
+        "DBC": {
+          "frames": 1728,
+          "negative_frames": 923,
+          "positive_frames": 805,
+          "fp_frames": 220,
+          "bg_fpr": 0.23835319609967498,
+          "hits": 492,
+          "hit_rate": 0.6111801242236025
+        },
+        "CDB": {
+          "frames": 2876,
+          "negative_frames": 619,
+          "positive_frames": 2257,
+          "fp_frames": 210,
+          "bg_fpr": 0.3392568659127625,
+          "hits": 1183,
+          "hit_rate": 0.5241470979175897
+        },
+        "仅遮挡": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 312,
+          "bg_fpr": 0.24074074074074073,
+          "hits": 2,
+          "hit_rate": 0.4
+        },
+        "仅出视野": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 470,
+          "bg_fpr": 0.37420382165605093,
+          "hits": 1,
+          "hit_rate": 0.2
+        },
+        "遮挡与出视野": {
+          "frames": 0,
+          "negative_frames": 0,
+          "positive_frames": 0,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 0,
+          "hit_rate": null
+        },
+        "无上述缺席标签": {
+          "frames": 11884,
+          "negative_frames": 40,
+          "positive_frames": 11844,
+          "fp_frames": 5,
+          "bg_fpr": 0.125,
+          "hits": 7853,
+          "hit_rate": 0.6630361364403917
+        }
+      },
+      "calibration": [
+        {
+          "validation_budget": 0.01,
+          "threshold": 0.7226562500000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 11,
+            "bg_fpr": 0.008821170809943865,
+            "hits": 3965,
+            "hit_rate": 0.5070980943854713
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 78,
+            "bg_fpr": 0.03009259259259259,
+            "hits": 5997,
+            "hit_rate": 0.5059051796861819
+          }
+        },
+        {
+          "validation_budget": 0.025,
+          "threshold": 0.6816406250000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 31,
+            "bg_fpr": 0.024859663191659984,
+            "hits": 4370,
+            "hit_rate": 0.558894999360532
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 200,
+            "bg_fpr": 0.07716049382716049,
+            "hits": 6553,
+            "hit_rate": 0.5528091783364265
+          }
+        },
+        {
+          "validation_budget": 0.05,
+          "threshold": 0.6152343750000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 62,
+            "bg_fpr": 0.04971932638331997,
+            "hits": 4741,
+            "hit_rate": 0.6063435221895384
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 354,
+            "bg_fpr": 0.13657407407407407,
+            "hits": 7016,
+            "hit_rate": 0.5918677239750295
+          }
+        },
+        {
+          "validation_budget": 0.075,
+          "threshold": 0.5449218750000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 93,
+            "bg_fpr": 0.07457898957497995,
+            "hits": 4944,
+            "hit_rate": 0.6323059214733342
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 448,
+            "bg_fpr": 0.1728395061728395,
+            "hits": 7275,
+            "hit_rate": 0.6137168888139025
+          }
+        },
+        {
+          "validation_budget": 0.1,
+          "threshold": 0.49121093750000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 124,
+            "bg_fpr": 0.09943865276663993,
+            "hits": 5048,
+            "hit_rate": 0.6456068550965597
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 508,
+            "bg_fpr": 0.19598765432098766,
+            "hits": 7435,
+            "hit_rate": 0.6272144423823182
+          }
+        },
+        {
+          "validation_budget": 0.15,
+          "threshold": 0.36669921875000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 187,
+            "bg_fpr": 0.14995990376904572,
+            "hits": 5205,
+            "hit_rate": 0.6656861491239289
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 647,
+            "bg_fpr": 0.2496141975308642,
+            "hits": 7670,
+            "hit_rate": 0.6470389741859288
+          }
+        },
+        {
+          "validation_budget": 0.2,
+          "threshold": 0.29833984375000006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 249,
+            "bg_fpr": 0.1996792301523657,
+            "hits": 5271,
+            "hit_rate": 0.6741271262309758
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 721,
+            "bg_fpr": 0.27816358024691357,
+            "hits": 7777,
+            "hit_rate": 0.6560654631348068
+          }
+        },
+        {
+          "validation_budget": 0.25,
+          "threshold": 0.22888183593750003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 310,
+            "bg_fpr": 0.24859663191659984,
+            "hits": 5339,
+            "hit_rate": 0.6828238905230848
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 827,
+            "bg_fpr": 0.31905864197530864,
+            "hits": 7881,
+            "hit_rate": 0.664838872954277
+          }
+        },
+        {
+          "validation_budget": 0.3,
+          "threshold": 0.17785644531250003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 374,
+            "bg_fpr": 0.29991980753809144,
+            "hits": 5383,
+            "hit_rate": 0.6884512085944494
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 908,
+            "bg_fpr": 0.35030864197530864,
+            "hits": 7949,
+            "hit_rate": 0.6705753332208537
+          }
+        }
+      ],
+      "top_fp_sequences": [
+        {
+          "seq": "jungle_18",
+          "frames": 176,
+          "negative_frames": 72,
+          "positive_frames": 104,
+          "fp_frames": 72,
+          "bg_fpr": 1.0,
+          "hits": 100,
+          "hit_rate": 0.9615384615384616
+        },
+        {
+          "seq": "building_73",
+          "frames": 170,
+          "negative_frames": 70,
+          "positive_frames": 100,
+          "fp_frames": 70,
+          "bg_fpr": 1.0,
+          "hits": 66,
+          "hit_rate": 0.66
+        },
+        {
+          "seq": "urban-areas_37",
+          "frames": 371,
+          "negative_frames": 103,
+          "positive_frames": 268,
+          "fp_frames": 61,
+          "bg_fpr": 0.5922330097087378,
+          "hits": 85,
+          "hit_rate": 0.31716417910447764
+        },
+        {
+          "seq": "urban-areas_42",
+          "frames": 298,
+          "negative_frames": 135,
+          "positive_frames": 163,
+          "fp_frames": 60,
+          "bg_fpr": 0.4444444444444444,
+          "hits": 56,
+          "hit_rate": 0.34355828220858897
+        },
+        {
+          "seq": "building_74",
+          "frames": 128,
+          "negative_frames": 53,
+          "positive_frames": 75,
+          "fp_frames": 52,
+          "bg_fpr": 0.9811320754716981,
+          "hits": 36,
+          "hit_rate": 0.48
+        },
+        {
+          "seq": "urban-areas_41",
+          "frames": 300,
+          "negative_frames": 143,
+          "positive_frames": 157,
+          "fp_frames": 52,
+          "bg_fpr": 0.36363636363636365,
+          "hits": 48,
+          "hit_rate": 0.3057324840764331
+        },
+        {
+          "seq": "jungle_17",
+          "frames": 187,
+          "negative_frames": 47,
+          "positive_frames": 140,
+          "fp_frames": 47,
+          "bg_fpr": 1.0,
+          "hits": 125,
+          "hit_rate": 0.8928571428571429
+        },
+        {
+          "seq": "urban-areas_40",
+          "frames": 300,
+          "negative_frames": 112,
+          "positive_frames": 188,
+          "fp_frames": 38,
+          "bg_fpr": 0.3392857142857143,
+          "hits": 79,
+          "hit_rate": 0.42021276595744683
+        },
+        {
+          "seq": "jungle_13",
+          "frames": 213,
+          "negative_frames": 31,
+          "positive_frames": 182,
+          "fp_frames": 31,
+          "bg_fpr": 1.0,
+          "hits": 119,
+          "hit_rate": 0.6538461538461539
+        },
+        {
+          "seq": "urban-areas_43",
+          "frames": 295,
+          "negative_frames": 131,
+          "positive_frames": 164,
+          "fp_frames": 31,
+          "bg_fpr": 0.2366412213740458,
+          "hits": 82,
+          "hit_rate": 0.5
+        }
+      ],
+      "provenance": {
+        "val_stats_sha256": "9ac82d749dd6d03d78c7e223cca7455ba1434ae1331b6d3e4376bdd9b094b980",
+        "test_stats_sha256": "3170a280ead08d50f2c517f5c459a3b8328788fa1ba4fe2799bd1c2314fb0cac"
+      }
+    },
+    "时序11s": {
+      "groups": {
+        "ALL": {
+          "frames": 14446,
+          "negative_frames": 2592,
+          "positive_frames": 11854,
+          "fp_frames": 250,
+          "bg_fpr": 0.09645061728395062,
+          "hits": 8813,
+          "hit_rate": 0.7434621224902986
+        },
+        "OC": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 79,
+          "bg_fpr": 0.06095679012345679,
+          "hits": 4,
+          "hit_rate": 0.8
+        },
+        "OV": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 168,
+          "bg_fpr": 0.1337579617834395,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "SV": {
+          "frames": 6690,
+          "negative_frames": 0,
+          "positive_frames": 6690,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 4568,
+          "hit_rate": 0.6828101644245143
+        },
+        "TC": {
+          "frames": 8443,
+          "negative_frames": 1512,
+          "positive_frames": 6931,
+          "fp_frames": 84,
+          "bg_fpr": 0.05555555555555555,
+          "hits": 4226,
+          "hit_rate": 0.6097244264896841
+        },
+        "DBC": {
+          "frames": 1728,
+          "negative_frames": 923,
+          "positive_frames": 805,
+          "fp_frames": 59,
+          "bg_fpr": 0.06392199349945829,
+          "hits": 563,
+          "hit_rate": 0.6993788819875777
+        },
+        "CDB": {
+          "frames": 2876,
+          "negative_frames": 619,
+          "positive_frames": 2257,
+          "fp_frames": 25,
+          "bg_fpr": 0.04038772213247173,
+          "hits": 1396,
+          "hit_rate": 0.618520159503766
+        },
+        "仅遮挡": {
+          "frames": 1301,
+          "negative_frames": 1296,
+          "positive_frames": 5,
+          "fp_frames": 79,
+          "bg_fpr": 0.06095679012345679,
+          "hits": 4,
+          "hit_rate": 0.8
+        },
+        "仅出视野": {
+          "frames": 1261,
+          "negative_frames": 1256,
+          "positive_frames": 5,
+          "fp_frames": 168,
+          "bg_fpr": 0.1337579617834395,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "遮挡与出视野": {
+          "frames": 0,
+          "negative_frames": 0,
+          "positive_frames": 0,
+          "fp_frames": 0,
+          "bg_fpr": null,
+          "hits": 0,
+          "hit_rate": null
+        },
+        "无上述缺席标签": {
+          "frames": 11884,
+          "negative_frames": 40,
+          "positive_frames": 11844,
+          "fp_frames": 3,
+          "bg_fpr": 0.075,
+          "hits": 8809,
+          "hit_rate": 0.7437521107733873
+        }
+      },
+      "calibration": [
+        {
+          "validation_budget": 0.01,
+          "threshold": 0.6093750000000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 12,
+            "bg_fpr": 0.009623095429029671,
+            "hits": 5374,
+            "hit_rate": 0.6873001662616703
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 94,
+            "bg_fpr": 0.036265432098765434,
+            "hits": 7743,
+            "hit_rate": 0.6531972330015184
+          }
+        },
+        {
+          "validation_budget": 0.025,
+          "threshold": 0.5029296875000001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 31,
+            "bg_fpr": 0.024859663191659984,
+            "hits": 5769,
+            "hit_rate": 0.7378181353114209
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 132,
+            "bg_fpr": 0.05092592592592592,
+            "hits": 8274,
+            "hit_rate": 0.6979922389066981
+          }
+        },
+        {
+          "validation_budget": 0.05,
+          "threshold": 0.26586914062500006,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 62,
+            "bg_fpr": 0.04971932638331997,
+            "hits": 6073,
+            "hit_rate": 0.7766977874408492
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 236,
+            "bg_fpr": 0.09104938271604938,
+            "hits": 8790,
+            "hit_rate": 0.7415218491648389
+          }
+        },
+        {
+          "validation_budget": 0.075,
+          "threshold": 0.13342285156250003,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 93,
+            "bg_fpr": 0.07457898957497995,
+            "hits": 6196,
+            "hit_rate": 0.792428699322164
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 344,
+            "bg_fpr": 0.13271604938271606,
+            "hits": 9017,
+            "hit_rate": 0.7606715032900286
+          }
+        },
+        {
+          "validation_budget": 0.1,
+          "threshold": 0.07641601562500001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 124,
+            "bg_fpr": 0.09943865276663993,
+            "hits": 6280,
+            "hit_rate": 0.8031717610947692
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 404,
+            "bg_fpr": 0.1558641975308642,
+            "hits": 9143,
+            "hit_rate": 0.7713008267251561
+          }
+        },
+        {
+          "validation_budget": 0.15,
+          "threshold": 0.024887084960937503,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 187,
+            "bg_fpr": 0.14995990376904572,
+            "hits": 6365,
+            "hit_rate": 0.8140427164599053
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 576,
+            "bg_fpr": 0.2222222222222222,
+            "hits": 9345,
+            "hit_rate": 0.7883414881052809
+          }
+        },
+        {
+          "validation_budget": 0.2,
+          "threshold": 0.010330200195312502,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 249,
+            "bg_fpr": 0.1996792301523657,
+            "hits": 6432,
+            "hit_rate": 0.8226115871594833
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 726,
+            "bg_fpr": 0.2800925925925926,
+            "hits": 9480,
+            "hit_rate": 0.7997300489286316
+          }
+        },
+        {
+          "validation_budget": 0.25,
+          "threshold": 0.004943847656250001,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 311,
+            "bg_fpr": 0.24939855653568566,
+            "hits": 6483,
+            "hit_rate": 0.829134160378565
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 896,
+            "bg_fpr": 0.345679012345679,
+            "hits": 9586,
+            "hit_rate": 0.8086721781677071
+          }
+        },
+        {
+          "validation_budget": 0.3,
+          "threshold": 0.0026016235351562504,
+          "val": {
+            "frames": 9066,
+            "negative_frames": 1247,
+            "positive_frames": 7819,
+            "fp_frames": 374,
+            "bg_fpr": 0.29991980753809144,
+            "hits": 6524,
+            "hit_rate": 0.8343777976723367
+          },
+          "test": {
+            "frames": 14446,
+            "negative_frames": 2592,
+            "positive_frames": 11854,
+            "fp_frames": 1104,
+            "bg_fpr": 0.42592592592592593,
+            "hits": 9670,
+            "hit_rate": 0.8157583937911254
+          }
+        }
+      ],
+      "top_fp_sequences": [
+        {
+          "seq": "building_74",
+          "frames": 128,
+          "negative_frames": 53,
+          "positive_frames": 75,
+          "fp_frames": 47,
+          "bg_fpr": 0.8867924528301887,
+          "hits": 46,
+          "hit_rate": 0.6133333333333333
+        },
+        {
+          "seq": "building_73",
+          "frames": 170,
+          "negative_frames": 70,
+          "positive_frames": 100,
+          "fp_frames": 41,
+          "bg_fpr": 0.5857142857142857,
+          "hits": 63,
+          "hit_rate": 0.63
+        },
+        {
+          "seq": "jungle_18",
+          "frames": 176,
+          "negative_frames": 72,
+          "positive_frames": 104,
+          "fp_frames": 18,
+          "bg_fpr": 0.25,
+          "hits": 101,
+          "hit_rate": 0.9711538461538461
+        },
+        {
+          "seq": "urban-areas_41",
+          "frames": 300,
+          "negative_frames": 143,
+          "positive_frames": 157,
+          "fp_frames": 18,
+          "bg_fpr": 0.1258741258741259,
+          "hits": 54,
+          "hit_rate": 0.34394904458598724
+        },
+        {
+          "seq": "cn_mountains_30",
+          "frames": 206,
+          "negative_frames": 50,
+          "positive_frames": 156,
+          "fp_frames": 14,
+          "bg_fpr": 0.28,
+          "hits": 136,
+          "hit_rate": 0.8717948717948718
+        },
+        {
+          "seq": "jungle_13",
+          "frames": 213,
+          "negative_frames": 31,
+          "positive_frames": 182,
+          "fp_frames": 11,
+          "bg_fpr": 0.3548387096774194,
+          "hits": 134,
+          "hit_rate": 0.7362637362637363
+        },
+        {
+          "seq": "cn_mountains_38",
+          "frames": 208,
+          "negative_frames": 42,
+          "positive_frames": 166,
+          "fp_frames": 10,
+          "bg_fpr": 0.23809523809523808,
+          "hits": 164,
+          "hit_rate": 0.9879518072289156
+        },
+        {
+          "seq": "cn_sky_15",
+          "frames": 200,
+          "negative_frames": 12,
+          "positive_frames": 188,
+          "fp_frames": 10,
+          "bg_fpr": 0.8333333333333334,
+          "hits": 184,
+          "hit_rate": 0.9787234042553191
+        },
+        {
+          "seq": "building_72",
+          "frames": 200,
+          "negative_frames": 11,
+          "positive_frames": 189,
+          "fp_frames": 8,
+          "bg_fpr": 0.7272727272727273,
+          "hits": 120,
+          "hit_rate": 0.6349206349206349
+        },
+        {
+          "seq": "jungle_17",
+          "frames": 187,
+          "negative_frames": 47,
+          "positive_frames": 140,
+          "fp_frames": 7,
+          "bg_fpr": 0.14893617021276595,
+          "hits": 139,
+          "hit_rate": 0.9928571428571429
+        }
+      ],
+      "provenance": {
+        "val_stats_sha256": "f14f47af2d55aca2e2aa0b5e116c51f9a8e1b030a3e20e4fc82103b7a36dd91c",
+        "test_stats_sha256": "23ef1b48d372afcec76cf5033315956fc653dbd64ec2d144bfa2bd83eb986c3e"
+      }
+    }
+  },
+  "protocol": "Condition on absence before computing BG-FP; attributes overlap. Thresholds fitted on validation negatives only. Raw frame stats reused; no model/test threshold fitting.",
+  "paired_background_outcomes": {
+    "旧时序11n": {
+      "background_frames": 2592,
+      "共同误报": 156,
+      "消除误报": 139,
+      "新增误报": 209,
+      "两者无误报": 2088
+    },
+    "时序seed0": {
+      "background_frames": 2592,
+      "共同误报": 350,
+      "消除误报": 175,
+      "新增误报": 192,
+      "两者无误报": 1875
+    },
+    "时序seed1": {
+      "background_frames": 2592,
+      "共同误报": 165,
+      "消除误报": 240,
+      "新增误报": 158,
+      "两者无误报": 2029
+    },
+    "时序seed2": {
+      "background_frames": 2592,
+      "共同误报": 207,
+      "消除误报": 223,
+      "新增误报": 126,
+      "两者无误报": 2036
+    },
+    "时序11s": {
+      "background_frames": 2592,
+      "共同误报": 201,
+      "消除误报": 586,
+      "新增误报": 49,
+      "两者无误报": 1756
+    }
+  },
+  "attribute_presence_counts": {
+    "train": {
+      "OC": {
+        "positive": 26,
+        "negative": 1576
+      },
+      "OV": {
+        "positive": 4,
+        "negative": 2056
+      },
+      "SV": {
+        "positive": 8668,
+        "negative": 0
+      },
+      "TC": {
+        "positive": 10430,
+        "negative": 1367
+      },
+      "DBC": {
+        "positive": 2355,
+        "negative": 325
+      },
+      "CDB": {
+        "positive": 3575,
+        "negative": 334
+      }
+    },
+    "val": {
+      "OC": {
+        "positive": 1,
+        "negative": 641
+      },
+      "OV": {
+        "positive": 3,
+        "negative": 573
+      },
+      "SV": {
+        "positive": 4125,
+        "negative": 0
+      },
+      "TC": {
+        "positive": 5057,
+        "negative": 851
+      },
+      "DBC": {
+        "positive": 3464,
+        "negative": 417
+      },
+      "CDB": {
+        "positive": 3331,
+        "negative": 215
+      }
+    },
+    "test": {
+      "OC": {
+        "positive": 5,
+        "negative": 1296
+      },
+      "OV": {
+        "positive": 5,
+        "negative": 1256
+      },
+      "SV": {
+        "positive": 6690,
+        "negative": 0
+      },
+      "TC": {
+        "positive": 6931,
+        "negative": 1512
+      },
+      "DBC": {
+        "positive": 805,
+        "negative": 923
+      },
+      "CDB": {
+        "positive": 2257,
+        "negative": 619
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "protocol": "Ultralytics get_flops on actual unfused CPU checkpoint, 3x640x640 input; operation count only, not measured deployment latency or energy.",
+  "models": {
+    "yolov5nu": {
+      "weights_sha256": "5d904cc4d99b24ba354f6f92f6ccb7d9003d52ebf973c8c868911b3c1a92390f",
+      "parameters_before_fusion": 2635619,
+      "gflops_3x640x640": 7.7326976,
+      "status": "MEASURED"
+    },
+    "yolov8n": {
+      "weights_sha256": "95387898b68548afc6b40d2f7097e76b6b07ba778fd721d4faad06d00878818d",
+      "parameters_before_fusion": 3138003,
+      "gflops_3x640x640": 8.7489152,
+      "status": "MEASURED"
+    },
+    "yolo26n": {
+      "weights_sha256": "54bb9cb05f0b3a12bc1c731bf36a93c378e8a6994cd647bfe100915b00570f55",
+      "parameters_before_fusion": 2533886,
+      "gflops_3x640x640": 6.0273152,
+      "status": "MEASURED"
+    },
+    "yolo11n": {
+      "weights_sha256": "cc42d84f32ffe3b5c1f40410d5a90c5133a4149233a0182285622c3c3eebafae",
+      "parameters_before_fusion": 2604883,
+      "gflops_3x640x640": 6.5671424,
+      "status": "MEASURED"
+    },
+    "C1_temporal_uniform": {
+      "weights_sha256": "f033b54a3c641835c2683af5d997915094c1dce5aebdb223451239f4dc8e4f9b",
+      "parameters_before_fusion": 2604883,
+      "gflops_3x640x640": 6.5671424,
+      "status": "MEASURED"
+    },
+    "tcs_yolo8n": {
+      "weights_sha256": "bde4f7bf1b8ece380d740d3b4c6186aa4a69f37d8d983661e943d90702d55be3",
+      "parameters_before_fusion": 3138003,
+      "gflops_3x640x640": 8.7489152,
+      "status": "MEASURED"
+    }
+  },
+  "same_state_shapes": {
+    "v8": true,
+    "v11": true
+  }
+}

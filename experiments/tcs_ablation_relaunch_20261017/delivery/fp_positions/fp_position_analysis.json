@@ -1,0 +1,47 @@
+{
+  "protocol": {
+    "split": "test",
+    "frames": 2592,
+    "background_definition": "original exist=0 annotations",
+    "confidence": 0.25,
+    "input_coords": "original image coordinates normalized separately per frame",
+    "spatial_bins": [
+      30,
+      24
+    ],
+    "note": "Descriptive analysis of already inspected test results; not new holdout validation or a causal clutter identification experiment"
+  },
+  "models": {
+    "yolo11n": {
+      "background_frames": 2592,
+      "fp_frames": 295,
+      "fp_frame_rate": 0.11381172839506173,
+      "false_boxes": 389,
+      "false_boxes_per_1000_frames": 150.07716049382717
+    },
+    "C1_temporal_uniform": {
+      "background_frames": 2592,
+      "fp_frames": 365,
+      "fp_frame_rate": 0.1408179012345679,
+      "false_boxes": 447,
+      "false_boxes_per_1000_frames": 172.4537037037037
+    }
+  },
+  "paired": {
+    "removed_fp_frames": 139,
+    "new_fp_frames": 209,
+    "both_fp": 156,
+    "neither_fp": 2088
+  },
+  "sources": {
+    "yolo11n": {
+      "prediction_sha256": "e57ce27bb21a54026297e2bafffd7a6df1181752ecc8be3d917c9182be80ad66",
+      "audit_sha256": "61f3588c4e36c19c29fbb9d3d40dc67a8c179fcaa07c5a084c756e0e0e1da588"
+    },
+    "C1_temporal_uniform": {
+      "prediction_sha256": "d3383ceca7709100e57436a753f806a6c58c0cbebfac8cad3c209237738ab31c",
+      "audit_sha256": "83a81394b29768ba18c8a14b05efaa58140a2443d4d212dd8a7c96c9ca413b7f"
+    }
+  },
+  "shapes_sha256": "fe51c62fdf51c101f07cc9c2fa75be43e238d6bdf84f481f1eb40739d25cdec1"
+}

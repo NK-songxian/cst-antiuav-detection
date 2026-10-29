@@ -1,0 +1,198 @@
+{
+  "frozen_at": "2026-10-19T12:42:59.645457+00:00",
+  "authorization": "2026-10-19 user: if supplemental experiments needed arrange on AutoDL, two concurrent jobs and two queues",
+  "models": [
+    {
+      "name": "N_gap15_seed0",
+      "arch": "yolo11n",
+      "input_mode": "temporal",
+      "seed": 0,
+      "priority": 0,
+      "workers": 8,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/gap15/data.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/weights/yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "gpu_budget_bytes": 35970351104,
+      "allocator_cap_bytes": 37580963840,
+      "far": 15,
+      "lane": "A"
+    },
+    {
+      "name": "N_gap15_seed1",
+      "arch": "yolo11n",
+      "input_mode": "temporal",
+      "seed": 1,
+      "priority": 1,
+      "workers": 8,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/gap15/data.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/weights/yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "gpu_budget_bytes": 35970351104,
+      "allocator_cap_bytes": 37580963840,
+      "far": 15,
+      "lane": "A"
+    },
+    {
+      "name": "N_gap15_seed2",
+      "arch": "yolo11n",
+      "input_mode": "temporal",
+      "seed": 2,
+      "priority": 2,
+      "workers": 8,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/gap15/data.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/weights/yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "gpu_budget_bytes": 35970351104,
+      "allocator_cap_bytes": 37580963840,
+      "far": 15,
+      "lane": "A"
+    },
+    {
+      "name": "N_gap20_seed0",
+      "arch": "yolo11n",
+      "input_mode": "temporal",
+      "seed": 0,
+      "priority": 0,
+      "workers": 8,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/gap20/data.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/weights/yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "gpu_budget_bytes": 35970351104,
+      "allocator_cap_bytes": 37580963840,
+      "far": 20,
+      "lane": "B"
+    },
+    {
+      "name": "N_gap20_seed1",
+      "arch": "yolo11n",
+      "input_mode": "temporal",
+      "seed": 1,
+      "priority": 1,
+      "workers": 8,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/gap20/data.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/weights/yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "gpu_budget_bytes": 35970351104,
+      "allocator_cap_bytes": 37580963840,
+      "far": 20,
+      "lane": "B"
+    },
+    {
+      "name": "N_gap20_seed2",
+      "arch": "yolo11n",
+      "input_mode": "temporal",
+      "seed": 2,
+      "priority": 2,
+      "workers": 8,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/gap20/data.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/weights/yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "gpu_budget_bytes": 35970351104,
+      "allocator_cap_bytes": 37580963840,
+      "far": 20,
+      "lane": "B"
+    }
+  ],
+  "code_sha256": {
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_paper_completion_20261018/matched_runtime.py": "1789cc6eb4e652e1bec8ef107113df4e4489fd18d40510910adb56bfa7c8087d",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_paper_completion_20261018/train_matched.py": "df436b88f59d1499b72c724737f5dec4c9ac182b7d88d47c0cbf627fa61bc04d",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_paper_completion_20261018/evaluate_matched.py": "d8b743b1b95a22c4484ac3dc177542b086afa5c907740d359bb865195bb9fdca",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_paper_completion_20261018/queue_matched.py": "baf27fd6fb6bf339e8218ebd8e0e18b50cff45b2680ff9ff1067d7ba708e51dd",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_paper_completion_20261018/test_matched_runtime.py": "d28e21a389559908ef98dd7cfba5860631a1ef20eaf4f1ed2c7a8c84c1b2c8d0",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/train_innovation.py": "9ca23841dbca9c8cbd502589d99dfb5b96578bf3fa4f0cd31e1696eead00db10",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/sampling.py": "4846d28a72deeb0e7c0cc5059856a6dbd51569e4b129f59d1e48523cc500668e",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/audit_validation.py": "abf4f4a47e02cd0b79b2608551b126fdf401fc34f67a557cb6d182c78776478b",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/matched_runtime.py": "1789cc6eb4e652e1bec8ef107113df4e4489fd18d40510910adb56bfa7c8087d",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/train_matched.py": "df436b88f59d1499b72c724737f5dec4c9ac182b7d88d47c0cbf627fa61bc04d",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/gap_protocol.py": "dbc36e6b57421f1ea8512c50699fe06f596fe6542e18634b9acc771ac5992606",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/bootstrap_gap_study.py": "6580256536a50b43c0079772d7c1ab9566ef0216e21c4865a67dee4885335061",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/evaluate_gap.py": "6f98c44c3b58175a62e6ed196adb676ff92eece0d7ade682bcf53da66c2e0a68",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/queue_gap.py": "1a28bf8f1cf311b0c816c2868a7e2aad737fe03dbccb48d485ee055e8412344c"
+  },
+  "reference_reuse": [
+    {
+      "name": "N_tcs_seed0",
+      "weights_sha256": "9a9e366c88b9bfe5372e02ea29aea54c6f0930fd9b06a1146ae36109f6ef2530",
+      "audit_sha256": "ae74904e8e4ee72490d2e3c6739df985f370cdb5ba15d080e07dc35f38cdfffd",
+      "args_sha256": "e12bac78f1c95342bdd6d1942f2735ec24d2ee0701c211a6e9ea60e2e55e57e8"
+    },
+    {
+      "name": "N_tcs_seed1",
+      "weights_sha256": "9d372b08091a34fbe7ab1f34fed6f8e42c5360b6b2413960ed509b917835a8c0",
+      "audit_sha256": "78989c487e65e590f0fc4302e21611fd0634c0e09ca1a90bd85be50334755412",
+      "args_sha256": "6b98d968256161512e0ec6e57db409c3ce4e56a08c9f1757f5867689c0a5d084"
+    },
+    {
+      "name": "N_tcs_seed2",
+      "weights_sha256": "6474ac6fa6cf0f5d209ed920447d9c0b471082c3958a560bf3d86acf20688f52",
+      "audit_sha256": "404fe0b0edbfe9952843b20f7818feb1220795a2234e72c5d1fc338fc27625fe",
+      "args_sha256": "446f3fcee52749b61d81d0887bf86f0de3f5218ca78a2fbff60afa8e4acc4aef"
+    }
+  ],
+  "reference_contract_sha256": "883130f2df8a839dcf7cf717dc9f4742a133ef3d8629a1a5d2e0522607996ea2",
+  "data_reports": {
+    "15": {
+      "train": {
+        "frames": 25612,
+        "sequences": 120,
+        "history_sha256": "334724c87162425aa68c9bc679e8084b6d6027c70dab5801e8f432c1356ca314",
+        "images_sha256": "0fcebc4c7ed4948e8cd054c37b4512884c0283941122bc55c425eaa15e4a5bda",
+        "list_sha256": "208ce1db22a7893c6e41ac7b9d2b46502ffea740f5e8cd8c217e306d485808fb",
+        "probes": 320
+      },
+      "val": {
+        "frames": 9066,
+        "sequences": 40,
+        "history_sha256": "2e73bc17b5cd0a5cabff35e5d558cc5265d35ad680a87bf6199864a3991896fe",
+        "images_sha256": "241c61eae40e0da0748b740436a9c807ca6b4284bc3d6103a8c2f74b5bb76863",
+        "list_sha256": "3cb3cbd7c6fd7090d8e8a49a9da543181ad50e88875dc232982674ae064591bf",
+        "probes": 240
+      },
+      "test": {
+        "frames": 14446,
+        "sequences": 60,
+        "history_sha256": "9a8e0703a8a45595f2b451df5be95d5998265d9cfc8bdcd8dcb5eda107bd7e8b",
+        "images_sha256": "9fe825d80a692a7fc1f566da4b77fbfa3115a53c51a78f6196d5487a3bd9a9f3",
+        "list_sha256": "904f402c53cac0a35873e900b2d6d9cd27e5cbd601924f820f5e9ff996a5ca7d",
+        "probes": 260
+      }
+    },
+    "20": {
+      "train": {
+        "frames": 25612,
+        "sequences": 120,
+        "history_sha256": "ceb09b6a6c1109db409d28e0c4df3ab6c926d35c5d6b34307826de331cb9529c",
+        "images_sha256": "0d3c11cd20c184a06112dff122a3271e7de2423a9768a6bdd9fcdae0c6b13fdb",
+        "list_sha256": "05fef5e48359b7d94996403ffa4285da3e35487310c682b3ce496d0d076f7cdd",
+        "probes": 320
+      },
+      "val": {
+        "frames": 9066,
+        "sequences": 40,
+        "history_sha256": "71064f6e0eb1b58f448952a367d08b84508c60be2124d3e7779ff509e563633e",
+        "images_sha256": "dec4d7d1d8f76d46936b43b8937b8c78112849887b128b9bb37ea4963e9dd144",
+        "list_sha256": "ef4e050dbf3a5308e0f6a6dc563fcc8750bfb5677602a5d631e48bca499dba89",
+        "probes": 240
+      },
+      "test": {
+        "frames": 14446,
+        "sequences": 60,
+        "history_sha256": "1b516d758390744012542debcc22e2d51003186c027b3b06a9549a834a351ebc",
+        "images_sha256": "befd61d90541f5dc5f40187fa5a1051887677abb6a120f13f80f51c54581b1aa",
+        "list_sha256": "96dc0be94905803193e305c2b6b698b24cf8f6a69b4955d294c8bbc0fddf7fc3",
+        "probes": 260
+      }
+    }
+  },
+  "common_args_sha256": "7e0ecf29a8de3f66cde3403dc6103c92bb87d538ca2fa459e7bd05330ad653eb",
+  "protocol_sha256": "7f52864413b11f37b982fc04cbeda9762444c5e0334f2039f3d1820336618fe4",
+  "environment": {
+    "torch": "2.8.0+cu128",
+    "ultralytics": "8.4.177",
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "numpy": "2.3.2"
+  },
+  "max_parallel": 2,
+  "stopping": "100 epochs, native patience20, no retry/retune on test; any failure prevents further launches; never reduce batch",
+  "selection": "native best.pt by validation AP50-95; test only for reporting"
+}

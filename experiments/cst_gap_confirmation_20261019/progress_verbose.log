@@ -1,0 +1,105 @@
+{
+  "captured_at": "2026-10-19T12:52:42.146301+00:00",
+  "queue_status": "running",
+  "scheduler_pid": 443208,
+  "max_parallel": 2,
+  "active_processes": 2,
+  "jobs": [
+    {
+      "lane": "A",
+      "name": "N_gap15_seed0",
+      "seed": 0,
+      "stage": "train",
+      "state": "running",
+      "pid": 443275,
+      "returncode": null,
+      "manifest": {
+        "status": "running",
+        "actual_batch": 256,
+        "actual_train_workers": 8,
+        "actual_val_workers": 4,
+        "actual_val_batch": 128,
+        "actual_optimizer": "MuSGD",
+        "latest_epoch": null,
+        "peak_reserved_bytes": null,
+        "error": null
+      },
+      "manifest_sha256": "8d348e34a70714f55e3c84be3bc9a5dda4511d2b008747ef42bd38b4ada60848",
+      "log_tail": [
+        "\u001b[K      1/100      31.8G      3.337      40.48      1.164        318        640: 39% \u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500 40/101 1.8it/s 29.0s<33.1s",
+        "\u001b[K      1/100      31.8G      3.317      39.56      1.158        295        640: 40% \u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500 41/101 1.9it/s 29.4s<31.2s",
+        "\u001b[K      1/100      31.8G      3.301      38.68      1.152        323        640: 41% \u2501\u2501\u2501\u2501\u2578\u2500\u2500\u2500\u2500\u2500\u2500\u2500 42/101 2.0it/s 29.9s<29.7s",
+        "\u001b[K      1/100      31.8G      3.284      37.84      1.146        312        640: 42% \u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500 43/101 2.0it/s 30.4s<28.3s",
+        "\u001b[K      1/100      31.8G      3.273      37.03       1.14        323        640: 43% \u2501\u2501\u2501\u2501\u2501\u2500\u2500\u2500\u2500\u2500\u2500\u2500 44/101 2.1it/s 30.8s<27.2s"
+      ],
+      "log_bytes": 193182
+    },
+    {
+      "lane": "A",
+      "name": "N_gap15_seed1",
+      "seed": 1,
+      "stage": "train",
+      "state": "pending",
+      "pid": null,
+      "returncode": null
+    },
+    {
+      "lane": "A",
+      "name": "N_gap15_seed2",
+      "seed": 2,
+      "stage": "train",
+      "state": "pending",
+      "pid": null,
+      "returncode": null
+    },
+    {
+      "lane": "B",
+      "name": "N_gap20_seed0",
+      "seed": 0,
+      "stage": "train",
+      "state": "running",
+      "pid": 443280,
+      "returncode": null,
+      "manifest": {
+        "status": "running",
+        "actual_batch": 256,
+        "actual_train_workers": 8,
+        "actual_val_workers": 4,
+        "actual_val_batch": 128,
+        "actual_optimizer": "MuSGD",
+        "latest_epoch": null,
+        "peak_reserved_bytes": null,
+        "error": null
+      },
+      "manifest_sha256": "7bd8c077fd45ddba6e40dab4493be1e6303d2dfc4a1bc3fa7a94d40ca60f77fa",
+      "log_tail": [
+        "\u001b[K      1/100      31.8G      2.865      20.76       1.01        339        640: 80% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500 81/101 2.0it/s 45.6s<9.8s",
+        "\u001b[K      1/100      31.8G      2.858      20.52      1.008        321        640: 81% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500 82/101 2.1it/s 46.1s<9.2s",
+        "\u001b[K      1/100      31.8G       2.85       20.3      1.006        289        640: 82% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500 83/101 2.1it/s 46.5s<8.6s",
+        "\u001b[K      1/100      31.8G      2.843      20.07      1.004        323        640: 83% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2578\u2500\u2500 84/101 2.1it/s 47.0s<8.0s",
+        "\u001b[K      1/100      31.8G      2.835      19.86      1.001        333        640: 84% \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2500\u2500 85/101 2.3it/s 47.4s<7.1s"
+      ],
+      "log_bytes": 206734
+    },
+    {
+      "lane": "B",
+      "name": "N_gap20_seed1",
+      "seed": 1,
+      "stage": "train",
+      "state": "pending",
+      "pid": null,
+      "returncode": null
+    },
+    {
+      "lane": "B",
+      "name": "N_gap20_seed2",
+      "seed": 2,
+      "stage": "train",
+      "state": "pending",
+      "pid": null,
+      "returncode": null
+    }
+  ],
+  "gpu": "66526 MiB, 30725 MiB, 93 %\n",
+  "collector_log": ""
+}

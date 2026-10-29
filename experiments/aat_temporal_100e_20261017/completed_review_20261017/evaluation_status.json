@@ -1,0 +1,126 @@
+{
+  "started_at": "2026-10-17T09:16:47.372008+00:00",
+  "tasks": [
+    [
+      "C1_temporal_uniform",
+      "val",
+      false
+    ],
+    [
+      "yolo11n",
+      "test",
+      false
+    ],
+    [
+      "A1_aat_global",
+      "test",
+      false
+    ],
+    [
+      "A2_aat_sequence",
+      "test",
+      false
+    ],
+    [
+      "C1_temporal_uniform",
+      "test",
+      false
+    ],
+    [
+      "C2_temporal_aat_sequence",
+      "test",
+      false
+    ],
+    [
+      "yolov8n",
+      "test",
+      false
+    ],
+    [
+      "yolov5nu",
+      "test",
+      false
+    ],
+    [
+      "yolo26n",
+      "test",
+      false
+    ],
+    [
+      "C1_temporal_uniform",
+      "test",
+      true
+    ],
+    [
+      "C2_temporal_aat_sequence",
+      "test",
+      true
+    ]
+  ],
+  "completed": [
+    {
+      "task": "val_C1_temporal_uniform",
+      "returncode": 0,
+      "ended_at": "2026-10-17T09:18:25.210322+00:00"
+    },
+    {
+      "task": "test_yolo11n",
+      "returncode": 0,
+      "ended_at": "2026-10-17T09:19:57.921896+00:00"
+    },
+    {
+      "task": "test_A1_aat_global",
+      "returncode": 0,
+      "ended_at": "2026-10-17T09:20:40.442457+00:00"
+    },
+    {
+      "task": "test_A2_aat_sequence",
+      "returncode": 0,
+      "ended_at": "2026-10-17T09:21:21.109354+00:00"
+    },
+    {
+      "task": "test_C1_temporal_uniform",
+      "returncode": 0,
+      "ended_at": "2026-10-17T09:23:14.714358+00:00"
+    },
+    {
+      "task": "test_C2_temporal_aat_sequence",
+      "returncode": 0,
+      "ended_at": "2026-10-17T09:24:47.062814+00:00"
+    },
+    {
+      "task": "test_yolov8n",
+      "returncode": 0,
+      "ended_at": "2026-10-17T09:25:23.024893+00:00"
+    },
+    {
+      "task": "test_yolov5nu",
+      "returncode": 0,
+      "ended_at": "2026-10-17T09:25:57.842144+00:00"
+    },
+    {
+      "task": "test_yolo26n",
+      "returncode": 0,
+      "ended_at": "2026-10-17T09:26:36.861522+00:00"
+    },
+    {
+      "task": "test_C1_temporal_uniform_repeat_current",
+      "returncode": 0,
+      "ended_at": "2026-10-17T09:28:08.668885+00:00"
+    },
+    {
+      "task": "test_C2_temporal_aat_sequence_repeat_current",
+      "returncode": 0,
+      "ended_at": "2026-10-17T09:29:40.736557+00:00"
+    }
+  ],
+  "checkpoint_policy": "All native best.pt; no test-based selection",
+  "exploratory_single_seed": true,
+  "controls": "Repeat-current is a post-training diagnostic; distribution shift limits interpretation",
+  "env": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "status": "completed",
+  "ended_at": "2026-10-17T09:29:40.738232+00:00"
+}

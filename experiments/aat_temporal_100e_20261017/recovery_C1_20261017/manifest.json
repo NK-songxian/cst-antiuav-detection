@@ -1,0 +1,46 @@
+{
+  "status": "completed",
+  "pid": 949019,
+  "started_at": "2026-10-17T05:59:47.119398+00:00",
+  "source_checkpoint": "/root/autodl-tmp/Ryan/cst_antiuav/runs/aat_temporal_100e_20261017/C1_temporal_uniform/weights/last.pt",
+  "source_sha256": "0dd276c6dfb77fd24cac99ca7dab769c63fc34224d6f9dd6e6ff46240029374e",
+  "checkpoint_epoch": 42,
+  "expected_resume_epoch": 43,
+  "original_exit_code": -9,
+  "original_exit_at": "2026-10-17T05:52:28.054939+00:00",
+  "cause": "SIGKILL sender unknown; no visible cgroup OOM kill event; kernel log unavailable",
+  "gpu_free_before_bytes": 50232950784,
+  "container_memory_before_bytes": 87894491136,
+  "container_memory_limit_bytes": 118111600640,
+  "changes": {
+    "train_workers": [
+      16,
+      2
+    ],
+    "val_workers": [
+      32,
+      4
+    ]
+  },
+  "unchanged": [
+    "batch256",
+    "imgsz640",
+    "dataset",
+    "uniform sampler",
+    "temporal inputs",
+    "loss",
+    "optimizer checkpoint",
+    "EMA checkpoint",
+    "epoch limit100",
+    "patience20"
+  ],
+  "reproducibility": "Resume preserves optimizer and EMA; changing workers and restarting RNG does not promise bitwise continuation",
+  "actual_start_epoch": 43,
+  "actual_train_workers": 2,
+  "actual_val_workers": 4,
+  "actual_save_dir": "/root/autodl-tmp/Ryan/cst_antiuav/runs/aat_temporal_100e_20261017/C1_temporal_uniform",
+  "latest_epoch": 87,
+  "updated_at": "2026-10-17T08:52:28.014422+00:00",
+  "ended_at": "2026-10-17T08:55:15.599196+00:00",
+  "last_epoch": 87
+}

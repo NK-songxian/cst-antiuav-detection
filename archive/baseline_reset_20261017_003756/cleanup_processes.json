@@ -1,0 +1,509 @@
+[
+  {
+    "pid": 834882,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627823004"
+  },
+  {
+    "pid": 834883,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627823009"
+  },
+  {
+    "pid": 834884,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627823021"
+  },
+  {
+    "pid": 834887,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627823034"
+  },
+  {
+    "pid": 834888,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627823038"
+  },
+  {
+    "pid": 834889,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627823042"
+  },
+  {
+    "pid": 834892,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627823055"
+  },
+  {
+    "pid": 834897,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627823074"
+  },
+  {
+    "pid": 835238,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627831407"
+  },
+  {
+    "pid": 835239,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627831409"
+  },
+  {
+    "pid": 835242,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627831413"
+  },
+  {
+    "pid": 835243,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627831414"
+  },
+  {
+    "pid": 835244,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627831415"
+  },
+  {
+    "pid": 835245,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627831416"
+  },
+  {
+    "pid": 835249,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627831417"
+  },
+  {
+    "pid": 835250,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627831418"
+  },
+  {
+    "pid": 835252,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "--name",
+      "yolo8n"
+    ],
+    "starttime": "2627831421"
+  },
+  {
+    "pid": 836233,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627855378"
+  },
+  {
+    "pid": 836234,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627855379"
+  },
+  {
+    "pid": 836236,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627855383"
+  },
+  {
+    "pid": 836237,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627855384"
+  },
+  {
+    "pid": 836238,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627855385"
+  },
+  {
+    "pid": 836242,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627855389"
+  },
+  {
+    "pid": 836245,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627855392"
+  },
+  {
+    "pid": 836893,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627871883"
+  },
+  {
+    "pid": 836898,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627871891"
+  },
+  {
+    "pid": 836899,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627871892"
+  },
+  {
+    "pid": 836900,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627871893"
+  },
+  {
+    "pid": 836902,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627871894"
+  },
+  {
+    "pid": 836903,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627871895"
+  },
+  {
+    "pid": 836904,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627871897"
+  },
+  {
+    "pid": 836905,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627871898"
+  },
+  {
+    "pid": 836906,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627871899"
+  },
+  {
+    "pid": 836907,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "--name",
+      "yolo11n"
+    ],
+    "starttime": "2627871900"
+  },
+  {
+    "pid": 837371,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+      "--name",
+      "yolo11s"
+    ],
+    "starttime": "2627882235"
+  },
+  {
+    "pid": 837374,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+      "--name",
+      "yolo11s"
+    ],
+    "starttime": "2627882238"
+  },
+  {
+    "pid": 837376,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+      "--name",
+      "yolo11s"
+    ],
+    "starttime": "2627882240"
+  },
+  {
+    "pid": 837377,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+      "--name",
+      "yolo11s"
+    ],
+    "starttime": "2627882242"
+  },
+  {
+    "pid": 837378,
+    "cwd": "/root/autodl-tmp/Ryan/cst_antiuav",
+    "argv": [
+      "/root/miniconda3/bin/python",
+      "/root/autodl-tmp/Ryan/cst_antiuav/scripts/train_one.py",
+      "--model",
+      "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+      "--name",
+      "yolo11s"
+    ],
+    "starttime": "2627882243"
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "frozen_at": "2026-10-19T12:35:07.798723+00:00",
+  "status": "PREPARED_NOT_TRAINED",
+  "authorization": "User 2026-10-19 authorizes necessary supplemental experiments on AutoDL with two parallel jobs and two queues.",
+  "question": "Sensitivity to historical offset under the unified image/trainer protocol",
+  "matrix": [
+    {
+      "lane": "A",
+      "far": 15,
+      "near": 5,
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "lane": "B",
+      "far": 20,
+      "near": 5,
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "reuse": "gap10 seeds0/1/2 only after contract, data PNG, checkpoint, code, environment and configuration checks",
+  "max_new_runs": 6,
+  "training": {
+    "batch": 256,
+    "imgsz": 640,
+    "max_epochs": 100,
+    "patience": 20,
+    "workers": 8,
+    "validation_batch": 128
+  },
+  "selection": "Native best.pt by validation AP50-95; no tuning based on test scores",
+  "primary": "Paired seed test AP50 differences, gap10-minus-gap15 and gap10-minus-gap20",
+  "secondary": [
+    "test AP50-95",
+    "validation AP50/AP50-95",
+    "fixed confidence0.25 background frame FPR"
+  ],
+  "reporting": "Report all three paired seed values and mean/sample SD; paired-t 95% intervals exploratory under normality, n=3; additionally 97.5% intervals for two-comparison Bonferroni family. Regardless of intervals, never claim global optimality or equivalence from a nonsignificant test.",
+  "failure": "Preserve failures, halt further launches, no silent batch reduction or test-driven retries; no automatic fallback9 without explicit documented incompatibility and revised frozen plan.",
+  "resources": "Two named FIFO lanes, at most2 active train/eval children total; each lane trains then audits val then test before next seed; obey VRAM and RAM reservations; preserve unrelated processes",
+  "test_evidence": "5 unit tests first fail missing implementation, then all5 pass including no future/cross-sequence, boundary fallback, history independent of labels, and gap10 exact equivalence",
+  "not_done": [
+    "Remote identity preflight",
+    "Data preparation",
+    "Training",
+    "Supplemental results"
+  ]
+}

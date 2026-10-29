@@ -1,0 +1,54 @@
+{
+  "status": "PLANNED_NOT_LAUNCHED",
+  "created_date": "2026-10-17",
+  "max_parallel": 2,
+  "base_model": "yolo11n",
+  "initialization": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+  "training_recipe": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/common_args.json",
+  "recipe_overrides": {"epochs": 100, "patience": 20},
+  "original_train_frames": 25612,
+  "primary_validation_endpoint": "metrics/mAP50-95(B)",
+  "validation_secondary_endpoints": ["TC AP50", "positive-frame hit rate at approximately 5% background-frame FPR", "background-frame FPR at conf=0.25"],
+  "first_wave": [
+    {
+      "id": "A1_global_TC_dose_matched",
+      "state": "PLANNED_REQUIRES_EPOCH_SAMPLER_IMPLEMENTATION",
+      "hypothesis": "Increasing TC exposure under fixed epoch length and negative count improves detection compared with B0.",
+      "changes": ["sampling only"],
+      "positive_slots": 22000,
+      "negative_slots": 3612,
+      "tc_positive_slots": 11283,
+      "max_frame_repeats_per_epoch": 2,
+      "exact_sequence_quotas": false
+    },
+    {
+      "id": "A2_sequence_quota_TC",
+      "state": "PLANNED_REQUIRES_EPOCH_SAMPLER_IMPLEMENTATION",
+      "hypothesis": "Preserving each sequence quota improves detection versus A1 with equal total TC exposure and equal optimizer-step budget.",
+      "changes": ["sampling only", "sequence quotas preserved"],
+      "positive_slots": 22000,
+      "negative_slots": 3612,
+      "tc_positive_slots": 11283,
+      "max_frame_repeats_per_epoch": 2,
+      "exact_sequence_quotas": true
+    }
+  ],
+  "second_wave_conditional": {
+    "state": "CANDIDATE_NOT_READY",
+    "prerequisites": ["Correct contrast-ratio formula and polarity handling", "Explicit suspect exclusion", "Recheck candidate negative images", "Use original training split only", "Freeze matched/random positive selection"],
+    "jobs": ["F1_hard_negative_sampling_only", "F2_same_negatives_matched_positive_protection", "F3_same_negatives_random_positive_protection"],
+    "max_parallel": 2,
+    "max_frame_repeats_per_epoch": 2,
+    "preserve_epoch_length_and_positive_negative_counts": true
+  },
+  "promotion_thresholds_percentage_points": {
+    "ap5095_vs_B0_min_gain": 0.5,
+    "TC_AP50_vs_B0_min_gain": 1.0,
+    "positive_hit_rate_at_FPR005_max_drop": 0.5,
+    "interpretation": "Engineering screening thresholds, not expected gains or statistical significance cutoffs. Failures and all tried settings must remain reported."
+  },
+  "stopping": "100 maximum epochs and patience 20; abort for nonfinite loss, invalid data or resource failure, preserving logs.",
+  "required_runtime_checks": ["Redraw sampling each epoch", "Audit actual loader indices", "Record Mosaic secondary-image exposure", "No __aat paths", "Reuse bounded loader and process-group cleanup"],
+  "confirmation_if_promoted": ["Paired B0 and selected method seeds 1 and 2", "Sequence-cluster paired analysis", "Freeze method and validation-derived threshold before test evaluation"],
+  "do_not_claim": ["SOTA from these runs", "Significance from one seed", "Algorithmic novelty established by this plan", "Real deployment latency from parallel training logs", "New training has launched"]
+}

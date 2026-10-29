@@ -1,0 +1,84 @@
+{
+  "frozen_at": "2026-10-17T11:23:17.159636+00:00",
+  "models": [
+    {
+      "name": "tcs_yolo11s",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+      "sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "wave": 2,
+      "temporal_channels": [
+        0,
+        -5,
+        -10
+      ],
+      "temporal": true,
+      "sampling": "uniform",
+      "allocator_cap_bytes": 85899345920,
+      "launch_gpu_bytes": 90194313216,
+      "measured_peak_reserved": 58533609472
+    },
+    {
+      "name": "single_yolo11s",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+      "sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/cst_original.yaml",
+      "wave": 3,
+      "temporal_channels": [
+        0,
+        0,
+        0
+      ],
+      "temporal": false,
+      "sampling": "uniform",
+      "allocator_cap_bytes": 85899345920,
+      "launch_gpu_bytes": 90194313216,
+      "measured_peak_reserved": 58533609472
+    }
+  ],
+  "max_parallel": 2,
+  "code_sha256": {
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_relaunch_20261017/prepare_safe.py": "f01daac018e0b7b164165877f35052d1e3a7b61bdb1ebfee382e8417e7437108",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_relaunch_20261017/probe_cst.py": "f18d7cde2e52f0a4d5f71d2d6d0bfeaaa46e016dc4877b65bd6083184abde0d1",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_relaunch_20261017/queue_safe.py": "33d13cbfc9bbb0ba4ed18f3e4dbff34a07843fd637469b64f23775e76e585f86",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_relaunch_20261017/train_safe.py": "c8c9a7c8b9a05e4f6be0e1df366fdaccd9de55d2989d2dcc7ced44db1c4fed39",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/train_innovation.py": "9ca23841dbca9c8cbd502589d99dfb5b96578bf3fa4f0cd31e1696eead00db10",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/sampling.py": "4846d28a72deeb0e7c0cc5059856a6dbd51569e4b129f59d1e48523cc500668e",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/audit_validation.py": "abf4f4a47e02cd0b79b2608551b126fdf401fc34f67a557cb6d182c78776478b"
+  },
+  "common_args_sha256": "e39306adb61d799d787ab8043dfd6d9c659a74de1e5d9a07da70899aae7acbc2",
+  "index_sha256": "9ce7b25b99e5ebaaeb4fd074a3f36e8453aec7c8088448f95954a0c13d579d83",
+  "primary": "val AP50; native best.pt selected by validation AP50-95",
+  "secondary": [
+    "val AP50-95",
+    "attribute AP",
+    "background FP at fixed and calibrated thresholds"
+  ],
+  "data_audit_sha256": "5daf4488fc7d4fc4bfd4b115544d05cc2f70e23a81f5e11fa04b166938ac2c7c",
+  "runtime": {
+    "train_batch": 256,
+    "imgsz": 640,
+    "epochs": 100,
+    "patience": 20,
+    "workers": 2,
+    "validation_batch_cap": 128,
+    "start_method": "forkserver",
+    "pin_memory": false,
+    "prefetch": 1
+  },
+  "matched_control": "single_yolo11s queued after four requested temporal ablations",
+  "test_selection": false,
+  "source_authorization": "User requested orphan cleanup and reviewed restart of CST temporal ablations with two parallel queue slots.",
+  "resource_policy": "Keep existing VisDrone A/B; at most two CST jobs, launch only when measured GPU and RAM budget fits; no silent batch reduction.",
+  "recovery": {
+    "source_contract_sha256": "c1d14ee389bd625d7733fe884c5eb1b5a76546053a986176f52757297bc80a5f",
+    "reason": "Previous tcs_yolo11s OOM during concurrent execution; single-frame control was never launched.",
+    "changes": [
+      "isolated output folder",
+      "one training process maximum",
+      "80GiB allocator cap;84GiB free required"
+    ],
+    "unchanged": "model/data/train batch256/imgsz640/epochs100/patience20/seed0/optimizer auto/sampler/augmentations",
+    "authorization": "Complete the user-authorized CST ablation queue; not a new scientific condition."
+  }
+}

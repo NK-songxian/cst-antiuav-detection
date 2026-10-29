@@ -1,0 +1,26 @@
+[queue] wave 1: ['yolo8n', 'yolo11n'] parallel
+[queue] wave1 yolo8n exit -9
+[queue] wave1 yolo11n exit -9
+[queue] wave1 yolo8n retry sequentially
+[queue] yolo8n start
+[queue] yolo8n exit -9
+[queue] yolo8n failed (-9); wait 120s then retry
+[queue] yolo8n start
+[queue] yolo8n exit -9
+[queue] yolo8n result=FAILED
+[queue] wave1 yolo11n retry sequentially
+[queue] yolo11n start
+[queue] yolo11n exit -9
+[queue] yolo11n failed (-9); wait 120s then retry
+[queue] yolo11n start
+[queue] yolo11n exit -9
+[queue] yolo11n result=FAILED
+[queue] wave 2: yolo11s alone
+[queue] yolo11s start
+[queue] yolo11s exit -9
+[queue] yolo11s failed (-9); wait 120s then retry
+[queue] yolo11s start
+[queue] yolo11s exit -6
+[queue] yolo11s result=FAILED
+[queue] summary: finished=[]
+[queue] INCOMPLETE (0/3)

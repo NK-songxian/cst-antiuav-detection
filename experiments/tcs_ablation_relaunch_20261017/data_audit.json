@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "split_sequences_disjoint": true,
+  "raw_frame_step_histogram": {
+    "5": 34518
+  },
+  "variants": {
+    "far15_train": {
+      "frames": 25612,
+      "history_sha256": "9aab7043eab5d7cc1c3a58ba096320c6dd839f770f7fa19fde2c0b32feb037fb",
+      "list_sha256": "9925a4a1f076605994432a45699ce495f5ec27a2e4617d38a03d72c3e8cd1239",
+      "repeated_boundary_frames": 360,
+      "checked_current_labels": 25612,
+      "verified_lossless_images": 121,
+      "future_frames_used": false
+    },
+    "far15_val": {
+      "frames": 9066,
+      "history_sha256": "6a3ad37435470f4a175fd401e69937427ca3210e3ce961060fad600b1b98d667",
+      "list_sha256": "3adbd6f9d9d0452855b9068a1ae081dd36ce4da26c078dc83c1dc812713ab9d1",
+      "repeated_boundary_frames": 120,
+      "checked_current_labels": 9066,
+      "verified_lossless_images": 121,
+      "future_frames_used": false
+    },
+    "far20_train": {
+      "frames": 25612,
+      "history_sha256": "fcc8f2705bf30c29d8bc044ef73ba112f676fd330e26eb308c0035c322231cde",
+      "list_sha256": "810e3960bc6005b4777887b47319913b08dc9483a5a2080c5f3ceb8500aa60ca",
+      "repeated_boundary_frames": 480,
+      "checked_current_labels": 25612,
+      "verified_lossless_images": 121,
+      "future_frames_used": false
+    },
+    "far20_val": {
+      "frames": 9066,
+      "history_sha256": "009a01d47f732687a611e3d345acb062b541ff5f35c82a7f2c5c36a91d99dff0",
+      "list_sha256": "aabe3bc6a6130c15bc9eea4870b722a6c2c05bb1f8957709c4f807fa16794c1f",
+      "repeated_boundary_frames": 160,
+      "checked_current_labels": 9066,
+      "verified_lossless_images": 121,
+      "future_frames_used": false
+    }
+  },
+  "interpretation": "near=5 fixed, far=15/20; not a delta1/delta10 experiment"
+}

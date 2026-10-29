@@ -1,0 +1,7 @@
+path: /root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/data
+train: /root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/temporal_train.txt
+val: /root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/temporal_val.txt
+nc: 1
+names:
+- uav
+test: /root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/completed_review_20261017/temporal_test.txt

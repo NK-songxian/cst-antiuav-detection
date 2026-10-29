@@ -1,0 +1,6 @@
+[2026-10-17T00:48:43.733079+00:00] START: tasks A and B, maximum two simultaneous jobs
+[2026-10-17T00:48:43.733829+00:00] LAUNCH A_zero_deploy attempt=1 pid=904011
+[2026-10-17T00:49:13.743290+00:00] LAUNCH B_p2_compact attempt=1 pid=904122
+[2026-10-17T02:25:48.740542+00:00] EXIT B_p2_compact: code=0, completed=True
+[2026-10-17T02:30:24.821518+00:00] EXIT A_zero_deploy: code=0, completed=True
+[2026-10-17T02:30:24.836026+00:00] QUEUE_END completed=2/2

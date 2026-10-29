@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "models": [
+    {
+      "variant": "A_zero_deploy",
+      "params": 2605459,
+      "strides": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "serialization_exact": true,
+      "whole_model_folding_max_abs_error": 0.00034332275390625,
+      "fold_pass": true
+    },
+    {
+      "variant": "B_p2_compact",
+      "params": 1962531,
+      "strides": [
+        4.0,
+        8.0,
+        16.0
+      ],
+      "serialization_exact": true,
+      "whole_model_folding_max_abs_error": 0.000701904296875,
+      "fold_pass": true
+    }
+  ],
+  "blocks": [
+    {
+      "channels": 8,
+      "height": 17,
+      "width": 19,
+      "max_abs_error": 9.5367431640625e-07
+    },
+    {
+      "channels": 32,
+      "height": 40,
+      "width": 40,
+      "max_abs_error": 9.5367431640625e-07
+    }
+  ]
+}

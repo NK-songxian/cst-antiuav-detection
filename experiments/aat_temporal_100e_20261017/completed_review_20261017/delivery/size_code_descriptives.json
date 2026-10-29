@@ -1,0 +1,34 @@
+{
+  "1": {
+    "objects": 2079,
+    "width_height_px_median_at_native_640x512": [
+      7.13856,
+      4.601344
+    ],
+    "area_median_native": 32.072957952
+  },
+  "2": {
+    "objects": 9144,
+    "width_height_px_median_at_native_640x512": [
+      13.43552,
+      7.306752
+    ],
+    "area_median_native": 95.95711258623999
+  },
+  "3": {
+    "objects": 491,
+    "width_height_px_median_at_native_640x512": [
+      29.83552,
+      18.916352
+    ],
+    "area_median_native": 581.90519074816
+  },
+  "4": {
+    "objects": 65,
+    "width_height_px_median_at_native_640x512": [
+      49.11616000000001,
+      32.674304
+    ],
+    "area_median_native": 1531.43678664704
+  }
+}

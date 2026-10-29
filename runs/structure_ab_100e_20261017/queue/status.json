@@ -1,0 +1,48 @@
+{
+  "updated_at": "2026-10-17T02:30:24.830928+00:00",
+  "scheduler_pid": 904010,
+  "max_parallel": 2,
+  "status": "completed",
+  "jobs": [
+    {
+      "name": "A_zero_deploy",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "state": "completed",
+      "attempt": 1,
+      "pid": 904011,
+      "run_name": "A_zero_deploy",
+      "started_at": "2026-10-17T00:48:43.733815+00:00",
+      "exit_code": 0,
+      "ended_at": "2026-10-17T02:30:24.821468+00:00",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "run_name": "A_zero_deploy",
+          "exit_code": 0,
+          "success": true
+        }
+      ]
+    },
+    {
+      "name": "B_p2_compact",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "state": "completed",
+      "attempt": 1,
+      "pid": 904122,
+      "run_name": "B_p2_compact",
+      "started_at": "2026-10-17T00:49:13.743249+00:00",
+      "exit_code": 0,
+      "ended_at": "2026-10-17T02:25:48.740509+00:00",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "run_name": "B_p2_compact",
+          "exit_code": 0,
+          "success": true
+        }
+      ]
+    }
+  ]
+}

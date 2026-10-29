@@ -1,0 +1,73 @@
+{
+  "models": [
+    {
+      "name": "yolov8n",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+      "sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+      "pretrained_parameters": 3157200
+    },
+    {
+      "name": "yolo11n",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "pretrained_parameters": 2624080
+    },
+    {
+      "name": "yolov5nu",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolov5nu.pt",
+      "sha256": "9e9c1be448b0e1b8598975a9abcab9a0fd0e21182eb422cda7f044a0442d0937",
+      "pretrained_parameters": 2654816
+    },
+    {
+      "name": "yolo26n",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo26n.pt",
+      "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+      "pretrained_parameters": 2572280
+    }
+  ],
+  "splits": {
+    "train": {
+      "images": 25612,
+      "objects": 22000,
+      "negatives": 3612,
+      "list_sha256": "a397552b51c623d3a2418fcdd5ee38941febbbac1bfc9b865b3a4df099726599",
+      "label_sha256": "355de31f91155ab1fea360d4d7b3e24d59e9aafec1c06062c5f9a9578c8f0f54"
+    },
+    "val": {
+      "images": 9066,
+      "objects": 7819,
+      "negatives": 1247,
+      "list_sha256": "e23cb9d1ad4e9a121d2e5fb521e168ad6a0aaa793bb574086e0dfe9da5fedacc",
+      "label_sha256": "0522a089e4858ed1ad2c8594bafa9899615a4d9c7d3b4556e5c78eaf5573a066"
+    },
+    "test": {
+      "images": 14446,
+      "objects": 11854,
+      "negatives": 2592,
+      "list_sha256": "c60c7506d607153bd35832659679d44b9739ba375880623d2e28873bcfbe852a",
+      "label_sha256": "d4b1b355dffa7a606fd13260cb365b8104faa56c83b41020259c0da34ceb57a2"
+    }
+  },
+  "index_sha256": "9ce7b25b99e5ebaaeb4fd074a3f36e8453aec7c8088448f95954a0c13d579d83",
+  "reference_args_sha256": "416a5e73109e36485a9031099239eb7ce248daebea663e9c72dddeb391022d21",
+  "common_args_sha256": "7a678f4f993095a53c64f8e63a537e6a04aec204699369979e6306006773e1f9",
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "ultralytics": "8.4.177",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "max_parallel": 2,
+  "stopping": "100 maximum epochs, patience 20 on framework validation fitness",
+  "runtime": {
+    "workers": 16,
+    "prefetch_factor": 1,
+    "pin_memory": false,
+    "multiprocessing_context": "forkserver"
+  },
+  "unknown_legacy_keys": [
+    "save_dir"
+  ],
+  "change_from_reference": "Only model/run paths and original split manifests; runtime prefetch/pinning/context bounded for two concurrent jobs. No AAT links, FP loss, distillation or custom augmentation."
+}

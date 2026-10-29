@@ -1,0 +1,5 @@
+[far15:train] 25612 frames, clamped=360
+[far15:val] 9066 frames, clamped=120
+[far20:train] 25612 frames, clamped=480
+[far20:val] 9066 frames, clamped=160
+TCS_ABLATION_DATA_DONE

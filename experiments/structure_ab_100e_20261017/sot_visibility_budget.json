@@ -1,0 +1,330 @@
+{
+  "split": "val",
+  "sequences": 40,
+  "frames": 45305,
+  "absent_frames": 6250,
+  "macro_absent_fraction": 0.11467657477492496,
+  "invalid_visible_gt": 0,
+  "rows": [
+    {
+      "sequence": "building_41",
+      "frames": 1000,
+      "absent_frames": 9,
+      "absent_fraction": 0.009,
+      "invalid_visible_gt": 0,
+      "sha256": "9902aca10be0868f81a04ff3ca2eb396d2415dbb11163ed7df545fc8cb9c9fc9"
+    },
+    {
+      "sequence": "building_42",
+      "frames": 1000,
+      "absent_frames": 0,
+      "absent_fraction": 0.0,
+      "invalid_visible_gt": 0,
+      "sha256": "42a1371b47fe7cde3eab8551d7024e62c5e3ec8a47dc9a114f96e1cf30a1eb50"
+    },
+    {
+      "sequence": "building_43",
+      "frames": 1000,
+      "absent_frames": 0,
+      "absent_fraction": 0.0,
+      "invalid_visible_gt": 0,
+      "sha256": "26bb64920e793bda9b23edab924a1a92c7a6f6321d314b6ed0e38db6cf5ac3ef"
+    },
+    {
+      "sequence": "building_44",
+      "frames": 1000,
+      "absent_frames": 39,
+      "absent_fraction": 0.039,
+      "invalid_visible_gt": 0,
+      "sha256": "24bbf370b09425703e251827da1d50b021dc4373ec619862e4e384c301a4c384"
+    },
+    {
+      "sequence": "building_45",
+      "frames": 1000,
+      "absent_frames": 109,
+      "absent_fraction": 0.109,
+      "invalid_visible_gt": 0,
+      "sha256": "9453f081d97329d5ab295d82d5d397f33e4a043766464b0a79a4e83aef5a9321"
+    },
+    {
+      "sequence": "building_46",
+      "frames": 875,
+      "absent_frames": 0,
+      "absent_fraction": 0.0,
+      "invalid_visible_gt": 0,
+      "sha256": "71b0decc307fa768292f9a7e52bc4bfda3633a7decee5a9cf46a0a5c95eeefb5"
+    },
+    {
+      "sequence": "building_47",
+      "frames": 965,
+      "absent_frames": 181,
+      "absent_fraction": 0.18756476683937823,
+      "invalid_visible_gt": 0,
+      "sha256": "750f68efc36ef5348601f3fab97fe8bc00edddb4e3b2591d5da3e36cca3f80f7"
+    },
+    {
+      "sequence": "building_48",
+      "frames": 1000,
+      "absent_frames": 8,
+      "absent_fraction": 0.008,
+      "invalid_visible_gt": 0,
+      "sha256": "3ef06df8c3dc550bedbc135f8f3ec6c6826c5a398d1c116bd1c5b4a5b93daed0"
+    },
+    {
+      "sequence": "building_49",
+      "frames": 1000,
+      "absent_frames": 0,
+      "absent_fraction": 0.0,
+      "invalid_visible_gt": 0,
+      "sha256": "162bbc194f85610a8ef921af43fe4e95aafef48c8f3b896ee7ae99655932be82"
+    },
+    {
+      "sequence": "building_50",
+      "frames": 1000,
+      "absent_frames": 11,
+      "absent_fraction": 0.011,
+      "invalid_visible_gt": 0,
+      "sha256": "3169511553839ae7d2982e67d5675306bf1956889f2e5fac90b3ec671b5ffa56"
+    },
+    {
+      "sequence": "building_51",
+      "frames": 950,
+      "absent_frames": 17,
+      "absent_fraction": 0.017894736842105262,
+      "invalid_visible_gt": 0,
+      "sha256": "8a083a702c8bd2a7fa194555d461ba8fa54371fc46d2da4ab8191daa11491996"
+    },
+    {
+      "sequence": "building_52",
+      "frames": 1035,
+      "absent_frames": 13,
+      "absent_fraction": 0.012560386473429951,
+      "invalid_visible_gt": 0,
+      "sha256": "eec08e6f84cb4828e5664392cf56e3330f6fc1e9b0d9db269816fdf4f8d025d7"
+    },
+    {
+      "sequence": "building_53",
+      "frames": 1000,
+      "absent_frames": 83,
+      "absent_fraction": 0.083,
+      "invalid_visible_gt": 0,
+      "sha256": "47b68663cd5da5fd42811a93338fd81d807e3de4e8d3ab4d1957cb7342485aef"
+    },
+    {
+      "sequence": "building_54",
+      "frames": 1244,
+      "absent_frames": 138,
+      "absent_fraction": 0.11093247588424437,
+      "invalid_visible_gt": 0,
+      "sha256": "2be19e38334bc1cb45b6f33e45f08a508fe6f2ade867a517b8150072cf73d051"
+    },
+    {
+      "sequence": "cn_mountains_21",
+      "frames": 995,
+      "absent_frames": 55,
+      "absent_fraction": 0.05527638190954774,
+      "invalid_visible_gt": 0,
+      "sha256": "1e783392b8e4c71c9bb21a7996757fed1c455646643fcb9de46f9d9a24706598"
+    },
+    {
+      "sequence": "cn_mountains_22",
+      "frames": 989,
+      "absent_frames": 119,
+      "absent_fraction": 0.12032355915065723,
+      "invalid_visible_gt": 0,
+      "sha256": "894a02a831e6861e0350e239540cc1f7c13d4c9e398b8754d1073cb5148e88c7"
+    },
+    {
+      "sequence": "cn_mountains_23",
+      "frames": 989,
+      "absent_frames": 58,
+      "absent_fraction": 0.05864509605662285,
+      "invalid_visible_gt": 0,
+      "sha256": "05e34e824aa07c51212816958184aadc5daf4eaf1d501e6fdff8856635801f3e"
+    },
+    {
+      "sequence": "cn_mountains_24",
+      "frames": 1160,
+      "absent_frames": 107,
+      "absent_fraction": 0.09224137931034483,
+      "invalid_visible_gt": 0,
+      "sha256": "a14daa1fd9370c399c97129176933a7643121b985bff9c587d843ecb37205019"
+    },
+    {
+      "sequence": "cn_mountains_25",
+      "frames": 1918,
+      "absent_frames": 422,
+      "absent_fraction": 0.22002085505735142,
+      "invalid_visible_gt": 0,
+      "sha256": "dae2629816cbd33dd18b5edf61941006aabf38803e4ee4d57b037e7794f88a27"
+    },
+    {
+      "sequence": "cn_mountains_26",
+      "frames": 1164,
+      "absent_frames": 158,
+      "absent_fraction": 0.13573883161512026,
+      "invalid_visible_gt": 0,
+      "sha256": "4a0b9b6674670f112b58d19ea00e5832262daf6f9b7a22caccf5c43d5c930f96"
+    },
+    {
+      "sequence": "cn_mountains_27",
+      "frames": 1189,
+      "absent_frames": 0,
+      "absent_fraction": 0.0,
+      "invalid_visible_gt": 0,
+      "sha256": "de1f0f1a6df042ac00bbe7148eb5f35bf5091466bad3c6fdc546760722aeca8f"
+    },
+    {
+      "sequence": "cn_mountains_28",
+      "frames": 1170,
+      "absent_frames": 284,
+      "absent_fraction": 0.24273504273504273,
+      "invalid_visible_gt": 0,
+      "sha256": "52c10c228e1d87788b6227c074663bde1b3c44b545867ae7ebe982a92fa7d3b2"
+    },
+    {
+      "sequence": "cn_mountains_29",
+      "frames": 1254,
+      "absent_frames": 154,
+      "absent_fraction": 0.12280701754385964,
+      "invalid_visible_gt": 0,
+      "sha256": "bc65f8e2c66de1d433b2d69fac7ae0873ce55a847d38ef7d5f661447bb31759a"
+    },
+    {
+      "sequence": "cn_sky_10",
+      "frames": 1000,
+      "absent_frames": 28,
+      "absent_fraction": 0.028,
+      "invalid_visible_gt": 0,
+      "sha256": "8fce4f2228711f752ae3c0cbe071e219d1623b6d65e6a87d2f0c5bd3bceab1bb"
+    },
+    {
+      "sequence": "cn_sky_9",
+      "frames": 1260,
+      "absent_frames": 545,
+      "absent_fraction": 0.43253968253968256,
+      "invalid_visible_gt": 0,
+      "sha256": "6b20ab962b6c81de1b0777d524781244bd00c0a502c096774c70367d35b60944"
+    },
+    {
+      "sequence": "jungle_6",
+      "frames": 1220,
+      "absent_frames": 218,
+      "absent_fraction": 0.17868852459016393,
+      "invalid_visible_gt": 0,
+      "sha256": "213fd24766a36f2d7a961a54a2c72720e8f4500454eb1a7c6a1fda775977fa13"
+    },
+    {
+      "sequence": "urban-areas_27",
+      "frames": 1500,
+      "absent_frames": 331,
+      "absent_fraction": 0.22066666666666668,
+      "invalid_visible_gt": 0,
+      "sha256": "0560ae8a1c0bdedb81d4ca010495e606aee917eff037d0d4569954ef4b29a434"
+    },
+    {
+      "sequence": "urban-areas_28",
+      "frames": 904,
+      "absent_frames": 0,
+      "absent_fraction": 0.0,
+      "invalid_visible_gt": 0,
+      "sha256": "62b8230db1664356717b305dae0e5d99e8b6a1dcd7e3a146810be6ec189a1232"
+    },
+    {
+      "sequence": "urban-areas_29",
+      "frames": 1720,
+      "absent_frames": 534,
+      "absent_fraction": 0.31046511627906975,
+      "invalid_visible_gt": 0,
+      "sha256": "50721c32ffe47b8ab99d48c990cd4dd6b390dc527464cae4191a78548f891acc"
+    },
+    {
+      "sequence": "urban-areas_30",
+      "frames": 1500,
+      "absent_frames": 547,
+      "absent_fraction": 0.36466666666666664,
+      "invalid_visible_gt": 0,
+      "sha256": "bf6390052f11ed00199e98ce6e744f2d1b77aa3f26c0ee00dc9df672b52d0a19"
+    },
+    {
+      "sequence": "urban-areas_31",
+      "frames": 1545,
+      "absent_frames": 441,
+      "absent_fraction": 0.2854368932038835,
+      "invalid_visible_gt": 0,
+      "sha256": "7ca75ffea53c446ea75e7e5e7e4cac1874efc839fda4ea17fb8bb7fd14421c3c"
+    },
+    {
+      "sequence": "urban-areas_32",
+      "frames": 1604,
+      "absent_frames": 583,
+      "absent_fraction": 0.3634663341645885,
+      "invalid_visible_gt": 0,
+      "sha256": "d32e53e6093335d55b870acc4b954c963e64179a26ac8da8d70fae549fe9c5ee"
+    },
+    {
+      "sequence": "urban-areas_33",
+      "frames": 1707,
+      "absent_frames": 313,
+      "absent_fraction": 0.1833626244874048,
+      "invalid_visible_gt": 0,
+      "sha256": "d24c61670748900ab48e04abc15b9df41a6c3358bfbd7a483effbec5afc3f7e9"
+    },
+    {
+      "sequence": "urban-areas_34",
+      "frames": 1595,
+      "absent_frames": 449,
+      "absent_fraction": 0.28150470219435736,
+      "invalid_visible_gt": 0,
+      "sha256": "3ad3709f941070d5126b86b68f3c6915c4fb015f7e009af16906f3037e898489"
+    },
+    {
+      "sequence": "water_14",
+      "frames": 603,
+      "absent_frames": 0,
+      "absent_fraction": 0.0,
+      "invalid_visible_gt": 0,
+      "sha256": "fc5104ebae0003c592ce3414a48449901d7ce56aa4a8ea41226bdc28f4d25d0c"
+    },
+    {
+      "sequence": "water_15",
+      "frames": 1059,
+      "absent_frames": 211,
+      "absent_fraction": 0.19924457034938622,
+      "invalid_visible_gt": 0,
+      "sha256": "73a0c0cf9587f7cc48ce8ddfd383a2323bf499a54d0170b23efbfdd23ecd055d"
+    },
+    {
+      "sequence": "water_16",
+      "frames": 722,
+      "absent_frames": 0,
+      "absent_fraction": 0.0,
+      "invalid_visible_gt": 0,
+      "sha256": "58e746e997bb48ceaf6252e1d2a0829b90eee40f373070006a15f8aaf8ff2c7a"
+    },
+    {
+      "sequence": "water_17",
+      "frames": 823,
+      "absent_frames": 0,
+      "absent_fraction": 0.0,
+      "invalid_visible_gt": 0,
+      "sha256": "98ddeff051a56f91f1f2ca5f63f1ca698c9180112051d2ddf2df0890aa0c72ec"
+    },
+    {
+      "sequence": "water_18",
+      "frames": 823,
+      "absent_frames": 0,
+      "absent_fraction": 0.0,
+      "invalid_visible_gt": 0,
+      "sha256": "733197f4bb072be4b4f9d51e34b36fba7311ec8c722ea50a0e9b55ed995c13c4"
+    },
+    {
+      "sequence": "water_19",
+      "frames": 823,
+      "absent_frames": 85,
+      "absent_fraction": 0.10328068043742406,
+      "invalid_visible_gt": 0,
+      "sha256": "ec8d3c1dc4ee0536e1842081a87f5f49a9f67e54a30997acf68594e70692b17a"
+    }
+  ]
+}

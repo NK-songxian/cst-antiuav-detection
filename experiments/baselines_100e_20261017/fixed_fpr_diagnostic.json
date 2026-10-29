@@ -1,0 +1,125 @@
+{
+  "status": "EXPLORATORY_VALIDATION_THRESHOLD_DIAGNOSTIC_NOT_TEST",
+  "results": {
+    "yolo11n": {
+      "0.05": {
+        "threshold": 0.29028320312500006,
+        "actual_background_fp_rate": 0.04971932638331997,
+        "positive_hit_rate_iou50": 0.6358869420642026,
+        "tc_positive_hit_rate_iou50": 0.48764089381055964,
+        "negative_frames": 1247,
+        "positive_frames": 7819,
+        "tc_positive_frames": 5057
+      },
+      "0.1": {
+        "threshold": 0.18273925781250003,
+        "actual_background_fp_rate": 0.09943865276663993,
+        "positive_hit_rate_iou50": 0.648420514132242,
+        "tc_positive_hit_rate_iou50": 0.5050425153252917,
+        "negative_frames": 1247,
+        "positive_frames": 7819,
+        "tc_positive_frames": 5057
+      }
+    },
+    "yolov8n": {
+      "0.05": {
+        "threshold": 0.26367187500000006,
+        "actual_background_fp_rate": 0.04971932638331997,
+        "positive_hit_rate_iou50": 0.6228417956260391,
+        "tc_positive_hit_rate_iou50": 0.472216729286138,
+        "negative_frames": 1247,
+        "positive_frames": 7819,
+        "tc_positive_frames": 5057
+      },
+      "0.1": {
+        "threshold": 0.15917968750000003,
+        "actual_background_fp_rate": 0.09943865276663993,
+        "positive_hit_rate_iou50": 0.6467578974293388,
+        "tc_positive_hit_rate_iou50": 0.5036582954320743,
+        "negative_frames": 1247,
+        "positive_frames": 7819,
+        "tc_positive_frames": 5057
+      }
+    },
+    "yolo26n": {
+      "0.05": {
+        "threshold": 0.14123535156250003,
+        "actual_background_fp_rate": 0.04971932638331997,
+        "positive_hit_rate_iou50": 0.612226627445965,
+        "tc_positive_hit_rate_iou50": 0.4597587502471821,
+        "negative_frames": 1247,
+        "positive_frames": 7819,
+        "tc_positive_frames": 5057
+      },
+      "0.1": {
+        "threshold": 0.05490112304687501,
+        "actual_background_fp_rate": 0.09943865276663993,
+        "positive_hit_rate_iou50": 0.630643304770431,
+        "tc_positive_hit_rate_iou50": 0.48091754004350407,
+        "negative_frames": 1247,
+        "positive_frames": 7819,
+        "tc_positive_frames": 5057
+      }
+    },
+    "yolov5nu": {
+      "0.05": {
+        "threshold": 0.44848632812500006,
+        "actual_background_fp_rate": 0.04891740176423416,
+        "positive_hit_rate_iou50": 0.6031461823762629,
+        "tc_positive_hit_rate_iou50": 0.4601542416452442,
+        "negative_frames": 1247,
+        "positive_frames": 7819,
+        "tc_positive_frames": 5057
+      },
+      "0.1": {
+        "threshold": 0.33447265625000006,
+        "actual_background_fp_rate": 0.09943865276663993,
+        "positive_hit_rate_iou50": 0.6165750095920194,
+        "tc_positive_hit_rate_iou50": 0.47656713466482103,
+        "negative_frames": 1247,
+        "positive_frames": 7819,
+        "tc_positive_frames": 5057
+      }
+    },
+    "AAT_v1_legacy": {
+      "0.05": {
+        "threshold": 0.5639648437500001,
+        "actual_background_fp_rate": 0.04891740176423416,
+        "positive_hit_rate_iou50": 0.6054482670418212,
+        "tc_positive_hit_rate_iou50": 0.4706347636938897,
+        "negative_frames": 1247,
+        "positive_frames": 7819,
+        "tc_positive_frames": 5057
+      },
+      "0.1": {
+        "threshold": 0.48242187500000006,
+        "actual_background_fp_rate": 0.09943865276663993,
+        "positive_hit_rate_iou50": 0.6289806880675278,
+        "tc_positive_hit_rate_iou50": 0.49831916155823613,
+        "negative_frames": 1247,
+        "positive_frames": 7819,
+        "tc_positive_frames": 5057
+      }
+    },
+    "AAT_v2_legacy": {
+      "0.05": {
+        "threshold": 0.6020507812500001,
+        "actual_background_fp_rate": 0.04971932638331997,
+        "positive_hit_rate_iou50": 0.586008440977107,
+        "tc_positive_hit_rate_iou50": 0.44473007712082263,
+        "negative_frames": 1247,
+        "positive_frames": 7819,
+        "tc_positive_frames": 5057
+      },
+      "0.1": {
+        "threshold": 0.5039062500000001,
+        "actual_background_fp_rate": 0.09863672814755413,
+        "positive_hit_rate_iou50": 0.612354521038496,
+        "tc_positive_hit_rate_iou50": 0.4761716432667589,
+        "negative_frames": 1247,
+        "positive_frames": 7819,
+        "tc_positive_frames": 5057
+      }
+    }
+  }
+}

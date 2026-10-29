@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "model": "yolov8n",
+      "hash_verified": true,
+      "frames_verified": true,
+      "shape_verified": true
+    },
+    {
+      "model": "yolo11n",
+      "hash_verified": true,
+      "frames_verified": true,
+      "shape_verified": true
+    },
+    {
+      "model": "yolov5nu",
+      "hash_verified": true,
+      "frames_verified": true,
+      "shape_verified": true
+    },
+    {
+      "model": "yolo26n",
+      "hash_verified": true,
+      "frames_verified": true,
+      "shape_verified": true
+    },
+    {
+      "model": "A1_aat_global",
+      "hash_verified": true,
+      "frames_verified": true,
+      "shape_verified": true
+    },
+    {
+      "model": "A2_aat_sequence",
+      "hash_verified": true,
+      "frames_verified": true,
+      "shape_verified": true
+    },
+    {
+      "model": "C1_temporal_uniform",
+      "hash_verified": true,
+      "frames_verified": true,
+      "shape_verified": true
+    },
+    {
+      "model": "C2_temporal_aat_sequence",
+      "hash_verified": true,
+      "frames_verified": true,
+      "shape_verified": true
+    }
+  ],
+  "as_of": "2026-10-17T09:33:38.587495+00:00",
+  "scope": "Copied metric artifacts, evaluator hashes, all 11 evaluation task exits and held-out frame inventory; not an originality or submission approval."
+}

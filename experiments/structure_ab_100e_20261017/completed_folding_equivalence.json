@@ -1,0 +1,50 @@
+{
+  "protocol": "16 deterministic real validation images; 640x640 padded input; strict CUDA FP32 with TF32 disabled; best before folding vs exported deploy; raw output tolerance, not exact FP16 or NMS identity guarantee",
+  "precision_before": {
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true
+  },
+  "initial_check_failure": {
+    "protocol": "CUDA float tensors with backend defaults; TF32 state not recorded during initial failed run",
+    "mismatched_elements": 5473,
+    "total_elements": 42000,
+    "max_abs_error": 0.9854736328125,
+    "note": "Initial assertion failed; strict FP32 rerun is required. This record does not by itself establish a TF32 root cause."
+  },
+  "paths": [
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_41_f000000.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_44_f000020.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_47_f000165.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_50_f000225.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_53_f000260.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_mountains_22_f000040.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_mountains_24_f001085.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_mountains_26_f001025.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_mountains_29_f000520.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/jungle_6_f000030.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/urban-areas_28_f000330.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/urban-areas_30_f000725.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/urban-areas_32_f000705.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/urban-areas_34_f000410.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/water_16_f000170.jpg",
+    "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/water_19_f000820.jpg"
+  ],
+  "models": {
+    "A_zero_deploy": {
+      "images": 16,
+      "fp32_allclose_pass": true,
+      "atol": 0.01,
+      "rtol": 0.0001,
+      "coordinate_max_abs": 0.0048065185546875,
+      "class_conf_max_abs": 5.036592483520508e-06
+    },
+    "B_p2_compact": {
+      "images": 16,
+      "fp32_allclose_pass": true,
+      "atol": 0.01,
+      "rtol": 0.0001,
+      "coordinate_max_abs": 0.0009765625,
+      "class_conf_max_abs": 2.473592758178711e-06
+    }
+  }
+}

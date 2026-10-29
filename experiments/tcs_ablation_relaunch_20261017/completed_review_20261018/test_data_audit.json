@@ -1,0 +1,20 @@
+{
+  "15": {
+    "frames": 14446,
+    "sequences": 60,
+    "past_only": true,
+    "current_labels": true,
+    "history_sha256": "70fd55aed35841312aefebe4e58bc55ca3f5161ad834deeebc42871a93406493",
+    "boundary_repeat_frames": 180,
+    "sampled_lossless_checks": 121
+  },
+  "20": {
+    "frames": 14446,
+    "sequences": 60,
+    "past_only": true,
+    "current_labels": true,
+    "history_sha256": "2182e1f9b3cdc896fd275cf7e2053710fa48fba37afc92d5e07e01d6fba36863",
+    "boundary_repeat_frames": 240,
+    "sampled_lossless_checks": 121
+  }
+}

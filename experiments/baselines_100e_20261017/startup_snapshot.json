@@ -1,0 +1,104 @@
+{
+  "queue_status": "running",
+  "updated_at": "2026-10-16T16:48:31.223460+00:00",
+  "scheduler_pid": 840648,
+  "jobs": [
+    {
+      "name": "yolov8n",
+      "state": "running",
+      "pid": 840649,
+      "attempt": 1,
+      "exit_code": null,
+      "epochs_recorded": 2,
+      "last_epoch": {
+        "epoch": "2",
+        "time": "150.396",
+        "train/box_loss": "2.16704",
+        "train/cls_loss": "1.31804",
+        "train/dfl_loss": "0.81206",
+        "metrics/precision(B)": "0.71661",
+        "metrics/recall(B)": "0.41783",
+        "metrics/mAP50(B)": "0.43786",
+        "metrics/mAP50-95(B)": "0.17735",
+        "val/box_loss": "2.4869",
+        "val/cls_loss": "2.9711",
+        "val/dfl_loss": "0.89263",
+        "lr/pg0": "0.019704",
+        "lr/pg1": "0.00656799",
+        "lr/pg2": "0.019704",
+        "lr/pg3": "0.00656799",
+        "lr/pg4": "0.019704",
+        "lr/pg5": "0.00656799",
+        "lr/pg6": "0.019704",
+        "lr/pg7": "0.00656799"
+      },
+      "training": {
+        "status": "running",
+        "actual_model_parameters": 3138003,
+        "actual_optimizer": "MuSGD",
+        "actual_train_images": 25612,
+        "actual_val_images": 9066,
+        "error": null
+      },
+      "log_bytes": 63692
+    },
+    {
+      "name": "yolo11n",
+      "state": "running",
+      "pid": 840744,
+      "attempt": 1,
+      "exit_code": null,
+      "epochs_recorded": 1,
+      "last_epoch": {
+        "epoch": "1",
+        "time": "124.356",
+        "train/box_loss": "2.26393",
+        "train/cls_loss": "13.2641",
+        "train/dfl_loss": "0.86256",
+        "metrics/precision(B)": "0.72323",
+        "metrics/recall(B)": "0.50096",
+        "metrics/mAP50(B)": "0.53808",
+        "metrics/mAP50-95(B)": "0.2469",
+        "val/box_loss": "2.20038",
+        "val/cls_loss": "1.99928",
+        "val/dfl_loss": "0.83289",
+        "lr/pg0": "0.00990099",
+        "lr/pg1": "0.00330033",
+        "lr/pg2": "0.00990099",
+        "lr/pg3": "0.00330033",
+        "lr/pg4": "0.00990099",
+        "lr/pg5": "0.00330033",
+        "lr/pg6": "0.00990099",
+        "lr/pg7": "0.00330033"
+      },
+      "training": {
+        "status": "running",
+        "actual_model_parameters": 2604883,
+        "actual_optimizer": "MuSGD",
+        "actual_train_images": 25612,
+        "actual_val_images": 9066,
+        "error": null
+      },
+      "log_bytes": 31334
+    },
+    {
+      "name": "yolov5nu",
+      "state": "pending",
+      "pid": null,
+      "attempt": 0,
+      "exit_code": null
+    },
+    {
+      "name": "yolo26n",
+      "state": "pending",
+      "pid": null,
+      "attempt": 0,
+      "exit_code": null
+    }
+  ],
+  "gpu": "71878 MiB, 97887 MiB, 98 %",
+  "gpu_processes": "840649, 33434 MiB\n840744, 38430 MiB",
+  "memory.current": "109164630016",
+  "memory.max": "118111600640",
+  "memory.events": "low 0\nhigh 1732429\nmax 0\noom 0\noom_kill 0"
+}

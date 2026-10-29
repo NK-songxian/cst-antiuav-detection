@@ -1,0 +1,7 @@
+path: /root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/gap20
+train: /root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/gap20/train.txt
+val: /root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/gap20/val.txt
+test: /root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/gap20/test.txt
+nc: 1
+names:
+- uav

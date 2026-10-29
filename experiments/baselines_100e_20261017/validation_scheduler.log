@@ -1,0 +1,6 @@
+{'name': 'yolov8n', 'exit_code': 0}
+{'name': 'yolo11n', 'exit_code': 0}
+{'name': 'yolov5nu', 'exit_code': 0}
+{'name': 'yolo26n', 'exit_code': 0}
+{'name': 'AAT_v1_legacy', 'exit_code': 0}
+{'name': 'AAT_v2_legacy', 'exit_code': 0}

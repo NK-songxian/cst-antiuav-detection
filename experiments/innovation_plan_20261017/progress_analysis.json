@@ -1,0 +1,214 @@
+{
+  "created_at": "2026-10-16T23:43:18.915691+00:00",
+  "stage": "completed_baselines_and_exploratory_validation_analysis",
+  "baseline_queue": {
+    "updated_at": "2026-10-16T19:02:03.705799+00:00",
+    "scheduler_pid": 840648,
+    "max_parallel": 2,
+    "status": "completed",
+    "jobs": [
+      {
+        "name": "yolov8n",
+        "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+        "sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+        "pretrained_parameters": 3157200,
+        "state": "completed",
+        "attempt": 1,
+        "pid": 840649,
+        "run_name": "yolov8n",
+        "started_at": "2026-10-16T16:45:22.169299+00:00",
+        "exit_code": 0,
+        "ended_at": "2026-10-16T17:19:22.759080+00:00",
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "run_name": "yolov8n",
+            "exit_code": 0,
+            "success": true
+          }
+        ]
+      },
+      {
+        "name": "yolo11n",
+        "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+        "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+        "pretrained_parameters": 2624080,
+        "state": "completed",
+        "attempt": 1,
+        "pid": 840744,
+        "run_name": "yolo11n",
+        "started_at": "2026-10-16T16:45:52.178017+00:00",
+        "exit_code": 0,
+        "ended_at": "2026-10-16T17:55:26.409838+00:00",
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "run_name": "yolo11n",
+            "exit_code": 0,
+            "success": true
+          }
+        ]
+      },
+      {
+        "name": "yolov5nu",
+        "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolov5nu.pt",
+        "sha256": "9e9c1be448b0e1b8598975a9abcab9a0fd0e21182eb422cda7f044a0442d0937",
+        "pretrained_parameters": 2654816,
+        "state": "completed",
+        "attempt": 1,
+        "pid": 845540,
+        "run_name": "yolov5nu",
+        "started_at": "2026-10-16T17:19:22.761112+00:00",
+        "exit_code": 0,
+        "ended_at": "2026-10-16T18:56:57.601222+00:00",
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "run_name": "yolov5nu",
+            "exit_code": 0,
+            "success": true
+          }
+        ]
+      },
+      {
+        "name": "yolo26n",
+        "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo26n.pt",
+        "sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+        "pretrained_parameters": 2572280,
+        "state": "completed",
+        "attempt": 1,
+        "pid": 850409,
+        "run_name": "yolo26n",
+        "started_at": "2026-10-16T17:55:26.411476+00:00",
+        "exit_code": 0,
+        "ended_at": "2026-10-16T19:02:03.705126+00:00",
+        "attempt_history": [
+          {
+            "attempt": 1,
+            "run_name": "yolo26n",
+            "exit_code": 0,
+            "success": true
+          }
+        ]
+      }
+    ]
+  },
+  "shared_baseline_epochs": 63,
+  "max_abs_delta": {
+    "metrics/mAP50(B)": 0.0,
+    "metrics/mAP50-95(B)": 0.0,
+    "train/box_loss": 0.0,
+    "train/cls_loss": 0.0
+  },
+  "results": [
+    {
+      "name": "AAT_v1_legacy",
+      "legacy": true,
+      "epochs_recorded": 33,
+      "best_epoch": 18,
+      "train_csv_best_ap50": 0.66839,
+      "train_csv_best_ap5095": 0.371,
+      "audited_ap50": 0.6682732278566977,
+      "audited_ap5095": 0.3709374720512754,
+      "audited_tc_ap50": 0.5524665036473864,
+      "audited_size_code1_ap50": 0.45830694397040767,
+      "background_fp_rate_at_conf025": 0.22534081796311148,
+      "positive_hit_rate_at_fpr005": 0.6054482670418212,
+      "audit_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/baselines_100e_20261017/validation_audit/AAT_v1_legacy/audit.json",
+      "audit_sha256": "cf98a24f85db22a674e7c34c0d5075b3ccc0b9d08292e6411016c581068cbbbe",
+      "weights_sha256": "d6a054740a4673385b45ea87be939248b8feaa393eac1578a410b994db53df2a"
+    },
+    {
+      "name": "AAT_v2_legacy",
+      "legacy": true,
+      "epochs_recorded": 44,
+      "best_epoch": 29,
+      "train_csv_best_ap50": 0.64059,
+      "train_csv_best_ap5095": 0.35672,
+      "audited_ap50": 0.6405357397571787,
+      "audited_ap5095": 0.35676342468623934,
+      "audited_tc_ap50": 0.519610784820772,
+      "audited_size_code1_ap50": 0.4463195873818818,
+      "background_fp_rate_at_conf025": 0.2453889334402566,
+      "positive_hit_rate_at_fpr005": 0.586008440977107,
+      "audit_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/baselines_100e_20261017/validation_audit/AAT_v2_legacy/audit.json",
+      "audit_sha256": "bb21cca4b6ec13bb4c07b7cbb92a6a694428d34d6c82387a950cc40f95b9fa2b",
+      "weights_sha256": "5f3753204a57ba30370bb9799a05983ab76e2ad7fe0fa72cddefa4239caf12e4"
+    },
+    {
+      "name": "yolo11n",
+      "legacy": false,
+      "epochs_recorded": 65,
+      "best_epoch": 45,
+      "train_csv_best_ap50": 0.66248,
+      "train_csv_best_ap5095": 0.36796,
+      "audited_ap50": 0.6621235875972866,
+      "audited_ap5095": 0.3678197402423832,
+      "audited_tc_ap50": 0.5342088870170528,
+      "audited_size_code1_ap50": 0.4747955498549407,
+      "background_fp_rate_at_conf025": 0.0673616680032077,
+      "positive_hit_rate_at_fpr005": 0.6358869420642026,
+      "audit_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/baselines_100e_20261017/validation_audit/yolo11n/audit.json",
+      "audit_sha256": "abb29c00e6972112fce8159209c2f337cc6340b8583f3d658368473d736bcf55",
+      "weights_sha256": "cc42d84f32ffe3b5c1f40410d5a90c5133a4149233a0182285622c3c3eebafae"
+    },
+    {
+      "name": "yolo26n",
+      "legacy": false,
+      "epochs_recorded": 59,
+      "best_epoch": 39,
+      "train_csv_best_ap50": 0.63779,
+      "train_csv_best_ap5095": 0.3603,
+      "audited_ap50": 0.6379184438242591,
+      "audited_ap5095": 0.36034561920092234,
+      "audited_tc_ap50": 0.4979772149189726,
+      "audited_size_code1_ap50": 0.4658761319139955,
+      "background_fp_rate_at_conf025": 0.030473135525260625,
+      "positive_hit_rate_at_fpr005": 0.612226627445965,
+      "audit_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/baselines_100e_20261017/validation_audit/yolo26n/audit.json",
+      "audit_sha256": "9bf34c6f3a98516ac27a743f4f34852b1f322fdf1c4a60ad9db680f453f5b525",
+      "weights_sha256": "54bb9cb05f0b3a12bc1c731bf36a93c378e8a6994cd647bfe100915b00570f55"
+    },
+    {
+      "name": "yolov5nu",
+      "legacy": false,
+      "epochs_recorded": 95,
+      "best_epoch": 75,
+      "train_csv_best_ap50": 0.6415,
+      "train_csv_best_ap5095": 0.35944,
+      "audited_ap50": 0.6416975220111909,
+      "audited_ap5095": 0.35942889697991476,
+      "audited_tc_ap50": 0.5188699663873023,
+      "audited_size_code1_ap50": 0.45641549917061774,
+      "background_fp_rate_at_conf025": 0.14434643143544507,
+      "positive_hit_rate_at_fpr005": 0.6031461823762629,
+      "audit_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/baselines_100e_20261017/validation_audit/yolov5nu/audit.json",
+      "audit_sha256": "eafe45f36e7b58d3a971c90294e15ff987640e745d1a9bf8d24e3669b8a6953b",
+      "weights_sha256": "5d904cc4d99b24ba354f6f92f6ccb7d9003d52ebf973c8c868911b3c1a92390f"
+    },
+    {
+      "name": "yolov8n",
+      "legacy": false,
+      "epochs_recorded": 31,
+      "best_epoch": 11,
+      "train_csv_best_ap50": 0.65217,
+      "train_csv_best_ap5095": 0.34877,
+      "audited_ap50": 0.6522012644573629,
+      "audited_ap5095": 0.3483374282539743,
+      "audited_tc_ap50": 0.5191789299982819,
+      "audited_size_code1_ap50": 0.45075643910028607,
+      "background_fp_rate_at_conf025": 0.05533279871692061,
+      "positive_hit_rate_at_fpr005": 0.6228417956260391,
+      "audit_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/baselines_100e_20261017/validation_audit/yolov8n/audit.json",
+      "audit_sha256": "4b85ee007bddc0a1fa4b2a05222ef752f57fec2aad6e69cc63788b5b30c61959",
+      "weights_sha256": "95387898b68548afc6b40d2f7097e76b6b07ba778fd721d4faad06d00878818d"
+    }
+  ],
+  "limitations": [
+    "Single training seed; no significance or SOTA claim.",
+    "Legacy AAT runs were interrupted and had different sampling budgets.",
+    "Audit uses batch=128, half=True; compare audit against audit, not rounded training logs.",
+    "Fixed-FPR thresholds selected on validation for diagnosis; not held-out test results.",
+    "Attribute flags overlap. SIZE is multi-valued, and OC/OV subsets contain very few positives."
+  ]
+}

@@ -1,0 +1,1857 @@
+{
+  "scope": "training split only; exploratory, eight TC-rich sequences, at most ten sampled frames each",
+  "attempted": 80,
+  "pairs_found": 80,
+  "qualified": 12,
+  "qualified_by_sequence": {
+    "cn_sky_4": 3,
+    "urban-areas_19": 3,
+    "cn_mountains_13": 2,
+    "urban-areas_20": 2,
+    "cn_mountains_19": 1,
+    "cn_mountains_20": 1
+  },
+  "median_proxy_gain": 0.6225069783588166,
+  "pairs": [
+    {
+      "seq": "cn_sky_4",
+      "hard": "cn_sky_4_f000000",
+      "reference": "cn_sky_4_f000035",
+      "gap_frames": 35,
+      "hard_proxy": 2.296654994575985,
+      "reference_proxy": 4.993185486595599,
+      "hard_box": [
+        266,
+        298,
+        273,
+        304
+      ],
+      "reference_box": [
+        352,
+        264,
+        359,
+        269
+      ],
+      "hard_matched_conf": 0.4754612147808075,
+      "reference_matched_conf": 0.620042085647583,
+      "reference_qualified": true
+    },
+    {
+      "seq": "cn_sky_4",
+      "hard": "cn_sky_4_f000165",
+      "reference": "cn_sky_4_f000190",
+      "gap_frames": 25,
+      "hard_proxy": 5.979520456189983,
+      "reference_proxy": 7.722065821408518,
+      "hard_box": [
+        338,
+        191,
+        345,
+        197
+      ],
+      "reference_box": [
+        341,
+        387,
+        348,
+        394
+      ],
+      "hard_matched_conf": 0.7218431830406189,
+      "reference_matched_conf": 0.6753495931625366,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_sky_4",
+      "hard": "cn_sky_4_f000330",
+      "reference": "cn_sky_4_f000350",
+      "gap_frames": 20,
+      "hard_proxy": 5.731404148475445,
+      "reference_proxy": 7.072191571808747,
+      "hard_box": [
+        164,
+        357,
+        175,
+        363
+      ],
+      "reference_box": [
+        225,
+        342,
+        238,
+        349
+      ],
+      "hard_matched_conf": 0.7115961313247681,
+      "reference_matched_conf": 0.7652546167373657,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_sky_4",
+      "hard": "cn_sky_4_f000495",
+      "reference": "cn_sky_4_f000535",
+      "gap_frames": 40,
+      "hard_proxy": 7.289582564838969,
+      "reference_proxy": 10.173336044958875,
+      "hard_box": [
+        141,
+        249,
+        155,
+        259
+      ],
+      "reference_box": [
+        309,
+        230,
+        324,
+        240
+      ],
+      "hard_matched_conf": 0.8204618096351624,
+      "reference_matched_conf": 0.7784374952316284,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_sky_4",
+      "hard": "cn_sky_4_f000680",
+      "reference": "cn_sky_4_f000640",
+      "gap_frames": 40,
+      "hard_proxy": 3.6788030696827425,
+      "reference_proxy": 5.699568838004771,
+      "hard_box": [
+        372,
+        493,
+        379,
+        497
+      ],
+      "reference_box": [
+        400,
+        436,
+        408,
+        441
+      ],
+      "hard_matched_conf": 0.46217483282089233,
+      "reference_matched_conf": 0.7044005990028381,
+      "reference_qualified": true
+    },
+    {
+      "seq": "cn_sky_4",
+      "hard": "cn_sky_4_f000885",
+      "reference": "cn_sky_4_f000890",
+      "gap_frames": 5,
+      "hard_proxy": 5.931485740904959,
+      "reference_proxy": 7.676950824760477,
+      "hard_box": [
+        292,
+        324,
+        306,
+        334
+      ],
+      "reference_box": [
+        236,
+        319,
+        251,
+        329
+      ],
+      "hard_matched_conf": 0.7557874917984009,
+      "reference_matched_conf": 0.7894233465194702,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_sky_4",
+      "hard": "cn_sky_4_f001050",
+      "reference": "cn_sky_4_f001010",
+      "gap_frames": 40,
+      "hard_proxy": 10.380556147656176,
+      "reference_proxy": 10.934289643267507,
+      "hard_box": [
+        31,
+        307,
+        42,
+        317
+      ],
+      "reference_box": [
+        27,
+        246,
+        41,
+        259
+      ],
+      "hard_matched_conf": 0.7491517663002014,
+      "reference_matched_conf": 0.8094094395637512,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_sky_4",
+      "hard": "cn_sky_4_f001215",
+      "reference": "cn_sky_4_f001180",
+      "gap_frames": 35,
+      "hard_proxy": 2.4086477468940353,
+      "reference_proxy": 4.347114318374312,
+      "hard_box": [
+        245,
+        446,
+        258,
+        452
+      ],
+      "reference_box": [
+        337,
+        432,
+        345,
+        439
+      ],
+      "hard_matched_conf": 0.6140905022621155,
+      "reference_matched_conf": 0.7138768434524536,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_sky_4",
+      "hard": "cn_sky_4_f001380",
+      "reference": "cn_sky_4_f001370",
+      "gap_frames": 10,
+      "hard_proxy": 6.206893035381477,
+      "reference_proxy": 6.579944828183212,
+      "hard_box": [
+        27,
+        302,
+        33,
+        306
+      ],
+      "reference_box": [
+        32,
+        316,
+        38,
+        321
+      ],
+      "hard_matched_conf": 0.49070942401885986,
+      "reference_matched_conf": 0.6205700039863586,
+      "reference_qualified": true
+    },
+    {
+      "seq": "cn_sky_4",
+      "hard": "cn_sky_4_f001550",
+      "reference": "cn_sky_4_f001530",
+      "gap_frames": 20,
+      "hard_proxy": 5.838463320237164,
+      "reference_proxy": 5.520338769922581,
+      "hard_box": [
+        438,
+        323,
+        443,
+        328
+      ],
+      "reference_box": [
+        437,
+        324,
+        442,
+        329
+      ],
+      "hard_matched_conf": 0.5113444924354553,
+      "reference_matched_conf": 0.4341391324996948,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_19",
+      "hard": "urban-areas_19_f000000",
+      "reference": "urban-areas_19_f000010",
+      "gap_frames": 10,
+      "hard_proxy": 1.5858626477194222,
+      "reference_proxy": 1.2615406583842843,
+      "hard_box": [
+        193,
+        170,
+        211,
+        178
+      ],
+      "reference_box": [
+        213,
+        171,
+        226,
+        177
+      ],
+      "hard_matched_conf": 0.6800699234008789,
+      "reference_matched_conf": 0.6985555291175842,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_19",
+      "hard": "urban-areas_19_f000160",
+      "reference": "urban-areas_19_f000210",
+      "gap_frames": 50,
+      "hard_proxy": 1.311072097039901,
+      "reference_proxy": 2.305814639705799,
+      "hard_box": [
+        270,
+        176,
+        282,
+        182
+      ],
+      "reference_box": [
+        250,
+        163,
+        263,
+        171
+      ],
+      "hard_matched_conf": 0.515428364276886,
+      "reference_matched_conf": 0.7332578897476196,
+      "reference_qualified": true
+    },
+    {
+      "seq": "urban-areas_19",
+      "hard": "urban-areas_19_f000320",
+      "reference": "urban-areas_19_f000355",
+      "gap_frames": 35,
+      "hard_proxy": 1.0167096632895034,
+      "reference_proxy": 4.263652407114906,
+      "hard_box": [
+        72,
+        167,
+        87,
+        174
+      ],
+      "reference_box": [
+        111,
+        167,
+        124,
+        175
+      ],
+      "hard_matched_conf": 0.6847413778305054,
+      "reference_matched_conf": 0.7446699142456055,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_19",
+      "hard": "urban-areas_19_f000480",
+      "reference": "urban-areas_19_f000460",
+      "gap_frames": 20,
+      "hard_proxy": 3.327568506970469,
+      "reference_proxy": 5.299593644856682,
+      "hard_box": [
+        104,
+        183,
+        116,
+        189
+      ],
+      "reference_box": [
+        290,
+        151,
+        304,
+        160
+      ],
+      "hard_matched_conf": 0.7041587233543396,
+      "reference_matched_conf": 0.7586888074874878,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_19",
+      "hard": "urban-areas_19_f000640",
+      "reference": "urban-areas_19_f000605",
+      "gap_frames": 35,
+      "hard_proxy": 2.4039881477360248,
+      "reference_proxy": 3.594607119304507,
+      "hard_box": [
+        131,
+        151,
+        146,
+        156
+      ],
+      "reference_box": [
+        155,
+        158,
+        169,
+        162
+      ],
+      "hard_matched_conf": 0.6309322714805603,
+      "reference_matched_conf": 0.7279528975486755,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_19",
+      "hard": "urban-areas_19_f000845",
+      "reference": "urban-areas_19_f000870",
+      "gap_frames": 25,
+      "hard_proxy": 2.529024621828968,
+      "reference_proxy": 3.09493774527744,
+      "hard_box": [
+        250,
+        152,
+        258,
+        158
+      ],
+      "reference_box": [
+        134,
+        157,
+        145,
+        161
+      ],
+      "hard_matched_conf": 0.6389578580856323,
+      "reference_matched_conf": 0.5970980525016785,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_19",
+      "hard": "urban-areas_19_f001005",
+      "reference": "urban-areas_19_f001015",
+      "gap_frames": 10,
+      "hard_proxy": 2.178924143884981,
+      "reference_proxy": 2.9263468471086505,
+      "hard_box": [
+        108,
+        140,
+        120,
+        145
+      ],
+      "reference_box": [
+        119,
+        140,
+        127,
+        145
+      ],
+      "hard_matched_conf": 0.6388301253318787,
+      "reference_matched_conf": 0.6495075225830078,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_19",
+      "hard": "urban-areas_19_f001165",
+      "reference": "urban-areas_19_f001190",
+      "gap_frames": 25,
+      "hard_proxy": 2.2340726487340548,
+      "reference_proxy": 2.6855418820338217,
+      "hard_box": [
+        98,
+        155,
+        106,
+        161
+      ],
+      "reference_box": [
+        239,
+        122,
+        244,
+        127
+      ],
+      "hard_matched_conf": 0.5511916875839233,
+      "reference_matched_conf": 0.5366498827934265,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_19",
+      "hard": "urban-areas_19_f001330",
+      "reference": "urban-areas_19_f001345",
+      "gap_frames": 15,
+      "hard_proxy": 1.7621640308922295,
+      "reference_proxy": 3.2190547070474733,
+      "hard_box": [
+        398,
+        115,
+        410,
+        121
+      ],
+      "reference_box": [
+        426,
+        110,
+        433,
+        117
+      ],
+      "hard_matched_conf": 0.1657327115535736,
+      "reference_matched_conf": 0.6210472583770752,
+      "reference_qualified": true
+    },
+    {
+      "seq": "urban-areas_19",
+      "hard": "urban-areas_19_f001495",
+      "reference": "urban-areas_19_f001490",
+      "gap_frames": 5,
+      "hard_proxy": 2.459851126691217,
+      "reference_proxy": 2.3628274262746,
+      "hard_box": [
+        117,
+        169,
+        129,
+        178
+      ],
+      "reference_box": [
+        126,
+        169,
+        136,
+        176
+      ],
+      "hard_matched_conf": 0.01089835911989212,
+      "reference_matched_conf": 0.7060694098472595,
+      "reference_qualified": true
+    },
+    {
+      "seq": "cn_mountains_13",
+      "hard": "cn_mountains_13_f000030",
+      "reference": "cn_mountains_13_f000020",
+      "gap_frames": 10,
+      "hard_proxy": 0.02428265834289906,
+      "reference_proxy": 1.5277236394448876,
+      "hard_box": [
+        210,
+        125,
+        224,
+        137
+      ],
+      "reference_box": [
+        249,
+        119,
+        264,
+        130
+      ],
+      "hard_matched_conf": 0.30577152967453003,
+      "reference_matched_conf": 0.08255349844694138,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_13",
+      "hard": "cn_mountains_13_f000190",
+      "reference": "cn_mountains_13_f000145",
+      "gap_frames": 45,
+      "hard_proxy": 0.36625197001096693,
+      "reference_proxy": 11.600762159867452,
+      "hard_box": [
+        158,
+        337,
+        171,
+        345
+      ],
+      "reference_box": [
+        194,
+        240,
+        209,
+        248
+      ],
+      "hard_matched_conf": 0.0,
+      "reference_matched_conf": 0.7629626989364624,
+      "reference_qualified": true
+    },
+    {
+      "seq": "cn_mountains_13",
+      "hard": "cn_mountains_13_f000380",
+      "reference": "cn_mountains_13_f000360",
+      "gap_frames": 20,
+      "hard_proxy": 0.1886444939557461,
+      "reference_proxy": 0.22604878027381065,
+      "hard_box": [
+        146,
+        324,
+        163,
+        332
+      ],
+      "reference_box": [
+        149,
+        321,
+        164,
+        331
+      ],
+      "hard_matched_conf": 0.6037231683731079,
+      "reference_matched_conf": 0.649698793888092,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_13",
+      "hard": "cn_mountains_13_f000535",
+      "reference": "cn_mountains_13_f000585",
+      "gap_frames": 50,
+      "hard_proxy": 0.3014531848456045,
+      "reference_proxy": 0.7588564747757921,
+      "hard_box": [
+        232,
+        421,
+        252,
+        428
+      ],
+      "reference_box": [
+        207,
+        470,
+        226,
+        480
+      ],
+      "hard_matched_conf": 0.7069388031959534,
+      "reference_matched_conf": 0.00489125307649374,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_13",
+      "hard": "cn_mountains_13_f000700",
+      "reference": "cn_mountains_13_f000750",
+      "gap_frames": 50,
+      "hard_proxy": 0.0317556226825279,
+      "reference_proxy": 0.7057346354551716,
+      "hard_box": [
+        165,
+        340,
+        183,
+        350
+      ],
+      "reference_box": [
+        170,
+        264,
+        191,
+        275
+      ],
+      "hard_matched_conf": 0.058876652270555496,
+      "reference_matched_conf": 0.6563050150871277,
+      "reference_qualified": true
+    },
+    {
+      "seq": "cn_mountains_13",
+      "hard": "cn_mountains_13_f000855",
+      "reference": "cn_mountains_13_f000900",
+      "gap_frames": 45,
+      "hard_proxy": 0.046135599321466145,
+      "reference_proxy": 0.45546893973698505,
+      "hard_box": [
+        165,
+        264,
+        186,
+        275
+      ],
+      "reference_box": [
+        168,
+        261,
+        187,
+        272
+      ],
+      "hard_matched_conf": 0.6821554899215698,
+      "reference_matched_conf": 0.7582302689552307,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_13",
+      "hard": "cn_mountains_13_f001010",
+      "reference": "cn_mountains_13_f001060",
+      "gap_frames": 50,
+      "hard_proxy": 0.5446838117567754,
+      "reference_proxy": 1.1968424801399493,
+      "hard_box": [
+        163,
+        245,
+        185,
+        256
+      ],
+      "reference_box": [
+        194,
+        243,
+        215,
+        254
+      ],
+      "hard_matched_conf": 0.7038854360580444,
+      "reference_matched_conf": 0.7486066818237305,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_13",
+      "hard": "cn_mountains_13_f001160",
+      "reference": "cn_mountains_13_f001200",
+      "gap_frames": 40,
+      "hard_proxy": 0.8268080142070849,
+      "reference_proxy": 0.8949588521264081,
+      "hard_box": [
+        471,
+        247,
+        492,
+        258
+      ],
+      "reference_box": [
+        509,
+        251,
+        530,
+        262
+      ],
+      "hard_matched_conf": 0.6952229738235474,
+      "reference_matched_conf": 0.7743535041809082,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_13",
+      "hard": "cn_mountains_13_f001315",
+      "reference": "cn_mountains_13_f001310",
+      "gap_frames": 5,
+      "hard_proxy": 0.9017706001158816,
+      "reference_proxy": 0.9079371404636427,
+      "hard_box": [
+        504,
+        251,
+        525,
+        262
+      ],
+      "reference_box": [
+        504,
+        251,
+        525,
+        262
+      ],
+      "hard_matched_conf": 0.7760258316993713,
+      "reference_matched_conf": 0.784389853477478,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_13",
+      "hard": "cn_mountains_13_f001470",
+      "reference": "cn_mountains_13_f001435",
+      "gap_frames": 35,
+      "hard_proxy": 0.3536374366921804,
+      "reference_proxy": 0.5279761194882014,
+      "hard_box": [
+        505,
+        245,
+        526,
+        256
+      ],
+      "reference_box": [
+        505,
+        244,
+        526,
+        255
+      ],
+      "hard_matched_conf": 0.8074927926063538,
+      "reference_matched_conf": 0.7542209029197693,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_20",
+      "hard": "urban-areas_20_f000000",
+      "reference": "urban-areas_20_f000030",
+      "gap_frames": 30,
+      "hard_proxy": 2.5582224258391557,
+      "reference_proxy": 3.1219591927579606,
+      "hard_box": [
+        102,
+        174,
+        114,
+        179
+      ],
+      "reference_box": [
+        54,
+        190,
+        63,
+        194
+      ],
+      "hard_matched_conf": 0.6670901775360107,
+      "reference_matched_conf": 0.0,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_20",
+      "hard": "urban-areas_20_f000145",
+      "reference": "urban-areas_20_f000140",
+      "gap_frames": 5,
+      "hard_proxy": 2.3687085192158137,
+      "reference_proxy": 2.972623086918555,
+      "hard_box": [
+        272,
+        187,
+        298,
+        203
+      ],
+      "reference_box": [
+        276,
+        186,
+        299,
+        199
+      ],
+      "hard_matched_conf": 0.8170368671417236,
+      "reference_matched_conf": 0.8194183707237244,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_20",
+      "hard": "urban-areas_20_f000370",
+      "reference": "urban-areas_20_f000405",
+      "gap_frames": 35,
+      "hard_proxy": 0.16335705566509093,
+      "reference_proxy": 0.24882691880142052,
+      "hard_box": [
+        49,
+        143,
+        75,
+        156
+      ],
+      "reference_box": [
+        171,
+        142,
+        206,
+        153
+      ],
+      "hard_matched_conf": 0.03826211020350456,
+      "reference_matched_conf": 0.3756287097930908,
+      "reference_qualified": true
+    },
+    {
+      "seq": "urban-areas_20",
+      "hard": "urban-areas_20_f000535",
+      "reference": "urban-areas_20_f000585",
+      "gap_frames": 50,
+      "hard_proxy": 0.31326356947321615,
+      "reference_proxy": 0.5494967740314189,
+      "hard_box": [
+        106,
+        168,
+        130,
+        186
+      ],
+      "reference_box": [
+        191,
+        155,
+        219,
+        169
+      ],
+      "hard_matched_conf": 0.5188023447990417,
+      "reference_matched_conf": 0.7294396162033081,
+      "reference_qualified": true
+    },
+    {
+      "seq": "urban-areas_20",
+      "hard": "urban-areas_20_f000685",
+      "reference": "urban-areas_20_f000700",
+      "gap_frames": 15,
+      "hard_proxy": 0.010472617285540822,
+      "reference_proxy": 0.4626723807398669,
+      "hard_box": [
+        238,
+        127,
+        260,
+        143
+      ],
+      "reference_box": [
+        268,
+        121,
+        290,
+        132
+      ],
+      "hard_matched_conf": 0.0,
+      "reference_matched_conf": 0.11269735544919968,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_20",
+      "hard": "urban-areas_20_f000835",
+      "reference": "urban-areas_20_f000820",
+      "gap_frames": 15,
+      "hard_proxy": 0.11549684023925613,
+      "reference_proxy": 0.8286192273428704,
+      "hard_box": [
+        222,
+        110,
+        240,
+        121
+      ],
+      "reference_box": [
+        223,
+        103,
+        241,
+        113
+      ],
+      "hard_matched_conf": 0.7526467442512512,
+      "reference_matched_conf": 0.771807074546814,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_20",
+      "hard": "urban-areas_20_f000990",
+      "reference": "urban-areas_20_f001040",
+      "gap_frames": 50,
+      "hard_proxy": 0.754034630276869,
+      "reference_proxy": 1.0504227490624474,
+      "hard_box": [
+        199,
+        207,
+        216,
+        217
+      ],
+      "reference_box": [
+        191,
+        209,
+        208,
+        219
+      ],
+      "hard_matched_conf": 0.7834585905075073,
+      "reference_matched_conf": 0.7857681512832642,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_20",
+      "hard": "urban-areas_20_f001140",
+      "reference": "urban-areas_20_f001160",
+      "gap_frames": 20,
+      "hard_proxy": 3.5400335391342868,
+      "reference_proxy": 3.287341239057814,
+      "hard_box": [
+        446,
+        218,
+        464,
+        227
+      ],
+      "reference_box": [
+        430,
+        222,
+        448,
+        231
+      ],
+      "hard_matched_conf": 0.7648930549621582,
+      "reference_matched_conf": 0.7830392718315125,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_20",
+      "hard": "urban-areas_20_f001290",
+      "reference": "urban-areas_20_f001260",
+      "gap_frames": 30,
+      "hard_proxy": 1.7613676690873756,
+      "reference_proxy": 2.254279568706916,
+      "hard_box": [
+        161,
+        257,
+        179,
+        266
+      ],
+      "reference_box": [
+        230,
+        257,
+        248,
+        266
+      ],
+      "hard_matched_conf": 0.7439029216766357,
+      "reference_matched_conf": 0.7103978991508484,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_20",
+      "hard": "urban-areas_20_f001495",
+      "reference": "urban-areas_20_f001475",
+      "gap_frames": 20,
+      "hard_proxy": 2.568497531727422,
+      "reference_proxy": 3.4062014703078716,
+      "hard_box": [
+        293,
+        301,
+        313,
+        311
+      ],
+      "reference_box": [
+        151,
+        292,
+        170,
+        303
+      ],
+      "hard_matched_conf": 0.7603132128715515,
+      "reference_matched_conf": 0.7760465741157532,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_19",
+      "hard": "cn_mountains_19_f000000",
+      "reference": "cn_mountains_19_f000030",
+      "gap_frames": 30,
+      "hard_proxy": 0.19270308288326904,
+      "reference_proxy": 0.48992360284242625,
+      "hard_box": [
+        407,
+        175,
+        424,
+        188
+      ],
+      "reference_box": [
+        539,
+        177,
+        555,
+        184
+      ],
+      "hard_matched_conf": 0.6415526270866394,
+      "reference_matched_conf": 0.68805330991745,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_19",
+      "hard": "cn_mountains_19_f000135",
+      "reference": "cn_mountains_19_f000105",
+      "gap_frames": 30,
+      "hard_proxy": 0.24312342703744413,
+      "reference_proxy": 0.5858655513981851,
+      "hard_box": [
+        559,
+        162,
+        575,
+        172
+      ],
+      "reference_box": [
+        578,
+        164,
+        589,
+        173
+      ],
+      "hard_matched_conf": 0.07395099848508835,
+      "reference_matched_conf": 0.6860166192054749,
+      "reference_qualified": true
+    },
+    {
+      "seq": "cn_mountains_19",
+      "hard": "cn_mountains_19_f000275",
+      "reference": "cn_mountains_19_f000325",
+      "gap_frames": 50,
+      "hard_proxy": 0.16718544117197495,
+      "reference_proxy": 1.1906609459736488,
+      "hard_box": [
+        177,
+        184,
+        197,
+        195
+      ],
+      "reference_box": [
+        159,
+        183,
+        176,
+        191
+      ],
+      "hard_matched_conf": 0.7033122181892395,
+      "reference_matched_conf": 0.7208677530288696,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_19",
+      "hard": "cn_mountains_19_f000415",
+      "reference": "cn_mountains_19_f000365",
+      "gap_frames": 50,
+      "hard_proxy": 0.15041778769159575,
+      "reference_proxy": 0.7865155123722054,
+      "hard_box": [
+        393,
+        151,
+        416,
+        161
+      ],
+      "reference_box": [
+        170,
+        176,
+        187,
+        184
+      ],
+      "hard_matched_conf": 0.6350896954536438,
+      "reference_matched_conf": 0.7269913554191589,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_19",
+      "hard": "cn_mountains_19_f000555",
+      "reference": "cn_mountains_19_f000520",
+      "gap_frames": 35,
+      "hard_proxy": 0.49578113806950797,
+      "reference_proxy": 0.7038212922039416,
+      "hard_box": [
+        354,
+        143,
+        378,
+        153
+      ],
+      "reference_box": [
+        377,
+        144,
+        403,
+        155
+      ],
+      "hard_matched_conf": 0.7229272723197937,
+      "reference_matched_conf": 0.6811052560806274,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_19",
+      "hard": "cn_mountains_19_f000695",
+      "reference": "cn_mountains_19_f000665",
+      "gap_frames": 30,
+      "hard_proxy": 0.03943334459382397,
+      "reference_proxy": 0.8331941878236163,
+      "hard_box": [
+        426,
+        153,
+        442,
+        162
+      ],
+      "reference_box": [
+        394,
+        145,
+        411,
+        153
+      ],
+      "hard_matched_conf": 0.7162879109382629,
+      "reference_matched_conf": 0.7255055904388428,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_19",
+      "hard": "cn_mountains_19_f000835",
+      "reference": "cn_mountains_19_f000880",
+      "gap_frames": 45,
+      "hard_proxy": 0.008854069233229437,
+      "reference_proxy": 0.5993154354499403,
+      "hard_box": [
+        543,
+        163,
+        555,
+        172
+      ],
+      "reference_box": [
+        569,
+        164,
+        582,
+        170
+      ],
+      "hard_matched_conf": 0.7245165705680847,
+      "reference_matched_conf": 0.7293190360069275,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_19",
+      "hard": "cn_mountains_19_f000975",
+      "reference": "cn_mountains_19_f000955",
+      "gap_frames": 20,
+      "hard_proxy": 0.06903243974069587,
+      "reference_proxy": 0.4805822249922122,
+      "hard_box": [
+        582,
+        120,
+        594,
+        128
+      ],
+      "reference_box": [
+        578,
+        139,
+        589,
+        147
+      ],
+      "hard_matched_conf": 0.717279314994812,
+      "reference_matched_conf": 0.6093915700912476,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_19",
+      "hard": "cn_mountains_19_f001230",
+      "reference": "cn_mountains_19_f001270",
+      "gap_frames": 40,
+      "hard_proxy": 0.33070370793885095,
+      "reference_proxy": 0.6309013483740445,
+      "hard_box": [
+        505,
+        132,
+        521,
+        139
+      ],
+      "reference_box": [
+        510,
+        132,
+        527,
+        140
+      ],
+      "hard_matched_conf": 0.5761590003967285,
+      "reference_matched_conf": 0.5737013816833496,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_19",
+      "hard": "cn_mountains_19_f001370",
+      "reference": "cn_mountains_19_f001360",
+      "gap_frames": 10,
+      "hard_proxy": 0.3085881049119012,
+      "reference_proxy": 0.9512919223080804,
+      "hard_box": [
+        395,
+        99,
+        410,
+        107
+      ],
+      "reference_box": [
+        418,
+        98,
+        437,
+        107
+      ],
+      "hard_matched_conf": 0.6328707337379456,
+      "reference_matched_conf": 0.4365374743938446,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_22",
+      "hard": "urban-areas_22_f000000",
+      "reference": "urban-areas_22_f000005",
+      "gap_frames": 5,
+      "hard_proxy": 10.773314698821691,
+      "reference_proxy": 8.395049447742075,
+      "hard_box": [
+        185,
+        0,
+        214,
+        21
+      ],
+      "reference_box": [
+        185,
+        0,
+        215,
+        24
+      ],
+      "hard_matched_conf": 0.8127710223197937,
+      "reference_matched_conf": 0.800376832485199,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_22",
+      "hard": "urban-areas_22_f000135",
+      "reference": "urban-areas_22_f000095",
+      "gap_frames": 40,
+      "hard_proxy": 5.36303558444044,
+      "reference_proxy": 8.449540910918651,
+      "hard_box": [
+        157,
+        73,
+        172,
+        82
+      ],
+      "reference_box": [
+        175,
+        69,
+        190,
+        79
+      ],
+      "hard_matched_conf": 0.8221139907836914,
+      "reference_matched_conf": 0.7813182473182678,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_22",
+      "hard": "urban-areas_22_f000270",
+      "reference": "urban-areas_22_f000255",
+      "gap_frames": 15,
+      "hard_proxy": 3.656135096983382,
+      "reference_proxy": 5.760726570919434,
+      "hard_box": [
+        130,
+        111,
+        139,
+        118
+      ],
+      "reference_box": [
+        136,
+        95,
+        144,
+        102
+      ],
+      "hard_matched_conf": 0.6760217547416687,
+      "reference_matched_conf": 0.7596515417098999,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_22",
+      "hard": "urban-areas_22_f000520",
+      "reference": "urban-areas_22_f000475",
+      "gap_frames": 45,
+      "hard_proxy": 0.6494679314039569,
+      "reference_proxy": 1.7015208863531264,
+      "hard_box": [
+        133,
+        178,
+        144,
+        185
+      ],
+      "reference_box": [
+        126,
+        164,
+        136,
+        168
+      ],
+      "hard_matched_conf": 0.5976235866546631,
+      "reference_matched_conf": 0.6931403875350952,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_22",
+      "hard": "urban-areas_22_f000655",
+      "reference": "urban-areas_22_f000640",
+      "gap_frames": 15,
+      "hard_proxy": 6.116492844617828,
+      "reference_proxy": 6.742883434932559,
+      "hard_box": [
+        160,
+        149,
+        176,
+        160
+      ],
+      "reference_box": [
+        157,
+        152,
+        173,
+        164
+      ],
+      "hard_matched_conf": 0.8105963468551636,
+      "reference_matched_conf": 0.7976464629173279,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_22",
+      "hard": "urban-areas_22_f000790",
+      "reference": "urban-areas_22_f000785",
+      "gap_frames": 5,
+      "hard_proxy": 5.817051527270003,
+      "reference_proxy": 6.764064054136421,
+      "hard_box": [
+        456,
+        127,
+        472,
+        138
+      ],
+      "reference_box": [
+        452,
+        128,
+        468,
+        138
+      ],
+      "hard_matched_conf": 0.8252294659614563,
+      "reference_matched_conf": 0.8511154055595398,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_22",
+      "hard": "urban-areas_22_f001045",
+      "reference": "urban-areas_22_f001005",
+      "gap_frames": 40,
+      "hard_proxy": 0.26783430835090377,
+      "reference_proxy": 1.0494516124437847,
+      "hard_box": [
+        180,
+        231,
+        195,
+        238
+      ],
+      "reference_box": [
+        120,
+        225,
+        134,
+        234
+      ],
+      "hard_matched_conf": 0.6568829417228699,
+      "reference_matched_conf": 0.6262392401695251,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_22",
+      "hard": "urban-areas_22_f001200",
+      "reference": "urban-areas_22_f001210",
+      "gap_frames": 10,
+      "hard_proxy": 0.33786474239435343,
+      "reference_proxy": 0.6915414394618136,
+      "hard_box": [
+        80,
+        244,
+        93,
+        252
+      ],
+      "reference_box": [
+        79,
+        248,
+        93,
+        256
+      ],
+      "hard_matched_conf": 0.5746949315071106,
+      "reference_matched_conf": 0.5149925351142883,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_22",
+      "hard": "urban-areas_22_f001335",
+      "reference": "urban-areas_22_f001295",
+      "gap_frames": 40,
+      "hard_proxy": 0.020991875783429433,
+      "reference_proxy": 0.2052252826890808,
+      "hard_box": [
+        103,
+        229,
+        111,
+        235
+      ],
+      "reference_box": [
+        90,
+        229,
+        100,
+        236
+      ],
+      "hard_matched_conf": 0.4027458429336548,
+      "reference_matched_conf": 0.04379861056804657,
+      "reference_qualified": false
+    },
+    {
+      "seq": "urban-areas_22",
+      "hard": "urban-areas_22_f001550",
+      "reference": "urban-areas_22_f001530",
+      "gap_frames": 20,
+      "hard_proxy": 0.3882517982568401,
+      "reference_proxy": 0.6029886304522564,
+      "hard_box": [
+        211,
+        248,
+        222,
+        253
+      ],
+      "reference_box": [
+        147,
+        232,
+        160,
+        239
+      ],
+      "hard_matched_conf": 0.0,
+      "reference_matched_conf": 0.02029041387140751,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_20",
+      "hard": "cn_mountains_20_f000000",
+      "reference": "cn_mountains_20_f000015",
+      "gap_frames": 15,
+      "hard_proxy": 0.12151832728008873,
+      "reference_proxy": 0.9887352087433775,
+      "hard_box": [
+        390,
+        102,
+        405,
+        107
+      ],
+      "reference_box": [
+        347,
+        102,
+        363,
+        108
+      ],
+      "hard_matched_conf": 0.6667439341545105,
+      "reference_matched_conf": 0.7614375352859497,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_20",
+      "hard": "cn_mountains_20_f000140",
+      "reference": "cn_mountains_20_f000175",
+      "gap_frames": 35,
+      "hard_proxy": 0.1177852080013185,
+      "reference_proxy": 0.7364085744042207,
+      "hard_box": [
+        465,
+        196,
+        481,
+        204
+      ],
+      "reference_box": [
+        548,
+        194,
+        568,
+        201
+      ],
+      "hard_matched_conf": 0.7292924523353577,
+      "reference_matched_conf": 0.5258630514144897,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_20",
+      "hard": "cn_mountains_20_f000270",
+      "reference": "cn_mountains_20_f000275",
+      "gap_frames": 5,
+      "hard_proxy": 0.47556236093348114,
+      "reference_proxy": 0.424287781911575,
+      "hard_box": [
+        411,
+        130,
+        427,
+        137
+      ],
+      "reference_box": [
+        408,
+        130,
+        424,
+        137
+      ],
+      "hard_matched_conf": 0.7141106128692627,
+      "reference_matched_conf": 0.6581276655197144,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_20",
+      "hard": "cn_mountains_20_f000400",
+      "reference": "cn_mountains_20_f000425",
+      "gap_frames": 25,
+      "hard_proxy": 0.7234832901071897,
+      "reference_proxy": 1.036672879802386,
+      "hard_box": [
+        362,
+        124,
+        376,
+        130
+      ],
+      "reference_box": [
+        294,
+        142,
+        308,
+        148
+      ],
+      "hard_matched_conf": 0.6668163537979126,
+      "reference_matched_conf": 0.7196986079216003,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_20",
+      "hard": "cn_mountains_20_f000530",
+      "reference": "cn_mountains_20_f000515",
+      "gap_frames": 15,
+      "hard_proxy": 0.6320809964251569,
+      "reference_proxy": 6.94377705485898,
+      "hard_box": [
+        228,
+        307,
+        244,
+        314
+      ],
+      "reference_box": [
+        275,
+        236,
+        291,
+        242
+      ],
+      "hard_matched_conf": 0.5386752486228943,
+      "reference_matched_conf": 0.7427578568458557,
+      "reference_qualified": true
+    },
+    {
+      "seq": "cn_mountains_20",
+      "hard": "cn_mountains_20_f000655",
+      "reference": "cn_mountains_20_f000705",
+      "gap_frames": 50,
+      "hard_proxy": 0.4161126372243574,
+      "reference_proxy": 1.3459414612518823,
+      "hard_box": [
+        128,
+        138,
+        141,
+        147
+      ],
+      "reference_box": [
+        163,
+        229,
+        181,
+        237
+      ],
+      "hard_matched_conf": 0.6268400549888611,
+      "reference_matched_conf": 0.6557710766792297,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_20",
+      "hard": "cn_mountains_20_f000785",
+      "reference": "cn_mountains_20_f000755",
+      "gap_frames": 30,
+      "hard_proxy": 0.18099228448937169,
+      "reference_proxy": 2.0754762105908067,
+      "hard_box": [
+        178,
+        230,
+        196,
+        239
+      ],
+      "reference_box": [
+        176,
+        317,
+        194,
+        325
+      ],
+      "hard_matched_conf": 0.6974467039108276,
+      "reference_matched_conf": 0.0,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_20",
+      "hard": "cn_mountains_20_f000915",
+      "reference": "cn_mountains_20_f000900",
+      "gap_frames": 15,
+      "hard_proxy": 0.09089863133146714,
+      "reference_proxy": 1.134279892835959,
+      "hard_box": [
+        192,
+        217,
+        210,
+        226
+      ],
+      "reference_box": [
+        187,
+        192,
+        205,
+        201
+      ],
+      "hard_matched_conf": 0.598918080329895,
+      "reference_matched_conf": 0.41858214139938354,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_20",
+      "hard": "cn_mountains_20_f001045",
+      "reference": "cn_mountains_20_f001050",
+      "gap_frames": 5,
+      "hard_proxy": 2.194908475505217,
+      "reference_proxy": 2.5055401277047817,
+      "hard_box": [
+        261,
+        304,
+        278,
+        312
+      ],
+      "reference_box": [
+        262,
+        308,
+        279,
+        315
+      ],
+      "hard_matched_conf": 0.6921629905700684,
+      "reference_matched_conf": 0.3560338318347931,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_20",
+      "hard": "cn_mountains_20_f001175",
+      "reference": "cn_mountains_20_f001140",
+      "gap_frames": 35,
+      "hard_proxy": 0.7976532342212772,
+      "reference_proxy": 9.728313203948424,
+      "hard_box": [
+        324,
+        314,
+        340,
+        321
+      ],
+      "reference_box": [
+        321,
+        324,
+        337,
+        331
+      ],
+      "hard_matched_conf": 0.7184453010559082,
+      "reference_matched_conf": 0.6306698322296143,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_16",
+      "hard": "cn_mountains_16_f000000",
+      "reference": "cn_mountains_16_f000045",
+      "gap_frames": 45,
+      "hard_proxy": 1.0439851347476774,
+      "reference_proxy": 1.782360411619975,
+      "hard_box": [
+        262,
+        95,
+        278,
+        104
+      ],
+      "reference_box": [
+        341,
+        94,
+        359,
+        103
+      ],
+      "hard_matched_conf": 0.7085977792739868,
+      "reference_matched_conf": 0.7805218696594238,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_16",
+      "hard": "cn_mountains_16_f000120",
+      "reference": "cn_mountains_16_f000115",
+      "gap_frames": 5,
+      "hard_proxy": 0.916308485512523,
+      "reference_proxy": 0.781742440425974,
+      "hard_box": [
+        415,
+        94,
+        430,
+        100
+      ],
+      "reference_box": [
+        417,
+        94,
+        432,
+        99
+      ],
+      "hard_matched_conf": 0.6540396213531494,
+      "reference_matched_conf": 0.5888890027999878,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_16",
+      "hard": "cn_mountains_16_f000245",
+      "reference": "cn_mountains_16_f000275",
+      "gap_frames": 30,
+      "hard_proxy": 0.2749850304260635,
+      "reference_proxy": 1.533154591630043,
+      "hard_box": [
+        365,
+        93,
+        381,
+        102
+      ],
+      "reference_box": [
+        351,
+        96,
+        364,
+        105
+      ],
+      "hard_matched_conf": 0.8127610087394714,
+      "reference_matched_conf": 0.7943637371063232,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_16",
+      "hard": "cn_mountains_16_f000370",
+      "reference": "cn_mountains_16_f000340",
+      "gap_frames": 30,
+      "hard_proxy": 0.5633413295021649,
+      "reference_proxy": 1.3860322077369351,
+      "hard_box": [
+        367,
+        99,
+        380,
+        109
+      ],
+      "reference_box": [
+        353,
+        99,
+        367,
+        107
+      ],
+      "hard_matched_conf": 0.7424918413162231,
+      "reference_matched_conf": 0.7492935061454773,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_16",
+      "hard": "cn_mountains_16_f000495",
+      "reference": "cn_mountains_16_f000540",
+      "gap_frames": 45,
+      "hard_proxy": 0.23925340955232022,
+      "reference_proxy": 0.9341887975990094,
+      "hard_box": [
+        364,
+        95,
+        379,
+        105
+      ],
+      "reference_box": [
+        380,
+        85,
+        395,
+        94
+      ],
+      "hard_matched_conf": 0.7639498114585876,
+      "reference_matched_conf": 0.7143751978874207,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_16",
+      "hard": "cn_mountains_16_f000620",
+      "reference": "cn_mountains_16_f000660",
+      "gap_frames": 40,
+      "hard_proxy": 0.10510662070371708,
+      "reference_proxy": 0.9302589516290368,
+      "hard_box": [
+        423,
+        57,
+        439,
+        68
+      ],
+      "reference_box": [
+        405,
+        64,
+        419,
+        75
+      ],
+      "hard_matched_conf": 0.7068048119544983,
+      "reference_matched_conf": 0.7941508293151855,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_16",
+      "hard": "cn_mountains_16_f000745",
+      "reference": "cn_mountains_16_f000740",
+      "gap_frames": 5,
+      "hard_proxy": 0.9737750487399665,
+      "reference_proxy": 0.9491095072057396,
+      "hard_box": [
+        380,
+        83,
+        394,
+        94
+      ],
+      "reference_box": [
+        380,
+        82,
+        394,
+        92
+      ],
+      "hard_matched_conf": 0.7397359013557434,
+      "reference_matched_conf": 0.7219712138175964,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_16",
+      "hard": "cn_mountains_16_f000870",
+      "reference": "cn_mountains_16_f000895",
+      "gap_frames": 25,
+      "hard_proxy": 0.7477959285722543,
+      "reference_proxy": 1.2749305354007328,
+      "hard_box": [
+        359,
+        95,
+        373,
+        106
+      ],
+      "reference_box": [
+        355,
+        96,
+        369,
+        106
+      ],
+      "hard_matched_conf": 0.7518218755722046,
+      "reference_matched_conf": 0.7803725004196167,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_16",
+      "hard": "cn_mountains_16_f000995",
+      "reference": "cn_mountains_16_f000960",
+      "gap_frames": 35,
+      "hard_proxy": 0.9654516211595807,
+      "reference_proxy": 1.2282850720856666,
+      "hard_box": [
+        345,
+        99,
+        357,
+        109
+      ],
+      "reference_box": [
+        349,
+        99,
+        362,
+        108
+      ],
+      "hard_matched_conf": 0.7422291040420532,
+      "reference_matched_conf": 0.7753958702087402,
+      "reference_qualified": false
+    },
+    {
+      "seq": "cn_mountains_16",
+      "hard": "cn_mountains_16_f001120",
+      "reference": "cn_mountains_16_f001115",
+      "gap_frames": 5,
+      "hard_proxy": 0.8686469156436343,
+      "reference_proxy": 1.03356760981624,
+      "hard_box": [
+        347,
+        95,
+        361,
+        105
+      ],
+      "reference_box": [
+        342,
+        96,
+        359,
+        105
+      ],
+      "hard_matched_conf": 0.7639327645301819,
+      "reference_matched_conf": 0.7295409440994263,
+      "reference_qualified": false
+    }
+  ]
+}

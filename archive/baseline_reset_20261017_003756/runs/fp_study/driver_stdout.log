@@ -1,0 +1,24 @@
+[driver] wave 1: G1 + G2
+[driver] G1 start
+[driver] G2 start
+[driver] G1 exit -9
+[driver] G2 exit -9
+[driver] wave 2: G3 + G4
+[driver] G3 start
+[driver] G4 start
+[driver] G3 exit -9
+[driver] G4 exit -9
+[driver] retry G1 sequentially
+[driver] G1 start
+[driver] G1 retry exit -9
+[driver] retry G2 sequentially
+[driver] G2 start
+[driver] G2 retry exit -9
+[driver] retry G3 sequentially
+[driver] G3 start
+[driver] G3 retry exit -9
+[driver] retry G4 sequentially
+[driver] G4 start
+[driver] G4 retry exit -9
+[driver] summary: finished=[]
+[driver] INCOMPLETE

@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/bootstrap_gap_study.py", line 114, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/bootstrap_gap_study.py", line 24, in main
+    assert sha(ROOT/'yolo11n.pt')=='0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1'
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/bootstrap_gap_study.py", line 11, in sha
+    def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+                                     ^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt'

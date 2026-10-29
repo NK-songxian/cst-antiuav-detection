@@ -1,0 +1,7 @@
+path: /root/autodl-tmp/Ryan/cst_antiuav/data/yolo
+train: /root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/train.txt
+val: /root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/val.txt
+test: /root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/test.txt
+nc: 1
+names:
+- uav

@@ -1,0 +1,82 @@
+{
+  "immediate": {
+    "event": {
+      "seq": "cn_mountains_30",
+      "start_frame": 730,
+      "previous_negative_samples": 2,
+      "visible_samples": 10,
+      "stems": [
+        "cn_mountains_30_f000730",
+        "cn_mountains_30_f000735",
+        "cn_mountains_30_f000740"
+      ]
+    },
+    "single": {
+      "seq": "cn_mountains_30",
+      "start_frame": 730,
+      "hits": [
+        false,
+        false,
+        false
+      ],
+      "first_sample": false,
+      "first3": false
+    },
+    "temporal": {
+      "seq": "cn_mountains_30",
+      "start_frame": 730,
+      "hits": [
+        true,
+        true,
+        true
+      ],
+      "first_sample": true,
+      "first3": true
+    },
+    "matching_events": 6,
+    "thresholds": {
+      "单帧seed0": 0.49218750000000006,
+      "时序seed0": 0.5244140625000001
+    }
+  },
+  "later": {
+    "event": {
+      "seq": "building_68",
+      "start_frame": 790,
+      "previous_negative_samples": 19,
+      "visible_samples": 3,
+      "stems": [
+        "building_68_f000790",
+        "building_68_f000795",
+        "building_68_f000800"
+      ]
+    },
+    "single": {
+      "seq": "building_68",
+      "start_frame": 790,
+      "hits": [
+        false,
+        false,
+        false
+      ],
+      "first_sample": false,
+      "first3": false
+    },
+    "temporal": {
+      "seq": "building_68",
+      "start_frame": 790,
+      "hits": [
+        false,
+        true,
+        false
+      ],
+      "first_sample": false,
+      "first3": true
+    },
+    "matching_events": 19,
+    "thresholds": {
+      "单帧seed0": 0.49218750000000006,
+      "时序seed0": 0.5244140625000001
+    }
+  }
+}

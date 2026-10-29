@@ -1,0 +1,23 @@
+# Dataset and weights are intentionally external.
+/data/
+**/images/
+**/labels/
+**/frames/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+*.engine
+*.weights
+*.pkl
+*.pickle
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+*.zip
+*.cache
+*.pid
+*.lock

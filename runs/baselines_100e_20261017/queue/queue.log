@@ -1,0 +1,10 @@
+[2026-10-16T16:45:22.168256+00:00] START: four baseline models, maximum two simultaneous jobs
+[2026-10-16T16:45:22.169312+00:00] LAUNCH yolov8n attempt=1 pid=840649
+[2026-10-16T16:45:52.178040+00:00] LAUNCH yolo11n attempt=1 pid=840744
+[2026-10-16T17:19:22.759129+00:00] EXIT yolov8n: code=0, completed=True
+[2026-10-16T17:19:22.761127+00:00] LAUNCH yolov5nu attempt=1 pid=845540
+[2026-10-16T17:55:26.409888+00:00] EXIT yolo11n: code=0, completed=True
+[2026-10-16T17:55:26.411488+00:00] LAUNCH yolo26n attempt=1 pid=850409
+[2026-10-16T18:56:57.601250+00:00] EXIT yolov5nu: code=0, completed=True
+[2026-10-16T19:02:03.705155+00:00] EXIT yolo26n: code=0, completed=True
+[2026-10-16T19:02:03.706593+00:00] QUEUE_END completed=4/4

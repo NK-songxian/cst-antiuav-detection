@@ -1,0 +1,315 @@
+{
+  "selection": "Fixed confidence0.25; first lexicographic qualifying frame with sequence diversity. Selected after outcomes for illustration; not prevalence estimates.",
+  "colors": "Ground truth cyan; predictions orange",
+  "cases": [
+    {
+      "kind": "temporal_recovers_target",
+      "matching_frames": 1477,
+      "selected": "building_66_f000020",
+      "metadata": {
+        "seq": "building_66",
+        "frame": 20,
+        "exist": 1,
+        "attr": {
+          "OC": 0,
+          "OV": 0,
+          "SV": 0,
+          "TC": 0,
+          "DBC": 0,
+          "CDB": 0,
+          "FM": 0,
+          "SIZE": 3
+        }
+      },
+      "history": [
+        "building_66_f000010",
+        "building_66_f000015",
+        "building_66_f000020"
+      ],
+      "yolo_ground_truth": "0 0.598621 0.198817 0.034960 0.041410",
+      "models": {
+        "yolo11n": {
+          "predictions": {
+            "xyxy": [],
+            "conf": []
+          },
+          "frame_stats": {
+            "score": 0.07183837890625,
+            "hit": -Infinity
+          }
+        },
+        "C1_temporal_uniform": {
+          "predictions": {
+            "xyxy": [
+              [
+                373.5,
+                94.375,
+                393.5,
+                108.875
+              ]
+            ],
+            "conf": [
+              0.6357421875
+            ]
+          },
+          "frame_stats": {
+            "score": 0.6357421875,
+            "hit": 0.6357421875
+          }
+        },
+        "C2_temporal_aat_sequence": {
+          "predictions": {
+            "xyxy": [
+              [
+                374.0,
+                93.1875,
+                394.0,
+                106.4375
+              ],
+              [
+                136.25,
+                467.5,
+                147.5,
+                476.0
+              ],
+              [
+                373.5,
+                94.5,
+                393.5,
+                109.75
+              ]
+            ],
+            "conf": [
+              0.638671875,
+              0.416259765625,
+              0.377197265625
+            ]
+          },
+          "frame_stats": {
+            "score": 0.638671875,
+            "hit": 0.638671875
+          }
+        }
+      }
+    },
+    {
+      "kind": "temporal_removes_background_fp",
+      "matching_frames": 80,
+      "selected": "cn_mountains_33_f000175",
+      "metadata": {
+        "seq": "cn_mountains_33",
+        "frame": 175,
+        "exist": 0,
+        "attr": {
+          "OC": 0,
+          "OV": 1,
+          "SV": 0,
+          "TC": 0,
+          "DBC": 0,
+          "CDB": 0,
+          "FM": 0,
+          "SIZE": 0
+        }
+      },
+      "history": [
+        "cn_mountains_33_f000165",
+        "cn_mountains_33_f000170",
+        "cn_mountains_33_f000175"
+      ],
+      "yolo_ground_truth": "",
+      "models": {
+        "yolo11n": {
+          "predictions": {
+            "xyxy": [
+              [
+                4.5,
+                397.0,
+                22.125,
+                405.0
+              ]
+            ],
+            "conf": [
+              0.322021484375
+            ]
+          },
+          "frame_stats": {
+            "score": 0.322021484375,
+            "hit": -Infinity
+          }
+        },
+        "C1_temporal_uniform": {
+          "predictions": {
+            "xyxy": [],
+            "conf": []
+          },
+          "frame_stats": {
+            "score": 0.0364990234375,
+            "hit": -Infinity
+          }
+        },
+        "C2_temporal_aat_sequence": {
+          "predictions": {
+            "xyxy": [],
+            "conf": []
+          },
+          "frame_stats": {
+            "score": 0.00494384765625,
+            "hit": -Infinity
+          }
+        }
+      }
+    },
+    {
+      "kind": "remaining_temporal_background_fp",
+      "matching_frames": 654,
+      "selected": "building_67_f000500",
+      "metadata": {
+        "seq": "building_67",
+        "frame": 500,
+        "exist": 0,
+        "attr": {
+          "OC": 1,
+          "OV": 0,
+          "SV": 0,
+          "TC": 1,
+          "DBC": 0,
+          "CDB": 0,
+          "FM": 0,
+          "SIZE": 0
+        }
+      },
+      "history": [
+        "building_67_f000490",
+        "building_67_f000495",
+        "building_67_f000500"
+      ],
+      "yolo_ground_truth": "",
+      "models": {
+        "yolo11n": {
+          "predictions": {
+            "xyxy": [],
+            "conf": []
+          },
+          "frame_stats": {
+            "score": 0.02337646484375,
+            "hit": -Infinity
+          }
+        },
+        "C1_temporal_uniform": {
+          "predictions": {
+            "xyxy": [
+              [
+                135.25,
+                469.5,
+                147.5,
+                477.5
+              ]
+            ],
+            "conf": [
+              0.436767578125
+            ]
+          },
+          "frame_stats": {
+            "score": 0.436767578125,
+            "hit": -Infinity
+          }
+        },
+        "C2_temporal_aat_sequence": {
+          "predictions": {
+            "xyxy": [
+              [
+                135.125,
+                469.5,
+                148.125,
+                477.5
+              ]
+            ],
+            "conf": [
+              0.1165771484375
+            ]
+          },
+          "frame_stats": {
+            "score": 0.1165771484375,
+            "hit": -Infinity
+          }
+        }
+      }
+    },
+    {
+      "kind": "temporal_regression",
+      "matching_frames": 290,
+      "selected": "building_68_f000205",
+      "metadata": {
+        "seq": "building_68",
+        "frame": 205,
+        "exist": 1,
+        "attr": {
+          "OC": 0,
+          "OV": 0,
+          "SV": 0,
+          "TC": 1,
+          "DBC": 0,
+          "CDB": 0,
+          "FM": 0,
+          "SIZE": 1
+        }
+      },
+      "history": [
+        "building_68_f000195",
+        "building_68_f000200",
+        "building_68_f000205"
+      ],
+      "yolo_ground_truth": "0 0.546304 0.061607 0.011898 0.011021",
+      "models": {
+        "yolo11n": {
+          "predictions": {
+            "xyxy": [
+              [
+                346.0,
+                29.1875,
+                354.0,
+                36.0
+              ]
+            ],
+            "conf": [
+              0.5654296875
+            ]
+          },
+          "frame_stats": {
+            "score": 0.5654296875,
+            "hit": 0.5654296875
+          }
+        },
+        "C1_temporal_uniform": {
+          "predictions": {
+            "xyxy": [
+              [
+                346.0,
+                28.0,
+                354.0,
+                35.0
+              ]
+            ],
+            "conf": [
+              0.61279296875
+            ]
+          },
+          "frame_stats": {
+            "score": 0.61279296875,
+            "hit": 0.61279296875
+          }
+        },
+        "C2_temporal_aat_sequence": {
+          "predictions": {
+            "xyxy": [],
+            "conf": []
+          },
+          "frame_stats": {
+            "score": 0.029083251953125,
+            "hit": 0.029083251953125
+          }
+        }
+      }
+    }
+  ]
+}

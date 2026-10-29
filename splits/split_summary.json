@@ -1,0 +1,27 @@
+{
+  "source": "data/yolo/attribute_index.json",
+  "source_sha256": "9ce7b25b99e5ebaaeb4fd074a3f36e8453aec7c8088448f95954a0c13d579d83",
+  "frame_stride": 5,
+  "index_convention": "frame is the original converter zero-based frame index",
+  "splits": {
+    "train": {
+      "sequences": 120,
+      "samples": 25612,
+      "target_present": 22000,
+      "target_absent": 3612
+    },
+    "val": {
+      "sequences": 40,
+      "samples": 9066,
+      "target_present": 7819,
+      "target_absent": 1247
+    },
+    "test": {
+      "sequences": 60,
+      "samples": 14446,
+      "target_present": 11854,
+      "target_absent": 2592
+    }
+  },
+  "sequence_overlap": false
+}

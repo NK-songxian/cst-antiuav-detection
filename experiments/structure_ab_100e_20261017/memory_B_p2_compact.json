@@ -1,0 +1,12 @@
+{
+  "status": "PASS_SYNTHETIC_MEMORY_ONLY",
+  "variant": "B_p2_compact",
+  "batch": 256,
+  "objects_per_image": 4,
+  "peak_allocated": 57624138752,
+  "peak_reserved": 59156463616,
+  "contrast_gradient_nonzero": true,
+  "loss_finite": true,
+  "probe_backward_divisor": 256,
+  "training_loss_unchanged": true
+}

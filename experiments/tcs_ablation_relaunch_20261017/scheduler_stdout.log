@@ -1,0 +1,12 @@
+[2026-10-17T11:23:17.200909+00:00] START CST corrected four-way: batch256/640/100epochs/patience20; preserve VisDrone jobs, max two CST jobs.
+[2026-10-17T11:23:17.284923+00:00] LAUNCH tcs_yolo8n: pid=997144
+[2026-10-17T11:23:52.758944+00:00] LAUNCH tcs_far15_yolo11n: pid=997273
+[2026-10-17T16:01:07.112971+00:00] EXIT tcs_far15_yolo11n: rc=0 verified_complete=True
+[2026-10-17T16:43:49.670308+00:00] EXIT tcs_yolo8n: rc=0 verified_complete=True
+[2026-10-17T16:43:49.740987+00:00] LAUNCH tcs_yolo11s: pid=56244
+[2026-10-17T16:44:15.107565+00:00] WAIT_RESOURCES {"gpu_free_bytes": 33534509056, "ram_available_including_inactive_file": 69590151168, "ram_limit_bytes": 118111600640, "ram_used_bytes": 52179673088, "inactive_file_bytes": 3658223616}
+[2026-10-17T16:46:16.794199+00:00] WAIT_RESOURCES {"gpu_free_bytes": 32095862784, "ram_available_including_inactive_file": 67901743104, "ram_limit_bytes": 118111600640, "ram_used_bytes": 53869690880, "inactive_file_bytes": 3659833344}
+[2026-10-17T16:47:12.565153+00:00] LAUNCH tcs_far20_yolo11n: pid=56860
+[2026-10-17T16:48:08.297785+00:00] EXIT tcs_yolo11s: rc=1 verified_complete=False
+[2026-10-17T20:15:31.300860+00:00] EXIT tcs_far20_yolo11n: rc=0 verified_complete=True
+[2026-10-17T20:15:31.302417+00:00] QUEUE_END needs_attention

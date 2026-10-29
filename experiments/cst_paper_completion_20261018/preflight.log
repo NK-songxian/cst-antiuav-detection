@@ -1,0 +1,5 @@
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 4580.7±327.3 MB/s, size: 325.2 KB)
+[K[34m[1mtrain: [0mScanning /root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/data/train/labels.cache... 25612 images, 3612 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 25612/25612 6.7Git/s 0.0s
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 4097.4±648.8 MB/s, size: 364.1 KB)
+[K[34m[1mtrain: [0mScanning /root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/data/train/labels.cache... 25612 images, 3612 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 25612/25612 6.7Git/s 0.0s
+PREFLIGHT_PASS ["BGR current=channel2, output copied; source not mutated", "Train/val/test sequence sets disjoint", "Four real augmented samples: current pixels exactly match temporal current channel; GT identical", "Input mode survives dataset serialization to worker processes", "Cached temporal source preserved while current-only image returned"]

@@ -1,0 +1,2455 @@
+{
+  "protocol": "one middle pair per training sequence per gap; GT boxes masked by union +12px; Hanning phase correlation; translation diagnostic only",
+  "summary": {
+    "5": {
+      "pairs": 120,
+      "0.0": {
+        "n": 120,
+        "median_px": 0.08749140116576637,
+        "p90_px": 0.9499202056193986,
+        "fraction_gt_1px": 0.1,
+        "fraction_gt_2px": 0.075
+      },
+      "0.3": {
+        "n": 118,
+        "median_px": 0.08610000724118816,
+        "p90_px": 0.8503667627758268,
+        "fraction_gt_1px": 0.1016949152542373,
+        "fraction_gt_2px": 0.07627118644067797
+      },
+      "0.6": {
+        "n": 117,
+        "median_px": 0.08591331990228039,
+        "p90_px": 0.8814232161392231,
+        "fraction_gt_1px": 0.10256410256410256,
+        "fraction_gt_2px": 0.07692307692307693
+      }
+    },
+    "10": {
+      "pairs": 120,
+      "0.0": {
+        "n": 120,
+        "median_px": 0.1695744651363699,
+        "p90_px": 1.2242423279937997,
+        "fraction_gt_1px": 0.11666666666666667,
+        "fraction_gt_2px": 0.09166666666666666
+      },
+      "0.3": {
+        "n": 118,
+        "median_px": 0.1662842383706214,
+        "p90_px": 1.2840198145567614,
+        "fraction_gt_1px": 0.11864406779661017,
+        "fraction_gt_2px": 0.09322033898305085
+      },
+      "0.6": {
+        "n": 118,
+        "median_px": 0.1662842383706214,
+        "p90_px": 1.2840198145567614,
+        "fraction_gt_1px": 0.11864406779661017,
+        "fraction_gt_2px": 0.09322033898305085
+      }
+    }
+  },
+  "records": [
+    {
+      "seq": "building_1",
+      "gap": 5,
+      "current": "building_1_f000465.jpg",
+      "previous": "building_1_f000460.jpg",
+      "dx": 0.03132441665343322,
+      "dy": -0.04115911991794974,
+      "shift_px": 0.051723227191447084,
+      "response": 0.9839714386267587
+    },
+    {
+      "seq": "building_1",
+      "gap": 10,
+      "current": "building_1_f000465.jpg",
+      "previous": "building_1_f000455.jpg",
+      "dx": 0.12249696849499969,
+      "dy": -0.17850524869334095,
+      "shift_px": 0.2164939516511638,
+      "response": 0.9730905435979367
+    },
+    {
+      "seq": "building_10",
+      "gap": 5,
+      "current": "building_10_f000590.jpg",
+      "previous": "building_10_f000585.jpg",
+      "dx": 0.10510422781754869,
+      "dy": 0.21958935976743987,
+      "shift_px": 0.24344688461386668,
+      "response": 0.9266252166591584
+    },
+    {
+      "seq": "building_10",
+      "gap": 10,
+      "current": "building_10_f000590.jpg",
+      "previous": "building_10_f000580.jpg",
+      "dx": 0.0252878762409523,
+      "dy": 0.28540339404713677,
+      "shift_px": 0.2865215070782697,
+      "response": 0.9232664718758314
+    },
+    {
+      "seq": "building_11",
+      "gap": 5,
+      "current": "building_11_f000500.jpg",
+      "previous": "building_11_f000495.jpg",
+      "dx": -0.04866747277304739,
+      "dy": -0.07415171356171868,
+      "shift_px": 0.08869610775143678,
+      "response": 0.9702423984184861
+    },
+    {
+      "seq": "building_11",
+      "gap": 10,
+      "current": "building_11_f000505.jpg",
+      "previous": "building_11_f000495.jpg",
+      "dx": -0.06504251920677007,
+      "dy": -0.10668427422490367,
+      "shift_px": 0.12494824397188421,
+      "response": 0.9528865435626358
+    },
+    {
+      "seq": "building_12",
+      "gap": 5,
+      "current": "building_12_f000500.jpg",
+      "previous": "building_12_f000495.jpg",
+      "dx": -0.04889939266320198,
+      "dy": -0.09095786248269633,
+      "shift_px": 0.10326898542278368,
+      "response": 0.9453422014601529
+    },
+    {
+      "seq": "building_12",
+      "gap": 10,
+      "current": "building_12_f000505.jpg",
+      "previous": "building_12_f000495.jpg",
+      "dx": -0.07220266145310461,
+      "dy": -0.05100454748298944,
+      "shift_px": 0.0884007250244938,
+      "response": 0.9410244639962911
+    },
+    {
+      "seq": "building_13",
+      "gap": 5,
+      "current": "building_13_f000600.jpg",
+      "previous": "building_13_f000595.jpg",
+      "dx": 0.056906791005644664,
+      "dy": -0.024743921964784477,
+      "shift_px": 0.06205356183781447,
+      "response": 0.9638976654969156
+    },
+    {
+      "seq": "building_13",
+      "gap": 10,
+      "current": "building_13_f000605.jpg",
+      "previous": "building_13_f000595.jpg",
+      "dx": 0.1151361306083345,
+      "dy": -0.0033368980353998268,
+      "shift_px": 0.11518447577672139,
+      "response": 0.9459006505087018
+    },
+    {
+      "seq": "building_14",
+      "gap": 5,
+      "current": "building_14_f000550.jpg",
+      "previous": "building_14_f000545.jpg",
+      "dx": -0.010297408198596258,
+      "dy": -0.22557912526428936,
+      "shift_px": 0.2258140349283243,
+      "response": 0.961197299696505
+    },
+    {
+      "seq": "building_14",
+      "gap": 10,
+      "current": "building_14_f000555.jpg",
+      "previous": "building_14_f000545.jpg",
+      "dx": 0.03650558112587987,
+      "dy": -0.3544859003147849,
+      "shift_px": 0.35636064734384154,
+      "response": 0.9529696943238377
+    },
+    {
+      "seq": "building_15",
+      "gap": 5,
+      "current": "building_15_f000500.jpg",
+      "previous": "building_15_f000495.jpg",
+      "dx": -0.144919671935952,
+      "dy": 0.03725935376573375,
+      "shift_px": 0.14963278637071506,
+      "response": 0.9701210420578719
+    },
+    {
+      "seq": "building_15",
+      "gap": 10,
+      "current": "building_15_f000505.jpg",
+      "previous": "building_15_f000495.jpg",
+      "dx": -0.2612791212194452,
+      "dy": 0.09474376874157997,
+      "shift_px": 0.2779265386762544,
+      "response": 0.9589587160386145
+    },
+    {
+      "seq": "building_16",
+      "gap": 5,
+      "current": "building_16_f000500.jpg",
+      "previous": "building_16_f000495.jpg",
+      "dx": 0.09061994528531159,
+      "dy": 0.20840055563843407,
+      "shift_px": 0.22725044790697535,
+      "response": 0.9687749022617936
+    },
+    {
+      "seq": "building_16",
+      "gap": 10,
+      "current": "building_16_f000505.jpg",
+      "previous": "building_16_f000495.jpg",
+      "dx": 0.10456403495601307,
+      "dy": 0.6274065497326546,
+      "shift_px": 0.636060229894714,
+      "response": 0.9207171494141221
+    },
+    {
+      "seq": "building_17",
+      "gap": 5,
+      "current": "building_17_f000500.jpg",
+      "previous": "building_17_f000495.jpg",
+      "dx": 0.05208186798421366,
+      "dy": -0.014899541227123336,
+      "shift_px": 0.05417118515875213,
+      "response": 0.970869431598112
+    },
+    {
+      "seq": "building_17",
+      "gap": 10,
+      "current": "building_17_f000505.jpg",
+      "previous": "building_17_f000495.jpg",
+      "dx": 0.056909178401781446,
+      "dy": -0.19963568657374253,
+      "shift_px": 0.2075886845185338,
+      "response": 0.9506578206084668
+    },
+    {
+      "seq": "building_18",
+      "gap": 5,
+      "current": "building_18_f000575.jpg",
+      "previous": "building_18_f000570.jpg",
+      "dx": -0.054673067613123294,
+      "dy": 0.08995372203037277,
+      "shift_px": 0.10526545696165825,
+      "response": 0.8878952061757446
+    },
+    {
+      "seq": "building_18",
+      "gap": 10,
+      "current": "building_18_f000575.jpg",
+      "previous": "building_18_f000565.jpg",
+      "dx": -0.18350652300944148,
+      "dy": 0.13703223650205132,
+      "shift_px": 0.22902505938820059,
+      "response": 0.8686253629624844
+    },
+    {
+      "seq": "building_19",
+      "gap": 5,
+      "current": "building_19_f000625.jpg",
+      "previous": "building_19_f000620.jpg",
+      "dx": -0.07788141861715303,
+      "dy": -0.020660192162040403,
+      "shift_px": 0.08057517549464392,
+      "response": 0.9542354499921203
+    },
+    {
+      "seq": "building_19",
+      "gap": 10,
+      "current": "building_19_f000630.jpg",
+      "previous": "building_19_f000620.jpg",
+      "dx": -0.23447123557389205,
+      "dy": -0.07418497806560254,
+      "shift_px": 0.2459271666208138,
+      "response": 0.9073513530660421
+    },
+    {
+      "seq": "building_2",
+      "gap": 5,
+      "current": "building_2_f000500.jpg",
+      "previous": "building_2_f000495.jpg",
+      "dx": 0.04519916799335988,
+      "dy": 0.027050692476706217,
+      "shift_px": 0.052675466307962555,
+      "response": 0.9789972862228751
+    },
+    {
+      "seq": "building_2",
+      "gap": 10,
+      "current": "building_2_f000505.jpg",
+      "previous": "building_2_f000495.jpg",
+      "dx": 0.13025411876719772,
+      "dy": 0.0503162130823398,
+      "shift_px": 0.13963472617786263,
+      "response": 0.9743424713611603
+    },
+    {
+      "seq": "building_20",
+      "gap": 5,
+      "current": "building_20_f000500.jpg",
+      "previous": "building_20_f000495.jpg",
+      "dx": 0.11953721472389134,
+      "dy": -0.09047195362990124,
+      "shift_px": 0.1499143758868932,
+      "response": 0.9722333831712604
+    },
+    {
+      "seq": "building_20",
+      "gap": 10,
+      "current": "building_20_f000505.jpg",
+      "previous": "building_20_f000495.jpg",
+      "dx": 0.10314021948386198,
+      "dy": -0.1764317049534725,
+      "shift_px": 0.20436744209381394,
+      "response": 0.9601776814088225
+    },
+    {
+      "seq": "building_21",
+      "gap": 5,
+      "current": "building_21_f000530.jpg",
+      "previous": "building_21_f000525.jpg",
+      "dx": 0.026455483724816986,
+      "dy": 0.11226773535409507,
+      "shift_px": 0.11534269383299137,
+      "response": 0.972317517362535
+    },
+    {
+      "seq": "building_21",
+      "gap": 10,
+      "current": "building_21_f000530.jpg",
+      "previous": "building_21_f000520.jpg",
+      "dx": 0.10372329469208807,
+      "dy": 0.06870931625147136,
+      "shift_px": 0.12441660661473794,
+      "response": 0.9643344707787037
+    },
+    {
+      "seq": "building_22",
+      "gap": 5,
+      "current": "building_22_f000610.jpg",
+      "previous": "building_22_f000605.jpg",
+      "dx": -0.11797156715880419,
+      "dy": 0.023840740984553577,
+      "shift_px": 0.12035643559277094,
+      "response": 0.9684866834431887
+    },
+    {
+      "seq": "building_22",
+      "gap": 10,
+      "current": "building_22_f000615.jpg",
+      "previous": "building_22_f000605.jpg",
+      "dx": -0.11422785519476975,
+      "dy": 0.00931023163408895,
+      "shift_px": 0.11460664603537474,
+      "response": 0.965201622992754
+    },
+    {
+      "seq": "building_23",
+      "gap": 5,
+      "current": "building_23_f000510.jpg",
+      "previous": "building_23_f000505.jpg",
+      "dx": 0.08232147248241972,
+      "dy": -0.04876919865500895,
+      "shift_px": 0.0956831206071662,
+      "response": 0.9815549942897632
+    },
+    {
+      "seq": "building_23",
+      "gap": 10,
+      "current": "building_23_f000515.jpg",
+      "previous": "building_23_f000505.jpg",
+      "dx": 0.1716360942858728,
+      "dy": -0.06328175394503432,
+      "shift_px": 0.1829303945331909,
+      "response": 0.9716147736646235
+    },
+    {
+      "seq": "building_24",
+      "gap": 5,
+      "current": "building_24_f000745.jpg",
+      "previous": "building_24_f000740.jpg",
+      "dx": 0.11651950749381967,
+      "dy": 0.022590638770338956,
+      "shift_px": 0.11868922691910265,
+      "response": 0.985399860702455
+    },
+    {
+      "seq": "building_24",
+      "gap": 10,
+      "current": "building_24_f000750.jpg",
+      "previous": "building_24_f000740.jpg",
+      "dx": 0.10836089488441303,
+      "dy": 0.012936974588967587,
+      "shift_px": 0.10913042129336074,
+      "response": 0.977844237885438
+    },
+    {
+      "seq": "building_25",
+      "gap": 5,
+      "current": "building_25_f000500.jpg",
+      "previous": "building_25_f000495.jpg",
+      "dx": -0.04428429013501045,
+      "dy": -0.06604636281423382,
+      "shift_px": 0.07951867952721041,
+      "response": 0.9881721416953951
+    },
+    {
+      "seq": "building_25",
+      "gap": 10,
+      "current": "building_25_f000505.jpg",
+      "previous": "building_25_f000495.jpg",
+      "dx": -0.04688294651873548,
+      "dy": -0.06050701680703696,
+      "shift_px": 0.07654482188342765,
+      "response": 0.9866769516374916
+    },
+    {
+      "seq": "building_26",
+      "gap": 5,
+      "current": "building_26_f000560.jpg",
+      "previous": "building_26_f000555.jpg",
+      "dx": -0.2246743058578886,
+      "dy": -0.05991821539504372,
+      "shift_px": 0.23252685059762654,
+      "response": 0.9422437731176615
+    },
+    {
+      "seq": "building_26",
+      "gap": 10,
+      "current": "building_26_f000565.jpg",
+      "previous": "building_26_f000555.jpg",
+      "dx": -0.1829643182664995,
+      "dy": -0.2097981502016637,
+      "shift_px": 0.2783724224609269,
+      "response": 0.937308706343174
+    },
+    {
+      "seq": "building_27",
+      "gap": 5,
+      "current": "building_27_f000590.jpg",
+      "previous": "building_27_f000585.jpg",
+      "dx": -0.09156920518358902,
+      "dy": -0.04168132189431617,
+      "shift_px": 0.10060940280516442,
+      "response": 0.9800839520990848
+    },
+    {
+      "seq": "building_27",
+      "gap": 10,
+      "current": "building_27_f000590.jpg",
+      "previous": "building_27_f000580.jpg",
+      "dx": 0.028461008517183473,
+      "dy": 0.014526427059962543,
+      "shift_px": 0.031953811806161754,
+      "response": 0.9570454236119985
+    },
+    {
+      "seq": "building_28",
+      "gap": 5,
+      "current": "building_28_f000500.jpg",
+      "previous": "building_28_f000495.jpg",
+      "dx": -0.349676620135142,
+      "dy": -0.15753987651169155,
+      "shift_px": 0.38352646761397763,
+      "response": 0.9680916306562721
+    },
+    {
+      "seq": "building_28",
+      "gap": 10,
+      "current": "building_28_f000505.jpg",
+      "previous": "building_28_f000495.jpg",
+      "dx": -0.49948655083136373,
+      "dy": -0.42595029739862866,
+      "shift_px": 0.656445329266187,
+      "response": 0.9602915355935693
+    },
+    {
+      "seq": "building_29",
+      "gap": 5,
+      "current": "building_29_f000500.jpg",
+      "previous": "building_29_f000495.jpg",
+      "dx": 0.1984205470603797,
+      "dy": -0.035663570617259666,
+      "shift_px": 0.2016001085439009,
+      "response": 0.9678709137719125
+    },
+    {
+      "seq": "building_29",
+      "gap": 10,
+      "current": "building_29_f000505.jpg",
+      "previous": "building_29_f000495.jpg",
+      "dx": 0.29593906432086214,
+      "dy": 0.2825026652774625,
+      "shift_px": 0.4091304018036027,
+      "response": 0.9289053359068931
+    },
+    {
+      "seq": "building_3",
+      "gap": 5,
+      "current": "building_3_f000500.jpg",
+      "previous": "building_3_f000495.jpg",
+      "dx": 0.02844915901528111,
+      "dy": 0.08730665790761805,
+      "shift_px": 0.09182487224970473,
+      "response": 0.9822552927769721
+    },
+    {
+      "seq": "building_3",
+      "gap": 10,
+      "current": "building_3_f000505.jpg",
+      "previous": "building_3_f000495.jpg",
+      "dx": -0.14138012251385135,
+      "dy": 0.33792934415200193,
+      "shift_px": 0.3663121355907197,
+      "response": 0.9646021138643845
+    },
+    {
+      "seq": "building_30",
+      "gap": 5,
+      "current": "building_30_f000500.jpg",
+      "previous": "building_30_f000495.jpg",
+      "dx": 0.06577221576526426,
+      "dy": 0.03399307721159062,
+      "shift_px": 0.07403724512018015,
+      "response": 0.9817890335340053
+    },
+    {
+      "seq": "building_30",
+      "gap": 10,
+      "current": "building_30_f000505.jpg",
+      "previous": "building_30_f000495.jpg",
+      "dx": -0.06000516006855605,
+      "dy": 0.08166277485639739,
+      "shift_px": 0.10133818644568139,
+      "response": 0.9795957473106682
+    },
+    {
+      "seq": "building_31",
+      "gap": 5,
+      "current": "building_31_f000780.jpg",
+      "previous": "building_31_f000775.jpg",
+      "dx": -0.025062257917340958,
+      "dy": 0.08130216326489403,
+      "shift_px": 0.0850773678687041,
+      "response": 0.9830148410052061
+    },
+    {
+      "seq": "building_31",
+      "gap": 10,
+      "current": "building_31_f000785.jpg",
+      "previous": "building_31_f000775.jpg",
+      "dx": -0.23502721569741425,
+      "dy": 0.024204188696330675,
+      "shift_px": 0.23627025811330224,
+      "response": 0.9295634454116225
+    },
+    {
+      "seq": "building_32",
+      "gap": 5,
+      "current": "building_32_f000500.jpg",
+      "previous": "building_32_f000495.jpg",
+      "dx": -0.02189664109516798,
+      "dy": -0.1043486802212783,
+      "shift_px": 0.1066213391173324,
+      "response": 0.9668720128014684
+    },
+    {
+      "seq": "building_32",
+      "gap": 10,
+      "current": "building_32_f000505.jpg",
+      "previous": "building_32_f000495.jpg",
+      "dx": -0.5150972810312737,
+      "dy": -0.30036338719276046,
+      "shift_px": 0.5962745787736713,
+      "response": 0.94547050697729
+    },
+    {
+      "seq": "building_33",
+      "gap": 5,
+      "current": "building_33_f000640.jpg",
+      "previous": "building_33_f000635.jpg",
+      "dx": 0.01951673094004036,
+      "dy": 0.04106448843128874,
+      "shift_px": 0.04546641614103068,
+      "response": 0.9864830205915496
+    },
+    {
+      "seq": "building_33",
+      "gap": 10,
+      "current": "building_33_f000640.jpg",
+      "previous": "building_33_f000630.jpg",
+      "dx": 0.007684501613539396,
+      "dy": -0.11876618553242224,
+      "shift_px": 0.11901453016741373,
+      "response": 0.9786174369975924
+    },
+    {
+      "seq": "building_34",
+      "gap": 5,
+      "current": "building_34_f000500.jpg",
+      "previous": "building_34_f000495.jpg",
+      "dx": 0.07702797591446142,
+      "dy": -0.009974866317122633,
+      "shift_px": 0.07767114671178299,
+      "response": 0.9861826334148646
+    },
+    {
+      "seq": "building_34",
+      "gap": 10,
+      "current": "building_34_f000505.jpg",
+      "previous": "building_34_f000495.jpg",
+      "dx": 0.09043291551648736,
+      "dy": -0.06577359423255302,
+      "shift_px": 0.11182252862049163,
+      "response": 0.9779220087453723
+    },
+    {
+      "seq": "building_35",
+      "gap": 5,
+      "current": "building_35_f000500.jpg",
+      "previous": "building_35_f000495.jpg",
+      "dx": -0.040726629126766056,
+      "dy": -0.28860867784442235,
+      "shift_px": 0.291468055277306,
+      "response": 0.975467226980254
+    },
+    {
+      "seq": "building_35",
+      "gap": 10,
+      "current": "building_35_f000505.jpg",
+      "previous": "building_35_f000495.jpg",
+      "dx": 0.00911387144407172,
+      "dy": -0.37483615682543814,
+      "shift_px": 0.374946939067868,
+      "response": 0.9725076781585813
+    },
+    {
+      "seq": "building_36",
+      "gap": 5,
+      "current": "building_36_f000565.jpg",
+      "previous": "building_36_f000560.jpg",
+      "dx": 0.017318040709312754,
+      "dy": -0.06335469786881731,
+      "shift_px": 0.06567900940223245,
+      "response": 0.9852116229012609
+    },
+    {
+      "seq": "building_36",
+      "gap": 10,
+      "current": "building_36_f000565.jpg",
+      "previous": "building_36_f000555.jpg",
+      "dx": 0.2590441587462351,
+      "dy": -0.24974399519140889,
+      "shift_px": 0.35982765223744423,
+      "response": 0.9622920751571655
+    },
+    {
+      "seq": "building_37",
+      "gap": 5,
+      "current": "building_37_f000710.jpg",
+      "previous": "building_37_f000705.jpg",
+      "dx": -0.06716347011013113,
+      "dy": -0.0541706742096153,
+      "shift_px": 0.08628669458009594,
+      "response": 0.9848104823380709
+    },
+    {
+      "seq": "building_37",
+      "gap": 10,
+      "current": "building_37_f000715.jpg",
+      "previous": "building_37_f000705.jpg",
+      "dx": -0.12721466665800563,
+      "dy": -0.033168127143028414,
+      "shift_px": 0.13146747153225236,
+      "response": 0.9827744132839143
+    },
+    {
+      "seq": "building_38",
+      "gap": 5,
+      "current": "building_38_f000500.jpg",
+      "previous": "building_38_f000495.jpg",
+      "dx": 0.10845161446661677,
+      "dy": -0.11164742210218037,
+      "shift_px": 0.15564992625272303,
+      "response": 0.9475124369375407
+    },
+    {
+      "seq": "building_38",
+      "gap": 10,
+      "current": "building_38_f000505.jpg",
+      "previous": "building_38_f000495.jpg",
+      "dx": 0.0853372822952565,
+      "dy": -0.1255174773244221,
+      "shift_px": 0.1517797379870815,
+      "response": 0.9400897084269673
+    },
+    {
+      "seq": "building_39",
+      "gap": 5,
+      "current": "building_39_f000500.jpg",
+      "previous": "building_39_f000495.jpg",
+      "dx": 0.0635158136627183,
+      "dy": -0.14284325790123376,
+      "shift_px": 0.156328036234949,
+      "response": 0.8959640032844618
+    },
+    {
+      "seq": "building_39",
+      "gap": 10,
+      "current": "building_39_f000505.jpg",
+      "previous": "building_39_f000495.jpg",
+      "dx": 0.025697755133194278,
+      "dy": -0.14203122991153805,
+      "shift_px": 0.1443372609171651,
+      "response": 0.897773519763723
+    },
+    {
+      "seq": "building_4",
+      "gap": 5,
+      "current": "building_4_f000560.jpg",
+      "previous": "building_4_f000555.jpg",
+      "dx": 0.4191335078580778,
+      "dy": -0.030243283386823805,
+      "shift_px": 0.4202232187771555,
+      "response": 0.9680446591228247
+    },
+    {
+      "seq": "building_4",
+      "gap": 10,
+      "current": "building_4_f000560.jpg",
+      "previous": "building_4_f000550.jpg",
+      "dx": 0.09321869763368795,
+      "dy": -0.11665847261679119,
+      "shift_px": 0.1493282452244168,
+      "response": 0.9734254507347941
+    },
+    {
+      "seq": "building_40",
+      "gap": 5,
+      "current": "building_40_f000565.jpg",
+      "previous": "building_40_f000560.jpg",
+      "dx": -0.26824476871763636,
+      "dy": 0.03203906550697866,
+      "shift_px": 0.2701513606535023,
+      "response": 0.9521020015701651
+    },
+    {
+      "seq": "building_40",
+      "gap": 10,
+      "current": "building_40_f000565.jpg",
+      "previous": "building_40_f000555.jpg",
+      "dx": -0.24787150066850927,
+      "dy": 0.05064474235490479,
+      "shift_px": 0.2529924322422579,
+      "response": 0.9450888123363257
+    },
+    {
+      "seq": "building_5",
+      "gap": 5,
+      "current": "building_5_f000500.jpg",
+      "previous": "building_5_f000495.jpg",
+      "dx": 0.006400893403395003,
+      "dy": -0.040224594607423114,
+      "shift_px": 0.04073069417151098,
+      "response": 0.9906479225493967
+    },
+    {
+      "seq": "building_5",
+      "gap": 10,
+      "current": "building_5_f000505.jpg",
+      "previous": "building_5_f000495.jpg",
+      "dx": -0.008574699253415474,
+      "dy": -0.042585421437649984,
+      "shift_px": 0.043440114943549386,
+      "response": 0.9855449955910445
+    },
+    {
+      "seq": "building_55",
+      "gap": 5,
+      "current": "building_55_f000500.jpg",
+      "previous": "building_55_f000495.jpg",
+      "dx": -0.08152895050886855,
+      "dy": 0.10366953297159398,
+      "shift_px": 0.13188761062975532,
+      "response": 0.9658885833341628
+    },
+    {
+      "seq": "building_55",
+      "gap": 10,
+      "current": "building_55_f000500.jpg",
+      "previous": "building_55_f000490.jpg",
+      "dx": 0.02255318464830225,
+      "dy": 0.3082483973070964,
+      "shift_px": 0.30907235492708496,
+      "response": 0.9237945845350624
+    },
+    {
+      "seq": "building_56",
+      "gap": 5,
+      "current": "building_56_f000500.jpg",
+      "previous": "building_56_f000495.jpg",
+      "dx": -0.17745778563443082,
+      "dy": 0.04194984344960062,
+      "shift_px": 0.1823487182508328,
+      "response": 0.9770818170625717
+    },
+    {
+      "seq": "building_56",
+      "gap": 10,
+      "current": "building_56_f000505.jpg",
+      "previous": "building_56_f000495.jpg",
+      "dx": -0.14709435532341786,
+      "dy": -0.1231125747881947,
+      "shift_px": 0.19181620223273826,
+      "response": 0.9537159910425543
+    },
+    {
+      "seq": "building_57",
+      "gap": 5,
+      "current": "building_57_f000500.jpg",
+      "previous": "building_57_f000495.jpg",
+      "dx": 0.0385187783970764,
+      "dy": 0.1946454152722481,
+      "shift_px": 0.19842009468727959,
+      "response": 0.9580508038401604
+    },
+    {
+      "seq": "building_57",
+      "gap": 10,
+      "current": "building_57_f000505.jpg",
+      "previous": "building_57_f000495.jpg",
+      "dx": 0.12769522025922697,
+      "dy": 0.2730444597430335,
+      "shift_px": 0.30142884114400453,
+      "response": 0.9431188207119703
+    },
+    {
+      "seq": "building_58",
+      "gap": 5,
+      "current": "building_58_f000500.jpg",
+      "previous": "building_58_f000495.jpg",
+      "dx": 0.07104898729198794,
+      "dy": 0.4935354421372722,
+      "shift_px": 0.4986232959267445,
+      "response": 0.934801210463047
+    },
+    {
+      "seq": "building_58",
+      "gap": 10,
+      "current": "building_58_f000505.jpg",
+      "previous": "building_58_f000495.jpg",
+      "dx": -0.09812884049233617,
+      "dy": 0.7331582086338244,
+      "shift_px": 0.7396960377232858,
+      "response": 0.9082782091572881
+    },
+    {
+      "seq": "building_59",
+      "gap": 5,
+      "current": "building_59_f000500.jpg",
+      "previous": "building_59_f000495.jpg",
+      "dx": -0.025530875169636147,
+      "dy": -0.027695381707417255,
+      "shift_px": 0.03766775484213369,
+      "response": 0.9671556724235415
+    },
+    {
+      "seq": "building_59",
+      "gap": 10,
+      "current": "building_59_f000505.jpg",
+      "previous": "building_59_f000495.jpg",
+      "dx": -0.0560198477544418,
+      "dy": -0.034875606002628956,
+      "shift_px": 0.06598887206553425,
+      "response": 0.9645786612527445
+    },
+    {
+      "seq": "building_6",
+      "gap": 5,
+      "current": "building_6_f000500.jpg",
+      "previous": "building_6_f000495.jpg",
+      "dx": -0.09798936487879928,
+      "dy": -0.1361102915282686,
+      "shift_px": 0.16771382497951898,
+      "response": 0.9624846315011382
+    },
+    {
+      "seq": "building_6",
+      "gap": 10,
+      "current": "building_6_f000505.jpg",
+      "previous": "building_6_f000495.jpg",
+      "dx": -0.1373027143466743,
+      "dy": -0.09005951760957487,
+      "shift_px": 0.16420338632023934,
+      "response": 0.961612936295569
+    },
+    {
+      "seq": "building_60",
+      "gap": 5,
+      "current": "building_60_f000500.jpg",
+      "previous": "building_60_f000495.jpg",
+      "dx": -0.09008521062526142,
+      "dy": 0.11857464734023893,
+      "shift_px": 0.14891370711005666,
+      "response": 0.9653940055519342
+    },
+    {
+      "seq": "building_60",
+      "gap": 10,
+      "current": "building_60_f000505.jpg",
+      "previous": "building_60_f000495.jpg",
+      "dx": -0.006135912829051904,
+      "dy": 0.41137084399406376,
+      "shift_px": 0.41141660238088845,
+      "response": 0.9564583309460432
+    },
+    {
+      "seq": "building_61",
+      "gap": 5,
+      "current": "building_61_f000500.jpg",
+      "previous": "building_61_f000495.jpg",
+      "dx": 0.07515995466081904,
+      "dy": -0.2945581968001534,
+      "shift_px": 0.30399597051075244,
+      "response": 0.9479535441845656
+    },
+    {
+      "seq": "building_61",
+      "gap": 10,
+      "current": "building_61_f000505.jpg",
+      "previous": "building_61_f000495.jpg",
+      "dx": 0.1560424617659919,
+      "dy": -0.45619218476605283,
+      "shift_px": 0.48214163823052614,
+      "response": 0.9490695990622043
+    },
+    {
+      "seq": "building_62",
+      "gap": 5,
+      "current": "building_62_f000540.jpg",
+      "previous": "building_62_f000535.jpg",
+      "dx": 0.05747769419321003,
+      "dy": 0.09585550325954273,
+      "shift_px": 0.11176744980050488,
+      "response": 0.978135852329433
+    },
+    {
+      "seq": "building_62",
+      "gap": 10,
+      "current": "building_62_f000540.jpg",
+      "previous": "building_62_f000530.jpg",
+      "dx": 0.11878526095500774,
+      "dy": 0.12270770853680801,
+      "shift_px": 0.1707838398517363,
+      "response": 0.9625018412480131
+    },
+    {
+      "seq": "building_63",
+      "gap": 5,
+      "current": "building_63_f000500.jpg",
+      "previous": "building_63_f000495.jpg",
+      "dx": 0.02807575409059382,
+      "dy": -0.11330400756446579,
+      "shift_px": 0.11673065620446077,
+      "response": 0.9818117948947475
+    },
+    {
+      "seq": "building_63",
+      "gap": 10,
+      "current": "building_63_f000505.jpg",
+      "previous": "building_63_f000495.jpg",
+      "dx": 0.08445329271734181,
+      "dy": -0.12295417905096429,
+      "shift_px": 0.14916463654934303,
+      "response": 0.9694040166214108
+    },
+    {
+      "seq": "building_64",
+      "gap": 5,
+      "current": "building_64_f000500.jpg",
+      "previous": "building_64_f000495.jpg",
+      "dx": 0.030880432122501134,
+      "dy": 0.5276585216152228,
+      "shift_px": 0.5285613649532426,
+      "response": 0.9713622884824872
+    },
+    {
+      "seq": "building_64",
+      "gap": 10,
+      "current": "building_64_f000505.jpg",
+      "previous": "building_64_f000495.jpg",
+      "dx": -0.06806735940153885,
+      "dy": 0.8322535220428904,
+      "shift_px": 0.835032388814167,
+      "response": 0.9574233050458133
+    },
+    {
+      "seq": "building_65",
+      "gap": 5,
+      "current": "building_65_f000450.jpg",
+      "previous": "building_65_f000445.jpg",
+      "dx": -0.16627511685311447,
+      "dy": 0.18825803334271995,
+      "shift_px": 0.2511742455001817,
+      "response": 0.9624911999329925
+    },
+    {
+      "seq": "building_65",
+      "gap": 10,
+      "current": "building_65_f000450.jpg",
+      "previous": "building_65_f000440.jpg",
+      "dx": -0.2948284998449253,
+      "dy": 0.7133378093393503,
+      "shift_px": 0.7718644146181843,
+      "response": 0.9094548303633928
+    },
+    {
+      "seq": "building_7",
+      "gap": 5,
+      "current": "building_7_f000300.jpg",
+      "previous": "building_7_f000295.jpg",
+      "dx": -0.0034891596784518697,
+      "dy": -0.010510237992548355,
+      "shift_px": 0.011074264667314992,
+      "response": 0.9832009194884449
+    },
+    {
+      "seq": "building_7",
+      "gap": 10,
+      "current": "building_7_f000305.jpg",
+      "previous": "building_7_f000295.jpg",
+      "dx": 0.05058164662756326,
+      "dy": -0.12034608027465765,
+      "shift_px": 0.13054379346805434,
+      "response": 0.9754189126193523
+    },
+    {
+      "seq": "building_8",
+      "gap": 5,
+      "current": "building_8_f000505.jpg",
+      "previous": "building_8_f000500.jpg",
+      "dx": -0.022913685106743742,
+      "dy": -0.06384334569145267,
+      "shift_px": 0.06783074342987358,
+      "response": 0.9631422556238249
+    },
+    {
+      "seq": "building_8",
+      "gap": 10,
+      "current": "building_8_f000510.jpg",
+      "previous": "building_8_f000500.jpg",
+      "dx": -0.02965936853331641,
+      "dy": -0.08036593046932694,
+      "shift_px": 0.08566423362171503,
+      "response": 0.9449784867465496
+    },
+    {
+      "seq": "building_9",
+      "gap": 5,
+      "current": "building_9_f000500.jpg",
+      "previous": "building_9_f000495.jpg",
+      "dx": -0.003965876524375744,
+      "dy": -0.029374489536337478,
+      "shift_px": 0.029640998838213847,
+      "response": 0.9751716857776046
+    },
+    {
+      "seq": "building_9",
+      "gap": 10,
+      "current": "building_9_f000505.jpg",
+      "previous": "building_9_f000495.jpg",
+      "dx": -0.11742157343684312,
+      "dy": -0.1547977863840515,
+      "shift_px": 0.1942940569801001,
+      "response": 0.9573987156618387
+    },
+    {
+      "seq": "cn_mountains_1",
+      "gap": 5,
+      "current": "cn_mountains_1_f000730.jpg",
+      "previous": "cn_mountains_1_f000725.jpg",
+      "dx": -5.667305181811798,
+      "dy": 0.04425458691801509,
+      "shift_px": 5.667477965749328,
+      "response": 0.9695248873904347
+    },
+    {
+      "seq": "cn_mountains_1",
+      "gap": 10,
+      "current": "cn_mountains_1_f000730.jpg",
+      "previous": "cn_mountains_1_f000720.jpg",
+      "dx": -11.253893190431825,
+      "dy": 0.08299895791452627,
+      "shift_px": 11.254199250442596,
+      "response": 0.9663403232581913
+    },
+    {
+      "seq": "cn_mountains_10",
+      "gap": 5,
+      "current": "cn_mountains_10_f000500.jpg",
+      "previous": "cn_mountains_10_f000495.jpg",
+      "dx": -0.004483768745899397,
+      "dy": 0.003230889742440013,
+      "shift_px": 0.00552655685707732,
+      "response": 0.993061674456112
+    },
+    {
+      "seq": "cn_mountains_10",
+      "gap": 10,
+      "current": "cn_mountains_10_f000500.jpg",
+      "previous": "cn_mountains_10_f000490.jpg",
+      "dx": -0.004342571207132551,
+      "dy": 0.014507811128623871,
+      "shift_px": 0.015143794386904469,
+      "response": 0.9935986742493697
+    },
+    {
+      "seq": "cn_mountains_11",
+      "gap": 5,
+      "current": "cn_mountains_11_f000695.jpg",
+      "previous": "cn_mountains_11_f000690.jpg",
+      "dx": 0.001204622138857303,
+      "dy": -0.0008047818618592828,
+      "shift_px": 0.0014487195527785345,
+      "response": 0.9931628969847225
+    },
+    {
+      "seq": "cn_mountains_11",
+      "gap": 10,
+      "current": "cn_mountains_11_f000700.jpg",
+      "previous": "cn_mountains_11_f000690.jpg",
+      "dx": 0.003139122760103419,
+      "dy": -0.002822629478998806,
+      "shift_px": 0.00422153157973648,
+      "response": 0.9906062856200151
+    },
+    {
+      "seq": "cn_mountains_12",
+      "gap": 5,
+      "current": "cn_mountains_12_f000755.jpg",
+      "previous": "cn_mountains_12_f000750.jpg",
+      "dx": -0.0030309027328030425,
+      "dy": -0.003543601493618098,
+      "shift_px": 0.00466299077001932,
+      "response": 0.9921860945876688
+    },
+    {
+      "seq": "cn_mountains_12",
+      "gap": 10,
+      "current": "cn_mountains_12_f000755.jpg",
+      "previous": "cn_mountains_12_f000745.jpg",
+      "dx": 0.0039041367912204805,
+      "dy": -0.005704555662987332,
+      "shift_px": 0.006912614512373895,
+      "response": 0.9914996273349971
+    },
+    {
+      "seq": "cn_mountains_13",
+      "gap": 5,
+      "current": "cn_mountains_13_f000740.jpg",
+      "previous": "cn_mountains_13_f000735.jpg",
+      "dx": -0.0014358987907030496,
+      "dy": -0.0004054708629723791,
+      "shift_px": 0.0014920495829100473,
+      "response": 0.9937783548608422
+    },
+    {
+      "seq": "cn_mountains_13",
+      "gap": 10,
+      "current": "cn_mountains_13_f000740.jpg",
+      "previous": "cn_mountains_13_f000730.jpg",
+      "dx": -0.0012503076732173213,
+      "dy": -0.004423811264871347,
+      "shift_px": 0.004597105109186513,
+      "response": 0.988705005380325
+    },
+    {
+      "seq": "cn_mountains_14",
+      "gap": 5,
+      "current": "cn_mountains_14_f000500.jpg",
+      "previous": "cn_mountains_14_f000495.jpg",
+      "dx": -0.0036200655549691874,
+      "dy": 0.0016848055079492497,
+      "shift_px": 0.003992924269491033,
+      "response": 0.9872967091854662
+    },
+    {
+      "seq": "cn_mountains_14",
+      "gap": 10,
+      "current": "cn_mountains_14_f000505.jpg",
+      "previous": "cn_mountains_14_f000495.jpg",
+      "dx": -0.00024867849134579956,
+      "dy": 0.011326398061754617,
+      "shift_px": 0.011329127682455378,
+      "response": 0.9871367613784969
+    },
+    {
+      "seq": "cn_mountains_15",
+      "gap": 5,
+      "current": "cn_mountains_15_f000625.jpg",
+      "previous": "cn_mountains_15_f000620.jpg",
+      "dx": -0.004739376604732115,
+      "dy": -0.001679835745278524,
+      "shift_px": 0.005028273931738163,
+      "response": 0.9901170375756919
+    },
+    {
+      "seq": "cn_mountains_15",
+      "gap": 10,
+      "current": "cn_mountains_15_f000625.jpg",
+      "previous": "cn_mountains_15_f000615.jpg",
+      "dx": 0.005789855893681306,
+      "dy": 0.0004369081094637295,
+      "shift_px": 0.00580631724638874,
+      "response": 0.9765990406740457
+    },
+    {
+      "seq": "cn_mountains_16",
+      "gap": 5,
+      "current": "cn_mountains_16_f000565.jpg",
+      "previous": "cn_mountains_16_f000560.jpg",
+      "dx": 0.00746613915157468,
+      "dy": -0.004578819809751167,
+      "shift_px": 0.008758357419108105,
+      "response": 0.98507638014853
+    },
+    {
+      "seq": "cn_mountains_16",
+      "gap": 10,
+      "current": "cn_mountains_16_f000565.jpg",
+      "previous": "cn_mountains_16_f000555.jpg",
+      "dx": 0.008180775461767098,
+      "dy": 0.006483344961623061,
+      "shift_px": 0.010438335549657991,
+      "response": 0.9885666097514332
+    },
+    {
+      "seq": "cn_mountains_17",
+      "gap": 5,
+      "current": "cn_mountains_17_f000535.jpg",
+      "previous": "cn_mountains_17_f000530.jpg",
+      "dx": 0.009115405826321421,
+      "dy": -0.019155236524056818,
+      "shift_px": 0.021213526573181905,
+      "response": 0.9856416091322899
+    },
+    {
+      "seq": "cn_mountains_17",
+      "gap": 10,
+      "current": "cn_mountains_17_f000535.jpg",
+      "previous": "cn_mountains_17_f000525.jpg",
+      "dx": 0.0054098187059707925,
+      "dy": -0.018782014871248975,
+      "shift_px": 0.01954559339225313,
+      "response": 0.9845792250707746
+    },
+    {
+      "seq": "cn_mountains_18",
+      "gap": 5,
+      "current": "cn_mountains_18_f000550.jpg",
+      "previous": "cn_mountains_18_f000545.jpg",
+      "dx": 0.003641783843306712,
+      "dy": 0.007073741386051324,
+      "shift_px": 0.007956155274886552,
+      "response": 0.9883067769929766
+    },
+    {
+      "seq": "cn_mountains_18",
+      "gap": 10,
+      "current": "cn_mountains_18_f000555.jpg",
+      "previous": "cn_mountains_18_f000545.jpg",
+      "dx": -0.021032119449330366,
+      "dy": -0.0028311771527569363,
+      "shift_px": 0.021221819257575294,
+      "response": 0.9827422284055501
+    },
+    {
+      "seq": "cn_mountains_19",
+      "gap": 5,
+      "current": "cn_mountains_19_f000690.jpg",
+      "previous": "cn_mountains_19_f000685.jpg",
+      "dx": -0.0009243097914009013,
+      "dy": 0.0020098255610889737,
+      "shift_px": 0.0022121815875931583,
+      "response": 0.9817319869878702
+    },
+    {
+      "seq": "cn_mountains_19",
+      "gap": 10,
+      "current": "cn_mountains_19_f000690.jpg",
+      "previous": "cn_mountains_19_f000680.jpg",
+      "dx": -0.0031551949912795862,
+      "dy": 0.017538528211474613,
+      "shift_px": 0.01782007932804135,
+      "response": 0.9784854093100875
+    },
+    {
+      "seq": "cn_mountains_2",
+      "gap": 5,
+      "current": "cn_mountains_2_f000760.jpg",
+      "previous": "cn_mountains_2_f000755.jpg",
+      "dx": 24.690615832875494,
+      "dy": -0.7307082844533284,
+      "shift_px": 24.70142596700868,
+      "response": 0.8795506083406508
+    },
+    {
+      "seq": "cn_mountains_2",
+      "gap": 10,
+      "current": "cn_mountains_2_f000765.jpg",
+      "previous": "cn_mountains_2_f000755.jpg",
+      "dx": 78.95964551196164,
+      "dy": -1.0528224671775774,
+      "shift_px": 78.96666419776156,
+      "response": 0.7760390849784017
+    },
+    {
+      "seq": "cn_mountains_20",
+      "gap": 5,
+      "current": "cn_mountains_20_f000590.jpg",
+      "previous": "cn_mountains_20_f000585.jpg",
+      "dx": 0.0013735386835946883,
+      "dy": -0.008532594054884157,
+      "shift_px": 0.008642440038598792,
+      "response": 0.9877393453381955
+    },
+    {
+      "seq": "cn_mountains_20",
+      "gap": 10,
+      "current": "cn_mountains_20_f000595.jpg",
+      "previous": "cn_mountains_20_f000585.jpg",
+      "dx": 0.014569761393545377,
+      "dy": -0.006814763135935209,
+      "shift_px": 0.016084742573748166,
+      "response": 0.9813566382974386
+    },
+    {
+      "seq": "cn_mountains_3",
+      "gap": 5,
+      "current": "cn_mountains_3_f000390.jpg",
+      "previous": "cn_mountains_3_f000385.jpg",
+      "dx": -0.0035777751644445743,
+      "dy": -0.010332800422304445,
+      "shift_px": 0.010934680594077328,
+      "response": 0.9897654919768684
+    },
+    {
+      "seq": "cn_mountains_3",
+      "gap": 10,
+      "current": "cn_mountains_3_f000395.jpg",
+      "previous": "cn_mountains_3_f000385.jpg",
+      "dx": 0.00532701903131283,
+      "dy": -0.00815113647729504,
+      "shift_px": 0.009737461559947688,
+      "response": 0.9896109771216288
+    },
+    {
+      "seq": "cn_mountains_4",
+      "gap": 5,
+      "current": "cn_mountains_4_f000390.jpg",
+      "previous": "cn_mountains_4_f000385.jpg",
+      "dx": 0.007418685966968042,
+      "dy": 0.01181201854609526,
+      "shift_px": 0.013948501124127528,
+      "response": 0.9916738821193576
+    },
+    {
+      "seq": "cn_mountains_4",
+      "gap": 10,
+      "current": "cn_mountains_4_f000390.jpg",
+      "previous": "cn_mountains_4_f000380.jpg",
+      "dx": 0.005962013284886325,
+      "dy": 0.03156497876790354,
+      "shift_px": 0.032123098963633044,
+      "response": 0.9871376439230517
+    },
+    {
+      "seq": "cn_mountains_5",
+      "gap": 5,
+      "current": "cn_mountains_5_f000390.jpg",
+      "previous": "cn_mountains_5_f000385.jpg",
+      "dx": 1.4356976392080583,
+      "dy": -0.4855019087803498,
+      "shift_px": 1.515565839763141,
+      "response": 0.9824082982726395
+    },
+    {
+      "seq": "cn_mountains_5",
+      "gap": 10,
+      "current": "cn_mountains_5_f000395.jpg",
+      "previous": "cn_mountains_5_f000385.jpg",
+      "dx": 2.0176098309928534,
+      "dy": -0.5393433559920595,
+      "shift_px": 2.0884541378186374,
+      "response": 0.963366286456585
+    },
+    {
+      "seq": "cn_mountains_6",
+      "gap": 5,
+      "current": "cn_mountains_6_f000420.jpg",
+      "previous": "cn_mountains_6_f000415.jpg",
+      "dx": 0.03826107636933784,
+      "dy": -0.013359749015592115,
+      "shift_px": 0.04052644641095389,
+      "response": 0.9746035325573758
+    },
+    {
+      "seq": "cn_mountains_6",
+      "gap": 10,
+      "current": "cn_mountains_6_f000425.jpg",
+      "previous": "cn_mountains_6_f000415.jpg",
+      "dx": 4.519816577291351,
+      "dy": -0.9360874524953147,
+      "shift_px": 4.615734135657823,
+      "response": 0.9538430422078819
+    },
+    {
+      "seq": "cn_mountains_7",
+      "gap": 5,
+      "current": "cn_mountains_7_f000450.jpg",
+      "previous": "cn_mountains_7_f000445.jpg",
+      "dx": 0.005487306029579031,
+      "dy": -0.002489667550719332,
+      "shift_px": 0.006025692655235512,
+      "response": 0.9893190055619925
+    },
+    {
+      "seq": "cn_mountains_7",
+      "gap": 10,
+      "current": "cn_mountains_7_f000450.jpg",
+      "previous": "cn_mountains_7_f000440.jpg",
+      "dx": 0.0055152706206627045,
+      "dy": -0.00705147154729957,
+      "shift_px": 0.00895217632766025,
+      "response": 0.9858148993458599
+    },
+    {
+      "seq": "cn_mountains_8",
+      "gap": 5,
+      "current": "cn_mountains_8_f000395.jpg",
+      "previous": "cn_mountains_8_f000390.jpg",
+      "dx": 0.002383753511935538,
+      "dy": -0.006823920767146774,
+      "shift_px": 0.0072282899389801755,
+      "response": 0.9938679726328701
+    },
+    {
+      "seq": "cn_mountains_8",
+      "gap": 10,
+      "current": "cn_mountains_8_f000400.jpg",
+      "previous": "cn_mountains_8_f000390.jpg",
+      "dx": 0.008086968247880577,
+      "dy": -0.007262899243528409,
+      "shift_px": 0.0108696256082661,
+      "response": 0.991601133509539
+    },
+    {
+      "seq": "cn_mountains_9",
+      "gap": 5,
+      "current": "cn_mountains_9_f000525.jpg",
+      "previous": "cn_mountains_9_f000520.jpg",
+      "dx": -0.003447070469292157,
+      "dy": 0.00032143269785933626,
+      "shift_px": 0.0034620245232405825,
+      "response": 0.995095932908589
+    },
+    {
+      "seq": "cn_mountains_9",
+      "gap": 10,
+      "current": "cn_mountains_9_f000530.jpg",
+      "previous": "cn_mountains_9_f000520.jpg",
+      "dx": -0.005330817771039165,
+      "dy": 0.0014604408620471077,
+      "shift_px": 0.0055272511811536,
+      "response": 0.9926512827340048
+    },
+    {
+      "seq": "cn_sky_1",
+      "gap": 5,
+      "current": "cn_sky_1_f000500.jpg",
+      "previous": "cn_sky_1_f000495.jpg",
+      "dx": -0.0010308166446293399,
+      "dy": 0.13815732093434008,
+      "shift_px": 0.1381611664351061,
+      "response": 0.8320228168740869
+    },
+    {
+      "seq": "cn_sky_1",
+      "gap": 10,
+      "current": "cn_sky_1_f000505.jpg",
+      "previous": "cn_sky_1_f000495.jpg",
+      "dx": 0.015453020739528256,
+      "dy": 0.0903477644746431,
+      "shift_px": 0.09165977523178787,
+      "response": 0.7907671999186278
+    },
+    {
+      "seq": "cn_sky_2",
+      "gap": 5,
+      "current": "cn_sky_2_f000500.jpg",
+      "previous": "cn_sky_2_f000495.jpg",
+      "dx": 0.01978795442084902,
+      "dy": -0.006940647246722165,
+      "shift_px": 0.020969876593938987,
+      "response": 0.7493173765949905
+    },
+    {
+      "seq": "cn_sky_2",
+      "gap": 10,
+      "current": "cn_sky_2_f000505.jpg",
+      "previous": "cn_sky_2_f000495.jpg",
+      "dx": 0.01165034585687863,
+      "dy": -0.021973662446669096,
+      "shift_px": 0.02487111577523302,
+      "response": 0.7603518261108547
+    },
+    {
+      "seq": "cn_sky_3",
+      "gap": 5,
+      "current": "cn_sky_3_f000560.jpg",
+      "previous": "cn_sky_3_f000555.jpg",
+      "dx": 0.025753012127154307,
+      "dy": 0.002049839581957258,
+      "shift_px": 0.0258344629503521,
+      "response": 0.7266369359567761
+    },
+    {
+      "seq": "cn_sky_3",
+      "gap": 10,
+      "current": "cn_sky_3_f000565.jpg",
+      "previous": "cn_sky_3_f000555.jpg",
+      "dx": 0.0008912752906553578,
+      "dy": -0.0031673880523044318,
+      "shift_px": 0.0032903979573318566,
+      "response": 0.7329934433102607
+    },
+    {
+      "seq": "cn_sky_4",
+      "gap": 5,
+      "current": "cn_sky_4_f000780.jpg",
+      "previous": "cn_sky_4_f000775.jpg",
+      "dx": 0.028959314399173763,
+      "dy": 0.016741368178912808,
+      "shift_px": 0.033450191314432075,
+      "response": 0.7475777354091406
+    },
+    {
+      "seq": "cn_sky_4",
+      "gap": 10,
+      "current": "cn_sky_4_f000780.jpg",
+      "previous": "cn_sky_4_f000770.jpg",
+      "dx": -0.006973250453370383,
+      "dy": 0.018637842700940155,
+      "shift_px": 0.01989963322351491,
+      "response": 0.7322894804179668
+    },
+    {
+      "seq": "cn_sky_5",
+      "gap": 5,
+      "current": "cn_sky_5_f000500.jpg",
+      "previous": "cn_sky_5_f000495.jpg",
+      "dx": 0.01281955500434151,
+      "dy": 0.08038338635529385,
+      "shift_px": 0.08139920019541826,
+      "response": 0.892059252411127
+    },
+    {
+      "seq": "cn_sky_5",
+      "gap": 10,
+      "current": "cn_sky_5_f000505.jpg",
+      "previous": "cn_sky_5_f000495.jpg",
+      "dx": 0.02156582044977995,
+      "dy": 0.07745981047420969,
+      "shift_px": 0.08040588815735221,
+      "response": 0.8703018663451075
+    },
+    {
+      "seq": "cn_sky_6",
+      "gap": 5,
+      "current": "cn_sky_6_f000500.jpg",
+      "previous": "cn_sky_6_f000495.jpg",
+      "dx": 0.016287820499655936,
+      "dy": 0.0026956349745717034,
+      "shift_px": 0.01650937747297415,
+      "response": 0.7654233492910862
+    },
+    {
+      "seq": "cn_sky_6",
+      "gap": 10,
+      "current": "cn_sky_6_f000505.jpg",
+      "previous": "cn_sky_6_f000495.jpg",
+      "dx": 0.0022588428220160495,
+      "dy": 0.026274960672793668,
+      "shift_px": 0.02637187762089433,
+      "response": 0.766168905980885
+    },
+    {
+      "seq": "cn_sky_7",
+      "gap": 5,
+      "current": "cn_sky_7_f000500.jpg",
+      "previous": "cn_sky_7_f000495.jpg",
+      "dx": -0.0012999506265032323,
+      "dy": -0.04053685501560267,
+      "shift_px": 0.04055769330456723,
+      "response": 0.9167533949017524
+    },
+    {
+      "seq": "cn_sky_7",
+      "gap": 10,
+      "current": "cn_sky_7_f000505.jpg",
+      "previous": "cn_sky_7_f000495.jpg",
+      "dx": -0.01038021694211011,
+      "dy": 0.021550922461102573,
+      "shift_px": 0.02392051760915146,
+      "response": 0.8927208733744919
+    },
+    {
+      "seq": "cn_sky_8",
+      "gap": 5,
+      "current": "cn_sky_8_f000500.jpg",
+      "previous": "cn_sky_8_f000495.jpg",
+      "dx": -0.019872650756212806,
+      "dy": 0.01127308467499688,
+      "shift_px": 0.022847421871363408,
+      "response": 0.9158892739098519
+    },
+    {
+      "seq": "cn_sky_8",
+      "gap": 10,
+      "current": "cn_sky_8_f000505.jpg",
+      "previous": "cn_sky_8_f000495.jpg",
+      "dx": -0.01782200268860379,
+      "dy": 0.02807098569397226,
+      "shift_px": 0.033250624319910084,
+      "response": 0.8898685733787716
+    },
+    {
+      "seq": "jungle_1",
+      "gap": 5,
+      "current": "jungle_1_f000500.jpg",
+      "previous": "jungle_1_f000495.jpg",
+      "dx": -0.07183407862396507,
+      "dy": -0.0021139770624927223,
+      "shift_px": 0.07186517759509636,
+      "response": 0.9674535851925612
+    },
+    {
+      "seq": "jungle_1",
+      "gap": 10,
+      "current": "jungle_1_f000505.jpg",
+      "previous": "jungle_1_f000495.jpg",
+      "dx": -0.23574705258369022,
+      "dy": -0.08395816889145635,
+      "shift_px": 0.25025116768059946,
+      "response": 0.9541350278072059
+    },
+    {
+      "seq": "jungle_2",
+      "gap": 5,
+      "current": "jungle_2_f000500.jpg",
+      "previous": "jungle_2_f000495.jpg",
+      "dx": 0.133269073825943,
+      "dy": 0.03807065873277793,
+      "shift_px": 0.13860022039943617,
+      "response": 0.9171415016055107
+    },
+    {
+      "seq": "jungle_2",
+      "gap": 10,
+      "current": "jungle_2_f000505.jpg",
+      "previous": "jungle_2_f000495.jpg",
+      "dx": 0.15878549949712806,
+      "dy": 0.0559818615438985,
+      "shift_px": 0.16836509042100348,
+      "response": 0.9395610492676496
+    },
+    {
+      "seq": "jungle_3",
+      "gap": 5,
+      "current": "jungle_3_f000500.jpg",
+      "previous": "jungle_3_f000495.jpg",
+      "dx": 0.056773688252690135,
+      "dy": -0.044182576159073506,
+      "shift_px": 0.07193991738851231,
+      "response": 0.9641616368666291
+    },
+    {
+      "seq": "jungle_3",
+      "gap": 10,
+      "current": "jungle_3_f000505.jpg",
+      "previous": "jungle_3_f000495.jpg",
+      "dx": -0.06136220839425732,
+      "dy": -0.15041074620040717,
+      "shift_px": 0.16244603162768725,
+      "response": 0.9414046787656843
+    },
+    {
+      "seq": "jungle_4",
+      "gap": 5,
+      "current": "jungle_4_f000475.jpg",
+      "previous": "jungle_4_f000470.jpg",
+      "dx": 0.02041819912187748,
+      "dy": -0.025947538191644526,
+      "shift_px": 0.03301783750622517,
+      "response": 0.9635471607558429
+    },
+    {
+      "seq": "jungle_4",
+      "gap": 10,
+      "current": "jungle_4_f000480.jpg",
+      "previous": "jungle_4_f000470.jpg",
+      "dx": -0.04055275187238294,
+      "dy": -0.1131504127088192,
+      "shift_px": 0.12019792669010215,
+      "response": 0.8954196636332199
+    },
+    {
+      "seq": "jungle_5",
+      "gap": 5,
+      "current": "jungle_5_f000505.jpg",
+      "previous": "jungle_5_f000500.jpg",
+      "dx": 0.04080524277321729,
+      "dy": -0.07034950882689373,
+      "shift_px": 0.08132724777075885,
+      "response": 0.9642793938517571
+    },
+    {
+      "seq": "jungle_5",
+      "gap": 10,
+      "current": "jungle_5_f000510.jpg",
+      "previous": "jungle_5_f000500.jpg",
+      "dx": 0.021054260605524178,
+      "dy": -0.08404566825038273,
+      "shift_px": 0.0866426929480999,
+      "response": 0.9515529735013842
+    },
+    {
+      "seq": "urban-areas_1",
+      "gap": 5,
+      "current": "urban-areas_1_f001015.jpg",
+      "previous": "urban-areas_1_f001010.jpg",
+      "dx": -0.0036513786147907012,
+      "dy": -0.02275265817672789,
+      "shift_px": 0.023043784843110593,
+      "response": 0.8238167498260737
+    },
+    {
+      "seq": "urban-areas_1",
+      "gap": 10,
+      "current": "urban-areas_1_f001015.jpg",
+      "previous": "urban-areas_1_f001005.jpg",
+      "dx": -0.005521800899828122,
+      "dy": 0.013213221949342824,
+      "shift_px": 0.014320597734031134,
+      "response": 0.6334143261890859
+    },
+    {
+      "seq": "urban-areas_10",
+      "gap": 5,
+      "current": "urban-areas_10_f000500.jpg",
+      "previous": "urban-areas_10_f000495.jpg",
+      "dx": -1.0575467972741421,
+      "dy": 0.3926991226333314,
+      "shift_px": 1.1281036429964153,
+      "response": 0.9953773554414511
+    },
+    {
+      "seq": "urban-areas_10",
+      "gap": 10,
+      "current": "urban-areas_10_f000505.jpg",
+      "previous": "urban-areas_10_f000495.jpg",
+      "dx": -1.410177138545805,
+      "dy": 0.49108978237003953,
+      "shift_px": 1.4932410175271398,
+      "response": 1.0553360478486866
+    },
+    {
+      "seq": "urban-areas_11",
+      "gap": 5,
+      "current": "urban-areas_11_f000500.jpg",
+      "previous": "urban-areas_11_f000495.jpg",
+      "dx": 0.1468882485334575,
+      "dy": -0.034022315678555515,
+      "shift_px": 0.15077690645903988,
+      "response": 0.9964767663739622
+    },
+    {
+      "seq": "urban-areas_11",
+      "gap": 10,
+      "current": "urban-areas_11_f000505.jpg",
+      "previous": "urban-areas_11_f000495.jpg",
+      "dx": 0.4819819739030322,
+      "dy": -0.10342819280697313,
+      "shift_px": 0.4929543733803156,
+      "response": 1.003020565211773
+    },
+    {
+      "seq": "urban-areas_12",
+      "gap": 5,
+      "current": "urban-areas_12_f000500.jpg",
+      "previous": "urban-areas_12_f000495.jpg",
+      "dx": -0.07028367592857876,
+      "dy": 0.028884562376020995,
+      "shift_px": 0.07598758481283459,
+      "response": 0.9994721740484238
+    },
+    {
+      "seq": "urban-areas_12",
+      "gap": 10,
+      "current": "urban-areas_12_f000505.jpg",
+      "previous": "urban-areas_12_f000495.jpg",
+      "dx": -0.1450681413350594,
+      "dy": 0.04404537751364046,
+      "shift_px": 0.1516072587666167,
+      "response": 0.9936629842966795
+    },
+    {
+      "seq": "urban-areas_13",
+      "gap": 5,
+      "current": "urban-areas_13_f000500.jpg",
+      "previous": "urban-areas_13_f000495.jpg",
+      "dx": -0.00873561847390647,
+      "dy": 0.004226114028625716,
+      "shift_px": 0.009704177961301158,
+      "response": 0.9979256736580282
+    },
+    {
+      "seq": "urban-areas_13",
+      "gap": 10,
+      "current": "urban-areas_13_f000505.jpg",
+      "previous": "urban-areas_13_f000495.jpg",
+      "dx": 0.0050227166190097705,
+      "dy": -0.0010371669628739255,
+      "shift_px": 0.005128683802278521,
+      "response": 1.0042103043291717
+    },
+    {
+      "seq": "urban-areas_14",
+      "gap": 5,
+      "current": "urban-areas_14_f000500.jpg",
+      "previous": "urban-areas_14_f000495.jpg",
+      "dx": 0.07455740117228515,
+      "dy": 0.032417891780852415,
+      "shift_px": 0.08130022003094534,
+      "response": 0.9981994240544736
+    },
+    {
+      "seq": "urban-areas_14",
+      "gap": 10,
+      "current": "urban-areas_14_f000505.jpg",
+      "previous": "urban-areas_14_f000495.jpg",
+      "dx": 0.23604374187362964,
+      "dy": 0.03123341621719078,
+      "shift_px": 0.2381011851425796,
+      "response": 0.9942692952230573
+    },
+    {
+      "seq": "urban-areas_15",
+      "gap": 5,
+      "current": "urban-areas_15_f000500.jpg",
+      "previous": "urban-areas_15_f000495.jpg",
+      "dx": -0.006536559464905167,
+      "dy": 0.014272276601076328,
+      "shift_px": 0.015697913524283163,
+      "response": 0.9878410852979869
+    },
+    {
+      "seq": "urban-areas_15",
+      "gap": 10,
+      "current": "urban-areas_15_f000505.jpg",
+      "previous": "urban-areas_15_f000495.jpg",
+      "dx": 0.3857642938568233,
+      "dy": 0.030782594660593077,
+      "shift_px": 0.38699051480481006,
+      "response": 1.0002877208869905
+    },
+    {
+      "seq": "urban-areas_16",
+      "gap": 5,
+      "current": "urban-areas_16_f000525.jpg",
+      "previous": "urban-areas_16_f000520.jpg",
+      "dx": 1.0206190987840955,
+      "dy": -0.34924548453898296,
+      "shift_px": 1.078719497030497,
+      "response": 0.8966081771068275
+    },
+    {
+      "seq": "urban-areas_16",
+      "gap": 10,
+      "current": "urban-areas_16_f000530.jpg",
+      "previous": "urban-areas_16_f000520.jpg",
+      "dx": 7.263281148657541,
+      "dy": -1.6958079123951393,
+      "shift_px": 7.458620349648181,
+      "response": 0.8940785546321421
+    },
+    {
+      "seq": "urban-areas_17",
+      "gap": 5,
+      "current": "urban-areas_17_f000775.jpg",
+      "previous": "urban-areas_17_f000770.jpg",
+      "dx": -4.046254844914358,
+      "dy": 1.0078337122136247,
+      "shift_px": 4.16988094092232,
+      "response": 0.7589235808700323
+    },
+    {
+      "seq": "urban-areas_17",
+      "gap": 10,
+      "current": "urban-areas_17_f000775.jpg",
+      "previous": "urban-areas_17_f000765.jpg",
+      "dx": -0.7209463913474679,
+      "dy": -0.34315875110365823,
+      "shift_px": 0.7984495147822176,
+      "response": 0.9773462060838938
+    },
+    {
+      "seq": "urban-areas_18",
+      "gap": 5,
+      "current": "urban-areas_18_f000750.jpg",
+      "previous": "urban-areas_18_f000745.jpg",
+      "dx": 19.885279575175502,
+      "dy": -3.2722385201984707,
+      "shift_px": 20.152714177399595,
+      "response": 0.9374744397588074
+    },
+    {
+      "seq": "urban-areas_18",
+      "gap": 10,
+      "current": "urban-areas_18_f000755.jpg",
+      "previous": "urban-areas_18_f000745.jpg",
+      "dx": 29.346115521938486,
+      "dy": -8.44749853983842,
+      "shift_px": 30.537759050191145,
+      "response": 0.88589400164783
+    },
+    {
+      "seq": "urban-areas_19",
+      "gap": 5,
+      "current": "urban-areas_19_f000750.jpg",
+      "previous": "urban-areas_19_f000745.jpg",
+      "dx": 0.7498881584862147,
+      "dy": -0.0025109093180617492,
+      "shift_px": 0.7498923622117042,
+      "response": 0.9586580395698547
+    },
+    {
+      "seq": "urban-areas_19",
+      "gap": 10,
+      "current": "urban-areas_19_f000755.jpg",
+      "previous": "urban-areas_19_f000745.jpg",
+      "dx": 0.46601533667717376,
+      "dy": 0.049853530971915916,
+      "shift_px": 0.4686743737059958,
+      "response": 0.9040268278331496
+    },
+    {
+      "seq": "urban-areas_2",
+      "gap": 5,
+      "current": "urban-areas_2_f000650.jpg",
+      "previous": "urban-areas_2_f000645.jpg",
+      "dx": 0.02169365984570959,
+      "dy": 0.02512746648304187,
+      "shift_px": 0.03319645236102414,
+      "response": 0.9789686754811555
+    },
+    {
+      "seq": "urban-areas_2",
+      "gap": 10,
+      "current": "urban-areas_2_f000655.jpg",
+      "previous": "urban-areas_2_f000645.jpg",
+      "dx": -0.022519951599861088,
+      "dy": 0.027520044275092914,
+      "shift_px": 0.035559823635152636,
+      "response": 0.9768641727045179
+    },
+    {
+      "seq": "urban-areas_20",
+      "gap": 5,
+      "current": "urban-areas_20_f000750.jpg",
+      "previous": "urban-areas_20_f000745.jpg",
+      "dx": 4.055482240581341,
+      "dy": -0.24473775842511714,
+      "shift_px": 4.062860171611817,
+      "response": 0.8937767221126706
+    },
+    {
+      "seq": "urban-areas_20",
+      "gap": 10,
+      "current": "urban-areas_20_f000755.jpg",
+      "previous": "urban-areas_20_f000745.jpg",
+      "dx": 4.9388930716015125,
+      "dy": -0.4376701113795889,
+      "shift_px": 4.958247664156001,
+      "response": 0.9549804818816483
+    },
+    {
+      "seq": "urban-areas_21",
+      "gap": 5,
+      "current": "urban-areas_21_f000485.jpg",
+      "previous": "urban-areas_21_f000480.jpg",
+      "dx": -0.9195999959911205,
+      "dy": -0.1723379599063719,
+      "shift_px": 0.9356091732403863,
+      "response": 0.026683572540059687
+    },
+    {
+      "seq": "urban-areas_21",
+      "gap": 10,
+      "current": "urban-areas_21_f000485.jpg",
+      "previous": "urban-areas_21_f000475.jpg",
+      "dx": 0.16757165558169618,
+      "dy": -0.8835142419588351,
+      "shift_px": 0.8992650752133575,
+      "response": 0.020943848881870508
+    },
+    {
+      "seq": "urban-areas_22",
+      "gap": 5,
+      "current": "urban-areas_22_f000780.jpg",
+      "previous": "urban-areas_22_f000775.jpg",
+      "dx": 3.860622405041795,
+      "dy": -3.9413142141477806,
+      "shift_px": 5.517097342711476,
+      "response": 0.8974140021950007
+    },
+    {
+      "seq": "urban-areas_22",
+      "gap": 10,
+      "current": "urban-areas_22_f000780.jpg",
+      "previous": "urban-areas_22_f000770.jpg",
+      "dx": 0.7931556942637599,
+      "dy": -0.5207342133921884,
+      "shift_px": 0.948820360416137,
+      "response": 0.02768273511901498
+    },
+    {
+      "seq": "urban-areas_23",
+      "gap": 5,
+      "current": "urban-areas_23_f000480.jpg",
+      "previous": "urban-areas_23_f000475.jpg",
+      "dx": -3.1955231325807176,
+      "dy": -0.06602026458818955,
+      "shift_px": 3.196205056969089,
+      "response": 0.8172204062342644
+    },
+    {
+      "seq": "urban-areas_23",
+      "gap": 10,
+      "current": "urban-areas_23_f000485.jpg",
+      "previous": "urban-areas_23_f000475.jpg",
+      "dx": -15.84212934712815,
+      "dy": -0.13578780729551454,
+      "shift_px": 15.842711276159429,
+      "response": 0.8853339223191142
+    },
+    {
+      "seq": "urban-areas_3",
+      "gap": 5,
+      "current": "urban-areas_3_f000525.jpg",
+      "previous": "urban-areas_3_f000520.jpg",
+      "dx": -0.01864752400922498,
+      "dy": -0.00295711878510474,
+      "shift_px": 0.01888053768259372,
+      "response": 0.9818543264642358
+    },
+    {
+      "seq": "urban-areas_3",
+      "gap": 10,
+      "current": "urban-areas_3_f000525.jpg",
+      "previous": "urban-areas_3_f000515.jpg",
+      "dx": -0.021836777243265715,
+      "dy": -0.0003585619660384509,
+      "shift_px": 0.02183972085571372,
+      "response": 0.9800287794321776
+    },
+    {
+      "seq": "urban-areas_4",
+      "gap": 5,
+      "current": "urban-areas_4_f000500.jpg",
+      "previous": "urban-areas_4_f000495.jpg",
+      "dx": -0.008810835084716473,
+      "dy": -0.01397561728049368,
+      "shift_px": 0.016521158956347592,
+      "response": 0.9874508582986892
+    },
+    {
+      "seq": "urban-areas_4",
+      "gap": 10,
+      "current": "urban-areas_4_f000505.jpg",
+      "previous": "urban-areas_4_f000495.jpg",
+      "dx": -0.023647802463017342,
+      "dy": -0.0030676101819722135,
+      "shift_px": 0.02384593872252524,
+      "response": 0.9779686436057091
+    },
+    {
+      "seq": "urban-areas_5",
+      "gap": 5,
+      "current": "urban-areas_5_f000500.jpg",
+      "previous": "urban-areas_5_f000495.jpg",
+      "dx": 0.006527402591927967,
+      "dy": 0.010015043194783857,
+      "shift_px": 0.011954416539107811,
+      "response": 0.9743999873287976
+    },
+    {
+      "seq": "urban-areas_5",
+      "gap": 10,
+      "current": "urban-areas_5_f000505.jpg",
+      "previous": "urban-areas_5_f000495.jpg",
+      "dx": -0.015622656744369579,
+      "dy": -0.011195996617630044,
+      "shift_px": 0.019220243078961818,
+      "response": 0.9669590067118407
+    },
+    {
+      "seq": "urban-areas_6",
+      "gap": 5,
+      "current": "urban-areas_6_f000500.jpg",
+      "previous": "urban-areas_6_f000495.jpg",
+      "dx": 6.45173668201096,
+      "dy": 0.0283609247740344,
+      "shift_px": 6.451799017023069,
+      "response": 0.9435632621869445
+    },
+    {
+      "seq": "urban-areas_6",
+      "gap": 10,
+      "current": "urban-areas_6_f000505.jpg",
+      "previous": "urban-areas_6_f000495.jpg",
+      "dx": 33.84791026658593,
+      "dy": 0.23605498836732863,
+      "shift_px": 33.84873337914413,
+      "response": 0.888250976242125
+    },
+    {
+      "seq": "urban-areas_7",
+      "gap": 5,
+      "current": "urban-areas_7_f000500.jpg",
+      "previous": "urban-areas_7_f000495.jpg",
+      "dx": -0.02256039699932444,
+      "dy": -0.27838667474907197,
+      "shift_px": 0.2792993236486847,
+      "response": 0.08238817099481821
+    },
+    {
+      "seq": "urban-areas_7",
+      "gap": 10,
+      "current": "urban-areas_7_f000505.jpg",
+      "previous": "urban-areas_7_f000495.jpg",
+      "dx": -35.596656112048265,
+      "dy": -0.3012887470719079,
+      "shift_px": 35.59793113747673,
+      "response": 0.7904046165756882
+    },
+    {
+      "seq": "urban-areas_8",
+      "gap": 5,
+      "current": "urban-areas_8_f000500.jpg",
+      "previous": "urban-areas_8_f000495.jpg",
+      "dx": -21.923083513172287,
+      "dy": -0.4270677782876646,
+      "shift_px": 21.927242818302034,
+      "response": 0.874569033505395
+    },
+    {
+      "seq": "urban-areas_8",
+      "gap": 10,
+      "current": "urban-areas_8_f000505.jpg",
+      "previous": "urban-areas_8_f000495.jpg",
+      "dx": -23.033470865808056,
+      "dy": -1.508015229024295,
+      "shift_px": 23.082783412253335,
+      "response": 0.83688487354666
+    },
+    {
+      "seq": "urban-areas_9",
+      "gap": 5,
+      "current": "urban-areas_9_f000500.jpg",
+      "previous": "urban-areas_9_f000495.jpg",
+      "dx": 0.6491399483467148,
+      "dy": 0.3806251986475502,
+      "shift_px": 0.7525013052381123,
+      "response": 0.5960476030595601
+    },
+    {
+      "seq": "urban-areas_9",
+      "gap": 10,
+      "current": "urban-areas_9_f000505.jpg",
+      "previous": "urban-areas_9_f000495.jpg",
+      "dx": 0.3360964806263951,
+      "dy": 1.1460888451711355,
+      "shift_px": 1.1943535847123146,
+      "response": 0.6352607337757945
+    },
+    {
+      "seq": "water_1",
+      "gap": 5,
+      "current": "water_1_f000475.jpg",
+      "previous": "water_1_f000470.jpg",
+      "dx": 0.20214951907308887,
+      "dy": 0.006125805507679161,
+      "shift_px": 0.20224231395679548,
+      "response": 0.9261844088789075
+    },
+    {
+      "seq": "water_1",
+      "gap": 10,
+      "current": "water_1_f000480.jpg",
+      "previous": "water_1_f000470.jpg",
+      "dx": 1.0093971728279598,
+      "dy": -0.09822970823262267,
+      "shift_px": 1.0141655328853099,
+      "response": 0.716205304954201
+    },
+    {
+      "seq": "water_10",
+      "gap": 5,
+      "current": "water_10_f000415.jpg",
+      "previous": "water_10_f000410.jpg",
+      "dx": 0.010834964076366305,
+      "dy": -0.0220268143760336,
+      "shift_px": 0.0245474438199253,
+      "response": 0.8775928605813533
+    },
+    {
+      "seq": "water_10",
+      "gap": 10,
+      "current": "water_10_f000415.jpg",
+      "previous": "water_10_f000405.jpg",
+      "dx": 0.08935415540872782,
+      "dy": -0.0836432842635304,
+      "shift_px": 0.12239429762532582,
+      "response": 0.7130193646997214
+    },
+    {
+      "seq": "water_11",
+      "gap": 5,
+      "current": "water_11_f000390.jpg",
+      "previous": "water_11_f000385.jpg",
+      "dx": 0.0007486136833563251,
+      "dy": -0.021504258179675162,
+      "shift_px": 0.02151728473355861,
+      "response": 0.8208053890615702
+    },
+    {
+      "seq": "water_11",
+      "gap": 10,
+      "current": "water_11_f000390.jpg",
+      "previous": "water_11_f000380.jpg",
+      "dx": -0.20243441236470971,
+      "dy": -0.07336220800016235,
+      "shift_px": 0.21531768360286718,
+      "response": 0.754416414629668
+    },
+    {
+      "seq": "water_12",
+      "gap": 5,
+      "current": "water_12_f000425.jpg",
+      "previous": "water_12_f000420.jpg",
+      "dx": 0.3659996306741391,
+      "dy": 0.11702773678013045,
+      "shift_px": 0.38425410971059987,
+      "response": 0.8888346374034881
+    },
+    {
+      "seq": "water_12",
+      "gap": 10,
+      "current": "water_12_f000430.jpg",
+      "previous": "water_12_f000420.jpg",
+      "dx": 0.5860193400515072,
+      "dy": 0.17797069841998336,
+      "shift_px": 0.6124477417792482,
+      "response": 0.8347933182958513
+    },
+    {
+      "seq": "water_13",
+      "gap": 5,
+      "current": "water_13_f000410.jpg",
+      "previous": "water_13_f000405.jpg",
+      "dx": -0.020818952760578213,
+      "dy": -0.018778121680611548,
+      "shift_px": 0.028036523463137165,
+      "response": 0.7519962962716817
+    },
+    {
+      "seq": "water_13",
+      "gap": 10,
+      "current": "water_13_f000410.jpg",
+      "previous": "water_13_f000400.jpg",
+      "dx": -0.16248161543063588,
+      "dy": -0.1107366398450722,
+      "shift_px": 0.1966287841520826,
+      "response": 0.7510780857875943
+    },
+    {
+      "seq": "water_2",
+      "gap": 5,
+      "current": "water_2_f000405.jpg",
+      "previous": "water_2_f000400.jpg",
+      "dx": 0.024283994566189904,
+      "dy": 0.07259627405125002,
+      "shift_px": 0.07655018875362057,
+      "response": 0.6804844833910465
+    },
+    {
+      "seq": "water_2",
+      "gap": 10,
+      "current": "water_2_f000410.jpg",
+      "previous": "water_2_f000400.jpg",
+      "dx": -0.0069092051833195,
+      "dy": 0.17986306625741122,
+      "shift_px": 0.17999572139299064,
+      "response": 0.7204716384410859
+    },
+    {
+      "seq": "water_3",
+      "gap": 5,
+      "current": "water_3_f000370.jpg",
+      "previous": "water_3_f000365.jpg",
+      "dx": -0.0900111204842915,
+      "dy": 0.10616794088610959,
+      "shift_px": 0.13918920030962928,
+      "response": 0.8832853132858872
+    },
+    {
+      "seq": "water_3",
+      "gap": 10,
+      "current": "water_3_f000375.jpg",
+      "previous": "water_3_f000365.jpg",
+      "dx": -0.28743474133335667,
+      "dy": 0.06194883550770669,
+      "shift_px": 0.2940346726937736,
+      "response": 0.706622296385467
+    },
+    {
+      "seq": "water_4",
+      "gap": 5,
+      "current": "water_4_f000435.jpg",
+      "previous": "water_4_f000430.jpg",
+      "dx": -0.0021795918232214717,
+      "dy": -0.0027197480271752283,
+      "shift_px": 0.0034853478803668144,
+      "response": 0.935805244371295
+    },
+    {
+      "seq": "water_4",
+      "gap": 10,
+      "current": "water_4_f000435.jpg",
+      "previous": "water_4_f000425.jpg",
+      "dx": -0.02945944806111811,
+      "dy": 0.01877585220560718,
+      "shift_px": 0.034934105199826135,
+      "response": 0.919768659514375
+    },
+    {
+      "seq": "water_5",
+      "gap": 5,
+      "current": "water_5_f000440.jpg",
+      "previous": "water_5_f000435.jpg",
+      "dx": 0.2422393249947845,
+      "dy": 0.09556128838568156,
+      "shift_px": 0.2604070859478678,
+      "response": 0.9076678080484271
+    },
+    {
+      "seq": "water_5",
+      "gap": 10,
+      "current": "water_5_f000440.jpg",
+      "previous": "water_5_f000430.jpg",
+      "dx": 0.41411611998796616,
+      "dy": 0.06478475742414957,
+      "shift_px": 0.41915298594712824,
+      "response": 0.857936199568212
+    },
+    {
+      "seq": "water_6",
+      "gap": 5,
+      "current": "water_6_f000420.jpg",
+      "previous": "water_6_f000415.jpg",
+      "dx": 0.07080519779987071,
+      "dy": 0.054219723444447254,
+      "shift_px": 0.08918046000033393,
+      "response": 0.7156125101260841
+    },
+    {
+      "seq": "water_6",
+      "gap": 10,
+      "current": "water_6_f000425.jpg",
+      "previous": "water_6_f000415.jpg",
+      "dx": -0.1808803725530197,
+      "dy": -0.02584096076992637,
+      "shift_px": 0.1827168969428719,
+      "response": 0.7630283521022647
+    },
+    {
+      "seq": "water_7",
+      "gap": 5,
+      "current": "water_7_f000555.jpg",
+      "previous": "water_7_f000550.jpg",
+      "dx": 0.013546926581682328,
+      "dy": -0.08483854853085404,
+      "shift_px": 0.08591331990228039,
+      "response": 0.9134326845407486
+    },
+    {
+      "seq": "water_7",
+      "gap": 10,
+      "current": "water_7_f000560.jpg",
+      "previous": "water_7_f000550.jpg",
+      "dx": 0.041692287994123944,
+      "dy": -0.10349567868684062,
+      "shift_px": 0.11157778625261718,
+      "response": 0.8688699466176331
+    },
+    {
+      "seq": "water_8",
+      "gap": 5,
+      "current": "water_8_f000400.jpg",
+      "previous": "water_8_f000395.jpg",
+      "dx": 0.022280779120137595,
+      "dy": -0.154645212018238,
+      "shift_px": 0.15624203889595828,
+      "response": 0.6894884197972715
+    },
+    {
+      "seq": "water_8",
+      "gap": 10,
+      "current": "water_8_f000405.jpg",
+      "previous": "water_8_f000395.jpg",
+      "dx": 0.2857386253384675,
+      "dy": -0.05827617168688448,
+      "shift_px": 0.2916207712025951,
+      "response": 0.7114434778690338
+    },
+    {
+      "seq": "water_9",
+      "gap": 5,
+      "current": "water_9_f000410.jpg",
+      "previous": "water_9_f000405.jpg",
+      "dx": -0.21128202524016615,
+      "dy": -0.04371502262517879,
+      "shift_px": 0.21575703324041628,
+      "response": 0.6837889740942046
+    },
+    {
+      "seq": "water_9",
+      "gap": 10,
+      "current": "water_9_f000410.jpg",
+      "previous": "water_9_f000400.jpg",
+      "dx": -0.37574502748526584,
+      "dy": -0.05618598143075815,
+      "shift_px": 0.3799226107896721,
+      "response": 0.6717831456102431
+    }
+  ]
+}

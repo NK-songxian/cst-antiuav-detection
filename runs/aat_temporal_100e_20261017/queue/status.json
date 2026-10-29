@@ -1,0 +1,104 @@
+{
+  "updated_at": "2026-10-17T06:33:22.965678+00:00",
+  "scheduler_pid": 927441,
+  "max_parallel": 2,
+  "status": "incomplete",
+  "jobs": [
+    {
+      "name": "A1_aat_global",
+      "sampling": "global",
+      "temporal": false,
+      "wave": 1,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/cst_original.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "state": "completed",
+      "attempt": 1,
+      "pid": 927602,
+      "run_name": "A1_aat_global",
+      "started_at": "2026-10-17T03:36:27.336007+00:00",
+      "exit_code": 0,
+      "ended_at": "2026-10-17T04:56:43.828882+00:00",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "run_name": "A1_aat_global",
+          "exit_code": 0,
+          "success": true
+        }
+      ]
+    },
+    {
+      "name": "A2_aat_sequence",
+      "sampling": "quota",
+      "temporal": false,
+      "wave": 1,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/cst_original.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "state": "completed",
+      "attempt": 1,
+      "pid": 927695,
+      "run_name": "A2_aat_sequence",
+      "started_at": "2026-10-17T03:36:57.346273+00:00",
+      "exit_code": 0,
+      "ended_at": "2026-10-17T04:49:22.710732+00:00",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "run_name": "A2_aat_sequence",
+          "exit_code": 0,
+          "success": true
+        }
+      ]
+    },
+    {
+      "name": "C1_temporal_uniform",
+      "sampling": "uniform",
+      "temporal": true,
+      "wave": 2,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "state": "failed",
+      "attempt": 1,
+      "pid": 938504,
+      "run_name": "C1_temporal_uniform",
+      "started_at": "2026-10-17T04:56:43.830233+00:00",
+      "exit_code": -9,
+      "ended_at": "2026-10-17T05:52:28.054939+00:00",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "run_name": "C1_temporal_uniform",
+          "exit_code": -9,
+          "success": false
+        }
+      ]
+    },
+    {
+      "name": "C2_temporal_aat_sequence",
+      "sampling": "quota",
+      "temporal": true,
+      "wave": 2,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "state": "completed",
+      "attempt": 1,
+      "pid": 938584,
+      "run_name": "C2_temporal_aat_sequence",
+      "started_at": "2026-10-17T04:57:13.839801+00:00",
+      "exit_code": 0,
+      "ended_at": "2026-10-17T06:33:22.964773+00:00",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "run_name": "C2_temporal_aat_sequence",
+          "exit_code": 0,
+          "success": true
+        }
+      ]
+    }
+  ]
+}

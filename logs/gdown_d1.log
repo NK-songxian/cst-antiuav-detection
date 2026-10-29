@@ -1,0 +1,7 @@
+设置成功!
+注意：
+1. 仅限学术用途和加速访问github/huggingface，不承诺稳定性
+2. 开启加速后对访问其他资源如pip源等会*更慢*
+warning: `--folder` is no longer required for folder URLs and will be removed in a future release
+Retrieving folder contents
+Failed to retrieve folder contents for folder ID: 13DIRzt1pC2c4Dhyi6yFhHBeMFoKPQtxU (status code 503). You may need to change the permission to 'Anyone with the link', or have had many accesses. Check FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.

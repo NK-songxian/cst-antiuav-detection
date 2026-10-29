@@ -1,0 +1,12 @@
+设置成功!
+注意：
+1. 仅限学术用途和加速访问github/huggingface，不承诺稳定性
+2. 开启加速后对访问其他资源如pip源等会*更慢*
+queue4.sh: line 8: 991210 Killed                  python train_ablation.py --name tcs_yolo8n > logs_tcs_yolo8n.log 2>&1
+queue4.sh: line 8: 991211 Killed                  python train_ablation.py --name tcs_far15_yolo11n > logs_tcs_far15.log 2>&1
+[2026-10-17T18:54:06+08:00] yolo8n exit=137 -> yolo11s
+queue4.sh: line 10: 991902 Killed                  python train_ablation.py --name tcs_yolo11s > logs_tcs_yolo11s.log 2>&1
+[2026-10-17T18:55:03+08:00] yolo11s exit=137 -> far20
+queue4.sh: line 13: 992298 Killed                  python train_ablation.py --name tcs_far20_yolo11n > logs_tcs_far20.log 2>&1
+[2026-10-17T18:56:46+08:00] far15 exit=137
+TCS_ABLATION_DONE yolo8n=137 yolo11s=137 far20=137 far15=137

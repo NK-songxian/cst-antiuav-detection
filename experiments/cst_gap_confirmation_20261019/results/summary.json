@@ -1,0 +1,296 @@
+{
+  "status": "COMPLETED_ALL9",
+  "created_at": "2026-10-19T18:03:02.345194+00:00",
+  "contract_sha256": "5e723672f5281979acbf19a76fb9fd34642dad562dcc5cae4b411c6631ebcaef",
+  "collector_sha256": "1455316360949e18917094cfc2d46c4e418b26a824e34cf11ee7c28e69bf6b97",
+  "reference_runs": 3,
+  "new_runs": 6,
+  "rows": [
+    {
+      "far": 10,
+      "near": 5,
+      "seed": 0,
+      "name": "N_tcs_seed0",
+      "val_AP50": 78.84134108573564,
+      "val_AP5095": 42.566093809538074,
+      "test_AP50": 74.73430740014187,
+      "test_AP5095": 39.258282826908655,
+      "test_BG_FP025": 20.910493827160494
+    },
+    {
+      "far": 10,
+      "near": 5,
+      "seed": 1,
+      "name": "N_tcs_seed1",
+      "val_AP50": 77.83336400556288,
+      "val_AP5095": 42.86354257077301,
+      "test_AP50": 72.54814770206839,
+      "test_AP5095": 39.25196783027918,
+      "test_BG_FP025": 12.46141975308642
+    },
+    {
+      "far": 10,
+      "near": 5,
+      "seed": 2,
+      "name": "N_tcs_seed2",
+      "val_AP50": 78.9459651208118,
+      "val_AP5095": 43.03683820578226,
+      "test_AP50": 75.36310338768834,
+      "test_AP5095": 40.276554952052955,
+      "test_BG_FP025": 12.847222222222221
+    },
+    {
+      "far": 15,
+      "near": 5,
+      "seed": 0,
+      "name": "N_gap15_seed0",
+      "val_AP50": 77.17459119936329,
+      "val_AP5095": 42.57010678645875,
+      "test_AP50": 74.20461849520389,
+      "test_AP5095": 39.65106987396495,
+      "test_BG_FP025": 13.773148148148149
+    },
+    {
+      "far": 15,
+      "near": 5,
+      "seed": 1,
+      "name": "N_gap15_seed1",
+      "val_AP50": 78.57440751146198,
+      "val_AP5095": 42.77298277867172,
+      "test_AP50": 73.44266043309301,
+      "test_AP5095": 38.99334644344548,
+      "test_BG_FP025": 20.563271604938272
+    },
+    {
+      "far": 15,
+      "near": 5,
+      "seed": 2,
+      "name": "N_gap15_seed2",
+      "val_AP50": 77.94668196782217,
+      "val_AP5095": 42.857499379166846,
+      "test_AP50": 72.49946408951561,
+      "test_AP5095": 39.02210882662275,
+      "test_BG_FP025": 13.580246913580247
+    },
+    {
+      "far": 20,
+      "near": 5,
+      "seed": 0,
+      "name": "N_gap20_seed0",
+      "val_AP50": 78.1299502659351,
+      "val_AP5095": 42.684185372268665,
+      "test_AP50": 74.8592541845448,
+      "test_AP5095": 39.785056723196995,
+      "test_BG_FP025": 7.600308641975309
+    },
+    {
+      "far": 20,
+      "near": 5,
+      "seed": 1,
+      "name": "N_gap20_seed1",
+      "val_AP50": 79.07339875897723,
+      "val_AP5095": 43.08220148060452,
+      "test_AP50": 73.00770786085712,
+      "test_AP5095": 39.007381492907975,
+      "test_BG_FP025": 18.3641975308642
+    },
+    {
+      "far": 20,
+      "near": 5,
+      "seed": 2,
+      "name": "N_gap20_seed2",
+      "val_AP50": 76.76190130425702,
+      "val_AP5095": 42.76479850312159,
+      "test_AP50": 73.55714235744276,
+      "test_AP5095": 39.01244458598839,
+      "test_BG_FP025": 12.731481481481483
+    }
+  ],
+  "summaries": [
+    {
+      "far": 10,
+      "val_AP50": {
+        "mean": 78.54022340403678,
+        "sd": 0.6143892935973557
+      },
+      "val_AP5095": {
+        "mean": 42.822158195364445,
+        "sd": 0.23808521908088598
+      },
+      "test_AP50": {
+        "mean": 74.21518616329953,
+        "sd": 1.4775347785776682
+      },
+      "test_AP5095": {
+        "mean": 39.59560186974693,
+        "sd": 0.5897311209544273
+      },
+      "test_BG_FP025": {
+        "mean": 15.406378600823045,
+        "sd": 4.770605224172048
+      }
+    },
+    {
+      "far": 15,
+      "val_AP50": {
+        "mean": 77.89856022621582,
+        "sd": 0.7011477757333457
+      },
+      "val_AP5095": {
+        "mean": 42.73352964809911,
+        "sd": 0.14770253118973597
+      },
+      "test_AP50": {
+        "mean": 73.38224767260417,
+        "sd": 0.8541809896221912
+      },
+      "test_AP5095": {
+        "mean": 39.22217504801106,
+        "sd": 0.3717121163871606
+      },
+      "test_BG_FP025": {
+        "mean": 15.972222222222221,
+        "sd": 3.9771350929378197
+      }
+    },
+    {
+      "far": 20,
+      "val_AP50": {
+        "mean": 77.98841677638978,
+        "sd": 1.162230148159846
+      },
+      "val_AP5095": {
+        "mean": 42.84372845199826,
+        "sd": 0.21042019448227706
+      },
+      "test_AP50": {
+        "mean": 73.80803480094822,
+        "sd": 0.9509291302964913
+      },
+      "test_AP5095": {
+        "mean": 39.26829426736445,
+        "sd": 0.4475365745349141
+      },
+      "test_BG_FP025": {
+        "mean": 12.898662551440331,
+        "sd": 5.383891541970442
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "comparison": "gap10-minus-gap15",
+      "paired_differences_pp": [
+        0.5296889049379843,
+        -0.8945127310246193,
+        2.8636392981727283
+      ],
+      "mean_pp": 0.8329384906953644,
+      "sd_pp": 1.8973394272207997,
+      "CI95": [
+        -3.880313932454595,
+        5.546190913845324
+      ],
+      "CI975_Bonferroni_two_comparisons": [
+        -5.964581029638037,
+        7.630458011028766
+      ],
+      "caution": "Exploratory paired-t intervals, n=3 seeds; normality not established, finite candidates only. Nonsignificance does not establish equivalence."
+    },
+    {
+      "comparison": "gap10-minus-gap20",
+      "paired_differences_pp": [
+        -0.12494678440292262,
+        -0.459560158788733,
+        1.8059610302455837
+      ],
+      "mean_pp": 0.4071513623513094,
+      "sd_pp": 1.2229034683184656,
+      "CI95": [
+        -2.630709261128866,
+        3.4450119858314845
+      ],
+      "CI975_Bonferroni_two_comparisons": [
+        -3.9740943326029927,
+        4.788397057305612
+      ],
+      "caution": "Exploratory paired-t intervals, n=3 seeds; normality not established, finite candidates only. Nonsignificance does not establish equivalence."
+    }
+  ],
+  "provenance": [
+    {
+      "name": "N_tcs_seed0",
+      "weights_sha256": "9a9e366c88b9bfe5372e02ea29aea54c6f0930fd9b06a1146ae36109f6ef2530",
+      "test_audit_sha256": "ae74904e8e4ee72490d2e3c6739df985f370cdb5ba15d080e07dc35f38cdfffd",
+      "val_audit_sha256": "85ebfcccfad200e1c42ed9591b5bfc0f3ab451830457063cdcf85e2ceb6dabbb",
+      "test_stats_sha256": "a21277a2d6414a049fa343aacb28c63bbaad17f45716dd25b31871fd3f901d65",
+      "val_stats_sha256": "cb0802775606948ccd4e8284b3c1b3fbf28240c9c87d6d42f40abe3d3d400955"
+    },
+    {
+      "name": "N_tcs_seed1",
+      "weights_sha256": "9d372b08091a34fbe7ab1f34fed6f8e42c5360b6b2413960ed509b917835a8c0",
+      "test_audit_sha256": "78989c487e65e590f0fc4302e21611fd0634c0e09ca1a90bd85be50334755412",
+      "val_audit_sha256": "cea80dc3b33d9ff18d55e54524531e305ecb45e0a2d6f73e49b86373a53a7ff1",
+      "test_stats_sha256": "44c8f7c29f1fa82a8f71a0acff3e7fad588c8c8d487263db8cd0ca831dc4406e",
+      "val_stats_sha256": "c88f8c6b4266c10bc89d6c12b67ce4cbeed65e7b4db99483aed1885dbf857b48"
+    },
+    {
+      "name": "N_tcs_seed2",
+      "weights_sha256": "6474ac6fa6cf0f5d209ed920447d9c0b471082c3958a560bf3d86acf20688f52",
+      "test_audit_sha256": "404fe0b0edbfe9952843b20f7818feb1220795a2234e72c5d1fc338fc27625fe",
+      "val_audit_sha256": "814c3cd9dae68b55dfe6e02a383d56833d204101a4760ec44c88be0e0d982880",
+      "test_stats_sha256": "c837032743567d3b384df41b81dcdc3e587d52aea18e73e3bed348309529d383",
+      "val_stats_sha256": "6a423b7d98c7f68fbf7ac755e76e9cf4b980a82f1ef6c9d8f2730fab456b98ed"
+    },
+    {
+      "name": "N_gap15_seed0",
+      "weights_sha256": "0e7849ae61b6fcaeb650c8e47953c99136f6671df2fe260d55376326624152d2",
+      "test_audit_sha256": "1e69116afff966bca0c7d3ab24c141f291d8f8e52eca3b638ba598ce8d5e1d0d",
+      "val_audit_sha256": "0847a2b493e59bbb34f18d728825fd4fd54824b02bc86babce47c11cc4209a19",
+      "test_stats_sha256": "1d54f9cd0527346db1ea52c40f1d0d63bddadb4992e527bf191afbd74f84aa7b",
+      "val_stats_sha256": "2a5669dca21713b96c7a5dafbf88b023ff7ec6222e7272a152f3880ae50e78d4"
+    },
+    {
+      "name": "N_gap15_seed1",
+      "weights_sha256": "d7fdc5cd88822bc7d05d16e1f78e00b3122e64d6df54443a786fd7e6b0db3f3a",
+      "test_audit_sha256": "ec09483581e409b0edd718d6e8d475b122833b6b80e7cd82fe888931d2a0e1ad",
+      "val_audit_sha256": "83e311642cb0d8e2a896bc5ce827fd507e239e8b0413dbc1ce2bcc03ebbaddf0",
+      "test_stats_sha256": "1ee460393e0b2f2d4146f72bfdf39ad1ca37707547b3bd35784b818d17e8b3be",
+      "val_stats_sha256": "4175fd2e63eb3f25d7a29f534b6f88d336be6dc6089f5dd11c6d2926b47f3035"
+    },
+    {
+      "name": "N_gap15_seed2",
+      "weights_sha256": "5cf1db34958e9d1d901407c806e7c9a547810bf22c6fd2537b5d4fea3dd60b69",
+      "test_audit_sha256": "1f271e4a73bdcf5dc7b7a1447d2f93e01b502f07e669e358d8335d1141c1a712",
+      "val_audit_sha256": "3d77885fa8df6636e3f7f96e2d5babf00042dff1513cbf9af05bc34841c50c42",
+      "test_stats_sha256": "a1ce911a7d1e01aafd22091129e343f7f6e753b96b57eaa179b1badcf05bd4be",
+      "val_stats_sha256": "53ae5740350156971a859af240b723fb639ad41f2339a80f9417b2ecffab6b57"
+    },
+    {
+      "name": "N_gap20_seed0",
+      "weights_sha256": "bccd916d7e068396a77cd4b311826a7afa0df1437024cfb5c5da5b2dfd54c649",
+      "test_audit_sha256": "49775f88fdecbaa32b3bfc49b44395fd6d578f982405c094d459d8ae4d55b0a7",
+      "val_audit_sha256": "d70d416eba277eb3891b0aee67cf33c417251665137667180e63f6eea57f1c7f",
+      "test_stats_sha256": "8c84495f9abfb0f46676ac3b61d440be0be5b96e0aef3d003df714ff9b887706",
+      "val_stats_sha256": "abb8ba730569c85ecadfe51c05dc8845fbc3e23866c4625a9ab8537234c66fe0"
+    },
+    {
+      "name": "N_gap20_seed1",
+      "weights_sha256": "f741626b3d90d61a7859a95f31a18702885570badf172cf7433baeaddc428cfd",
+      "test_audit_sha256": "95d4aad803b798775f9851ed72a472867df8e93aa75f9b3b44f265b7fd7a01f4",
+      "val_audit_sha256": "b268dff48daf09779fd04572a86ff5dfa79bd69c3f8b8bb6ca025a9dbc5331c1",
+      "test_stats_sha256": "c3d482fdfe168fff60b7565b55bc6a3b82abeb92b090ec27d863fc972daedff8",
+      "val_stats_sha256": "76ad2b27330804eb9eec81d7575c3bd0acd8e086549b3442d0c756b348c111b6"
+    },
+    {
+      "name": "N_gap20_seed2",
+      "weights_sha256": "18501048cdd22fd5b2a79e4e35210f16a21226aafe11f4528b8c48d95e05f646",
+      "test_audit_sha256": "7224e973084cb5f7b7afc6825998f5bb5a967a5904ce37fd44dc92b26c6b53c5",
+      "val_audit_sha256": "0dca81266ab54490a80c0a658d44cad883a354f91a660172d7bd7d2c8b7663d2",
+      "test_stats_sha256": "31195bbb6b98ef0cfe85b9073035bedb584faf0956e3fd15023a784f4a1a3086",
+      "val_stats_sha256": "12b65fd47c0e10bc721252bbf1d2265e0d7415283d64d69b29fb534d4bea12a0"
+    }
+  ],
+  "selection": "Each checkpoint selected by validation AP50-95. No test-directed tuning or extra seeds.",
+  "scope": "Finite candidate sensitivity comparison, not global optimality or mechanism identification"
+}

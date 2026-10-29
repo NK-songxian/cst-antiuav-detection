@@ -1,0 +1,19 @@
+{
+  "status": "transferred_to_matched_queue",
+  "scheduler_pid": 117824,
+  "max_parallel": 1,
+  "jobs": [
+    {
+      "name": "tcs_yolo11s",
+      "state": "running",
+      "pid": 119779,
+      "started_at": "2026-10-18T00:34:49.233501+00:00"
+    },
+    {
+      "name": "single_yolo11s",
+      "state": "pending"
+    }
+  ],
+  "updated_at": "2026-10-18T00:34:49.233531+00:00",
+  "new_status_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/cst_paper_completion_20261018/queue/status.json"
+}

@@ -1,0 +1,6 @@
+path: /root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_20261017/data/far20
+train: /root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_20261017/data/far20/temporal_train.txt
+val: /root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_20261017/data/far20/temporal_val.txt
+nc: 1
+names:
+- uav

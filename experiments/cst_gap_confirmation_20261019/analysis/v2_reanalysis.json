@@ -1,0 +1,614 @@
+{
+  "status": "PASS_BOUNDED_NUMERICAL_REGRESSION",
+  "no_training": true,
+  "metric_source": {
+    "path": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_gap_confirmation_20261019/analysis/ultralytics_metrics_v8_4_177.py",
+    "sha256": "e2f216964bb0d89ac26efecb4e0a76750b554d2e670a27e6ed4a8f42d998b2a0"
+  },
+  "numpy_version": "2.3.2",
+  "index_sha256": "9ce7b25b99e5ebaaeb4fd074a3f36e8453aec7c8088448f95954a0c13d579d83",
+  "regression": [
+    {
+      "model": "N_current_seed0",
+      "group": "ALL",
+      "metric": "metrics/mAP50(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_current_seed0",
+      "group": "ALL",
+      "metric": "metrics/mAP50-95(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_current_seed0",
+      "group": "TC_POS_ONLY",
+      "metric": "metrics/mAP50(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_current_seed0",
+      "group": "TC_POS_ONLY",
+      "metric": "metrics/mAP50-95(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_tcs_seed0",
+      "group": "ALL",
+      "metric": "metrics/mAP50(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_tcs_seed0",
+      "group": "ALL",
+      "metric": "metrics/mAP50-95(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_tcs_seed0",
+      "group": "TC_POS_ONLY",
+      "metric": "metrics/mAP50(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_tcs_seed0",
+      "group": "TC_POS_ONLY",
+      "metric": "metrics/mAP50-95(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_current_seed1",
+      "group": "ALL",
+      "metric": "metrics/mAP50(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_current_seed1",
+      "group": "ALL",
+      "metric": "metrics/mAP50-95(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_current_seed1",
+      "group": "TC_POS_ONLY",
+      "metric": "metrics/mAP50(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_current_seed1",
+      "group": "TC_POS_ONLY",
+      "metric": "metrics/mAP50-95(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_tcs_seed1",
+      "group": "ALL",
+      "metric": "metrics/mAP50(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_tcs_seed1",
+      "group": "ALL",
+      "metric": "metrics/mAP50-95(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_tcs_seed1",
+      "group": "TC_POS_ONLY",
+      "metric": "metrics/mAP50(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_tcs_seed1",
+      "group": "TC_POS_ONLY",
+      "metric": "metrics/mAP50-95(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_current_seed2",
+      "group": "ALL",
+      "metric": "metrics/mAP50(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_current_seed2",
+      "group": "ALL",
+      "metric": "metrics/mAP50-95(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_current_seed2",
+      "group": "TC_POS_ONLY",
+      "metric": "metrics/mAP50(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_current_seed2",
+      "group": "TC_POS_ONLY",
+      "metric": "metrics/mAP50-95(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_tcs_seed2",
+      "group": "ALL",
+      "metric": "metrics/mAP50(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_tcs_seed2",
+      "group": "ALL",
+      "metric": "metrics/mAP50-95(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_tcs_seed2",
+      "group": "TC_POS_ONLY",
+      "metric": "metrics/mAP50(B)",
+      "error_pp": 0.0
+    },
+    {
+      "model": "N_tcs_seed2",
+      "group": "TC_POS_ONLY",
+      "metric": "metrics/mAP50-95(B)",
+      "error_pp": 0.0
+    }
+  ],
+  "max_regression_error_pp": 0.0,
+  "AP_scope": "positive frames only for all four attributes; attributes overlap; SD over three seeds; local cross-platform tied-confidence sorting can slightly change AP",
+  "sources": [
+    {
+      "model": "N_current_seed0",
+      "test_stats_sha256": "a80e94a15f135410c04c12f5578c341c2b0edcb58bbb8e2bf5eda108b6264e90",
+      "val_stats_sha256": "98c2576e1c14562670823bca9d8f8e83558b403f8e544825378322c1aaf4235e"
+    },
+    {
+      "model": "N_tcs_seed0",
+      "test_stats_sha256": "a21277a2d6414a049fa343aacb28c63bbaad17f45716dd25b31871fd3f901d65",
+      "val_stats_sha256": "cb0802775606948ccd4e8284b3c1b3fbf28240c9c87d6d42f40abe3d3d400955"
+    },
+    {
+      "model": "N_current_seed1",
+      "test_stats_sha256": "1fdb923982ca9b3fdb745c99443fb323e94c047d09232184e96ab8635f3eff00",
+      "val_stats_sha256": "22504f35a9d2808e59d520048906c54f4faf984d9fc024e7bbbec4ac0340c7f7"
+    },
+    {
+      "model": "N_tcs_seed1",
+      "test_stats_sha256": "44c8f7c29f1fa82a8f71a0acff3e7fad588c8c8d487263db8cd0ca831dc4406e",
+      "val_stats_sha256": "c88f8c6b4266c10bc89d6c12b67ce4cbeed65e7b4db99483aed1885dbf857b48"
+    },
+    {
+      "model": "N_current_seed2",
+      "test_stats_sha256": "58c7077fc64effffa5fbbbc3b21b9c4f8dd644ebcfdad0f03c5e20d2c0f877b1",
+      "val_stats_sha256": "6b48faa59dbfa6f30f33592182f4caf5753e0ffc799db488d7fb0ea27c3ff610"
+    },
+    {
+      "model": "N_tcs_seed2",
+      "test_stats_sha256": "c837032743567d3b384df41b81dcdc3e587d52aea18e73e3bed348309529d383",
+      "val_stats_sha256": "6a423b7d98c7f68fbf7ac755e76e9cf4b980a82f1ef6c9d8f2730fab456b98ed"
+    }
+  ],
+  "attributes": [
+    {
+      "attribute": "TC",
+      "单帧": {
+        "AP50": {
+          "mean": 42.99516603431351,
+          "sd": 2.0244350089677385
+        },
+        "AP5095": {
+          "mean": 22.801454972988783,
+          "sd": 1.0131019071104306
+        }
+      },
+      "positive_frames": 6931,
+      "negative_frames": 1512,
+      "三帧": {
+        "AP50": {
+          "mean": 63.23721257801808,
+          "sd": 2.494282214058951
+        },
+        "AP5095": {
+          "mean": 31.58126342060197,
+          "sd": 0.8372922724991269
+        }
+      }
+    },
+    {
+      "attribute": "SV",
+      "单帧": {
+        "AP50": {
+          "mean": 53.9890221374449,
+          "sd": 1.3719231539805605
+        },
+        "AP5095": {
+          "mean": 29.491124938523996,
+          "sd": 0.6241703145921533
+        }
+      },
+      "positive_frames": 6690,
+      "negative_frames": 0,
+      "三帧": {
+        "AP50": {
+          "mean": 69.27944302461451,
+          "sd": 2.1586610998233136
+        },
+        "AP5095": {
+          "mean": 36.240538285562614,
+          "sd": 0.8610688986729438
+        }
+      }
+    },
+    {
+      "attribute": "DBC",
+      "单帧": {
+        "AP50": {
+          "mean": 55.7654352879675,
+          "sd": 2.8164824271875384
+        },
+        "AP5095": {
+          "mean": 27.259576041944864,
+          "sd": 1.8235143729182655
+        }
+      },
+      "positive_frames": 805,
+      "negative_frames": 923,
+      "三帧": {
+        "AP50": {
+          "mean": 64.95688770979471,
+          "sd": 2.3237873946507777
+        },
+        "AP5095": {
+          "mean": 30.979608815054977,
+          "sd": 1.3737244457578797
+        }
+      }
+    },
+    {
+      "attribute": "CDB",
+      "单帧": {
+        "AP50": {
+          "mean": 46.82147588717296,
+          "sd": 2.8665783182705047
+        },
+        "AP5095": {
+          "mean": 25.30918804102073,
+          "sd": 1.0007519902175144
+        }
+      },
+      "positive_frames": 2257,
+      "negative_frames": 619,
+      "三帧": {
+        "AP50": {
+          "mean": 65.5513507578059,
+          "sd": 1.4172105079713575
+        },
+        "AP5095": {
+          "mean": 34.13654327273451,
+          "sd": 0.7153198137181858
+        }
+      }
+    }
+  ],
+  "per_seed_AP": [
+    {
+      "model": "N_current_seed0",
+      "input": "单帧",
+      "seed": 0,
+      "attribute": "TC",
+      "positive_frames": 6931,
+      "negative_frames": 1512,
+      "AP50": 45.26766224809873,
+      "AP5095": 23.859064077334864
+    },
+    {
+      "model": "N_current_seed0",
+      "input": "单帧",
+      "seed": 0,
+      "attribute": "SV",
+      "positive_frames": 6690,
+      "negative_frames": 0,
+      "AP50": 55.56370652381584,
+      "AP5095": 29.91495828529124
+    },
+    {
+      "model": "N_current_seed0",
+      "input": "单帧",
+      "seed": 0,
+      "attribute": "DBC",
+      "positive_frames": 805,
+      "negative_frames": 923,
+      "AP50": 57.56057332581488,
+      "AP5095": 28.474096078944612
+    },
+    {
+      "model": "N_current_seed0",
+      "input": "单帧",
+      "seed": 0,
+      "attribute": "CDB",
+      "positive_frames": 2257,
+      "negative_frames": 619,
+      "AP50": 50.12918913355448,
+      "AP5095": 26.276476061253874
+    },
+    {
+      "model": "N_tcs_seed0",
+      "input": "三帧",
+      "seed": 0,
+      "attribute": "TC",
+      "positive_frames": 6931,
+      "negative_frames": 1512,
+      "AP50": 64.53430696687815,
+      "AP5095": 31.496032342369844
+    },
+    {
+      "model": "N_tcs_seed0",
+      "input": "三帧",
+      "seed": 0,
+      "attribute": "SV",
+      "positive_frames": 6690,
+      "negative_frames": 0,
+      "AP50": 70.14660269999618,
+      "AP5095": 35.876289245219766
+    },
+    {
+      "model": "N_tcs_seed0",
+      "input": "三帧",
+      "seed": 0,
+      "attribute": "DBC",
+      "positive_frames": 805,
+      "negative_frames": 923,
+      "AP50": 66.41276910041245,
+      "AP5095": 30.892072541653082
+    },
+    {
+      "model": "N_tcs_seed0",
+      "input": "三帧",
+      "seed": 0,
+      "attribute": "CDB",
+      "positive_frames": 2257,
+      "negative_frames": 619,
+      "AP50": 66.2552994365291,
+      "AP5095": 33.65494291846057
+    },
+    {
+      "model": "N_current_seed1",
+      "input": "单帧",
+      "seed": 1,
+      "attribute": "TC",
+      "positive_frames": 6931,
+      "negative_frames": 1512,
+      "AP50": 41.38440994615704,
+      "AP5095": 21.83966923070005
+    },
+    {
+      "model": "N_current_seed1",
+      "input": "单帧",
+      "seed": 1,
+      "attribute": "SV",
+      "positive_frames": 6690,
+      "negative_frames": 0,
+      "AP50": 53.051846860737584,
+      "AP5095": 28.774369130123954
+    },
+    {
+      "model": "N_current_seed1",
+      "input": "单帧",
+      "seed": 1,
+      "attribute": "DBC",
+      "positive_frames": 805,
+      "negative_frames": 923,
+      "AP50": 57.21641535975095,
+      "AP5095": 28.141916801517453
+    },
+    {
+      "model": "N_current_seed1",
+      "input": "单帧",
+      "seed": 1,
+      "attribute": "CDB",
+      "positive_frames": 2257,
+      "negative_frames": 619,
+      "AP50": 45.06016664855256,
+      "AP5095": 24.27803151017116
+    },
+    {
+      "model": "N_tcs_seed1",
+      "input": "三帧",
+      "seed": 1,
+      "attribute": "TC",
+      "positive_frames": 6931,
+      "negative_frames": 1512,
+      "AP50": 60.36164868559012,
+      "AP5095": 30.789846528055875
+    },
+    {
+      "model": "N_tcs_seed1",
+      "input": "三帧",
+      "seed": 1,
+      "attribute": "SV",
+      "positive_frames": 6690,
+      "negative_frames": 0,
+      "AP50": 66.82204419379846,
+      "AP5095": 35.6214564492198
+    },
+    {
+      "model": "N_tcs_seed1",
+      "input": "三帧",
+      "seed": 1,
+      "attribute": "DBC",
+      "positive_frames": 805,
+      "negative_frames": 923,
+      "AP50": 66.1809446804367,
+      "AP5095": 32.395008062332664
+    },
+    {
+      "model": "N_tcs_seed1",
+      "input": "三帧",
+      "seed": 1,
+      "attribute": "CDB",
+      "positive_frames": 2257,
+      "negative_frames": 619,
+      "AP50": 63.91999069975063,
+      "AP5095": 33.79619952624305
+    },
+    {
+      "model": "N_current_seed2",
+      "input": "单帧",
+      "seed": 2,
+      "attribute": "TC",
+      "positive_frames": 6931,
+      "negative_frames": 1512,
+      "AP50": 42.33342590868478,
+      "AP5095": 22.70563161093143
+    },
+    {
+      "model": "N_current_seed2",
+      "input": "单帧",
+      "seed": 2,
+      "attribute": "SV",
+      "positive_frames": 6690,
+      "negative_frames": 0,
+      "AP50": 53.351513027781294,
+      "AP5095": 29.784047400156787
+    },
+    {
+      "model": "N_current_seed2",
+      "input": "单帧",
+      "seed": 2,
+      "attribute": "DBC",
+      "positive_frames": 805,
+      "negative_frames": 923,
+      "AP50": 52.51931717833668,
+      "AP5095": 25.162715245372524
+    },
+    {
+      "model": "N_current_seed2",
+      "input": "单帧",
+      "seed": 2,
+      "attribute": "CDB",
+      "positive_frames": 2257,
+      "negative_frames": 619,
+      "AP50": 45.27507187941181,
+      "AP5095": 25.37305655163714
+    },
+    {
+      "model": "N_tcs_seed2",
+      "input": "三帧",
+      "seed": 2,
+      "attribute": "TC",
+      "positive_frames": 6931,
+      "negative_frames": 1512,
+      "AP50": 64.81568208158599,
+      "AP5095": 32.45791139138019
+    },
+    {
+      "model": "N_tcs_seed2",
+      "input": "三帧",
+      "seed": 2,
+      "attribute": "SV",
+      "positive_frames": 6690,
+      "negative_frames": 0,
+      "AP50": 70.8696821800489,
+      "AP5095": 37.22386916224828
+    },
+    {
+      "model": "N_tcs_seed2",
+      "input": "三帧",
+      "seed": 2,
+      "attribute": "DBC",
+      "positive_frames": 805,
+      "negative_frames": 923,
+      "AP50": 62.27694934853499,
+      "AP5095": 29.65174584117919
+    },
+    {
+      "model": "N_tcs_seed2",
+      "input": "三帧",
+      "seed": 2,
+      "attribute": "CDB",
+      "positive_frames": 2257,
+      "negative_frames": 619,
+      "AP50": 66.47876213713798,
+      "AP5095": 34.95848737349989
+    }
+  ],
+  "calibration": [
+    {
+      "input": "单帧",
+      "seed": 0,
+      "tau": 0.49218750000000006,
+      "val_fp": 61,
+      "val_bg": 1247,
+      "val_BG_FP": 4.891740176423416,
+      "test_fp": 352,
+      "test_bg": 2592,
+      "test_BG_FP": 13.580246913580247,
+      "R1": 20.786516853932586,
+      "R3": 38.764044943820224
+    },
+    {
+      "input": "三帧",
+      "seed": 0,
+      "tau": 0.5244140625000001,
+      "val_fp": 62,
+      "val_bg": 1247,
+      "val_BG_FP": 4.971932638331997,
+      "test_fp": 227,
+      "test_bg": 2592,
+      "test_BG_FP": 8.757716049382717,
+      "R1": 29.213483146067414,
+      "R3": 50.56179775280899
+    },
+    {
+      "input": "单帧",
+      "seed": 1,
+      "tau": 0.5078125000000001,
+      "val_fp": 62,
+      "val_bg": 1247,
+      "val_BG_FP": 4.971932638331997,
+      "test_fp": 126,
+      "test_bg": 2592,
+      "test_BG_FP": 4.861111111111112,
+      "R1": 21.34831460674157,
+      "R3": 31.46067415730337
+    },
+    {
+      "input": "三帧",
+      "seed": 1,
+      "tau": 0.39428710937500006,
+      "val_fp": 62,
+      "val_bg": 1247,
+      "val_BG_FP": 4.971932638331997,
+      "test_fp": 212,
+      "test_bg": 2592,
+      "test_BG_FP": 8.179012345679013,
+      "R1": 32.02247191011236,
+      "R3": 48.87640449438202
+    },
+    {
+      "input": "单帧",
+      "seed": 2,
+      "tau": 0.36743164062500006,
+      "val_fp": 62,
+      "val_bg": 1247,
+      "val_BG_FP": 4.971932638331997,
+      "test_fp": 319,
+      "test_bg": 2592,
+      "test_BG_FP": 12.3070987654321,
+      "R1": 20.224719101123593,
+      "R3": 34.831460674157306
+    },
+    {
+      "input": "三帧",
+      "seed": 2,
+      "tau": 0.48339843750000006,
+      "val_fp": 62,
+      "val_bg": 1247,
+      "val_BG_FP": 4.971932638331997,
+      "test_fp": 176,
+      "test_bg": 2592,
+      "test_BG_FP": 6.790123456790123,
+      "R1": 32.58426966292135,
+      "R3": 56.17977528089888
+    }
+  ]
+}

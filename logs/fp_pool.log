@@ -1,0 +1,10 @@
+train exist=0 帧: 3612
+原始 FP 检测: 441 (conf>=0.1)
+
+池化后误报候选: 148 (强 conf>0.25: 84)，覆盖 65 序列
+可疑档（疑似漏标）: 24，crop 已导出 /root/autodl-tmp/Ryan/cst_antiuav/runs/fp_pool/suspicious/
+对比度极性分布: {'cold': 19, 'hot': 129}
+尺寸 d 分布: p25/p50/p90 = [10.7, 15.0, 23.9]
+conf 分布: p50/p90/max = [0.29, 0.621] 0.713
+
+saved -> /root/autodl-tmp/Ryan/cst_antiuav/runs/fp_pool/pool.json

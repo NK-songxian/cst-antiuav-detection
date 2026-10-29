@@ -1,0 +1,14 @@
+{
+  "N_tcs_seed0": {
+    "audit_sha256": "ae74904e8e4ee72490d2e3c6739df985f370cdb5ba15d080e07dc35f38cdfffd",
+    "weights_sha256": "9a9e366c88b9bfe5372e02ea29aea54c6f0930fd9b06a1146ae36109f6ef2530"
+  },
+  "N_tcs_seed1": {
+    "audit_sha256": "78989c487e65e590f0fc4302e21611fd0634c0e09ca1a90bd85be50334755412",
+    "weights_sha256": "9d372b08091a34fbe7ab1f34fed6f8e42c5360b6b2413960ed509b917835a8c0"
+  },
+  "N_tcs_seed2": {
+    "audit_sha256": "404fe0b0edbfe9952843b20f7818feb1220795a2234e72c5d1fc338fc27625fe",
+    "weights_sha256": "6474ac6fa6cf0f5d209ed920447d9c0b471082c3958a560bf3d86acf20688f52"
+  }
+}

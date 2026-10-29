@@ -1,0 +1,9 @@
+{
+  "status": "UNAVAILABLE",
+  "tool": "light-result-analysis/scripts/result_card_gate.py",
+  "reason": "Installed skill runtime could not locate repository root containing _shared. The actual invocation raised RuntimeError before evaluating the result card.",
+  "not_a_pass": true,
+  "independent_artifact_integrity": "delivery_integrity.json covers the actual metric hashes and completed evaluation tasks; it does not replace the unavailable skill gate.",
+  "result_card_decision": "REVISION_REQUIRED",
+  "interpretation": "Results are delivered as descriptive analysis. No confirmatory p-values, SOTA claim, originality guarantee or submission approval is inferred."
+}

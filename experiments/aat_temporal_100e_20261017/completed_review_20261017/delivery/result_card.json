@@ -1,0 +1,132 @@
+{
+  "schema": "light.result_card.v1",
+  "project": "CST-AntiUAV-completed-20261017",
+  "as_of": "2026-10-17T09:33:38.587495+00:00",
+  "plan_lock": {
+    "status": "EXPLORATORY",
+    "locked_at": "2026-10-17T09:16:47.372008+00:00",
+    "results_available_at": "2026-10-17T09:29:57.077936+00:00",
+    "locator": "D:\\deskFiles\\UAV\\aat_temporal_20261017\\completed_review\\evaluation_plan.json",
+    "sha256": "4d9abbf9a2d901943a62d559c5e16bfc15f6f3a98faaf7993fba74c29c5a9282"
+  },
+  "result_card": {
+    "claim_id": "C1_test_AP50_descriptive",
+    "target_claim": "Report the observed C1 versus YOLO11n test AP50 difference and false-alarm tradeoff.",
+    "target_type": "SUPPLEMENTARY",
+    "estimand_or_hypothesis": "Pooled held-out AP50 difference conditional on these fixed seed-0 weights.",
+    "metric": "test mAP50 difference in percentage points",
+    "comparison_family": "five_exploratory_fixed_checkpoint_contrasts",
+    "family_size": 5,
+    "correction": "NONE_NO_SIGNIFICANCE_TESTS",
+    "analysis_set": {
+      "name": "all held-out CST test sequences",
+      "n": 60,
+      "unit": "video sequence",
+      "missingness": {
+        "rate": 0,
+        "mechanism": "NONE",
+        "handling": "All 14446 held-out frames retained, including 2592 negatives."
+      }
+    },
+    "provenance": {
+      "source_run_ids": [
+        "yolo11n",
+        "C1_temporal_uniform"
+      ],
+      "run_manifest_locator": "D:\\deskFiles\\UAV\\aat_temporal_20261017\\completed_review\\evaluation_status.json",
+      "run_manifest_sha256": "cdf0d9a51fb622c0ea373a049d5e3c268aecccbed06eaf9ae504c557d186406f",
+      "raw_result_locator": "D:\\deskFiles\\UAV\\aat_temporal_20261017\\completed_review\\comparison.json",
+      "raw_result_sha256": "e2b269fc0e3bc9a2eceb4a49f56afeb4e7eaaf0de108533766f660e24dba0dd9",
+      "analysis_code_locator": "D:\\deskFiles\\UAV\\aat_temporal_20261017\\completed_review\\analyze_cst_completed.py",
+      "analysis_code_sha256": "79ccc1dcfbbd54ca3bf7c5efa6b418b2123d478ea1251ede41e20a0c04f46c65",
+      "computed_at": "2026-10-17T09:33:38.587495+00:00",
+      "owner_skill": "RESULT-ANALYSIS"
+    },
+    "practical_threshold": {
+      "metric": "test AP50 difference pp",
+      "value": 5,
+      "direction": "HIGHER_IS_BETTER",
+      "justification_locator": "User-requested 5-point target; post-training descriptive comparison, not a newly preregistered primary endpoint."
+    },
+    "assumption_checks": [
+      {
+        "assumption": "Train/val/test sequences are disjoint; past-only history within each split.",
+        "status": "PASS",
+        "evidence_locator": "D:\\deskFiles\\UAV\\aat_temporal_20261017\\completed_review\\test_data_audit.json"
+      },
+      {
+        "assumption": "Training seed variability is characterized.",
+        "status": "UNKNOWN",
+        "evidence_locator": "Only seed0 has been trained."
+      }
+    ],
+    "guardrail_analysis": {
+      "required": true,
+      "evidence_locator": "D:\\deskFiles\\UAV\\aat_temporal_20261017\\completed_review\\comparison.json",
+      "evidence_sha256": "e2b269fc0e3bc9a2eceb4a49f56afeb4e7eaaf0de108533766f660e24dba0dd9",
+      "checks": [
+        {
+          "id": "val_BG_FP025",
+          "metric": "val background frame FP rate at confidence0.25",
+          "status": "FAIL",
+          "observed": 0.09943865276663993,
+          "threshold": 0.0873616680032077,
+          "claim_impact": "Do not claim unqualified false-alarm suppression at fixed confidence; report the validation-calibrated threshold analysis separately.",
+          "evidence_locator": "D:\\deskFiles\\UAV\\aat_temporal_20261017\\completed_review\\comparison.json"
+        }
+      ]
+    },
+    "effect": {
+      "estimate": 13.46397829430963,
+      "effect_size": 13.46397829430963,
+      "ci95": [
+        9.971107541957055,
+        16.47151936503784
+      ],
+      "p": null,
+      "q": null,
+      "direction": "POSITIVE",
+      "practical_significance": "DESCRIPTIVE_ONLY"
+    },
+    "language": {
+      "conclusion": "The fixed seed-0 weights show an observed test AP50 difference of 13.46 percentage points. Sequence bootstrap is conditional; no confirmatory p-values or SOTA claim.",
+      "strength": "DESCRIPTIVE_ONLY",
+      "near_threshold_wording": "No significance threshold decision is made; no p-values are fabricated."
+    }
+  },
+  "decision_ledger": [
+    {
+      "decision_id": "D1",
+      "timing": "PRE",
+      "kind": "MODEL_CHOICE",
+      "planned": true,
+      "classification": "EXPLORATORY",
+      "affected_claim_ids": [
+        "C1_test_AP50_descriptive"
+      ],
+      "rationale": "Evaluate every native validation-AP95 best.pt; no test checkpoint selection.",
+      "evidence_locator": "D:\\deskFiles\\UAV\\aat_temporal_20261017\\completed_review\\evaluation_plan.json"
+    },
+    {
+      "decision_id": "D2",
+      "timing": "POST",
+      "kind": "ANALYSIS",
+      "planned": false,
+      "classification": "SENSITIVITY",
+      "affected_claim_ids": [
+        "C1_test_AP50_descriptive"
+      ],
+      "rationale": "Sequence bootstrap added as conditional descriptive sensitivity, not a confirmatory training-seed analysis.",
+      "evidence_locator": "D:\\deskFiles\\UAV\\aat_temporal_20261017\\completed_review\\comparison.json"
+    }
+  ],
+  "sensitivity": [
+    {
+      "sensitivity_id": "S1",
+      "classification": "SENSITIVITY",
+      "description": "Paired resampling of entire held-out sequences with replacement; recompute pooled AP50 with fixed confidence tie order.",
+      "evidence_locator": "D:\\deskFiles\\UAV\\aat_temporal_20261017\\completed_review\\comparison.json"
+    }
+  ],
+  "decision": "REVISION_REQUIRED"
+}

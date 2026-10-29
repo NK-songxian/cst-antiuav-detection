@@ -1,0 +1,72 @@
+[
+  {
+    "name": "tcs_yolo8n",
+    "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolov8n.pt",
+    "sha256": "f59b3d833e2ff32e194b5bb8e08d211dc7c5bdf144b90d2c8412c47ccfc83b36",
+    "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+    "wave": 1,
+    "temporal_channels": [
+      0,
+      -5,
+      -10
+    ],
+    "temporal": true,
+    "sampling": "uniform"
+  },
+  {
+    "name": "tcs_far15_yolo11n",
+    "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+    "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_relaunch_20261017/cst_far15.yaml",
+    "wave": 1,
+    "temporal_channels": [
+      0,
+      -5,
+      -15
+    ],
+    "temporal": true,
+    "sampling": "uniform"
+  },
+  {
+    "name": "tcs_yolo11s",
+    "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+    "sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+    "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+    "wave": 2,
+    "temporal_channels": [
+      0,
+      -5,
+      -10
+    ],
+    "temporal": true,
+    "sampling": "uniform"
+  },
+  {
+    "name": "tcs_far20_yolo11n",
+    "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+    "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs_ablation_relaunch_20261017/cst_far20.yaml",
+    "wave": 2,
+    "temporal_channels": [
+      0,
+      -5,
+      -20
+    ],
+    "temporal": true,
+    "sampling": "uniform"
+  },
+  {
+    "name": "single_yolo11s",
+    "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+    "sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+    "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/cst_original.yaml",
+    "wave": 3,
+    "temporal_channels": [
+      0,
+      0,
+      0
+    ],
+    "temporal": false,
+    "sampling": "uniform"
+  }
+]

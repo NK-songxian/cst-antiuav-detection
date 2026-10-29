@@ -1,0 +1,73 @@
+{
+  "models": [
+    {
+      "name": "A_zero_deploy",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+    },
+    {
+      "name": "B_p2_compact",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1"
+    }
+  ],
+  "baseline_study": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017",
+  "splits": {
+    "train": {
+      "images": 25612,
+      "objects": 22000,
+      "negatives": 3612,
+      "list_sha256": "a397552b51c623d3a2418fcdd5ee38941febbbac1bfc9b865b3a4df099726599",
+      "label_sha256": "355de31f91155ab1fea360d4d7b3e24d59e9aafec1c06062c5f9a9578c8f0f54"
+    },
+    "val": {
+      "images": 9066,
+      "objects": 7819,
+      "negatives": 1247,
+      "list_sha256": "e23cb9d1ad4e9a121d2e5fb521e168ad6a0aaa793bb574086e0dfe9da5fedacc",
+      "label_sha256": "0522a089e4858ed1ad2c8594bafa9899615a4d9c7d3b4556e5c78eaf5573a066"
+    },
+    "test": {
+      "images": 14446,
+      "objects": 11854,
+      "negatives": 2592,
+      "list_sha256": "c60c7506d607153bd35832659679d44b9739ba375880623d2e28873bcfbe852a",
+      "label_sha256": "d4b1b355dffa7a606fd13260cb365b8104faa56c83b41020259c0da34ceb57a2"
+    }
+  },
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "ultralytics": "8.4.177",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "runtime": {
+    "workers": 16,
+    "prefetch_factor": 1,
+    "pin_memory": false,
+    "multiprocessing_context": "forkserver"
+  },
+  "max_parallel": 2,
+  "task_A": "Original YOLO11n + foldable contrast classification convolution",
+  "task_B": "P2/P3/P4 compact head + foldable contrast classification convolution",
+  "target": "B: exploratory +5 percentage points AP50, approximately 71.21%; not a promised result",
+  "stopping": "100 maximum epochs, patience 20, same AP50-95 checkpoint selection as baseline",
+  "common_args_sha256": "75ce2f8851a0d2d42285b672917debeda264f266ca4e101b83d9deb7c53c4521",
+  "code_sha256": {
+    "structure_feasibility.py": "8c7077384cd8243d1103861f18de8448199b9d5dfd5116bf2b5611d2317f4f77",
+    "structure_model.py": "9177692b363bb7a3ad63fec9eb47963c2f6e01390e4fb7aeb4bfa7ac0ec0063e",
+    "structure_trainer.py": "02f29a0bbb3e7a07d4551b13a4a8373d94c5bd7a25a47daa305b06672b656d78",
+    "preflight.py": "a421c95341e705b1f2326353b4a486bbbb3fe6f72a62fd20fd4edb16e06478c8",
+    "train_structure.py": "7e7eaf7e768d588f866e05ba58d952b40b6e30849787ce8aeb6093a98c97d6a2",
+    "run_structure_queue.py": "9505824eb94e72b4a060af8a5d5807a8fddb32a6b93972a6d0006f201d511139",
+    "prepare_run.py": "c7fd0b3e2a327f8ddbdea4ad6a472a34b75222a9fab5f3b44f4707d7fb142121",
+    "check_status.py": "39a119ce99c5f29350ee902693b6aae9332dc9b70093717a3155f9e2c65c766e"
+  },
+  "preflight_sha256": "f7d2a048df7b5aa33c4df7e470a4deb2a302b20791e4d9371fa44d797096e8f4",
+  "synthetic_memory_peak_reserved_sum": 97523859456,
+  "gpu_total_memory": 101974081536,
+  "cuda_context_safety_reserve": 2147483648,
+  "data": "Original CST manifest only. No AAT, no custom loss, no added data augmentation.",
+  "source_authorization": "User: OK \u5e76\u884c\u6267\u884c (2026-10-17)"
+}

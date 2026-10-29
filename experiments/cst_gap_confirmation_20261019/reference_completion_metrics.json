@@ -1,0 +1,150 @@
+{
+  "as_of": "2026-10-18T10:45:45.655240+00:00",
+  "queue_status": "completed",
+  "rows": [
+    {
+      "name": "N_current_seed0",
+      "mode": "current",
+      "seed": 0,
+      "arch": "yolo11n",
+      "state": "completed",
+      "stage": "test",
+      "epoch": 45,
+      "val_AP50": 0.6705535085471986,
+      "test_AP50": 0.6116664393219431,
+      "test_AP5095": 0.33521819129268043,
+      "test_BG_FP025": 0.2025462962962963
+    },
+    {
+      "name": "N_tcs_seed0",
+      "mode": "temporal",
+      "seed": 0,
+      "arch": "yolo11n",
+      "state": "completed",
+      "stage": "test",
+      "epoch": 58,
+      "val_AP50": 0.7884134108573564,
+      "test_AP50": 0.7473430740014188,
+      "test_AP5095": 0.3925828282690865,
+      "test_BG_FP025": 0.20910493827160495
+    },
+    {
+      "name": "S_current_seed0",
+      "mode": "current",
+      "seed": 0,
+      "arch": "yolo11s",
+      "state": "completed",
+      "stage": "test",
+      "epoch": 66,
+      "val_AP50": 0.6902931844942036,
+      "test_AP50": 0.6178311902070688,
+      "test_AP5095": 0.3473590097863995,
+      "test_BG_FP025": 0.30362654320987653
+    },
+    {
+      "name": "S_tcs_seed0_adopted",
+      "mode": "temporal",
+      "seed": 0,
+      "arch": "yolo11s",
+      "state": "completed",
+      "stage": "test",
+      "epoch": 72,
+      "val_AP50": 0.8071421191765304,
+      "test_AP50": 0.7711867926815128,
+      "test_AP5095": 0.4139593173767039,
+      "test_BG_FP025": 0.09645061728395062
+    },
+    {
+      "name": "N_current_seed1",
+      "mode": "current",
+      "seed": 1,
+      "arch": "yolo11n",
+      "state": "completed",
+      "stage": "test",
+      "epoch": 68,
+      "val_AP50": 0.6614056952169478,
+      "test_AP50": 0.58487097166111,
+      "test_AP5095": 0.31969239419949635,
+      "test_BG_FP025": 0.15625
+    },
+    {
+      "name": "N_tcs_seed1",
+      "mode": "temporal",
+      "seed": 1,
+      "arch": "yolo11n",
+      "state": "completed",
+      "stage": "test",
+      "epoch": 80,
+      "val_AP50": 0.7783336400556289,
+      "test_AP50": 0.7254814770206839,
+      "test_AP5095": 0.3925196783027918,
+      "test_BG_FP025": 0.1246141975308642
+    },
+    {
+      "name": "N_current_seed2",
+      "mode": "current",
+      "seed": 2,
+      "arch": "yolo11n",
+      "state": "completed",
+      "stage": "test",
+      "epoch": 74,
+      "val_AP50": 0.6497389231024162,
+      "test_AP50": 0.5837718276260384,
+      "test_AP5095": 0.32655326339660246,
+      "test_BG_FP025": 0.16589506172839505
+    },
+    {
+      "name": "N_tcs_seed2",
+      "mode": "temporal",
+      "seed": 2,
+      "arch": "yolo11n",
+      "state": "completed",
+      "stage": "test",
+      "epoch": 81,
+      "val_AP50": 0.789459651208118,
+      "test_AP50": 0.7536310338768835,
+      "test_AP5095": 0.40276554952052956,
+      "test_BG_FP025": 0.1284722222222222
+    }
+  ],
+  "paired_summary": {
+    "paired_seeds_complete": 3,
+    "paired_seeds_planned": 3,
+    "seed_pairs": [
+      {
+        "seed": 0,
+        "current_AP50": 0.6116664393219431,
+        "tcs_AP50": 0.7473430740014188,
+        "difference_pp": 13.567663467947567
+      },
+      {
+        "seed": 1,
+        "current_AP50": 0.58487097166111,
+        "tcs_AP50": 0.7254814770206839,
+        "difference_pp": 14.061050535957387
+      },
+      {
+        "seed": 2,
+        "current_AP50": 0.5837718276260384,
+        "tcs_AP50": 0.7536310338768835,
+        "difference_pp": 16.985920625084503
+      }
+    ],
+    "current_AP50": {
+      "mean": 0.5934364128696972,
+      "sd": 0.015797228482858878,
+      "n": 3
+    },
+    "tcs_AP50": {
+      "mean": 0.7421518616329954,
+      "sd": 0.014775347785776723,
+      "n": 3
+    },
+    "difference_pp": {
+      "mean": 14.87154487632982,
+      "sd": 1.8476461525171104,
+      "n": 3
+    }
+  },
+  "interpretation": "Only completed fixed-checkpoint audits enter numeric cells. Uncompleted values remain missing. Paired means use the intersection of completed seeds; no best-seed selection."
+}

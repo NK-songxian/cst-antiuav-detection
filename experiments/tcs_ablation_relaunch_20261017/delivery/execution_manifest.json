@@ -1,0 +1,24 @@
+{
+  "status": "RUNNING_NOT_COMPLETED",
+  "cst_scheduler_pid": 997141,
+  "cst_running": {
+    "tcs_yolo8n": 997144,
+    "tcs_far15_yolo11n": 997273
+  },
+  "preserved_visdrone": [
+    994214,
+    994338
+  ],
+  "queued": [
+    "tcs_yolo11s",
+    "tcs_far20_yolo11n",
+    "single_yolo11s"
+  ],
+  "remote_runs": "/root/autodl-tmp/Ryan/cst_antiuav/runs/tcs_ablation_relaunch_20261017",
+  "configured_epochs": 100,
+  "patience": 20,
+  "batch": 256,
+  "imgsz": 640,
+  "workers": 2,
+  "validation_batch_cap": 128
+}

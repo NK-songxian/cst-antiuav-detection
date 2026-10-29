@@ -1,0 +1,10 @@
+[2026-10-17T03:36:27.334775+00:00] START: four tasks in two barrier-synchronized waves, maximum two simultaneous jobs
+[2026-10-17T03:36:27.336054+00:00] LAUNCH A1_aat_global attempt=1 pid=927602
+[2026-10-17T03:36:57.346316+00:00] LAUNCH A2_aat_sequence attempt=1 pid=927695
+[2026-10-17T04:49:22.710757+00:00] EXIT A2_aat_sequence: code=0, completed=True
+[2026-10-17T04:56:43.828930+00:00] EXIT A1_aat_global: code=0, completed=True
+[2026-10-17T04:56:43.830241+00:00] LAUNCH C1_temporal_uniform attempt=1 pid=938504
+[2026-10-17T04:57:13.839834+00:00] LAUNCH C2_temporal_aat_sequence attempt=1 pid=938584
+[2026-10-17T05:52:28.054989+00:00] EXIT C1_temporal_uniform: code=-9, completed=False
+[2026-10-17T06:33:22.964821+00:00] EXIT C2_temporal_aat_sequence: code=0, completed=True
+[2026-10-17T06:33:22.966893+00:00] QUEUE_END completed=3/4

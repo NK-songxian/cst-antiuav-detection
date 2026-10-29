@@ -1,0 +1,119 @@
+{
+  "recorded_at": "2026-10-17T02:41:35.836656+00:00",
+  "pid": 919974,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "torch": "2.8.0+cu128",
+  "protocol": {
+    "batch": 1,
+    "network_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "precision": "FP16",
+    "backend": "PyTorch eager, fused, no TensorRT, no CUDA graphs",
+    "raw": "GPU-resident real input tensor to raw predictions; CUDA events",
+    "wall": "decoded CPU BGR array through YOLO.predict preprocessing/H2D/network/NMS; synchronized wall time; JPEG decoding excluded",
+    "images": 32,
+    "raw_warmup_per_model": 40,
+    "raw_samples_per_model": 200,
+    "wall_warmup_per_model": 12,
+    "wall_samples_per_model": 128,
+    "conf": 0.25,
+    "iou": 0.7,
+    "max_det": 300,
+    "schedule": "round-robin; one process; no concurrent evaluation",
+    "logging": "Ultralytics warnings suppressed consistently for all models",
+    "sample_paths": [
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_41_f000000.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_42_f000460.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_43_f000920.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_45_f000385.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_46_f000845.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_48_f000470.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_49_f000930.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_51_f000390.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_52_f000905.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/building_54_f000330.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_mountains_21_f000550.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_mountains_23_f000025.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_mountains_24_f000500.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_mountains_25_f000800.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_mountains_26_f000340.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_mountains_27_f000640.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_mountains_28_f000910.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_mountains_29_f001205.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/cn_sky_9_f000410.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/jungle_6_f000610.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/urban-areas_27_f000855.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/urban-areas_28_f000815.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/urban-areas_29_f001375.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/urban-areas_30_f001115.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/urban-areas_31_f001080.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/urban-areas_32_f000995.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/urban-areas_33_f000850.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/urban-areas_34_f000605.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/water_14_f000470.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/water_16_f000270.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/water_18_f000180.jpg",
+      "/root/autodl-tmp/Ryan/cst_antiuav/data/yolo/val/images/water_19_f000820.jpg"
+    ]
+  },
+  "models": {
+    "yolo11n": {
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/runs/baselines_100e_20261017/yolo11n/weights/best.pt",
+      "weights_sha256": "cc42d84f32ffe3b5c1f40410d5a90c5133a4149233a0182285622c3c3eebafae",
+      "fused_parameters": 2597051,
+      "gflops_640": 6.4363264,
+      "raw_cuda_forward": {
+        "n": 200,
+        "mean_ms": 2.994005262851715,
+        "median_ms": 2.977423906326294,
+        "p95_ms": 3.0100432515144346
+      },
+      "cpu_array_to_boxes_wall": {
+        "n": 128,
+        "mean_ms": 4.103809245862067,
+        "median_ms": 4.166582599282265,
+        "p95_ms": 4.339475557208061
+      }
+    },
+    "A_zero_deploy": {
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/runs/structure_ab_100e_20261017/A_zero_deploy/weights/deploy.pt",
+      "weights_sha256": "37934d1e91d904d28127a0b28921e12aa418bc90da0dfeeec22b101506964350",
+      "fused_parameters": 2597051,
+      "gflops_640": 6.4363264,
+      "raw_cuda_forward": {
+        "n": 200,
+        "mean_ms": 2.9957731211185457,
+        "median_ms": 2.9866719245910645,
+        "p95_ms": 3.030113625526428
+      },
+      "cpu_array_to_boxes_wall": {
+        "n": 128,
+        "mean_ms": 4.1110877355095,
+        "median_ms": 4.155723378062248,
+        "p95_ms": 4.19659111648798
+      }
+    },
+    "B_p2_compact": {
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/runs/structure_ab_100e_20261017/B_p2_compact/weights/deploy.pt",
+      "weights_sha256": "5827015b48dab456f4cf463330dbf186233be2736752f15e8a60510f7bc02807",
+      "fused_parameters": 1955539,
+      "gflops_640": 7.3084928,
+      "raw_cuda_forward": {
+        "n": 200,
+        "mean_ms": 2.9919150459766386,
+        "median_ms": 2.9756640195846558,
+        "p95_ms": 3.0049361109733583
+      },
+      "cpu_array_to_boxes_wall": {
+        "n": 128,
+        "mean_ms": 4.001339228125289,
+        "median_ms": 4.112327471375465,
+        "p95_ms": 4.176515713334084
+      }
+    }
+  }
+}

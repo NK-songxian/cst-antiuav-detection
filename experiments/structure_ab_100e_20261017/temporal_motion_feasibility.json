@@ -1,0 +1,41 @@
+{
+  "5": {
+    "valid_pairs": 25492,
+    "missing_history": 120,
+    "exist_transitions": 445,
+    "both_positive_pairs": 21658,
+    "median_displacement_px": 3.781763861394591,
+    "p25_p75_displacement_px": [
+      1.4431093709073277,
+      7.996230535644643
+    ],
+    "fraction_below_1px": 0.19304644934897036,
+    "fraction_displacement_gt_quarter_box": 0.5477421737925939
+  },
+  "10": {
+    "valid_pairs": 25372,
+    "missing_history": 240,
+    "exist_transitions": 780,
+    "both_positive_pairs": 21372,
+    "median_displacement_px": 7.675103622723839,
+    "p25_p75_displacement_px": [
+      2.9027484312611667,
+      15.966294673570133
+    ],
+    "fraction_below_1px": 0.11781770540894629,
+    "fraction_displacement_gt_quarter_box": 0.7247332959011791
+  },
+  "20": {
+    "valid_pairs": 25132,
+    "missing_history": 480,
+    "exist_transitions": 1293,
+    "both_positive_pairs": 20881,
+    "median_displacement_px": 15.240585887539117,
+    "p25_p75_displacement_px": [
+      5.864725477633222,
+      31.01970710845605
+    ],
+    "fraction_below_1px": 0.06489152818351611,
+    "fraction_displacement_gt_quarter_box": 0.827594463866673
+  }
+}

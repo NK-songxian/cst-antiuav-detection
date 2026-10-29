@@ -1,0 +1,10 @@
+{
+  "paths": [
+    "/root/autodl-tmp/Ryan/cst_antiuav/archive/baseline_reset_20261017_003756/runs/baseline_yolo11n/weights/best.pt",
+    "/root/autodl-tmp/Ryan/cst_antiuav/runs/baselines_100e_20261017/yolo11n/weights/best.pt"
+  ],
+  "keys_match": true,
+  "tensor_count": 499,
+  "all_tensors_equal": true,
+  "different_tensors": []
+}

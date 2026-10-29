@@ -1,0 +1,13 @@
+分层: reliable=31  suspect=117 (edge=32, near_change=113)
+  目标统计 0/22000
+  目标统计 5000/22000
+  目标统计 10000/22000
+  目标统计 15000/22000
+  目标统计 20000/22000
+真目标统计: 22000 个（来自 22000 帧）
+
+匹配结果: 配对成功 31/31 (覆盖率 100%)  未匹配 0
+D 分布 p50/p90: [0.07, 0.17]
+被保护真目标: 31 帧（去重）
+
+saved -> /root/autodl-tmp/Ryan/cst_antiuav/runs/fp_pool/pool_tiered.json, pairs.json

@@ -1,0 +1,1567 @@
+{
+  "status": "PASS",
+  "captured_at": "2026-10-19T12:49:50.480188+00:00",
+  "index_sha256": "9ce7b25b99e5ebaaeb4fd074a3f36e8453aec7c8088448f95954a0c13d579d83",
+  "script_sha256": "8b0eac404a03e5ffc70ea34ce22be3bcdd54a05c47850238072e3fd41b8e6eb3",
+  "counts": {
+    "train": {
+      "sequences": 120,
+      "retained_frames": 25612,
+      "attribute_values_checked": 204896
+    },
+    "val": {
+      "sequences": 40,
+      "retained_frames": 9066,
+      "attribute_values_checked": 72528
+    },
+    "test": {
+      "sequences": 60,
+      "retained_frames": 14446,
+      "attribute_values_checked": 115440
+    }
+  },
+  "sources": [
+    {
+      "split": "train",
+      "seq": "building_1",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_1/IR_label.json",
+      "frames": 925,
+      "sha256": "ab2e7a75c8d71df93c7dafb503b82801bace1249ae70d06845487c644a5ed847"
+    },
+    {
+      "split": "train",
+      "seq": "building_10",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_10/IR_label.json",
+      "frames": 1175,
+      "sha256": "4161529571e0b64bae7dca48d05c368bdb3e355c18e94d44d3ab30e384d13063"
+    },
+    {
+      "split": "train",
+      "seq": "building_11",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_11/IR_label.json",
+      "frames": 1000,
+      "sha256": "f9007218b9ac0d806681bdbc7ee26ca45c4ea4e6b22cb12321ef7d6921df7e11"
+    },
+    {
+      "split": "train",
+      "seq": "building_12",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_12/IR_label.json",
+      "frames": 1000,
+      "sha256": "5e7045e8bf5d428219092854573adc3f331d729b5d4e7f949bee603f7ed1f545"
+    },
+    {
+      "split": "train",
+      "seq": "building_13",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_13/IR_label.json",
+      "frames": 1200,
+      "sha256": "8cdd78b9fd1361e5272da08a5f35dadd71ba9a46d9733ff27582434b9543fd45"
+    },
+    {
+      "split": "train",
+      "seq": "building_14",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_14/IR_label.json",
+      "frames": 1100,
+      "sha256": "628e60509eb58511c69ab3b6f0661646bb32c094ebb8b336b02020ec8c2223e1"
+    },
+    {
+      "split": "train",
+      "seq": "building_15",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_15/IR_label.json",
+      "frames": 1000,
+      "sha256": "02df886891c7a5936ee612b1a812148bbdb8d5d63d49dd20638f7944cb925fe0"
+    },
+    {
+      "split": "train",
+      "seq": "building_16",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_16/IR_label.json",
+      "frames": 1000,
+      "sha256": "c7376c136e53d19667e3e96e1e579080e14f68effd74bc39eab2aa904e6c0b5a"
+    },
+    {
+      "split": "train",
+      "seq": "building_17",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_17/IR_label.json",
+      "frames": 1000,
+      "sha256": "a5fa84275b380cea7deb428280866cbee6c0e123e5e175c5fc0186d49508427b"
+    },
+    {
+      "split": "train",
+      "seq": "building_18",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_18/IR_label.json",
+      "frames": 1145,
+      "sha256": "f34b42ee60f76ab68983f9d142e369b0a4de12c51570b97cd8445c66d26a2b81"
+    },
+    {
+      "split": "train",
+      "seq": "building_19",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_19/IR_label.json",
+      "frames": 1247,
+      "sha256": "025198190099abd7b9c2ecac03d3a0ccd74ed7e68794ac4c0b5b158e7619d41b"
+    },
+    {
+      "split": "train",
+      "seq": "building_2",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_2/IR_label.json",
+      "frames": 1000,
+      "sha256": "f8095d90fbdbf577a39b9afbbb97935263010f3a18ea73420e8b34f3c75afe78"
+    },
+    {
+      "split": "train",
+      "seq": "building_20",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_20/IR_label.json",
+      "frames": 1000,
+      "sha256": "8cd3a11eeeb10a2da46796b433f2f1e998b9b59ef0f7e021fecd1fac57029601"
+    },
+    {
+      "split": "train",
+      "seq": "building_21",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_21/IR_label.json",
+      "frames": 1055,
+      "sha256": "876b82d4184d72bd6b6aeeb23a936746a332f4d5f17e58d55c08cac563c6a888"
+    },
+    {
+      "split": "train",
+      "seq": "building_22",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_22/IR_label.json",
+      "frames": 1220,
+      "sha256": "11f908dbd39b1eed352952a5c2970787ac6bd3d5c78f28fad0d1af0c09ff1b8b"
+    },
+    {
+      "split": "train",
+      "seq": "building_23",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_23/IR_label.json",
+      "frames": 1020,
+      "sha256": "481351a23625f7f2d6cfee18117c4897b7037b299504a403f8d61fb2c927f458"
+    },
+    {
+      "split": "train",
+      "seq": "building_24",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_24/IR_label.json",
+      "frames": 1488,
+      "sha256": "f381d5e57d9e258efbccd5f575a83723b3e85b257e8c7e987b6ecc0a9f8ded05"
+    },
+    {
+      "split": "train",
+      "seq": "building_25",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_25/IR_label.json",
+      "frames": 1000,
+      "sha256": "748cb962b472eae5819f8ee317f78ff46805ef2ff22deade12b2ed97499cac65"
+    },
+    {
+      "split": "train",
+      "seq": "building_26",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_26/IR_label.json",
+      "frames": 1120,
+      "sha256": "a334af51e2005a57c7bf25e377605743f090105058f04ebe86aeaa7efe4e0f1b"
+    },
+    {
+      "split": "train",
+      "seq": "building_27",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_27/IR_label.json",
+      "frames": 1175,
+      "sha256": "19213a028e95d400c686624976833d2fa36fcddd245febb5e52e4c93093104d3"
+    },
+    {
+      "split": "train",
+      "seq": "building_28",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_28/IR_label.json",
+      "frames": 1000,
+      "sha256": "03d0be9f11425bd7ef01033107c4f7a0cf506cf30bf6a44aff637fd242e21d54"
+    },
+    {
+      "split": "train",
+      "seq": "building_29",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_29/IR_label.json",
+      "frames": 1000,
+      "sha256": "59f4271f1df7bd6bea901868d511dd71806e7608f614c141dbb2060eb35407fc"
+    },
+    {
+      "split": "train",
+      "seq": "building_3",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_3/IR_label.json",
+      "frames": 1000,
+      "sha256": "2540f4d1d78a46f4698d75914c394ed44ed0807251961d016aea954c3db04c57"
+    },
+    {
+      "split": "train",
+      "seq": "building_30",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_30/IR_label.json",
+      "frames": 1000,
+      "sha256": "db8fa2f7e08bf13d623bd22f2d89d1a66c3a9a59ea2366f1b256489e5bcb414d"
+    },
+    {
+      "split": "train",
+      "seq": "building_31",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_31/IR_label.json",
+      "frames": 1556,
+      "sha256": "12a405ae6ece855c5b0ddbf2ebdaed4ca0f3ba3659bb23e1130fce9696c85eec"
+    },
+    {
+      "split": "train",
+      "seq": "building_32",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_32/IR_label.json",
+      "frames": 1000,
+      "sha256": "65f3c809a25632d86210f3fd8234120a3a787f4c3e3a07ee3c6186e985c8a26f"
+    },
+    {
+      "split": "train",
+      "seq": "building_33",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_33/IR_label.json",
+      "frames": 1275,
+      "sha256": "29556735e32a96af3c20ad7551918e88dcf0a050d18e8dbedba7617605caf0df"
+    },
+    {
+      "split": "train",
+      "seq": "building_34",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_34/IR_label.json",
+      "frames": 1000,
+      "sha256": "700d909ef9c8204cda2caf5cbcfbe6f59d275dc649d40a1a14c99f3734089c49"
+    },
+    {
+      "split": "train",
+      "seq": "building_35",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_35/IR_label.json",
+      "frames": 1000,
+      "sha256": "15d7d09270dea34d584b4b1847ee9970bdfd87867f7ab491c61006aa9e533ef8"
+    },
+    {
+      "split": "train",
+      "seq": "building_36",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_36/IR_label.json",
+      "frames": 1125,
+      "sha256": "5c1afb71ded6bff62f962104cdab3837706fe6bd2e9a400db7eb2b7b84c1a1bc"
+    },
+    {
+      "split": "train",
+      "seq": "building_37",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_37/IR_label.json",
+      "frames": 1418,
+      "sha256": "513a67266c0d0fa645381c31e89a5b1cc7b12b67e6e99ca2ea9e71a16f7615f5"
+    },
+    {
+      "split": "train",
+      "seq": "building_38",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_38/IR_label.json",
+      "frames": 1000,
+      "sha256": "3e6733c08c667481af6a248b7cbc7f03dd45d9433bb3bf1c6250a6cca5415b78"
+    },
+    {
+      "split": "train",
+      "seq": "building_39",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_39/IR_label.json",
+      "frames": 1000,
+      "sha256": "0609fb6b9bc83974ebafa207af1c0cb7edaba261ad4189ed5bcf0661e824dc33"
+    },
+    {
+      "split": "train",
+      "seq": "building_4",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_4/IR_label.json",
+      "frames": 1115,
+      "sha256": "fd5641a1926ca0294a394f8932a8fa2085fc0c21d3532ab1f379218a708ccfe4"
+    },
+    {
+      "split": "train",
+      "seq": "building_40",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_40/IR_label.json",
+      "frames": 1125,
+      "sha256": "6c7c686e3d3faf4c6a7937764fd6368d7dfb2662cff337c9f6271b50a248b31c"
+    },
+    {
+      "split": "train",
+      "seq": "building_5",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_5/IR_label.json",
+      "frames": 1000,
+      "sha256": "4e1431023cafbb084922a4347665595f4b34b51e8f508615f8097fffce5501ae"
+    },
+    {
+      "split": "train",
+      "seq": "building_55",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_55/IR_label.json",
+      "frames": 995,
+      "sha256": "d13a90675e87af671001ba952c787bc94a7505e6db059a118bf16fc5d1065d9c"
+    },
+    {
+      "split": "train",
+      "seq": "building_56",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_56/IR_label.json",
+      "frames": 1000,
+      "sha256": "e6dc48793b0cdec0613a53d3b8bad267ec064b43249349a8cb71c43a6b3277d9"
+    },
+    {
+      "split": "train",
+      "seq": "building_57",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_57/IR_label.json",
+      "frames": 1000,
+      "sha256": "9e277d14b61d95f4464211d1343163de03cdbfad7da599ffa3ac27e46ffd4970"
+    },
+    {
+      "split": "train",
+      "seq": "building_58",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_58/IR_label.json",
+      "frames": 1000,
+      "sha256": "45019db330f145778ec7701b4681601d19ab8dbf35627c3a5e00234d51ed1458"
+    },
+    {
+      "split": "train",
+      "seq": "building_59",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_59/IR_label.json",
+      "frames": 1000,
+      "sha256": "d3b6fa1cdefef6a04432da21693fe2dfef041551929f41f626e36aa78ab9fe39"
+    },
+    {
+      "split": "train",
+      "seq": "building_6",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_6/IR_label.json",
+      "frames": 1000,
+      "sha256": "813586c4ef8db39aa903118079dcc4c84f9191e83be6f42491043323215bb98d"
+    },
+    {
+      "split": "train",
+      "seq": "building_60",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_60/IR_label.json",
+      "frames": 1000,
+      "sha256": "f47876f518525866531d68ae3ab3732f384d5ea6d9e61b9e1a3ebf11c8f0ce84"
+    },
+    {
+      "split": "train",
+      "seq": "building_61",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_61/IR_label.json",
+      "frames": 1000,
+      "sha256": "17ec26c035f381cef065653404c28afe3bcce940083d019107b4d7dfa5d9207f"
+    },
+    {
+      "split": "train",
+      "seq": "building_62",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_62/IR_label.json",
+      "frames": 1075,
+      "sha256": "108ec39a5193a1b43f2a940f2d51984be5fc3348ce284c4b0ae668da1cba4de0"
+    },
+    {
+      "split": "train",
+      "seq": "building_63",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_63/IR_label.json",
+      "frames": 1000,
+      "sha256": "65d04b41995ac1aeaf04a5383c22f9cdf42787b7d404a454a507da5e99f07eba"
+    },
+    {
+      "split": "train",
+      "seq": "building_64",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_64/IR_label.json",
+      "frames": 1000,
+      "sha256": "54cd7db31c97b0df497f8831a5368341ddd6bdb3008efc2aabcf083dd224c7df"
+    },
+    {
+      "split": "train",
+      "seq": "building_65",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_65/IR_label.json",
+      "frames": 894,
+      "sha256": "251045746e2d11c3cc44472628d3acfeaea6c86d202e7b04af051ec28df98c4c"
+    },
+    {
+      "split": "train",
+      "seq": "building_7",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_7/IR_label.json",
+      "frames": 600,
+      "sha256": "d62c724c5fc31deeb00738b60c9e4d6a370473a360fe637715399b08e6dde2c8"
+    },
+    {
+      "split": "train",
+      "seq": "building_8",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_8/IR_label.json",
+      "frames": 1010,
+      "sha256": "8929fc4361be601fa4fe7d732d3554f9c8d187107f59258df7189e2c804e57fa"
+    },
+    {
+      "split": "train",
+      "seq": "building_9",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/building_9/IR_label.json",
+      "frames": 1000,
+      "sha256": "5fb271d5e953a54473736a505e212d60c3eda2817523bf9efc4bf5b61fe1fb1e"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_1",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_1/IR_label.json",
+      "frames": 1454,
+      "sha256": "74c2611f757c0a251eff944b06e37bf939820edb2d015b4deaef4a87c70f715f"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_10",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_10/IR_label.json",
+      "frames": 995,
+      "sha256": "d99355d070a205bf5f154243ddc64f333b5e33630376012651592c2a9b4d5162"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_11",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_11/IR_label.json",
+      "frames": 1389,
+      "sha256": "2ab9456364b1181e82e2ffde3fe61a24c650c08be99607c8cc0309e2031a7325"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_12",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_12/IR_label.json",
+      "frames": 1504,
+      "sha256": "7c6a30238ba76a064b45049953a682dae25391c5ebae47d7b7dde0df1c9211e1"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_13",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_13/IR_label.json",
+      "frames": 1471,
+      "sha256": "a15d293d5a07846001154c6292e9f193275ad62be581f8cb8bcb39f2cb9bdbf3"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_14",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_14/IR_label.json",
+      "frames": 1000,
+      "sha256": "ff32275ffe2c32e894bac53cc8a55545560d06f5b2fc307ec408b094a56410de"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_15",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_15/IR_label.json",
+      "frames": 1245,
+      "sha256": "ac9675e7ab0f9df3621036ddacbd91539507b729df610da179f81dc5c5c2ea03"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_16",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_16/IR_label.json",
+      "frames": 1124,
+      "sha256": "ab512201f0584f4a5465eb119ace695359564ba163a8f2c1c07da24aea69ddfc"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_17",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_17/IR_label.json",
+      "frames": 1064,
+      "sha256": "a8792d6f2a5186bd7fa62623c05b7fe8a234cc9d041a9c8f036fb9afce783a09"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_18",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_18/IR_label.json",
+      "frames": 1099,
+      "sha256": "7438d730fca51d7df2b9e207594e3737feb9962e034c37056ed8ae0280e8e3a5"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_19",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_19/IR_label.json",
+      "frames": 1374,
+      "sha256": "4d0d0d360bcc4911d7811457ca24bacdbcae34329518e2155765557c2b5b43d0"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_2",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_2/IR_label.json",
+      "frames": 1520,
+      "sha256": "3c3b682e3e94135123aceebf92b93a2f89c733d71cc974b90787486a35f7845f"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_20",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_20/IR_label.json",
+      "frames": 1179,
+      "sha256": "16bfa90614b060b6a8794afb8567d8e1a329f9bab349a221ddd3af4c5d0233da"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_3",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_3/IR_label.json",
+      "frames": 779,
+      "sha256": "e914c641c578ce9ee7e182e9ad75c0406b63fa82388cdd5ccd500ba3f4791e70"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_4",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_4/IR_label.json",
+      "frames": 775,
+      "sha256": "e16d446bc146d71a783732eebe53341b5f5127035f7f20e0c166cf5e16ce0590"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_5",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_5/IR_label.json",
+      "frames": 777,
+      "sha256": "53cdda6e95d4ba3c1f23d01acf0dbe19b665efec6a0d94f137f748b5a1e67862"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_6",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_6/IR_label.json",
+      "frames": 840,
+      "sha256": "d6b512a05bce7d92f52cb7ac676d4518393514d4b4fc5a4c25bd834c5dc2ad4b"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_7",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_7/IR_label.json",
+      "frames": 895,
+      "sha256": "fb27525bdea15e3c9cb5a5f507f1aa0a1f77a761781d19180b85d66fd5b2d812"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_8",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_8/IR_label.json",
+      "frames": 789,
+      "sha256": "4eefe8977d2c18fce8881873a68a20443d2227216f4174f1a139d9de71309740"
+    },
+    {
+      "split": "train",
+      "seq": "cn_mountains_9",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_mountains_9/IR_label.json",
+      "frames": 1050,
+      "sha256": "89f5edc8e059ae343a5206ae0128d039c59852b70090bd966bbd1e2dae0ae94f"
+    },
+    {
+      "split": "train",
+      "seq": "cn_sky_1",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_sky_1/IR_label.json",
+      "frames": 1000,
+      "sha256": "38aeeea50b6422acc37f6392ef8f0b071283201df3b63f5cfe90539bbe42ebeb"
+    },
+    {
+      "split": "train",
+      "seq": "cn_sky_2",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_sky_2/IR_label.json",
+      "frames": 1000,
+      "sha256": "5a64c533f8a63aa21a59d15cea6d871b2e144818ab2912943c0b2b7ad1aefa66"
+    },
+    {
+      "split": "train",
+      "seq": "cn_sky_3",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_sky_3/IR_label.json",
+      "frames": 1120,
+      "sha256": "3d6adef029002973c1d9f968030abdd8b5d7f9fe5cef46a9f259884d6d327aed"
+    },
+    {
+      "split": "train",
+      "seq": "cn_sky_4",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_sky_4/IR_label.json",
+      "frames": 1551,
+      "sha256": "65bdcf080aff13f158d041004d8abaec3db2ae71756109e480c879508efb8112"
+    },
+    {
+      "split": "train",
+      "seq": "cn_sky_5",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_sky_5/IR_label.json",
+      "frames": 1000,
+      "sha256": "e1d6c56bc47d9e462296d049aa6951137926c501f7bcd698e0d26532ef14cc2b"
+    },
+    {
+      "split": "train",
+      "seq": "cn_sky_6",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_sky_6/IR_label.json",
+      "frames": 1000,
+      "sha256": "afac7abcbd6b3c842b21c013d842c1a7850145ae6ac7fea6af79a967a300e3ac"
+    },
+    {
+      "split": "train",
+      "seq": "cn_sky_7",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_sky_7/IR_label.json",
+      "frames": 1000,
+      "sha256": "e4d711805ae2648e9e46ffd58fdedc7848f9e2343bf8898d7ae377b1c9e625c2"
+    },
+    {
+      "split": "train",
+      "seq": "cn_sky_8",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/cn_sky_8/IR_label.json",
+      "frames": 1000,
+      "sha256": "0649a8ed3287e7fe17898a38e2a26613f890446d7da3829f1eefd562980d69c1"
+    },
+    {
+      "split": "train",
+      "seq": "jungle_1",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/jungle_1/IR_label.json",
+      "frames": 1000,
+      "sha256": "c8e8bfb2e5cfaaeed4da835adc97c76f0b86963ad9049b6e420b2f8f31a2eec7"
+    },
+    {
+      "split": "train",
+      "seq": "jungle_2",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/jungle_2/IR_label.json",
+      "frames": 1000,
+      "sha256": "160ae5541613785fe49122113601b5767d455902f22b4c2e633df3ae80e70637"
+    },
+    {
+      "split": "train",
+      "seq": "jungle_3",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/jungle_3/IR_label.json",
+      "frames": 1000,
+      "sha256": "dc1a0483ff91c7bb6bf31d4145636a9036a875a539c6a14f867d0fd07746e00e"
+    },
+    {
+      "split": "train",
+      "seq": "jungle_4",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/jungle_4/IR_label.json",
+      "frames": 950,
+      "sha256": "25333ae3cdbe9ea02ad735e75931fa0595a792fa61a0db9525feb13cb038bfc3"
+    },
+    {
+      "split": "train",
+      "seq": "jungle_5",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/jungle_5/IR_label.json",
+      "frames": 1010,
+      "sha256": "2c8503e1d51667677a0356a5d049b2e9a21338be54ce457a72c81bb165c83802"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_1",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_1/IR_label.json",
+      "frames": 2022,
+      "sha256": "b85d7678c30cabda4e867b46fc39aadb8fc65cb93fa198f04e7ac16912e7b95f"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_10",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_10/IR_label.json",
+      "frames": 1000,
+      "sha256": "204392463e02e2c15664e8c12532c953dbcd5118d1b2cbb70d01ce728e295c32"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_11",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_11/IR_label.json",
+      "frames": 1000,
+      "sha256": "a929d672ba176f1b4546d16f0f27363f4c32c1a4d47888cb9d7deccb007cc722"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_12",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_12/IR_label.json",
+      "frames": 1000,
+      "sha256": "4596876c252686c3d9eea452a4963b84077623db4b91859de08f01291b112432"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_13",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_13/IR_label.json",
+      "frames": 1000,
+      "sha256": "d3005c13b1b6f19464667af6e0d3930f43b1e97bae9545ceb7026e1dee6c9ee2"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_14",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_14/IR_label.json",
+      "frames": 1000,
+      "sha256": "cf8c4a9717cf50150e2515f50611a2e66dfeae5d7fd759f17c5e85e3a09f905f"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_15",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_15/IR_label.json",
+      "frames": 1000,
+      "sha256": "0984a6136398f4e4f53414dac4f83ec2bb2f32c043fd0e8ac3dce393d8038bf6"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_16",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_16/IR_label.json",
+      "frames": 1048,
+      "sha256": "3953292dc855db41b0e70f327ca0ca2f28c82babfa0d4445e3505e75e6bfe70c"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_17",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_17/IR_label.json",
+      "frames": 1545,
+      "sha256": "4c75d9f5e17d6fc4941bd1e49a087ee046e7a5ee3426b3917fd0a7fab56697a6"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_18",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_18/IR_label.json",
+      "frames": 1500,
+      "sha256": "b6364acb3ee13069072c8835f6a5f642bda0d406e5d63a2cae096663b0a338e3"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_19",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_19/IR_label.json",
+      "frames": 1500,
+      "sha256": "fb8cb021d3a9aee8066e83fa2b91f98ae4eee577c507a00d5fc6fc5cc8354252"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_2",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_2/IR_label.json",
+      "frames": 1300,
+      "sha256": "7f3ad6b30be377002b5a30e47f56340619917d82a1ac021305e28c0939695606"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_20",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_20/IR_label.json",
+      "frames": 1500,
+      "sha256": "e49384a30c7a3f82ae6848db5348bf9d2fab5bc7ef0c1cb6a18882fba2106cab"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_21",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_21/IR_label.json",
+      "frames": 965,
+      "sha256": "8a98af5c71de9a7edbacd3089dd8a931aa593492fe602110fa8e750e884c28ae"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_22",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_22/IR_label.json",
+      "frames": 1555,
+      "sha256": "bacce246b6830af453161c7c462082746b253fac216560f1d2bba3b4d53942c7"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_23",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_23/IR_label.json",
+      "frames": 960,
+      "sha256": "403c7708c904a141abb74905f083e05eafa32d0021ea4b39af1e4b03cbc016f2"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_3",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_3/IR_label.json",
+      "frames": 1045,
+      "sha256": "e177932acce187b1e5547e7323650c9cbcece6ebe5c59625cee931ede5d760b6"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_4",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_4/IR_label.json",
+      "frames": 1000,
+      "sha256": "99aa7edba36fc21615858d723cfb7985b11d4a5c2983c8a263127a20e7960bf6"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_5",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_5/IR_label.json",
+      "frames": 1000,
+      "sha256": "3b7a18970bd3bb6ad81f1272d5cc9712d16d3bf3ba020c3119d09f8dfa116647"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_6",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_6/IR_label.json",
+      "frames": 1000,
+      "sha256": "c43c0209708e83ccb72672aba3358afc2e8376e6fe2e5fdff50b87f36f2a2aec"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_7",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_7/IR_label.json",
+      "frames": 1000,
+      "sha256": "7746a28d554cc2565ef34d5a0221360ff47be6b5500cf8d41cb4c2665c8d99d3"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_8",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_8/IR_label.json",
+      "frames": 1000,
+      "sha256": "6f818198aef451e79fddca841e9b14b489ba2eb02f77185fa5ad1ef64eedbed0"
+    },
+    {
+      "split": "train",
+      "seq": "urban-areas_9",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/urban-areas_9/IR_label.json",
+      "frames": 1000,
+      "sha256": "507cd02b515aaa463c7da6865e2282d04cc69400fcb2d6d7956edfd07a385f08"
+    },
+    {
+      "split": "train",
+      "seq": "water_1",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_1/IR_label.json",
+      "frames": 947,
+      "sha256": "87d18aca600d456e9a263785125b95afd6def4de109f06b9589129e4776e1900"
+    },
+    {
+      "split": "train",
+      "seq": "water_10",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_10/IR_label.json",
+      "frames": 824,
+      "sha256": "2c3de8f387b16970dc398c5bd7b134cccb6af8c8f9e83848ccd97ab4325f0246"
+    },
+    {
+      "split": "train",
+      "seq": "water_11",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_11/IR_label.json",
+      "frames": 772,
+      "sha256": "3b6c3c4f014b0e0b8a7e6fd49b1d8ede1b034dc2cec549461167765d112d5479"
+    },
+    {
+      "split": "train",
+      "seq": "water_12",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_12/IR_label.json",
+      "frames": 849,
+      "sha256": "e0c67af9f28a8d71a7ca914b1d2d7ad964972773ba5857cb83dc4790491e863e"
+    },
+    {
+      "split": "train",
+      "seq": "water_13",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_13/IR_label.json",
+      "frames": 811,
+      "sha256": "12815e816a813db6f78c3c478b5b4a07add776da5e2214c85adbc058582cdc48"
+    },
+    {
+      "split": "train",
+      "seq": "water_2",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_2/IR_label.json",
+      "frames": 809,
+      "sha256": "7495fdde9a960689a780cfe8df01886167b51ac230b01aee9d6b1af1ed97b5c9"
+    },
+    {
+      "split": "train",
+      "seq": "water_3",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_3/IR_label.json",
+      "frames": 737,
+      "sha256": "4f1401bdb9eadf661419b1d7af11854277756739456ae568a1e7fc359a20e4f9"
+    },
+    {
+      "split": "train",
+      "seq": "water_4",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_4/IR_label.json",
+      "frames": 862,
+      "sha256": "e7b81efb5d6c38e0e823403852c7cb421fc6fc9b9ca84552af66d348601afab5"
+    },
+    {
+      "split": "train",
+      "seq": "water_5",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_5/IR_label.json",
+      "frames": 875,
+      "sha256": "180d1ee38ca06a15a3f315d41145fbbf1b62e1a1239bb1f2d79075129af8470f"
+    },
+    {
+      "split": "train",
+      "seq": "water_6",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_6/IR_label.json",
+      "frames": 837,
+      "sha256": "259df479d3cbf4fae2b7345aa1a600bdcb60d2835017aa58b6245cdab49f7322"
+    },
+    {
+      "split": "train",
+      "seq": "water_7",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_7/IR_label.json",
+      "frames": 1107,
+      "sha256": "87e1ae3e0947bbb04e33bde08ae2f911ed2bf97d8280c5fb23b11feec60e4410"
+    },
+    {
+      "split": "train",
+      "seq": "water_8",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_8/IR_label.json",
+      "frames": 798,
+      "sha256": "3ea93cf535d472bf54b91f614f54c5f89b580dc2a35f9d34acf132c7bad70ae9"
+    },
+    {
+      "split": "train",
+      "seq": "water_9",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/train/water_9/IR_label.json",
+      "frames": 811,
+      "sha256": "1d2c4134d82b7aaf29ccb2ac438305de65f3867ac835580f52371de4ac5affd6"
+    },
+    {
+      "split": "val",
+      "seq": "building_41",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_41/IR_label.json",
+      "frames": 1000,
+      "sha256": "9902aca10be0868f81a04ff3ca2eb396d2415dbb11163ed7df545fc8cb9c9fc9"
+    },
+    {
+      "split": "val",
+      "seq": "building_42",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_42/IR_label.json",
+      "frames": 1000,
+      "sha256": "42a1371b47fe7cde3eab8551d7024e62c5e3ec8a47dc9a114f96e1cf30a1eb50"
+    },
+    {
+      "split": "val",
+      "seq": "building_43",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_43/IR_label.json",
+      "frames": 1000,
+      "sha256": "26bb64920e793bda9b23edab924a1a92c7a6f6321d314b6ed0e38db6cf5ac3ef"
+    },
+    {
+      "split": "val",
+      "seq": "building_44",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_44/IR_label.json",
+      "frames": 1000,
+      "sha256": "24bbf370b09425703e251827da1d50b021dc4373ec619862e4e384c301a4c384"
+    },
+    {
+      "split": "val",
+      "seq": "building_45",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_45/IR_label.json",
+      "frames": 1000,
+      "sha256": "9453f081d97329d5ab295d82d5d397f33e4a043766464b0a79a4e83aef5a9321"
+    },
+    {
+      "split": "val",
+      "seq": "building_46",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_46/IR_label.json",
+      "frames": 875,
+      "sha256": "71b0decc307fa768292f9a7e52bc4bfda3633a7decee5a9cf46a0a5c95eeefb5"
+    },
+    {
+      "split": "val",
+      "seq": "building_47",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_47/IR_label.json",
+      "frames": 965,
+      "sha256": "750f68efc36ef5348601f3fab97fe8bc00edddb4e3b2591d5da3e36cca3f80f7"
+    },
+    {
+      "split": "val",
+      "seq": "building_48",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_48/IR_label.json",
+      "frames": 1000,
+      "sha256": "3ef06df8c3dc550bedbc135f8f3ec6c6826c5a398d1c116bd1c5b4a5b93daed0"
+    },
+    {
+      "split": "val",
+      "seq": "building_49",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_49/IR_label.json",
+      "frames": 1000,
+      "sha256": "162bbc194f85610a8ef921af43fe4e95aafef48c8f3b896ee7ae99655932be82"
+    },
+    {
+      "split": "val",
+      "seq": "building_50",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_50/IR_label.json",
+      "frames": 1000,
+      "sha256": "3169511553839ae7d2982e67d5675306bf1956889f2e5fac90b3ec671b5ffa56"
+    },
+    {
+      "split": "val",
+      "seq": "building_51",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_51/IR_label.json",
+      "frames": 950,
+      "sha256": "8a083a702c8bd2a7fa194555d461ba8fa54371fc46d2da4ab8191daa11491996"
+    },
+    {
+      "split": "val",
+      "seq": "building_52",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_52/IR_label.json",
+      "frames": 1035,
+      "sha256": "eec08e6f84cb4828e5664392cf56e3330f6fc1e9b0d9db269816fdf4f8d025d7"
+    },
+    {
+      "split": "val",
+      "seq": "building_53",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_53/IR_label.json",
+      "frames": 1000,
+      "sha256": "47b68663cd5da5fd42811a93338fd81d807e3de4e8d3ab4d1957cb7342485aef"
+    },
+    {
+      "split": "val",
+      "seq": "building_54",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/building_54/IR_label.json",
+      "frames": 1244,
+      "sha256": "2be19e38334bc1cb45b6f33e45f08a508fe6f2ade867a517b8150072cf73d051"
+    },
+    {
+      "split": "val",
+      "seq": "cn_mountains_21",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/cn_mountains_21/IR_label.json",
+      "frames": 995,
+      "sha256": "1e783392b8e4c71c9bb21a7996757fed1c455646643fcb9de46f9d9a24706598"
+    },
+    {
+      "split": "val",
+      "seq": "cn_mountains_22",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/cn_mountains_22/IR_label.json",
+      "frames": 989,
+      "sha256": "894a02a831e6861e0350e239540cc1f7c13d4c9e398b8754d1073cb5148e88c7"
+    },
+    {
+      "split": "val",
+      "seq": "cn_mountains_23",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/cn_mountains_23/IR_label.json",
+      "frames": 989,
+      "sha256": "05e34e824aa07c51212816958184aadc5daf4eaf1d501e6fdff8856635801f3e"
+    },
+    {
+      "split": "val",
+      "seq": "cn_mountains_24",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/cn_mountains_24/IR_label.json",
+      "frames": 1160,
+      "sha256": "a14daa1fd9370c399c97129176933a7643121b985bff9c587d843ecb37205019"
+    },
+    {
+      "split": "val",
+      "seq": "cn_mountains_25",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/cn_mountains_25/IR_label.json",
+      "frames": 1918,
+      "sha256": "dae2629816cbd33dd18b5edf61941006aabf38803e4ee4d57b037e7794f88a27"
+    },
+    {
+      "split": "val",
+      "seq": "cn_mountains_26",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/cn_mountains_26/IR_label.json",
+      "frames": 1164,
+      "sha256": "4a0b9b6674670f112b58d19ea00e5832262daf6f9b7a22caccf5c43d5c930f96"
+    },
+    {
+      "split": "val",
+      "seq": "cn_mountains_27",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/cn_mountains_27/IR_label.json",
+      "frames": 1189,
+      "sha256": "de1f0f1a6df042ac00bbe7148eb5f35bf5091466bad3c6fdc546760722aeca8f"
+    },
+    {
+      "split": "val",
+      "seq": "cn_mountains_28",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/cn_mountains_28/IR_label.json",
+      "frames": 1170,
+      "sha256": "52c10c228e1d87788b6227c074663bde1b3c44b545867ae7ebe982a92fa7d3b2"
+    },
+    {
+      "split": "val",
+      "seq": "cn_mountains_29",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/cn_mountains_29/IR_label.json",
+      "frames": 1254,
+      "sha256": "bc65f8e2c66de1d433b2d69fac7ae0873ce55a847d38ef7d5f661447bb31759a"
+    },
+    {
+      "split": "val",
+      "seq": "cn_sky_10",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/cn_sky_10/IR_label.json",
+      "frames": 1000,
+      "sha256": "8fce4f2228711f752ae3c0cbe071e219d1623b6d65e6a87d2f0c5bd3bceab1bb"
+    },
+    {
+      "split": "val",
+      "seq": "cn_sky_9",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/cn_sky_9/IR_label.json",
+      "frames": 1260,
+      "sha256": "6b20ab962b6c81de1b0777d524781244bd00c0a502c096774c70367d35b60944"
+    },
+    {
+      "split": "val",
+      "seq": "jungle_6",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/jungle_6/IR_label.json",
+      "frames": 1220,
+      "sha256": "213fd24766a36f2d7a961a54a2c72720e8f4500454eb1a7c6a1fda775977fa13"
+    },
+    {
+      "split": "val",
+      "seq": "urban-areas_27",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/urban-areas_27/IR_label.json",
+      "frames": 1500,
+      "sha256": "0560ae8a1c0bdedb81d4ca010495e606aee917eff037d0d4569954ef4b29a434"
+    },
+    {
+      "split": "val",
+      "seq": "urban-areas_28",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/urban-areas_28/IR_label.json",
+      "frames": 904,
+      "sha256": "62b8230db1664356717b305dae0e5d99e8b6a1dcd7e3a146810be6ec189a1232"
+    },
+    {
+      "split": "val",
+      "seq": "urban-areas_29",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/urban-areas_29/IR_label.json",
+      "frames": 1720,
+      "sha256": "50721c32ffe47b8ab99d48c990cd4dd6b390dc527464cae4191a78548f891acc"
+    },
+    {
+      "split": "val",
+      "seq": "urban-areas_30",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/urban-areas_30/IR_label.json",
+      "frames": 1500,
+      "sha256": "bf6390052f11ed00199e98ce6e744f2d1b77aa3f26c0ee00dc9df672b52d0a19"
+    },
+    {
+      "split": "val",
+      "seq": "urban-areas_31",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/urban-areas_31/IR_label.json",
+      "frames": 1545,
+      "sha256": "7ca75ffea53c446ea75e7e5e7e4cac1874efc839fda4ea17fb8bb7fd14421c3c"
+    },
+    {
+      "split": "val",
+      "seq": "urban-areas_32",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/urban-areas_32/IR_label.json",
+      "frames": 1604,
+      "sha256": "d32e53e6093335d55b870acc4b954c963e64179a26ac8da8d70fae549fe9c5ee"
+    },
+    {
+      "split": "val",
+      "seq": "urban-areas_33",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/urban-areas_33/IR_label.json",
+      "frames": 1707,
+      "sha256": "d24c61670748900ab48e04abc15b9df41a6c3358bfbd7a483effbec5afc3f7e9"
+    },
+    {
+      "split": "val",
+      "seq": "urban-areas_34",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/urban-areas_34/IR_label.json",
+      "frames": 1595,
+      "sha256": "3ad3709f941070d5126b86b68f3c6915c4fb015f7e009af16906f3037e898489"
+    },
+    {
+      "split": "val",
+      "seq": "water_14",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/water_14/IR_label.json",
+      "frames": 603,
+      "sha256": "fc5104ebae0003c592ce3414a48449901d7ce56aa4a8ea41226bdc28f4d25d0c"
+    },
+    {
+      "split": "val",
+      "seq": "water_15",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/water_15/IR_label.json",
+      "frames": 1059,
+      "sha256": "73a0c0cf9587f7cc48ce8ddfd383a2323bf499a54d0170b23efbfdd23ecd055d"
+    },
+    {
+      "split": "val",
+      "seq": "water_16",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/water_16/IR_label.json",
+      "frames": 722,
+      "sha256": "58e746e997bb48ceaf6252e1d2a0829b90eee40f373070006a15f8aaf8ff2c7a"
+    },
+    {
+      "split": "val",
+      "seq": "water_17",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/water_17/IR_label.json",
+      "frames": 823,
+      "sha256": "98ddeff051a56f91f1f2ca5f63f1ca698c9180112051d2ddf2df0890aa0c72ec"
+    },
+    {
+      "split": "val",
+      "seq": "water_18",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/water_18/IR_label.json",
+      "frames": 823,
+      "sha256": "733197f4bb072be4b4f9d51e34b36fba7311ec8c722ea50a0e9b55ed995c13c4"
+    },
+    {
+      "split": "val",
+      "seq": "water_19",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/val/water_19/IR_label.json",
+      "frames": 823,
+      "sha256": "ec8d3c1dc4ee0536e1842081a87f5f49a9f67e54a30997acf68594e70692b17a"
+    },
+    {
+      "split": "test",
+      "seq": "building_66",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/building_66/IR_label.json",
+      "frames": 1000,
+      "sha256": "6840d02446358dd18fc47592aa74be0a1b5fc9290bc085408a1f4e807e6bb403"
+    },
+    {
+      "split": "test",
+      "seq": "building_67",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/building_67/IR_label.json",
+      "frames": 1000,
+      "sha256": "f09675bc2e90396ada35c95c80e255231c00c5828ed8e91c1e6b8120da4b6629"
+    },
+    {
+      "split": "test",
+      "seq": "building_68",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/building_68/IR_label.json",
+      "frames": 1000,
+      "sha256": "183404b3702cb0686f993388d015d8b4527f43a2b73da8c22789650f8321bf15"
+    },
+    {
+      "split": "test",
+      "seq": "building_69",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/building_69/IR_label.json",
+      "frames": 1000,
+      "sha256": "a75f8dd5f95db2f408fadec4934c268d62875258e4698eafbd3eacad24e8727f"
+    },
+    {
+      "split": "test",
+      "seq": "building_70",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/building_70/IR_label.json",
+      "frames": 1000,
+      "sha256": "e84ceb9ac429b3d74e72a65dd8d555415da0b184a46cabd10bb9930889224840"
+    },
+    {
+      "split": "test",
+      "seq": "building_71",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/building_71/IR_label.json",
+      "frames": 1000,
+      "sha256": "22111b6e644ee919f24ea288830d165abb60ffef0775fb1ce21d3e1209286b12"
+    },
+    {
+      "split": "test",
+      "seq": "building_72",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/building_72/IR_label.json",
+      "frames": 1000,
+      "sha256": "6d13431d059dc35d42fcf08f877f600e5fc63982f0d95b11c8c89139ba455a80"
+    },
+    {
+      "split": "test",
+      "seq": "building_73",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/building_73/IR_label.json",
+      "frames": 850,
+      "sha256": "fb394e15e3531339d7d2f1b81ef33150ec0e32ca19610a7ddeb22845735a93cd"
+    },
+    {
+      "split": "test",
+      "seq": "building_74",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/building_74/IR_label.json",
+      "frames": 640,
+      "sha256": "37d68f62ea4c4c268ac60a46aea239bbff90cbc56d92a6e10d6fd14a5f0398b2"
+    },
+    {
+      "split": "test",
+      "seq": "cn_mountains_30",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_mountains_30/IR_label.json",
+      "frames": 1029,
+      "sha256": "725b8fd56183e1175c6090645408f963e950b53d5b4c399651256130d2af35e0"
+    },
+    {
+      "split": "test",
+      "seq": "cn_mountains_31",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_mountains_31/IR_label.json",
+      "frames": 1029,
+      "sha256": "01e7e79782bf868700cd835153a5f4f7297d785de2c1c08474ac1a5dc724cdd2"
+    },
+    {
+      "split": "test",
+      "seq": "cn_mountains_32",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_mountains_32/IR_label.json",
+      "frames": 1179,
+      "sha256": "d279d6d212ea2b8da7d21dfaf7e31e4cfe5a9f982ab0e257cb143820052e2710"
+    },
+    {
+      "split": "test",
+      "seq": "cn_mountains_33",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_mountains_33/IR_label.json",
+      "frames": 1829,
+      "sha256": "13b6a34a57c1363b02286f2197040d85e1d8ad64280afb6fdbe9679d88c3f85a"
+    },
+    {
+      "split": "test",
+      "seq": "cn_mountains_34",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_mountains_34/IR_label.json",
+      "frames": 941,
+      "sha256": "1f6e31a11bb0ffbf1014b9cc45b6f4741bde4489e0a6ea163f711761b7dceeb4"
+    },
+    {
+      "split": "test",
+      "seq": "cn_mountains_35",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_mountains_35/IR_label.json",
+      "frames": 1500,
+      "sha256": "9d1eb38082c8ed7fa8242ff5ee0eea25344c2cea9058ddc98b54e8b30c293b3f"
+    },
+    {
+      "split": "test",
+      "seq": "cn_mountains_36",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_mountains_36/IR_label.json",
+      "frames": 1500,
+      "sha256": "667048cd2a6f3ad72a44da31195ea3ff028502f47d2f2957d547f760189ed8b1"
+    },
+    {
+      "split": "test",
+      "seq": "cn_mountains_37",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_mountains_37/IR_label.json",
+      "frames": 1429,
+      "sha256": "b933006f14a2c911093dd50fc1d0afb3608caf4504aba7d046ad192cbaf4d3ef"
+    },
+    {
+      "split": "test",
+      "seq": "cn_mountains_38",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_mountains_38/IR_label.json",
+      "frames": 1039,
+      "sha256": "d6b1d64db03b4d91adb7468e2f6938a751592d197d3fe35c8cda9752916612ec"
+    },
+    {
+      "split": "test",
+      "seq": "cn_sky_11",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_sky_11/IR_label.json",
+      "frames": 1000,
+      "sha256": "509c0225abcd6a102678516f40b55eec3c81ae3a88b923d824aed450cffd56ef"
+    },
+    {
+      "split": "test",
+      "seq": "cn_sky_12",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_sky_12/IR_label.json",
+      "frames": 1000,
+      "sha256": "884f7e69048196299627e92ecedc57e587b6d26803f58e8fb6fa238602ea0aad"
+    },
+    {
+      "split": "test",
+      "seq": "cn_sky_13",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_sky_13/IR_label.json",
+      "frames": 1085,
+      "sha256": "87d1746d38932fbb1a1a2f230d63d6346a91c7c439f9c44f112a990176b84b59"
+    },
+    {
+      "split": "test",
+      "seq": "cn_sky_14",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_sky_14/IR_label.json",
+      "frames": 895,
+      "sha256": "ad248fedd51ebc5aaaf079760d8f9ee1d4ec2da56db5dcfc2c3d1db9472084c6"
+    },
+    {
+      "split": "test",
+      "seq": "cn_sky_15",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_sky_15/IR_label.json",
+      "frames": 1000,
+      "sha256": "39fe475947eca0b6f5c9fec7ae392e9dff1f0a8fd1875d696ec78e1b741f94e0"
+    },
+    {
+      "split": "test",
+      "seq": "cn_sky_16",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/cn_sky_16/IR_label.json",
+      "frames": 1706,
+      "sha256": "d2e4f6c9f5d514da37ddc458f33596b4a4f6b1974e821b654f0b35d37758b734"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_10",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_10/IR_label.json",
+      "frames": 1012,
+      "sha256": "fb48e6fffb817633ee0f056c202c29279338a505bee9cb1605b00cb53993c609"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_11",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_11/IR_label.json",
+      "frames": 830,
+      "sha256": "f808083a88740813d9c45557d417caf6373e31999b5ed92d59a0db63dc6cd4e3"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_12",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_12/IR_label.json",
+      "frames": 1476,
+      "sha256": "c04676e82c0423df09d9a26334365d653c975fcf1af682f14ea7de76e1a2ed43"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_13",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_13/IR_label.json",
+      "frames": 1062,
+      "sha256": "556d632501b119b4776642fa66a8d8f67ff0eeaa84e362f9c27518b80c30cb77"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_14",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_14/IR_label.json",
+      "frames": 1295,
+      "sha256": "b059983a722358a065615a0bf9fba190c101cc026522232156bbe9cf3877c394"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_15",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_15/IR_label.json",
+      "frames": 1000,
+      "sha256": "43d88258890ba9d78b5aad9a462ebd7026a807ade22f1da2234c6efb31ac9860"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_16",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_16/IR_label.json",
+      "frames": 1295,
+      "sha256": "8710037e4ee7b7ed296b49621985fdcbc706dfb4834d9211d2734e195ca7c398"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_17",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_17/IR_label.json",
+      "frames": 932,
+      "sha256": "9197ba7eba86c42a24342bc3bbabc9f35d9d4eee67d6d0ebc314530d4d1a82e6"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_18",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_18/IR_label.json",
+      "frames": 880,
+      "sha256": "1bf52df759ccab324d10bdfbd44a1ea839b3c652889ad5483d2b603591b4ee98"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_19",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_19/IR_label.json",
+      "frames": 909,
+      "sha256": "0d97537f48e5cae977773d7a5d62602a3bd6e958320edd5416726303bcefef89"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_7",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_7/IR_label.json",
+      "frames": 1223,
+      "sha256": "7959bfc6a97ec655ab92d35da120dad5361421fdae8c25036ef22b4101081aee"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_8",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_8/IR_label.json",
+      "frames": 969,
+      "sha256": "a3b7266e94a6795ff5d29d055b29945f7ed75322a411ad3909bd125af032581b"
+    },
+    {
+      "split": "test",
+      "seq": "jungle_9",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/jungle_9/IR_label.json",
+      "frames": 862,
+      "sha256": "0e183a5dac90148ba4b7617e6c7d67a4e64d0effb4acfc1b9bc800b317381bf2"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_24",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_24/IR_label.json",
+      "frames": 1500,
+      "sha256": "45dccc67e953672c6dd917d468ce317e53b4881375a9dd63ea82b37e270122b0"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_25",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_25/IR_label.json",
+      "frames": 1025,
+      "sha256": "ae2f78711c72e3e94857bb5cd4afa0f763bf11b0d6f74e44c32b0ec96310d56a"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_26",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_26/IR_label.json",
+      "frames": 1500,
+      "sha256": "38212ac1a0bf4934627e9edbaaa8dfd08256113b2c402043b264c04ecb57e451"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_35",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_35/IR_label.json",
+      "frames": 1740,
+      "sha256": "773408751aba31340f81ae561c70543b20006d1ccb8c6650cb5055c45508f03c"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_36",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_36/IR_label.json",
+      "frames": 1500,
+      "sha256": "4b7b17ec70de146617711537dba4f4db503a052c625d7dd13cbf721a71ab6dec"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_37",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_37/IR_label.json",
+      "frames": 1855,
+      "sha256": "88753d559235218c4138c75766061197fc23567780cff1edc67bc309771598e3"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_38",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_38/IR_label.json",
+      "frames": 1500,
+      "sha256": "94beb58f6631e4da82a38eeaeacdb9e2136ea82879783a50bf1fc8da1f27159a"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_39",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_39/IR_label.json",
+      "frames": 2062,
+      "sha256": "8b07bba82bff68dc342d465bdcea4164b99afb8c9e8da8faef4b87bf9072382f"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_40",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_40/IR_label.json",
+      "frames": 1500,
+      "sha256": "6260fc4d902519c83cc1f8f2c257506c482776f8fd7fea300b530bd733290584"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_41",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_41/IR_label.json",
+      "frames": 1500,
+      "sha256": "ea4c48e538646e9bba17ef5a5bcad158db9f4d046571ed9bed4f73019de78444"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_42",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_42/IR_label.json",
+      "frames": 1490,
+      "sha256": "37658baa54a2110aabc696d57f71cf5bbabdf2cd5d15ebd60b6a4ab87164b4a7"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_43",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_43/IR_label.json",
+      "frames": 1475,
+      "sha256": "a7d438a99b4c97d170a5128f583262540f2e4114e0208b92bd6a4b3ed61f5529"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_44",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_44/IR_label.json",
+      "frames": 1500,
+      "sha256": "d61b3713bf88bd9fd6e46d552dd1407d1cbf64229fcb5604497343db1134ba01"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_45",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_45/IR_label.json",
+      "frames": 1500,
+      "sha256": "94c1b8a0e6f072d5720746163bdc06cfae65df529136b8b98a790456dc40573f"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_46",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_46/IR_label.json",
+      "frames": 1500,
+      "sha256": "60b936efe7e12ae0d7050e93b8361552ecedcdc65eddd391318a0713015f2b2b"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_47",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_47/IR_label.json",
+      "frames": 1725,
+      "sha256": "8e28507bb032a45e49a63d499ef5c5106dcc2433a36cc7ff6f06b04088f6bbf0"
+    },
+    {
+      "split": "test",
+      "seq": "urban-areas_48",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/urban-areas_48/IR_label.json",
+      "frames": 2045,
+      "sha256": "85b42b31fb5b3f68d422e78ce00e1cf6bf127c8d5c15caf73ca638ddf893016a"
+    },
+    {
+      "split": "test",
+      "seq": "water_20",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/water_20/IR_label.json",
+      "frames": 746,
+      "sha256": "9cb92bbd9010c424d50b30050e6aa20bb516c337183c392cb8e4f6702dc436d8"
+    },
+    {
+      "split": "test",
+      "seq": "water_21",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/water_21/IR_label.json",
+      "frames": 952,
+      "sha256": "eab2f8c5378fb2583f4cfa3062c5c62bd6b1115ee798d1c17294a40df5830f70"
+    },
+    {
+      "split": "test",
+      "seq": "water_22",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/water_22/IR_label.json",
+      "frames": 874,
+      "sha256": "9c59d110fbfee746e4c314e55bc2323e2b4c36ab08aca327399d5b2ffcfeb69e"
+    },
+    {
+      "split": "test",
+      "seq": "water_23",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/water_23/IR_label.json",
+      "frames": 797,
+      "sha256": "bede0f1ef9e9753deedb0dd6a9cb5c8f18b27d30e32c2c97dc5e18cbea43bd19"
+    },
+    {
+      "split": "test",
+      "seq": "water_24",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/water_24/IR_label.json",
+      "frames": 836,
+      "sha256": "d226f56bc44cf308ce88a75531206306617658f0dc904cbfa2c083da5792a647"
+    },
+    {
+      "split": "test",
+      "seq": "water_25",
+      "path": "/root/autodl-tmp/Ryan/cst_antiuav/data/CST-AntiUAV/test/water_25/IR_label.json",
+      "frames": 657,
+      "sha256": "3b7a13d6254d12b75a9fdba815cf2b7106020de3ea0c25da92f549d916cfb965"
+    }
+  ],
+  "meaning": "All indexed attribute values and existence states match released IR_label.json at original frame indices. No sequence summaries or geometric proxies used for this index.",
+  "limits": "Validates provenance/alignment, not human label accuracy."
+}

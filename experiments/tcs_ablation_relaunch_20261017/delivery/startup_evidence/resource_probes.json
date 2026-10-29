@@ -1,0 +1,47 @@
+[
+  {
+    "model": "yolov8n",
+    "batch": 256,
+    "imgsz": 640,
+    "allocator_cap_gib": 35,
+    "kind": "resource_not_accuracy",
+    "status": "PASS",
+    "peak_reserved": 28527558656,
+    "peak_allocated": 28309428736,
+    "step_seconds": [
+      1.7587092034518719,
+      0.6353334076702595
+    ],
+    "parameters": 3138003
+  },
+  {
+    "model": "yolo11n",
+    "batch": 256,
+    "imgsz": 640,
+    "allocator_cap_gib": 38,
+    "kind": "resource_not_accuracy",
+    "status": "PASS",
+    "peak_reserved": 32822525952,
+    "peak_allocated": 32602974720,
+    "step_seconds": [
+      6.821500100195408,
+      0.6568815633654594
+    ],
+    "parameters": 2604883
+  },
+  {
+    "model": "yolo11s",
+    "batch": 256,
+    "imgsz": 640,
+    "allocator_cap_gib": 68,
+    "kind": "resource_not_accuracy",
+    "status": "PASS",
+    "peak_reserved": 58533609472,
+    "peak_allocated": 58180045312,
+    "step_seconds": [
+      3.3835098445415497,
+      0.8216811902821064
+    ],
+    "parameters": 9428179
+  }
+]

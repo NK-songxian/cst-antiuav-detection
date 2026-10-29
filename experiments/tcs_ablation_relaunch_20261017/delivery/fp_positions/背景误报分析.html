@@ -1,0 +1,34 @@
+<!doctype html><meta charset="utf-8"><title>C1背景误报分析</title><style>body{font-family:Microsoft YaHei,sans-serif;max-width:1150px;margin:40px auto;padding:0 24px;line-height:1.8;color:#263544}img{max-width:100%}table{border-collapse:collapse;width:100%}td,th{border:1px solid #dce4e8;padding:10px}th{background:#edf5f6}a{color:#087f8c}</style><h1>C1背景误报位置与配对分析</h1>
+<p>来自已经完成的同一批2592张test背景帧，固定conf≥0.25，复用冻结预测，不重新调阈值。</p>
+<table>
+<thead>
+<tr>
+<th>模型</th>
+<th style="text-align: right;">有误报背景帧</th>
+<th style="text-align: right;">误报帧率</th>
+<th style="text-align: right;">误报框总数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YOLO11n单帧</td>
+<td style="text-align: right;">295</td>
+<td style="text-align: right;">11.38%</td>
+<td style="text-align: right;">389</td>
+</tr>
+<tr>
+<td>C1时序输入</td>
+<td style="text-align: right;">365</td>
+<td style="text-align: right;">14.08%</td>
+<td style="text-align: right;">447</td>
+</tr>
+</tbody>
+</table>
+<p>逐帧比较：139张从有误报变成无误报；209张出现新增误报；156张两者都有误报。</p>
+<p><strong>固定0.25阈值下，C1背景误报帧率增加了2.70个百分点，净新增70张误报帧。不能将主张写为“统一阈值下全面抑制背景”。已有召回/AP收益及按val校准阈值后的工作点需要分开报告。</strong></p>
+<p><img alt="空间计数图" src="背景误报位置对比.png" /></p>
+<p><img alt="配对变化" src="背景误报配对变化.png" /></p>
+<p><img alt="真实同帧案例" src="同帧真实预测示例.png" /></p>
+<p>能支持的结论：在相同阈值与相同背景帧上，C1改变了误报的发生率和空间分布；同时报告新增失败，避免只展示成功。</p>
+<p>不能仅凭本图证明：模型识别的是运动、特定云边或建筑纹理。跨场景的归一化图像坐标不是同一物理位置，位置热图不是注意力图。这里不再使用已被证伪的“旧目标残影”解释。完整的运动依赖判断应结合已有repeat-current输入干预和同帧预测对比。</p>
+<p>本分析使用已经看过的test结果，为描述性补充；不能写成新方法选择后的独立盲测。</p>

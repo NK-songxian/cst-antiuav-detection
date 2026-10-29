@@ -1,0 +1,226 @@
+{
+  "source": "runs/fp_pool/pool.json",
+  "pool_sha256": "d4767c57af25590ad6d9df0910c357525837586ad503eeebee930ef1ba64af04",
+  "n_pool": 148,
+  "n_suspicious": 24,
+  "n_unique_frames": 148,
+  "n_sequences": 65,
+  "train_negative_frames": 3612,
+  "all_in_train": true,
+  "all_exist_zero": true,
+  "all_labels_empty": true,
+  "n_conf_above_025": 84,
+  "polarity": {
+    "cold": 19,
+    "hot": 129
+  },
+  "n_border_within_2px": 31,
+  "config": {
+    "CONF_MIN": 0.1,
+    "CAP_PER_SEQ": 20,
+    "MIN_GAP": 25,
+    "HOTSPOT_IOU": 0.3
+  },
+  "suspicious_order": [
+    "building_12_f000925_c0.65_d17_c+22.8.jpg",
+    "building_27_f001145_c0.23_d6_c+1.6.jpg",
+    "building_31_f001165_c0.37_d8_c+1.6.jpg",
+    "building_37_f000300_c0.19_d11_c+6.3.jpg",
+    "building_38_f000835_c0.42_d14_c+2.8.jpg",
+    "building_40_f001050_c0.52_d10_c+17.1.jpg",
+    "building_62_f000995_c0.13_d12_c+6.9.jpg",
+    "building_7_f000125_c0.12_d10_c+3.4.jpg",
+    "building_7_f000355_c0.22_d17_c+2.4.jpg",
+    "cn_mountains_15_f000875_c0.36_d18_c+1.6.jpg",
+    "cn_mountains_15_f001120_c0.57_d11_c+20.1.jpg",
+    "cn_mountains_19_f001085_c0.12_d19_c+3.5.jpg",
+    "cn_sky_4_f000755_c0.14_d8_c+4.2.jpg",
+    "jungle_1_f000335_c0.11_d8_c+3.1.jpg",
+    "urban-areas_14_f000845_c0.24_d19_c+1.5.jpg",
+    "urban-areas_16_f000020_c0.69_d15_c+1.8.jpg",
+    "urban-areas_19_f001200_c0.41_d11_c+2.7.jpg",
+    "urban-areas_20_f000340_c0.10_d12_c+2.4.jpg",
+    "urban-areas_21_f000245_c0.15_d21_c+3.2.jpg",
+    "urban-areas_22_f000365_c0.64_d11_c+1.6.jpg",
+    "water_2_f000490_c0.58_d9_c+2.2.jpg",
+    "water_2_f000630_c0.41_d9_c+2.1.jpg",
+    "water_7_f000680_c0.46_d11_c+4.2.jpg",
+    "water_8_f000070_c0.60_d26_c+1.8.jpg"
+  ],
+  "n_near_exist1_within_25": 111,
+  "triage_counts": {
+    "HOLD_FOR_REVIEW": 121,
+    "UNREVIEWED_CANDIDATE": 27
+  },
+  "triage_note": "Automatic conservative triage only. No candidate is certified false positive. Original pool unchanged.",
+  "context_examples": {
+    "building_12_f000925": {
+      "raw_image": "data/CST-AntiUAV/train/building_12/000926.jpg",
+      "converted_matches_raw": true,
+      "annotations": [
+        {
+          "frame_index": 915,
+          "exist": 0,
+          "box": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame_index": 920,
+          "exist": 0,
+          "box": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame_index": 925,
+          "exist": 0,
+          "box": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame_index": 930,
+          "exist": 1,
+          "box": [
+            279.8857679188973,
+            0.0,
+            13.01457593563515,
+            6.107701158806349
+          ]
+        },
+        {
+          "frame_index": 935,
+          "exist": 1,
+          "box": [
+            279.5479164985192,
+            0.0,
+            13.352427356013209,
+            8.134809681074643
+          ]
+        }
+      ]
+    },
+    "water_2_f000490": {
+      "raw_image": "data/CST-AntiUAV/train/water_2/000491.jpg",
+      "converted_matches_raw": true,
+      "annotations": [
+        {
+          "frame_index": 480,
+          "exist": 1,
+          "box": [
+            627.9661016949152,
+            199.15254237288136,
+            12.03389830508479,
+            8.14785814499902
+          ]
+        },
+        {
+          "frame_index": 485,
+          "exist": 1,
+          "box": [
+            630.6625577812018,
+            199.537750385208,
+            9.337442218798174,
+            9.411653025776076
+          ]
+        },
+        {
+          "frame_index": 490,
+          "exist": 0,
+          "box": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame_index": 495,
+          "exist": 0,
+          "box": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame_index": 500,
+          "exist": 0,
+          "box": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "water_7_f000680": {
+      "raw_image": "data/CST-AntiUAV/train/water_7/000681.jpg",
+      "converted_matches_raw": true,
+      "annotations": [
+        {
+          "frame_index": 670,
+          "exist": 0,
+          "box": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame_index": 675,
+          "exist": 0,
+          "box": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame_index": 680,
+          "exist": 0,
+          "box": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "frame_index": 685,
+          "exist": 1,
+          "box": [
+            0.9780544843517198,
+            49.79396310285346,
+            16.192585357334217,
+            8.385445988619502
+          ]
+        },
+        {
+          "frame_index": 690,
+          "exist": 1,
+          "box": [
+            12.227482185234093,
+            49.187547740534846,
+            15.367225633801391,
+            8.427188250794309
+          ]
+        }
+      ]
+    }
+  }
+}

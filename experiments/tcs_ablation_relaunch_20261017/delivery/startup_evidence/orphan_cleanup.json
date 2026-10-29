@@ -1,0 +1,278 @@
+{
+  "at": "2026-10-17T11:14:25.281237+00:00",
+  "before": "991210, 29846 MiB\n991902, 816 MiB\n992298, 4282 MiB\n994214, 5398 MiB\n994338, 7900 MiB\n",
+  "targets": [
+    {
+      "pid": 991827,
+      "start_ticks": "2634528034",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991829,
+      "start_ticks": "2634528052",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991830,
+      "start_ticks": "2634528061",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991832,
+      "start_ticks": "2634528074",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991836,
+      "start_ticks": "2634528082",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991838,
+      "start_ticks": "2634528095",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991839,
+      "start_ticks": "2634528103",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991841,
+      "start_ticks": "2634528116",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991842,
+      "start_ticks": "2634528124",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991843,
+      "start_ticks": "2634528131",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991844,
+      "start_ticks": "2634528136",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991845,
+      "start_ticks": "2634528144",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991846,
+      "start_ticks": "2634528154",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 991847,
+      "start_ticks": "2634528162",
+      "cmd": "python train_ablation.py --name tcs_yolo8n",
+      "ppid": 1
+    },
+    {
+      "pid": 992200,
+      "start_ticks": "2634533482",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992201,
+      "start_ticks": "2634533484",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992202,
+      "start_ticks": "2634533487",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992203,
+      "start_ticks": "2634533489",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992204,
+      "start_ticks": "2634533490",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992205,
+      "start_ticks": "2634533491",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992207,
+      "start_ticks": "2634533494",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992208,
+      "start_ticks": "2634533495",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992209,
+      "start_ticks": "2634533496",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992210,
+      "start_ticks": "2634533497",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992211,
+      "start_ticks": "2634533498",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992212,
+      "start_ticks": "2634533500",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992213,
+      "start_ticks": "2634533501",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992214,
+      "start_ticks": "2634533502",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992215,
+      "start_ticks": "2634533503",
+      "cmd": "python train_ablation.py --name tcs_yolo11s",
+      "ppid": 1
+    },
+    {
+      "pid": 992735,
+      "start_ticks": "2634543421",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992736,
+      "start_ticks": "2634543423",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992737,
+      "start_ticks": "2634543426",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992738,
+      "start_ticks": "2634543427",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992739,
+      "start_ticks": "2634543429",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992740,
+      "start_ticks": "2634543430",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992741,
+      "start_ticks": "2634543432",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992742,
+      "start_ticks": "2634543433",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992743,
+      "start_ticks": "2634543435",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992744,
+      "start_ticks": "2634543436",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992745,
+      "start_ticks": "2634543437",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992746,
+      "start_ticks": "2634543438",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992747,
+      "start_ticks": "2634543440",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992748,
+      "start_ticks": "2634543441",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992749,
+      "start_ticks": "2634543442",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    },
+    {
+      "pid": 992750,
+      "start_ticks": "2634543444",
+      "cmd": "python train_ablation.py --name tcs_far20_yolo11n",
+      "ppid": 1
+    }
+  ],
+  "after": "994214, 5398 MiB\n994338, 7900 MiB\n",
+  "gpu_after": "13334 MiB, 83917 MiB\n"
+}

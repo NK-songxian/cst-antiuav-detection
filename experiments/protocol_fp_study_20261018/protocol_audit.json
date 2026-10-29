@@ -1,0 +1,44 @@
+{
+  "split_audit": {
+    "train": {
+      "sequences": 120,
+      "frames": 25612,
+      "present": 22000,
+      "empty": 3612,
+      "label_mismatch": 0,
+      "source_mismatch": 0,
+      "tiny_present_filtered": 0,
+      "oob_boxes": 0,
+      "dummy_absent_boxes_ignored": 0,
+      "attribute_length_mismatch": 0
+    },
+    "val": {
+      "sequences": 40,
+      "frames": 9066,
+      "present": 7819,
+      "empty": 1247,
+      "label_mismatch": 0,
+      "source_mismatch": 0,
+      "tiny_present_filtered": 0,
+      "oob_boxes": 0,
+      "dummy_absent_boxes_ignored": 0,
+      "attribute_length_mismatch": 0
+    },
+    "test": {
+      "sequences": 60,
+      "frames": 14446,
+      "present": 11854,
+      "empty": 2592,
+      "label_mismatch": 0,
+      "source_mismatch": 0,
+      "tiny_present_filtered": 0,
+      "oob_boxes": 1,
+      "dummy_absent_boxes_ignored": 0,
+      "attribute_length_mismatch": 0
+    }
+  },
+  "index_sha256": "9ce7b25b99e5ebaaeb4fd074a3f36e8453aec7c8088448f95954a0c13d579d83",
+  "converter_sha256": "3d596d18490078cdee81f5f1076ffdcb0c520700d1c2ecb4aec99321d4f50f85",
+  "coordinate_rule": "Source top-left pixel xywh to normalized centre xywh, class0; exist0 => empty even with dummy coordinates; only exist1&w>1&h>1 yield positive; original frame zero-based metadata index.",
+  "scope": "Read-only verification; no label changes"
+}

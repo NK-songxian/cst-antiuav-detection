@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-18T01:07:02.211573+00:00",
+  "training_pid_preserved": 119779,
+  "scheduler_pid_stopped": 117824,
+  "reason": "Replace pending native-JPG control with matched-PNG control and add paired seeds."
+}

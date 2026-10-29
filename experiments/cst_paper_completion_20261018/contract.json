@@ -1,0 +1,164 @@
+{
+  "frozen_at": "2026-10-18T01:07:01.910799+00:00",
+  "authorization": "User asked to revise the outline and immediately complete missing experiments with large batch.",
+  "primary": "paired seed-wise test AP50 difference; native checkpoint selected on val AP50-95",
+  "scientific_comparison": "same temporal PNG data and current labels, same uniform sampler and shared brightness; only input mode differs within each paired seed",
+  "training": {
+    "batch": 256,
+    "imgsz": 640,
+    "epochs": 100,
+    "patience": 20,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "no_test_selection": true,
+    "workers_nano": 8,
+    "workers_small": 2,
+    "val_loader_workers": 4,
+    "val_batch": 128
+  },
+  "models": [
+    {
+      "name": "N_current_seed0",
+      "arch": "yolo11n",
+      "input_mode": "current",
+      "seed": 0,
+      "priority": 0,
+      "workers": 8,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "gpu_budget_bytes": 35970351104,
+      "allocator_cap_bytes": 37580963840
+    },
+    {
+      "name": "N_tcs_seed0",
+      "arch": "yolo11n",
+      "input_mode": "temporal",
+      "seed": 0,
+      "priority": 1,
+      "workers": 8,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "gpu_budget_bytes": 35970351104,
+      "allocator_cap_bytes": 37580963840
+    },
+    {
+      "name": "S_current_seed0",
+      "arch": "yolo11s",
+      "input_mode": "current",
+      "seed": 0,
+      "priority": 2,
+      "workers": 2,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+      "weights_sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+      "gpu_budget_bytes": 64424509440,
+      "allocator_cap_bytes": 80530636800
+    },
+    {
+      "name": "S_tcs_seed0_adopted",
+      "arch": "yolo11s",
+      "input_mode": "temporal",
+      "seed": 0,
+      "priority": 2,
+      "workers": 2,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11s.pt",
+      "weights_sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+      "gpu_budget_bytes": 64424509440,
+      "allocator_cap_bytes": 80530636800,
+      "adopted": true,
+      "trained_weights": "/root/autodl-tmp/Ryan/cst_antiuav/runs/tcs11s_recovery_20261018/tcs_yolo11s/weights/best.pt"
+    },
+    {
+      "name": "N_current_seed1",
+      "arch": "yolo11n",
+      "input_mode": "current",
+      "seed": 1,
+      "priority": 4,
+      "workers": 8,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "gpu_budget_bytes": 35970351104,
+      "allocator_cap_bytes": 37580963840
+    },
+    {
+      "name": "N_tcs_seed1",
+      "arch": "yolo11n",
+      "input_mode": "temporal",
+      "seed": 1,
+      "priority": 5,
+      "workers": 8,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "gpu_budget_bytes": 35970351104,
+      "allocator_cap_bytes": 37580963840
+    },
+    {
+      "name": "N_current_seed2",
+      "arch": "yolo11n",
+      "input_mode": "current",
+      "seed": 2,
+      "priority": 6,
+      "workers": 8,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "gpu_budget_bytes": 35970351104,
+      "allocator_cap_bytes": 37580963840
+    },
+    {
+      "name": "N_tcs_seed2",
+      "arch": "yolo11n",
+      "input_mode": "temporal",
+      "seed": 2,
+      "priority": 7,
+      "workers": 8,
+      "data": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/cst_temporal.yaml",
+      "weights": "/root/autodl-tmp/Ryan/cst_antiuav/yolo11n.pt",
+      "weights_sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+      "gpu_budget_bytes": 35970351104,
+      "allocator_cap_bytes": 37580963840
+    }
+  ],
+  "code_sha256": {
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_paper_completion_20261018/matched_runtime.py": "1789cc6eb4e652e1bec8ef107113df4e4489fd18d40510910adb56bfa7c8087d",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_paper_completion_20261018/train_matched.py": "df436b88f59d1499b72c724737f5dec4c9ac182b7d88d47c0cbf627fa61bc04d",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_paper_completion_20261018/evaluate_matched.py": "d8b743b1b95a22c4484ac3dc177542b086afa5c907740d359bb865195bb9fdca",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_paper_completion_20261018/queue_matched.py": "baf27fd6fb6bf339e8218ebd8e0e18b50cff45b2680ff9ff1067d7ba708e51dd",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/cst_paper_completion_20261018/test_matched_runtime.py": "d28e21a389559908ef98dd7cfba5860631a1ef20eaf4f1ed2c7a8c84c1b2c8d0",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/train_innovation.py": "9ca23841dbca9c8cbd502589d99dfb5b96578bf3fa4f0cd31e1696eead00db10",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/sampling.py": "4846d28a72deeb0e7c0cc5059856a6dbd51569e4b129f59d1e48523cc500668e",
+    "/root/autodl-tmp/Ryan/cst_antiuav/experiments/baselines_100e_20261017/audit_validation.py": "abf4f4a47e02cd0b79b2608551b126fdf401fc34f67a557cb6d182c78776478b"
+  },
+  "index_sha256": "9ce7b25b99e5ebaaeb4fd074a3f36e8453aec7c8088448f95954a0c13d579d83",
+  "data_sha256": "dfec3000bbde9393fc5a80032ef58c52a912aa310b8a7505b35bc591769245a2",
+  "preflight_sha256": "2530e2ace8c382e82291a356b8f50d9ba01c062e73b5c341caf5aa24e790354b",
+  "adopted_training": {
+    "pid": 119779,
+    "create_time": 1792283688.77,
+    "manifest": "/root/autodl-tmp/Ryan/cst_antiuav/experiments/tcs11s_recovery_20261018/jobs/tcs_yolo11s/manifest.json",
+    "output": "/root/autodl-tmp/Ryan/cst_antiuav/runs/tcs11s_recovery_20261018/tcs_yolo11s"
+  },
+  "transferred_scheduler": {
+    "pid": 117824,
+    "create_time": 1792283048.65,
+    "status_path": "/root/autodl-tmp/Ryan/cst_antiuav/runs/tcs11s_recovery_20261018/queue/status.json"
+  },
+  "failure_tree": {
+    "success": "Report all three paired seeds, mean and SD, with full attribute/FP results",
+    "inconclusive": "Report spread and limitations; do not select best seed",
+    "failure": "Preserve failed run and stop new launches; no silent batch/config changes"
+  },
+  "environment": {
+    "torch": "2.8.0+cu128",
+    "ultralytics": "8.4.177",
+    "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]"
+  }
+}

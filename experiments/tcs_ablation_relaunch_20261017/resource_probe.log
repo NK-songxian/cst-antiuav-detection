@@ -1,0 +1,8 @@
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 288.0±60.7 MB/s, size: 413.3 KB)
+[K[34m[1mtrain: [0mScanning /root/autodl-tmp/Ryan/cst_antiuav/experiments/aat_temporal_100e_20261017/data/train/labels.cache... 25612 images, 3612 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 25612/25612 7.2Git/s 0.0s
+Overriding model.yaml nc=80 with nc=1
+{"model": "yolov8n", "batch": 256, "imgsz": 640, "allocator_cap_gib": 35, "kind": "resource_not_accuracy", "status": "PASS", "peak_reserved": 28527558656, "peak_allocated": 28309428736, "step_seconds": [1.7587092034518719, 0.6353334076702595], "parameters": 3138003}
+Overriding model.yaml nc=80 with nc=1
+{"model": "yolo11n", "batch": 256, "imgsz": 640, "allocator_cap_gib": 38, "kind": "resource_not_accuracy", "status": "PASS", "peak_reserved": 32822525952, "peak_allocated": 32602974720, "step_seconds": [6.821500100195408, 0.6568815633654594], "parameters": 2604883}
+Overriding model.yaml nc=80 with nc=1
+{"model": "yolo11s", "batch": 256, "imgsz": 640, "allocator_cap_gib": 68, "kind": "resource_not_accuracy", "status": "PASS", "peak_reserved": 58533609472, "peak_allocated": 58180045312, "step_seconds": [3.3835098445415497, 0.8216811902821064], "parameters": 9428179}
