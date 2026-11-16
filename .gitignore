@@ -1,5 +1,6 @@
 # Dataset and weights are intentionally external.
 /data/
+data/gap*/
 **/images/
 **/labels/
 **/frames/

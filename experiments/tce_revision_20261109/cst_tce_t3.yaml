@@ -1,0 +1,9 @@
+path: /root/autodl-tmp/Ryan/cst_antiuav/experiments/tce_revision_20261109/data/t3
+train: /root/autodl-tmp/Ryan/cst_antiuav/experiments/tce_revision_20261109/t3_train.txt
+val: /root/autodl-tmp/Ryan/cst_antiuav/experiments/tce_revision_20261109/t3_val.txt
+test: /root/autodl-tmp/Ryan/cst_antiuav/experiments/tce_revision_20261109/t3_test.txt
+nc: 3
+names:
+- uav_far
+- uav_near
+- uav_current

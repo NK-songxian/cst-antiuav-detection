@@ -111,7 +111,7 @@ FIG2 = {
 
 def make_fig2():
     fig, axes = plt.subplots(1, 2, figsize=(6.7, 3.0))
-    fig.subplots_adjust(left=0.235, right=0.905, top=0.775, bottom=0.15, wspace=0.36)
+    fig.subplots_adjust(left=0.155, right=0.90, top=0.775, bottom=0.15, wspace=0.85)
     y = [3, 2, 1, 0]
     for ax, (key, d) in zip(axes, FIG2.items()):
         cur, tcs = d["cur"], d["tcs"]
@@ -120,10 +120,7 @@ def make_fig2():
         ax.axhline(0.5, color="#C8C8C8", ls=(0, (4, 3)), lw=0.9, zorder=1)  # 11n/11s 分隔
         style_axes(ax, grid_axis="x")
         ax.set_yticks(y)
-        if ax is axes[0]:
-            ax.set_yticklabels(ROWS2)
-        else:
-            ax.tick_params(labelleft=False)  # 右面板共享左侧行标签
+        ax.set_yticklabels(ROWS2)
         ax.set_xlabel("精度 (%)")
         ax.set_title(d["title"], loc="left", fontweight="bold", fontsize=10, pad=6)
         for yi, c0, c1 in zip(y, cur, tcs):
@@ -317,7 +314,7 @@ FIG5 = {
 
 def make_fig5():
     fig, axes = plt.subplots(1, 2, figsize=(6.7, 3.05))
-    fig.subplots_adjust(left=0.075, right=0.985, top=0.775, bottom=0.135, wspace=0.42)
+    fig.subplots_adjust(left=0.075, right=0.915, top=0.775, bottom=0.135, wspace=0.50)
     x = np.arange(3)
     w = 0.36
     for ax, key in zip(axes, ["a", "b"]):
@@ -325,15 +322,23 @@ def make_fig5():
         cur, tcs = d["cur"], d["tcs"]
         ax.bar(x - 0.19, cur, width=w, color=BLUE, zorder=2)
         ax.bar(x + 0.19, tcs, width=w, color=ORANGE, zorder=2)
-        # n/178 柱顶标注：统一放各自柱顶正上方黑字，无底框
+        # n/178 柱顶标注：单帧标签靠柱顶左上、时序标签靠柱顶右上，避免互相重叠；
+        # 白底截断穿过的均值虚线，保证文字清晰
+        lab_bbox = dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.85)
         for xi, v in zip(x - 0.19, cur):
-            ax.text(xi, v + 1.5, f"{v}/178", ha="center", va="bottom",
-                    fontsize=8.5, color="black", zorder=3)
+            ax.text(xi - 0.02, v + 1.5, f"{v}/178", ha="right", va="bottom",
+                    fontsize=9, color="black", zorder=3, bbox=lab_bbox)
         for xi, v in zip(x + 0.19, tcs):
-            ax.text(xi, v + 1.5, f"{v}/178", ha="center", va="bottom",
-                    fontsize=8.5, color="black", zorder=3)
-        # 三种子均值见正文与表5，图中不再画均值线
-        ax.set_xlim(-0.75, 2.75)
+            ax.text(xi + 0.02, v + 1.5, f"{v}/178", ha="left", va="bottom",
+                    fontsize=9, color="black", zorder=3, bbox=lab_bbox)
+        # 三种子均值细虚线（计数口径），右端小字
+        bt = blended_transform_factory(ax.transAxes, ax.transData)
+        for vals, col in [(cur, BLUE), (tcs, ORANGE)]:
+            m = float(np.mean(vals))
+            ax.axhline(m, color=col, ls=(0, (3, 2.5)), lw=1.0, alpha=0.9, zorder=1)
+            ax.text(1.02, m, f"均值 {m:.1f}", transform=bt, ha="left", va="center",
+                    fontsize=7.8, color=col)
+        ax.set_xlim(-0.75, 2.90)
         ax.set_ylim(*d["ylim"])
         ax.set_yticks(d["yticks"])
         ax.set_xticks(x)

@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "created_at": "2026-11-09T04:03:10.219712+00:00",
+  "near": 5,
+  "far": 10,
+  "ghost_iou_threshold": 0.5,
+  "splits": {
+    "train": {
+      "frames": 25612,
+      "ghost_frame_ratio": 0.6487193503045448,
+      "ghost_total": 26751,
+      "all_past_boxes": 44004,
+      "t3_class_counts": {
+        "0": 14319,
+        "1": 12432,
+        "2": 22000
+      },
+      "image_hash_list_sha256": "8b5424eeed35e0e5cc55956a8d6bda8dd8e64a0c42cadac22606032ebd1bc73d",
+      "history_sha256": "4182d16c7c419232a7b160a4f2d7693c92352cf876dd3a1733ad42f73cc06d73",
+      "list_sha256": "ef5fcf4402ae7714bf02b2dd4a6cfab98ae6ec547deaeee29d57eed10650a0d0"
+    },
+    "val": {
+      "frames": 9066,
+      "ghost_frame_ratio": null,
+      "ghost_total": null,
+      "all_past_boxes": null,
+      "t3_class_counts": null,
+      "image_hash_list_sha256": "ffffb6c2e8896d479b25e7a3481be520e943ae1b2d1f25dcc0bd1e8a6985ac3e",
+      "history_sha256": "75032401370fefe5f14c318a498b1aa4a883d307a6a9c77da54a5d32263f7103",
+      "list_sha256": "4c21412c8608c0b17a96e46ec70573bc522eccc6903a7dba6a99b1954c50ed6b"
+    },
+    "test": {
+      "frames": 14446,
+      "ghost_frame_ratio": null,
+      "ghost_total": null,
+      "all_past_boxes": null,
+      "t3_class_counts": null,
+      "image_hash_list_sha256": "d24f9c15a62885946bde05f24b7bc4c800dcd576baf7da7ed9e1dbffd847ef02",
+      "history_sha256": "17d6c4b028c7e8a774f76d3c092da496d9cdaf9db53920e804513e60df33950f",
+      "list_sha256": "2e9725d2630b7164aa877f642b920684e61c6906d1c3dad25a6e04c4d38507eb"
+    }
+  },
+  "completed_at": "2026-11-09T04:05:16.246306+00:00",
+  "list_sha256s": {
+    "t2_train": "c51ccb8daf1d265b7af34534ba77a6a84fc19334ad9e6a84dc478c2516ac761e",
+    "t3_train": "8cce67a855650db7140a554d66195d02bc9e3a0a9563543c78baefe164e3f74b",
+    "t2_val": "7aae9b736864acde28916bb16ced3add2105da94f61742ef464a8657c3ec561c",
+    "t3_val": "8621e004ba7309919b642b5e957a68785090341aa49f8467dd10e7b0d435a697",
+    "t2_test": "b05de4ffdd5387c8802053682a25a2a4837d2227b0170dc8554e027f21ef3fb9",
+    "t3_test": "e372f88e548d7a5165c3d4ae8f4ec14f61ea9df33fb316e83ce11516a0589049"
+  },
+  "yamls_fixed": "per-arm frame lists; label derivation resolves to data/<arm>/<split>/labels"
+}

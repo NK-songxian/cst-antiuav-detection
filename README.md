@@ -1,8 +1,29 @@
-# CST Anti-UAV检测评测协议与三帧时序输入
+# CST Anti-UAV检测评测协议与时序类别编码
 
-AutoDL项目`/root/autodl-tmp/Ryan/cst_antiuav`的代码与实验记录快照，导出日期：2026-10-29。
+AutoDL项目`/root/autodl-tmp/Ryan/cst_antiuav`的代码与实验记录快照。本次同步日期：2026-11-16；上一版为2026-10-29（提交`8970dc5`）。
 
-本仓库保留数据格式转换、原序列划分清单、单帧/三帧输入、训练、评测、统计与绘图代码，以及非权重实验配置和结果。数据集、训练权重与预训练权重需另行准备。
+本仓库保留数据格式转换、原序列划分清单、单帧/三帧输入、时序类别编码（TCE）、训练、评测、统计与绘图代码，以及非权重实验配置和结果。数据集、训练权重与预训练权重需另行准备。
+
+## 本次更新（2026-11-16）
+
+相对2026-10-29快照：新增846个文件、修改2个、移除326个；Python源文件由114个增至119个。
+
+| 变更 | 内容 |
+|---|---|
+| 新增TCE修订研究 | `experiments/tce_revision_20261109/`：`train_tce.py`（T2/T3/T3v2三臂）、`audit_tce.py`（冻结协议评测）、`probe_ghost.py`（ghost标签定义标定）、`build_tce_data.py`、`apply_tce_revision.py`、`cst_tce_t2.yaml`/`cst_tce_t3.yaml`、`jobs/`、`audit/`、`TCE_section.md` |
+| 新增视觉诊断 | `experiments/visual_diagnostics_20261114/`：当前/近/远通道真实训练切片与特征分配统计 |
+| 新增采样记录 | `experiments/aat_temporal_100e_20261017/jobs/TCE_*/sampling/`：TCE任务逐epoch采样快照 |
+| 新增论文材料 | `Detection_Evaluation_Protocol_and_Temporal_Class_Encoding_EN.docx/.pdf`、`面向红外反无人机的检测评测协议与时序类别编码监督.docx`、`图1/图2/图3`（600 dpi PNG与可编辑pptx）、`paper_preview.html`、`preview_media/` |
+| 新增写作记录 | `写作问题诊断与代码核对_20261113.md`、`文献补充与引用核查_20261114.md`、`复查清单_20261113.json` |
+| 移除 | `archive/baseline_reset_20261017_003756/`（153个文件）与`runs/aat_temporal_100e_20261017/`、`runs/tcs_ablation_relaunch_20261017/`（169个文件）已于2026-11-10在服务器清理；需要取回时见提交`8970dc5` |
+
+TCE的三种监督设定均由`train_tce.py --arm`选择，训练协议冻结自`cst_gap_confirmation_20261019`（同一批PNG、同一采样器、同一SharedBrightness与batch=256，按验证集AP50-95取`best.pt`）：
+
+- `t2`：ghost标签，单类别`nc=1`；
+- `t3`：ghost标签+时序通道类别，`nc=3`，验证时仅保留当前帧类别（class 2）参与匹配，因此训练期模型选择与报告的AP都只对应可部署的当前帧输出；
+- `t3v2`：在T3基础上对ghost目标做回归剔除，`run_seed0_v2.sh`与`run_seed12_v2.sh`分别为seed 0与seed 1-2的训练加评测队列。
+
+`probe_ghost.py`的标定结论：堆叠训练帧中86.3%含未标注残差正样本，平均1.97个框，该统计用于固定ghost标签的IoU判定规则。
 
 ## 主要入口
 
@@ -18,6 +39,11 @@ AutoDL项目`/root/autodl-tmp/Ryan/cst_antiuav`的代码与实验记录快照，
 | 检测、背景误报及重新出现评测 | 同目录的`evaluate_matched.py` |
 | 帧间隔验证与bootstrap | `experiments/cst_gap_confirmation_20261019/` |
 | TC加权采样 | `experiments/aat_temporal_100e_20261017/sampling.py` |
+| TCE数据构建（T2/T3/T3v2） | `experiments/tce_revision_20261109/build_tce_data.py` |
+| TCE训练与当前帧类别校验 | 同目录的`train_tce.py` |
+| TCE冻结协议评测 | 同目录的`audit_tce.py` |
+| ghost标签定义标定 | 同目录的`probe_ghost.py` |
+| 论文图重绘（TCE输入流程、背景误报分面图） | `experiments/tce_revision_20261109/apply_tce_revision.py`、`paper_assets_figures_20261027/plot_paper_figures.py` |
 | 数据与验证流程审计 | `experiments/baselines_100e_20261017/audit_validation.py` |
 | 论文绘图 | `paper_assets_figures_20261027/` |
 | 上游CST跟踪评测工具 | `code/CST-Anti-UAV/` |
@@ -41,25 +67,43 @@ AutoDL项目`/root/autodl-tmp/Ryan/cst_antiuav`的代码与实验记录快照，
 3. 转换数据：
 
 ```bash
-python scripts/prep_cst_yolo.py   --cst_root /path/to/CST-AntiUAV   --out "$PWD/data/yolo"   --frame_stride 5
+python scripts/prep_cst_yolo.py \
+  --cst_root /path/to/CST-AntiUAV \
+  --out "$PWD/data/yolo" \
+  --frame_stride 5
 
-python tools/export_splits.py   --index data/yolo/attribute_index.json   --out split_check
+python tools/export_splits.py \
+  --index data/yolo/attribute_index.json \
+  --out split_check
 ```
 
 4. 核对`split_check`与仓库`splits/`，再由对应的`prepare_study.py`或`build_data.py`准备时序输入。
 5. 将所需预训练权重放回原配置指定的位置。原实验脚本保留AutoDL绝对路径；迁移机器时需调整各脚本的`ROOT`、数据配置、`common_args.json`和`matrix.json`路径。
 6. 在新的空输出目录运行训练。`runs/`和`experiments/`保留历史结果；不要用原任务名覆盖这些记录。部分`prepare_*`脚本是当时运行任务的编排快照，含进程状态断言，不应直接当成新环境的一键启动器。
 
-例如，完成路径、权重和输出目录配置后，统一图像组训练入口为：
+统一图像组单帧/三帧训练入口：
 
 ```bash
-python experiments/cst_paper_completion_20261018/train_matched.py   --study experiments/cst_paper_completion_20261018   --name N_current_seed0
+python experiments/cst_paper_completion_20261018/train_matched.py \
+  --study experiments/cst_paper_completion_20261018 \
+  --name N_current_seed0
 ```
 
 单帧复制当前灰度图至三个通道；主要三帧设置使用当前及两幅历史图像，原帧偏移为0/5/10，仅监督当前帧。原流程组与统一图像组分别保留配置和结果，输入增益在统一图像组内比较。
 
+TCE训练与评测入口（需先由`build_tce_data.py`生成`experiments/tce_revision_20261109/data/`，该目录体积约22 GB，不入库）：
+
+```bash
+cd experiments/tce_revision_20261109
+python3 train_tce.py --arm t3v2 --seed 0
+python3 audit_tce.py --arm t3v2 --seed 0 --split val
+python3 audit_tce.py --arm t3v2 --seed 0 --split test
+```
+
 ## 打包范围与来源
 
-保留原项目目录层次。排除根`data/`、数据图像/标签目录、数据软链接、91个模型权重文件、旧压缩包和运行缓存。保留数据划分清单、配置、指标、采样记录、分析结果与绘图材料；具体文件及哈希见`EXPORT_MANIFEST.json`。本次只检查代码语法和文件完整性，没有重新运行训练。
+保留原项目目录层次。排除根`data/`（4.7 GB）、含图像的嵌套`data/`目录（`experiments/tce_revision_20261109/data/`，22 GB、49,124张PNG）、数据图像/标签目录、数据软链接、模型权重文件、旧压缩包、单文件超过60 MB的条目与运行缓存。保留数据划分清单、配置、指标、采样记录、分析结果与绘图材料；具体文件及哈希见`EXPORT_MANIFEST.json`。本次只检查代码语法和文件完整性，没有重新运行训练。
+
+已知差异：服务器上`experiments/tce_revision_20261109/bootstrap_R3_verify.json`与`bootstrap_r3_verify.json`仅大小写不同，在Windows文件系统上无法共存，本次仅收录前者（610字节）；后者的内容可由`bootstrap_r3_verify.py`重新生成。如需同时保留，建议在源目录改名。
 
 上游CST代码与许可证原样位于`code/CST-Anti-UAV/`。本快照没有替作者另行授予整个仓库的新许可证；使用第三方代码时遵循对应目录的原始许可。

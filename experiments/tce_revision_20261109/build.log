@@ -1,0 +1,7 @@
+[train] images=25612 ghost_frames=0.649 ghost_total=26751 all_past_boxes=44004 t3_class_counts={0: 14319, 1: 12432, 2: 22000}
+[val] images=9066 ghost_frames=0.000 ghost_total=0 all_past_boxes=0 t3_class_counts={0: 0, 1: 0, 2: 0}
+[test] images=14446 ghost_frames=0.000 ghost_total=0 all_past_boxes=0 t3_class_counts={0: 0, 1: 0, 2: 0}
+[probe:train] 30 frames channel-equality PASS
+[probe:val] 30 frames channel-equality PASS
+[probe:test] 30 frames channel-equality PASS
+TCE_DATA_DONE

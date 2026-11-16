@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>paper</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">paper</h1>
+</header>
+<p>摘要：远距离红外无人机目标像素少、轮廓弱。连续检测既要准确检出，也要在目标消失后抑制背景误报，并在其重新出现时及时响应。原用于跟踪的CST Anti-UAV保留了这些过程的目标框、存在状态和逐帧属性，但跟踪指标未直接刻画检测器的背景误报与重新出现响应。本文据此构建检测评测协议，并提出三帧时序输入下的时序类别编码与解耦监督（TCE）。协议保留原序列划分和无目标帧，联系属性分层与重新出现事件进行评价。TCE利用原始标注区分历史和当前响应，使分类学习时间身份、定位聚焦当前目标。在CST的统一对照实验中，完整TCE在YOLO11n上的三种子平均精度mAP50为76.45%，置信度阈值0.25时的帧级背景误报率为10.51%。结果表明，该设计改善了检出与背景抑制的平衡，联合协议同时揭示了不同场景与响应阶段的性能差异。</p>
+<p>关键词：红外无人机检测、CST Anti-UAV、检测评测协议、时序类别编码、解耦监督、背景误报</p>
+<h1 id="引言"><strong>1 引言</strong></h1>
+<p>红外反无人机检测需从远距离、低对比度图像中发现弱小目标，并在目标遮挡或移出画面时抑制误报，在其返回后及时恢复检出。CST Anti-UAV与Anti-UAV410提供了红外视频及跟踪标注[1,2]。CST的220个序列还包含存在状态和逐帧属性，可联系检测精度、背景误报与时间响应。</p>
+<p>已有工作利用CST存在标签研究点定位、负样本校准和误报分析[3]，跨数据集顺序学习关注检测遗忘与尺度变化[4]。LDHD-Net则从Anti-UAV410构造图像样本开展框检测[5]。这些路径的输出与评价目标各有侧重。面向连续框检测，还需保留无目标帧和序列过程，联系属性差异考察误报与重新出现检出，明确改进发生的场景及其代价。</p>
+<p>时间信息为弱小目标检测提供了改进途径。显式时序方法利用帧差和多尺度运动线索[6]，或时序差分卷积与三维特征[7]。输入侧方法堆叠灰度图[8,9]，或扩展通道整合多幅彩色图像[10]。辅助监督也可利用跨帧关系，如实例级时间循环任务用于改善检测器的跨域鲁棒性[11]。三帧输入中，历史与当前目标可能错位，当前无目标时历史通道仍可能有目标。仅用当前框监督未显式区分响应的时间身份。本文利用历史目标身份组织监督，使最终定位服务于当前时刻。</p>
+<p>反无人机系统需要兼顾检测性能与运行开销[12]。轻量化研究已通过骨干与检测头改进[13,14]、高分辨率细节分支[15]、实例分割[16]和跨模态融合[17]平衡精度与部署开销。本文从视频标注与监督组织入手。在评价层面，将有目标帧检出、帧级背景误报、属性分层和重新出现事件纳入统一协议。在方法层面，提出时序类别编码与解耦监督（Temporal Class Encoding with Decoupled Supervision，TCE），将三帧上下文、时间身份与当前定位组织为完整检测方法。在轻量单阶段检测器YOLO（You Only Look Once）上，本文通过统一对照、组件消融和分层分析检验该设计的作用。</p>
+<h1 id="cst检测评测协议"><strong>2 CST检测评测协议</strong></h1>
+<p>协议以当前帧无人机框为评价对象，流程见图1。原序列划分与抽样(a)产生检测样本，标签转换保留存在状态和属性(b)，同一组测试预测与真值用于总体精度、属性分层和重新出现事件评价(c)。验证集无目标帧用于校准事件阈值，测试集报告该工作点的实际检出与误报。</p>
+<h1 id="检测样本与序列组织"><strong>2.1 检测样本与序列组织</strong></h1>
+<p>目标存在标志exist=1/0表示有/无目标。仅当exist=1且框宽、高均大于1像素时输出无人机框，否则保留存在状态并输出空标签。本次49,124幅样本中，尺寸不合要求的有目标帧为0。记框左上角为(x,y)，框宽、高为(w,h)，图像宽、高为(W,H)，归一化标签为</p>
+<p><span class="math inline">$x_{c} = \frac{x + w/2}{W},\ \ \ y_{c} = \frac{y + h/2}{H},\ \ \ w_{n} = \frac{w}{W},\ \ \ h_{n} = \frac{h}{H}$</span> (1)</p>
+<p>各分量限制于[0,1]。沿用训练/验证/测试120/40/60个序列的划分，每隔5个原视频帧取样，得到25,612/9,066/14,446幅图像，其中有目标帧22,000/7,819/11,854幅，无目标帧3,612/1,247/2,592幅。空标签帧保留于训练和评价，训练时无当前框回归目标，评测时统计背景误报。历史帧仅取自同一划分、同一序列。</p>
+<p><img src="media/image1.png" style="width:6.7in;height:3in" alt="CST检测评测协议，包含序列划分、标签转换、状态属性与重新出现事件评价" /></p>
+<p>图1　CST检测评测协议。GT为真值。AP/mAP为平均精度及类别均值，DR为检出率，BG-FP为帧级背景误报率，R₁/R₃为首次/前三次内至少一次正确检出的事件比例。红框为真值，填色格为成立属性。虚线以验证集无目标帧校准5%误报预算阈值。事件示例为cn_mountains_32原帧90—110、步长5。正确匹配要求交并比（IoU）≥0.5。</p>
+<h1 id="状态与属性分层"><strong>2.2 状态与属性分层</strong></h1>
+<p>六类逐帧属性沿用CST[1]定义，分别为遮挡（OC）、视外（OV）、尺度变化（SV）、热交叉（TC）、动态背景杂波（DBC）和复杂动态背景（CDB）。这些标记由原标注按帧索引与检测标签对齐。先划分有目标帧集合P与无目标帧集合B，再在属性子集内分别评价检出和误报。属性可重叠，各子集独立统计。OC、OV的有目标帧各仅5幅，本文分析其无目标误报。SV不含无目标帧，不报告该属性的BG-FP。</p>
+<h1 id="检出误报与重新出现指标"><strong>2.3 检出、误报与重新出现指标</strong></h1>
+<p>交并比（IoU）为预测框与真值框交集面积与并集面积的比值。单类任务中mAP等于AP。总体mAP在包含无目标帧的完整测试集上计算，属性AP使用对应有目标子集。mAP50、mAP75分别取IoU=0.5、0.75，mAP50–95为十档阈值的平均。</p>
+<p><span class="math inline">$\text{mAP}_{50} = \ mAP(0.50)\text{\ \ \ \ \ \ }\text{mAP}_{50–95} = \frac{1}{10}\sum_{k = 0}^{9}mAP(0.50\  + \ 0.05k)$</span> (2)</p>
+<p>Dᵢ(τ)为抽样帧i中置信度不低于τ的后处理预测框集合。hᵢ(τ)=1表示至少一框按评测器规则正确匹配且IoU≥0.5，否则为0。帧级背景误报率与有目标帧检出率为</p>
+<p><span class="math inline">$BG - FP(\tau)\  = \frac{\left| \{ i\  \in \ B\ :\ Dᵢ(\tau)\  \neq \ \varnothing\} \right|}{\left| B \right|}\text{\ \ \ \ \ \ \ \ \ \ }\ \ DR(\tau)\  = \frac{\left| \{ i\  \in \ P\ :\ hᵢ(\tau)\  = \ 1\} \right|}{\left| P \right|}$</span> (3)</p>
+<p>BG-FP在无目标帧上计数，一帧出现至少1个预测框即记一次，不累计框数。总体分母为|B|。属性帧集记为A时，子集分母为|B∩A|。属性背景分析固定τ=0.25。</p>
+<p>长时重新检测[18]与反无人机挑战[19]关注目标消失后的恢复。本文按真值定义重新出现事件为同序列连续至少2次抽样无目标，紧接至少3次有目标，每段连续可见区间计一次。下一事件须再次满足条件。测试集共178次事件、47个序列，前三次窗口不重叠。记hₑ,ᵣ为事件e第r次可见观测是否正确检出，E为事件数，则</p>
+<p><span class="math inline">$R_{K}(\tau)\  = \frac{1}{E}\sum_{e = 1}^{E}\max_{1 \leq r \leq K}h_{e,r}(\tau),\ \ \ K\  \in \ \{ 1,\ 3\}$</span> (4)</p>
+<p>R₃允许首次或中间漏检，只需前三次内至少一次正确匹配。窗口跨度10个原帧。逐模型在1,247幅验证无目标帧上取使误报帧数不超过62（5%预算）的最低阈值τ*，再固定到测试集。报告3种子均值与样本标准差。事件差值对47个序列作20,000次有放回配对bootstrap，配置间共享抽样并保留序列内全部事件，按事件等权计算各固定种子的差值后取均值，95%区间取2.5%和97.5%分位数。</p>
+<h1 id="时序类别编码与解耦监督"><strong>3 时序类别编码与解耦监督</strong></h1>
+<p>TCE将三帧上下文、时间身份标签与当前定位监督组织为完整检测方法。三幅灰度图提供输入，原始标注确定目标响应来自哪个时刻。分类学习远历史、近历史和当前三种身份，框回归学习当前目标位置。三类表示时间身份，最终评价任务仍是当前帧无人机单类检测，整体方法见图2。</p>
+<p><img src="media/image6.png" style="width:6.7in;height:3.055in" alt="三帧输入到YOLO及当前输出的单向流程，以及真实训练标签、正锚点分配和解耦监督" /></p>
+<p>图2　TCE的检测与监督。(a)当前、前5和前10个原视频帧堆叠为三个输入通道，经YOLO11n输出目标框与时间类别，非极大值抑制（NMS）后仅保留当前类预测。(b)左列为真值局部裁区，后续以当前帧为底图共享裁区。蓝、橙、红分别表示远、近、当前身份，点为固定权重无增强前向所得正锚点。分类覆盖背景与三类目标，框回归与分布焦点损失（DFL）只监督当前类正锚点。</p>
+<h1 id="三帧输入构建"><strong>3.1 三帧输入构建</strong></h1>
+<p>单帧输入将当前灰度图<span class="math inline"><em>I</em><sub><em>t</em></sub></span>复制到三个通道。三帧输入组织为(<span class="math inline"><em>I</em><sub><em>t</em></sub></span>,<span class="math inline"><em>I</em><sub><em>t</em> − 5</sub></span>,<span class="math inline"><em>I</em><sub><em>t</em> − 10</sub></span>)，偏移按原视频帧索引计算。缺少近历史帧时复用当前帧，缺少远历史帧时复用已取得的近历史帧。三个通道共享几何变换与[0.6,1.4]的亮度增益，像素截断至[0,255]，保留跨帧的灰度关系。网络通过二维卷积联合处理三个时间通道，并始终以当前时刻的检测为输出任务。</p>
+<h1 id="时间身份编码与历史框筛选"><strong>3.2 时间身份编码与历史框筛选</strong></h1>
+<p>历史通道中的目标响应来自过去的目标位置。TCE利用这些位置的原始标注构造辅助身份标签。前10帧的框编码为远历史类0，前5帧编码为近历史类1，当前框编码为当前类2。各框保留所属帧中的空间坐标。这样，即使当前帧无目标，历史响应也有对应的身份监督，而不会成为当前类正样本。</p>
+<p>为降低高度重叠的跨时刻标签冲突，历史框只有在与所有当前框的IoU均小于0.5时才保留。远历史框还须与已保留近历史框的IoU小于0.5，优先保留更近的历史。训练集最终包含22,000个当前框、12,432个近历史框与14,319个远历史框。该过程直接使用训练序列标注。验证和测试只保留当前帧真值框，将类别编号映射为当前类，空间框与存在状态不变。</p>
+<h1 id="分类与定位的解耦监督"><strong>3.3 分类与定位的解耦监督</strong></h1>
+<p>TCE沿用YOLO11n的骨干、多尺度融合和共享框回归分支，将分类输出扩为三类。正锚点通过任务对齐标签分配，由分类得分与定位质量共同确定[20]。历史正锚点学习历史类，其当前类目标为零。框回归采用完整交并比（CIoU）损失[21]，并结合分布焦点损失（DFL）学习框边界分布[22]，两项均只由当前类正锚点承担。令Ω为全部锚点，即特征图上的候选预测位置，<span class="math inline"><em>Ω</em><sub>cur</sub></span>为匹配当前类的正锚点，损失写为</p>
+<p><span class="math inline"><em>L</em> = <em>λ</em><sub>cls</sub><em>L</em><sub>cls</sub>(<em>Ω</em>) + <em>λ</em><sub>box</sub><em>L</em><sub>box</sub>(<em>Ω</em><sub>cur</sub>) + <em>λ</em><sub>DFL</sub><em>L</em><sub>DFL</sub>(<em>Ω</em><sub>cur</sub>)</span> (5)</p>
+<p>分类项采用二元交叉熵，覆盖背景及三类时间身份，两个回归项仅累加当前类正锚点，并以这些锚点的匹配得分和归一化，分母下限为1。<span class="math inline"><em>λ</em><sub>cls</sub></span>、<span class="math inline"><em>λ</em><sub>box</sub></span>、<span class="math inline"><em>λ</em><sub>DFL</sub></span>分别取0.5、7.5、1.5。历史实例通过分类分支更新共享特征，当前实例决定定位目标，二者在监督中各有职责。推理先按三类完成非极大值抑制（NMS）等后处理，再保留当前类预测。训练期间也按当前类验证mAP50–95选择权重。</p>
+<h1 id="实验结果与分析"><strong>4 实验结果与分析</strong></h1>
+<h1 id="实验设置与对照"><strong>4.1 实验设置与对照</strong></h1>
+<p>实验基于Ultralytics 8.4.177[23]，采用YOLO11n对照单帧、仅当前框监督的三帧与完整TCE三种配置，通过组件消融分析输入上下文与时间身份监督的作用。三种配置共用无损PNG时序图像，采样、增强及优化设置一致，输入与监督按各方案构建。YOLO11n使用种子0/1/2。YOLO11s仅用于单帧与三帧输入的补充对照，使用seed0。</p>
+<p>训练输入尺寸640×640，批量256，最多100轮，早停耐心20轮，启用混合精度，并按验证集mAP50–95保存最优权重。测试张量统一为544×672，候选置信度下限0.001，NMS IoU阈值0.7，每帧最多保留300框。τ*按2.3节逐模型校准，固定阈值另取0.25。均值、标准差与差值均由未舍入结果计算。</p>
+<h1 id="总体检出与误报"><strong>4.2 总体检出与误报</strong></h1>
+<p>完整TCE在统一对照实验中取得76.45%的mAP50和10.51%的BG-FP@0.25（表1）。在验证集校准工作点，测试DR为71.14%，BG-FP为5.79%。相对单帧对照，模型在目标检出、背景抑制和重新出现响应上均获得改善，体现了该方法面向连续检测的整体收益。</p>
+<p>表1　YOLO11n统一对照结果（3种子均值±样本标准差，%）。τ*由验证集5%帧级误报预算校准后固定到测试。BG-FP每个无目标帧至多计一次。</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>配置</td>
+<td>mAP50</td>
+<td>mAP50–95</td>
+<td>DR@τ*</td>
+<td>BG-FP@0.25</td>
+<td>BG-FP@τ*</td>
+<td>R₁</td>
+<td>R₃</td>
+</tr>
+<tr class="even">
+<td>单帧</td>
+<td>59.34±1.58</td>
+<td>32.72±0.78</td>
+<td>57.66±3.23</td>
+<td>17.49±2.44</td>
+<td>10.25±4.71</td>
+<td>20.79±0.56</td>
+<td>35.02±3.66</td>
+</tr>
+<tr class="odd">
+<td>三帧当前监督</td>
+<td>74.22±1.48</td>
+<td>39.60±0.59</td>
+<td>69.81±1.35</td>
+<td>15.41±4.77</td>
+<td>7.91±1.01</td>
+<td>31.27±1.81</td>
+<td>51.87±3.82</td>
+</tr>
+<tr class="even">
+<td>TCE</td>
+<td>76.45±1.61</td>
+<td>39.61±1.11</td>
+<td>71.14±0.56</td>
+<td>10.51±2.01</td>
+<td>5.79±1.93</td>
+<td>30.90±0.97</td>
+<td>49.63±0.32</td>
+</tr>
+</tbody>
+</table>
+<h1 id="输入与监督组件消融"><strong>4.3 输入与监督组件消融</strong></h1>
+<p>仅当前框监督的三帧变体，其三种子平均mAP50为74.22%，BG-FP@0.25为15.41%（表1）。完整TCE提高mAP50 2.24个百分点，降低BG-FP 4.90个百分点，两者mAP50–95均值接近。在YOLO11s上，三帧较单帧提高mAP50和mAP50–95各15.34、6.66个百分点。</p>
+<p>监督组件消融固定三帧输入与seed0（表2）。全实例回归变体保留时间身份标签，但让历史与当前实例共同承担定位损失，其BG-FP为13.93%，mAP75为29.3%，mAP50–95为36.06%。与当前框监督相比，时间身份标签改善了背景判别，全实例回归则伴随精细定位下降。</p>
+<p>表2　监督组件消融（YOLO11n，seed0，%）。mAP75取一位小数。BG-FP按无目标帧计数。</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><strong>监督方式</strong></td>
+<td><strong>mAP50</strong></td>
+<td><strong>mAP75</strong></td>
+<td><strong>mAP50–95</strong></td>
+<td><strong>BG-FP@0.25</strong></td>
+</tr>
+<tr class="even">
+<td>去除时间编码</td>
+<td>74.73</td>
+<td>36.3</td>
+<td>39.26</td>
+<td>20.91</td>
+</tr>
+<tr class="odd">
+<td>时间编码、全回归</td>
+<td>75.29</td>
+<td>29.3</td>
+<td>36.06</td>
+<td>13.93</td>
+</tr>
+<tr class="even">
+<td>完整TCE</td>
+<td>75.22</td>
+<td>35.5</td>
+<td>38.98</td>
+<td>8.95</td>
+</tr>
+</tbody>
+</table>
+<p>完整TCE的mAP75为35.5%，mAP50–95为38.98%，BG-FP为8.95%。相对全回归变体，当前类回归及其归一化恢复了定位表现并降低误报，支持分类利用历史身份、定位聚焦当前目标的分工。</p>
+<h1 id="属性检出与背景误报分布"><strong>4.4 属性检出与背景误报分布</strong></h1>
+<p>完整TCE在TC、SV和CDB正帧上的mAP50均值分别为65.66%、71.31%和67.90%，均高于当前框监督三帧变体（表3）。DBC的mAP50由64.96%降至63.90%，BG-FP同时由10.11%降至6.64%，反映出局部检出与背景抑制的取舍。</p>
+<p>表3　有目标属性子集mAP50（3种子均值±样本标准差，%）。属性可重叠，OC/OV不报告AP。</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><strong>属性</strong></td>
+<td><strong>有/无目标帧</strong></td>
+<td><strong>单帧</strong></td>
+<td><strong>三帧当前监督</strong></td>
+<td><strong>TCE</strong></td>
+</tr>
+<tr class="even">
+<td>TC</td>
+<td>6931/1512</td>
+<td>43.00±2.02</td>
+<td>63.24±2.49</td>
+<td>65.66±2.00</td>
+</tr>
+<tr class="odd">
+<td>SV</td>
+<td>6690/0</td>
+<td>53.99±1.37</td>
+<td>69.28±2.16</td>
+<td>71.31±1.64</td>
+</tr>
+<tr class="even">
+<td>DBC</td>
+<td>805/923</td>
+<td>55.77±2.82</td>
+<td>64.96±2.32</td>
+<td>63.90±1.23</td>
+</tr>
+<tr class="odd">
+<td>CDB</td>
+<td>2257/619</td>
+<td>46.82±2.87</td>
+<td>65.55±1.42</td>
+<td>67.90±2.40</td>
+</tr>
+</tbody>
+</table>
+<p>在固定τ=0.25时，TCE的总体及五个可统计属性背景集合的BG-FP均值均低于当前监督三帧（图3a）。其中TC由9.26%降至6.53%，OV由20.94%降至13.77%。OV仍具有最高的条件误报率，说明目标移出画面后的背景抑制是连续检测中的重点。图3b进一步显示，在0.10—0.50的九档阈值上，TCE总体BG-FP均值均低于另外两种配置，背景抑制优势在该阈值区间内保持一致。</p>
+<p><img src="media/image4.png" style="width:6.7in;height:2.85in" alt="统一坐标的六个子集误报小图，包含均值和全部种子观测，以及置信度阈值曲线" /></p>
+<p>图3　三种配置的帧级背景误报。(a)各小图采用相同刻度，柱高及数字为三种子均值，空心点为独立种子结果，τ=0.25。(b)总体BG-FP随阈值变化，阴影为三种子样本标准差。每个无目标帧至少1框即记一次，属性分母为对应无目标帧数，SV不含无目标帧。</p>
+<h1 id="重新出现后的及时检出"><strong>4.5 重新出现后的及时检出</strong></h1>
+<p>背景抑制之外，协议还检验模型能否及时检出重新出现的目标。TCE的R₁为30.90%、R₃为49.63%，均高于单帧的20.79%和35.02%（表1）。R₃相对单帧的配对序列bootstrap差值95%区间为[10.11,19.67]个百分点。时间输入与身份监督提高了相对单帧的目标恢复比例。</p>
+<p>在该事件定义和帧偏移下，首次可见观测的两幅历史帧均无目标。第二次包含一幅有目标历史帧，第三次才包含两幅。R₁/R₃据此考察历史上下文从缺失到逐步建立时的检测响应，将总体AP未单独刻画的重新出现过程，与三帧输入的实际信息来源联系起来。</p>
+<p>相对当前监督三帧，TCE的R₃均值低2.25个百分点，差值95%区间为[−4.61,0.21]个百分点。该工作点由逐模型验证集校准得到。TCE在测试集上的误报更低、整体DR更高，但重新出现窗口的及时检出并未同步增加。总体检出率与事件响应衡量了不同过程，这也说明独立设置重新出现指标的必要性。测试误报与验证集5%预算的差别，则反映阈值迁移后的实际工作状态。</p>
+<h1 id="方法特征与处理开销"><strong>4.6 方法特征与处理开销</strong></h1>
+<p>TCE将时间信息同时编码到通道和标签中，通过监督分工复用二维检测器。分类输出由1类扩为3类后，参数由2,604,883增至2,605,369，仅增加486个，约0.019%。解耦项改变训练损失的作用范围。以640×512、8位灰度图计，两幅历史图像的数据量为0.625 MiB。额外需求来自训练标签、历史图像及分类输出，骨干、多尺度融合与共享框回归结构得以沿用。</p>
+<p>联合评价显示，TCE主要改善检出与背景抑制，DBC局部检出与重新出现工作点存在取舍。后续可针对短暂闪现、剧烈相机运动和跨数据集场景，研究时间跨度与身份监督的自适应组织。</p>
+<h1 id="总结"><strong>5 总结</strong></h1>
+<p>本文将CST Anti-UAV的序列划分、存在状态与逐帧属性重组为面向连续检测的评测与监督信息：联合协议同时报告总体检测精度、帧级背景误报与重新出现后的及时检出，并以属性分层呈现场景差异。方法上，TCE以三帧灰度图提供时序上下文，以原始标注编码历史与当前身份，将时间身份判别与当前定位分配给不同的监督范围；该设计直接复用已有视频标注，沿用轻量二维检测器的主要特征处理结构，推理输出与单帧检测器等价。</p>
+<p>在相同数据准备与优化设置下，TCE的三种子平均mAP50达到76.45%，较单帧对照提高17.1个百分点；BG-FP@0.25降至10.51%，较三帧基线相对降低31.8%，全部参数代价为486个。消融结果支持时间身份判别与当前定位的监督分工；属性分层与事件结果进一步揭示了总体精度之外的场景差异与响应取舍。</p>
+<p>重新出现分析进一步表明，在本文的事件定义下，目标首次返回时两幅历史帧均不含目标，历史通道需随后数帧才逐步积累目标信息；持续可见与刚刚返回两个阶段因此面临不同的上下文条件。将早期响应纳入评价，能够识别总体精度之外的漏检，也为依据目标存在状态调整历史监督、在背景抑制与及时恢复之间取得平衡提供依据。</p>
+<p>本文结论存在边界：评测与方法均在CST Anti-UAV单一红外数据集上验证，历史时间跨度固定为5与10个抽样帧，监督组织仅在YOLO11n一类轻量单阶段检测器上检验。后续工作将把联合协议与时序类别编码推广到其他红外视频基准，研究时间跨度与身份监督的自适应组织，以覆盖短暂闪现、剧烈相机运动与跨域场景。</p>
+<p><strong>参考文献</strong></p>
+<p>[1] Xie, B., Zhang, C., Wang, F., et al., “CST Anti-UAV: a thermal infrared benchmark for tiny UAV tracking in complex scenes,” Proc. ICCVW, 6216–6225 (2025). https://doi.org/10.1109/ICCVW69036.2025.00647</p>
+<p>[2] Huang, B., Li, J., Chen, J., et al., “Anti-UAV410: a thermal infrared benchmark and customized scheme for tracking drones in the wild,” IEEE Trans. Pattern Anal. Mach. Intell. 46(5), 2852–2865 (2024). https://doi.org/10.1109/TPAMI.2023.3335338</p>
+<p>[3] Son, W., Choi, G., Seo, J., Kim, H., “What frame-level labels can and cannot do for small-UAV point detection in thermal video,” arXiv preprint arXiv:2610.07705 (2026). https://arxiv.org/abs/2610.07705</p>
+<p>[4] Nguyen, K. D. G., Ziabari, S. S. M., Alsahag, A. M. M., “Catastrophic forgetting in sequential thermal anti-UAV detection: the role of scale-conditioned gradient imbalance,” arXiv preprint arXiv:2610.08315 (2026). https://arxiv.org/abs/2610.08315</p>
+<p>[5] Zhang, C., Gao, Q., Shi, R., Yue, M., “LDHD-Net: a lightweight network with double branch head for feature enhancement of UAV targets in complex scenes,” Int. J. Intell. Syst. 2024, 7259029 (2024). https://doi.org/10.1155/2024/7259029</p>
+<p>[6] He, R., Zhou, S., Cheng, R., et al., “Motion matters: difference-based multi-scale learning for infrared UAV detection,” Proc. CVPRW, 3006–3015 (2023). https://doi.org/10.1109/CVPRW59228.2023.00302</p>
+<p>[7] Fang, H., Guo, S., Chen, Q., Chang, Y., Yan, L., “Spatio-temporal context learning with temporal difference convolution for moving infrared small target detection,” Proc. AAAI 40(5), 3840–3848 (2026). https://doi.org/10.1609/aaai.v40i5.37385</p>
+<p>[8] Corsel, C. W., van Lier, M., Kampmeijer, L., Boehrer, N., Bakker, E. M., “Exploiting temporal context for tiny object detection,” Proc. WACVW, 79–89 (2023). https://doi.org/10.1109/WACVW58289.2023.00013</p>
+<p>[9] van Leeuwen, M. C., Fokkinga, E. P., Huizinga, W., Baan, J., Heslinga, F. G., “Toward versatile small object detection with Temporal-YOLOv8,” Sensors 24(22), 7387 (2024). https://doi.org/10.3390/s24227387</p>
+<p>[10] Quan, Y., Kiefer, B., Messmer, M., Zell, A., “Lightweight multi-frame integration for robust YOLO object detection in videos,” Proc. European Conference on Mobile Robots (ECMR), 1–7 (2025). https://doi.org/10.1109/ECMR65884.2025.11162972</p>
+<p>[11] Wang, X., Huang, T. E., Liu, B., et al., “Robust object detection via instance-level temporal cycle confusion,” Proc. ICCV, 9143–9152 (2021). https://doi.org/10.1109/ICCV48922.2021.00901</p>
+<p>[12] Dong, Y., Wu, F., Zhang, S., et al., “Securing the skies: a comprehensive survey on anti-UAV methods, benchmarking, and future directions,” Proc. CVPRW, 6661–6675 (2025). https://doi.org/10.1109/CVPRW67362.2025.00663</p>
+<p>[13] Yu, H., Jiang, H., Lan, W., et al., “YOLO-LIRTU: a lightweight infrared real-time UAV detection framework,” Pattern Anal. Appl. 29(1), 29 (2026). https://doi.org/10.1007/s10044-026-01610-5</p>
+<p>[14] Nguyen, P. T., Nguyen, G. L., Bui, D. D., “LW-UAV–YOLOv10: a lightweight model for small UAV detection on infrared data based on YOLOv10,” Geomatica 77(1), 100049 (2025). https://doi.org/10.1016/j.geomat.2025.100049</p>
+<p>[15] Aldubaikhi, A., Patel, S., “S-Drone-YOLO: a parameter-efficient P2-guided quality-aware YOLO detector for infrared small UAV detection,” Appl. Sci. 16(12), 5854 (2026). https://doi.org/10.3390/app16125854</p>
+<p>[16] Chen, Y. Z., Sun, H. Y., Tian, L., et al., “Detecting infrared UAVs on edge devices through lightweight instance segmentation,” PLOS ONE 20(8), e0330074 (2025). https://doi.org/10.1371/journal.pone.0330074</p>
+<p>[17] Huang, C., Xu, Y., Wang, M., Shen, G., “Lightweight UAV object tracking model based on cross-modal feature fusion,” Proc. SPIE 14174, 1417409 (2026). https://doi.org/10.1117/12.3110670</p>
+<p>[18] Voigtlaender, P., Luiten, J., Torr, P. H. S., Leibe, B., “Siam R-CNN: visual tracking by re-detection,” Proc. CVPR, 6578–6588 (2020). https://doi.org/10.1109/CVPR42600.2020.00661</p>
+<p>[19] Zhao, J., Li, J., Jin, L., et al., “The 3rd Anti-UAV workshop &amp; challenge: methods and results,” arXiv preprint arXiv:2305.07290 (2023). https://arxiv.org/abs/2305.07290</p>
+<p>[20] Feng, C., Zhong, Y., Gao, Y., Scott, M. R., Huang, W., “TOOD: task-aligned one-stage object detection,” Proc. ICCV, 3510–3519 (2021). https://doi.org/10.1109/ICCV48922.2021.00349</p>
+<p>[21] Zheng, Z., Wang, P., Liu, W., Li, J., Ye, R., Ren, D., “Distance-IoU loss: faster and better learning for bounding box regression,” Proc. AAAI 34(7), 12993–13000 (2020). https://doi.org/10.1609/aaai.v34i07.6999</p>
+<p>[22] Li, X., Wang, W., Wu, L., et al., “Generalized focal loss: learning qualified and distributed bounding boxes for dense object detection,” Adv. Neural Inf. Process. Syst. 33, 21002–21012 (2020). https://proceedings.neurips.cc/paper/2020/hash/f0bda020d2470f2e74990a07a607ebd9-Abstract.html</p>
+<p>[23] Ultralytics, “Ultralytics YOLO, version 8.4.177,” GitHub (2026). https://github.com/ultralytics/ultralytics/releases/tag/v8.4.177</p>
+</body>
+</html>

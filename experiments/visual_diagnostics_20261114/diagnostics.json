@@ -1,0 +1,97 @@
+{
+  "scope": "Fixed-weight CPU FP32 forward passes, no augmentation, 640 square letterbox, no gradient, no training, no replacement of frozen quantitative results",
+  "weight_sha256": "98a396e272d5d9fa6014a1a2b6104acf0c0111a3b1154df844cee3f3cebf74eb",
+  "training_example": {
+    "stem": "cn_mountains_13_f000155",
+    "triplet": [
+      "cn_mountains_13_f000145",
+      "cn_mountains_13_f000150",
+      "cn_mountains_13_f000155"
+    ],
+    "boxes": [
+      [
+        0.31516,
+        0.476536,
+        0.022475,
+        0.01358
+      ],
+      [
+        0.317625,
+        0.50318,
+        0.025859,
+        0.015151
+      ],
+      [
+        0.29059,
+        0.637037,
+        0.026551,
+        0.013918
+      ]
+    ],
+    "crop": [
+      86,
+      218,
+      302,
+      352
+    ],
+    "score": 106.65036995838011
+  },
+  "feature_shapes": [
+    [
+      1,
+      64,
+      80,
+      80
+    ],
+    [
+      1,
+      128,
+      40,
+      40
+    ],
+    [
+      1,
+      256,
+      20,
+      20
+    ]
+  ],
+  "positive_anchors_by_class": {
+    "0": 3,
+    "1": 3,
+    "2": 5
+  },
+  "native_labels": [
+    [
+      2.0,
+      0.29058998823165894,
+      0.6370369791984558,
+      0.026551000773906708,
+      0.013918000273406506
+    ],
+    [
+      1.0,
+      0.3176249861717224,
+      0.5031800270080566,
+      0.02585900016129017,
+      0.015150999650359154
+    ],
+    [
+      0.0,
+      0.31516000628471375,
+      0.47653600573539734,
+      0.022475000470876694,
+      0.013580000028014183
+    ]
+  ],
+  "candidate_selection": "First 60 labelled, separated-history textured crops; maximize crop standard deviation plus bounded displacement score",
+  "evaluated_candidates": 60,
+  "test_example": "cn_mountains_32_f000110",
+  "outputs": [
+    "train_far.jpg",
+    "train_near.jpg",
+    "train_current.jpg",
+    "actual_assignments_and_features.npz",
+    "diagnostics.json"
+  ]
+}
